@@ -1,8 +1,8 @@
 # My resume
 
-Used jsonresume.org schema.
+[jsonresume.org](https://jsonresume.org/schema/) schema is used.
 
-[resume.json](resume.json) contains all the generic information.
+[resume.json](resume.json) contains all the information.
 
 For specialized versions create topical files, like `resume-manager.json`, or `resume-frontent.json`.
 
