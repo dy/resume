@@ -50,7 +50,7 @@
 	"work": [
 		{
 			"company": "KudaGo Inc.",
-			"position": "Frontend developer",
+			"position": "web-developer",
 			"website": "http://kudago.com",
 			"startDate": "2012-03-01",
 			"endDate": "2015-01-12",
@@ -86,10 +86,10 @@
 			]
 		},
 		{
-			"company": "Revan Inc.",
-			"position": "Frontend-developer, designer",
+			"company": "LLC Revan",
+			"position": "web-designer",
 			"summary": "Revan internet agency as a front-end developer",
-			"startDate": "2012-03-01",
+			"startDate": "2012-02-04",
 			"endDate": "2013-03-01",
 			"highlights": [
 				"ipoteka-vam.ru - prototyping, design, development",
@@ -204,9 +204,9 @@
 		},
 		{
 			"organization": "Baltic State Technical University",
-			"position": "Lecturer",
+			"position": "Pedagogical Internship",
 			"website": "",
-			"startDate": "2009-01-01",
+			"startDate": "4 weeks",
 			"endDate": "",
 			"summary": "Technical drawing course: basic painting, photoshop, design"
 		},
@@ -235,26 +235,52 @@
 	"education": [
 		{
 			"institution": "Baltic State Technical University “Voenmeh”",
-			"area": "Information technologies in computer graphic systems",
-			"studyType": "Magister",
-			"startDate": "2006-09-01",
-			"endDate": "2014-01-01",
+			"area": "Economics and Management",
+			"studyType": "Specialist",
+			"startDate": "2010-09-01",
+			"endDate": "2012-02-15",
 			"gpa": "",
 			"courses": [
-				"DB1101 - Basic SQL",
-				"CS2011 - Java Introduction"
 			]
 		},
 		{
-			"institution": "Saint-Petersburg College of Naval Instrument-making",
+			"institution": "Baltic State Technical University “Voenmeh”",
+			"area": "Information science and computers, Intellectual systems",
+			"studyType": "Master’s degree",
+			"startDate": "2010-09-01",
+			"endDate": "2012-06-14",
+			"gpa": "",
+			"courses": [
+			]
+		},
+		{
+			"institution": "Baltic State Technical University “Voenmeh”",
+			"area": "Information and computer science",
+			"studyType": "Bachelor’s degree",
+			"startDate": "2006-09-01",
+			"endDate": "2010-06-14",
+			"gpa": "",
+			"courses": [
+			]
+		},
+		{
+			"institution": "Saint-Petersburg College of Marine Instrumentation",
 			"area": "Automatic control systems",
-			"studyType": "Specialist",
-			"startDate": "2001-09-01",
+			"studyType": "Secondary professional education, technic",
+			"startDate": "2002-09-01",
 			"endDate": "2006-06-01",
 			"gpa": "",
 			"courses": [
-				"DB1101 - Basic SQL",
-				"CS2011 - Java Introduction"
+			]
+		},
+		{
+			"institution": "School #569",
+			"area": "General",
+			"studyType": "Basic secondary education",
+			"startDate": "1994-09-01",
+			"endDate": "2002-06-01",
+			"gpa": "",
+			"courses": [
 			]
 		}
 	],
