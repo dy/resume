@@ -1,0 +1,428 @@
+{
+	"basics": {
+		"name": "Dmitry Ywanov",
+		"label": "Frontend developer",
+		"picture": "",
+		"email": "df.creative@gmail.com",
+		"phone": "+7 (952) 215-52-48",
+		"website": "http://dfcreative.github.com",
+		"summary": "Dmitry Ywanov hails from Saint-Petersburg. He has earned degrees from the Baltic State Technical University and Marine Instrumentation College. Before starting KudaGo.com, he worked as a freelance software developer and conducted side voluntary jobs. While his work primarily focuses on frontend web-development (JS, HTML, CSS) and secondary on user experience, interfaces and design, his non-work interests range widely, everything from quantum computing to chaos theory.",
+		"location": {
+			"address": "Pribrezhnaya st., 1, 131",
+			"postalCode": "192076",
+			"city": "Saint-Petersburg",
+			"countryCode": "RU",
+			"region": ""
+		},
+		"profiles": [
+			{
+				"network": "Twitter",
+				"username": "projectire",
+				"url": "https://twitter.com/projectire"
+			},
+			{
+				"network": "Github",
+				"username": "dfcreative",
+				"url": "https://github.com/dfcreative"
+			},
+			{
+				"network": "Vk",
+				"username": "dfcreative",
+				"url": "http://vk.com/dfcreative"
+			},
+			{
+				"network": "Facebook",
+				"username": "Dima Ivanov",
+				"url": "https://www.facebook.com/dmitry.ivanov.92798"
+			},
+			{
+				"network": "Instagram",
+				"username": "maladyn",
+				"url": "http://instagram.com/maladyn"
+			},
+			{
+				"network": "Habrahabr",
+				"username": "dmitry_f",
+				"url": "http://habrahabr.ru/users/dmitry_f/"
+			}
+		]
+	},
+	"work": [
+		{
+			"company": "KudaGo Inc.",
+			"position": "Frontend developer",
+			"website": "http://kudago.com",
+			"startDate": "2012-03-01",
+			"endDate": "2015-01-12",
+			"summary": "Kudago is an information agency and a web-site covering city events all over the world.",
+			"highlights": [
+				"UX, UI and IA of kudago.com",
+				"implementing frontend of kudago.com",
+				"recruiting specialists",
+				"developing mobile version of a site",
+				"getting 100 of 100 in google page insights",
+				"introducing frontend building process",
+				"Mobile version for kudago.com, jQuery-less, optimized for speed, based on components."
+			],
+			"keywords": [
+				"javascript",
+				"css3",
+				"html5",
+				"npm",
+				"less",
+				"browserify",
+				"commonjs",
+				"jquery",
+				"component",
+				"django",
+				"underscore",
+				"closurecompiler",
+				"es6",
+				"bower",
+				"git",
+				"backbone",
+				"modernizr",
+				"github"
+			]
+		},
+		{
+			"company": "Revan Inc.",
+			"position": "Frontend-developer, designer",
+			"summary": "Revan internet agency as a front-end developer",
+			"startDate": "2012-03-01",
+			"endDate": "2013-03-01",
+			"highlights": [
+				"ipoteka-vam.ru - prototyping, design, development",
+				"to-travel.ru - prototyping, design",
+				"to-create.ru - branding, prototyping, design",
+				"tm-print.ru - designing logo, redesign of web-site",
+				"design for likemeter application",
+				"implementing statistics diagram for likemeter app"
+			]
+		},
+		{
+			"company": "Freelance",
+			"position": "Web-designer",
+			"summary": "Taking up different web-design and web-development jobs, including mockups, prototyping, HTML, CSS, JS, PHP. Setting up, configuring and developing themes and plugins for wordpress. Experience with other CMS: modx, drupal, subdreamer. Setting up server-side environment: Apache, nginx, MySQL.",
+			"highlights": [
+				"rsua.ru - design, web-development",
+				"postavokna.ru - design, site",
+				"gildiya-masterov.ru - design, site",
+				"arkon-okna.ru - design, site",
+				"SmartMedia - design",
+				"Law services site - design",
+				"LeGran - design",
+				"okonka.ru - redesign",
+				"jumpingclay.ru - design, web-developing, hosting, administrating",
+				"aurama.ru - prototyping, design, web-developing.",
+				"podsoblyaev.ru - design, development, hosting.",
+				"biletron.ru - prototyping, design",
+				"concertinfo.ru - redesign",
+				"ditspb.ru - design, development, hosting, administering",
+				"rukasil.ru - redesign",
+				"voenmeh.ru faculty I site - prototyping, design, development",
+				"dverka.ru - logo & business cards design",
+				"sayhello.ru - prototyping, design",
+				"zpapa.ru - prototyping, design",
+				"productinsignt.ru - prototyping, design"
+			]
+		},
+		{
+			"company": "STC pro",
+			"position": "Internship",
+			"summary": "",
+			"highlights": [
+				"Design & development of interactive guide for SpeechPro VoiceKey, using flash technology",
+				"Developing batch scripts on visual basic to handle massive data",
+				"Supporting web-site (gallery)"
+			]
+		},
+		{
+			"company": "Ingria",
+			"position": "Technical director",
+			"website": "",
+			"summary": "",
+			"highlights": [
+				"Developing strategy for Boutiqueland.ru",
+				"Branding & design for boutiqueland.ru",
+				"Supporting site seemedia.ru",
+				"Setting up and administrating dev & production for boutiqueland.ru",
+				"Recruiting specialists",
+				"Developing UI-kit for seemedia.ru",
+				"Designing mobile site prototype for boutiqueland.ru",
+				""
+			]
+		},
+		{
+			"company": "Freelance",
+			"position": "",
+			"website": "https://www.fl.ru/users/Dmitry_f",
+			"startDate": "2009-01-01",
+			"endDate": "2012-03-01",
+			"summary": "Taking up different design tasks, improving design mastery",
+			"highlights": [
+				"Designing GUI elements for application package “Pure Office”",
+				"Designing icons for mobile portal kilowap.ru",
+				"Designing icons for project gloricism.com",
+				"Designing layout of book “Childhood”, author Andreeva L.",
+				"Designing and maintaining web site www.le-gran.spb.ru, JSC Masterskaya",
+				"Creating 3d model of radar device for  navy simulator, JSC Sistema",
+				"Illustrating textbook of methods on hydrodynamics, BSTU Voenmeh",
+
+			]
+		},
+		{
+			"company": "JSC Master",
+			"position": "web-master",
+			"website": "http://macter.ru/",
+			"startDate": "2007-09-01",
+			"endDate": "2008-04-01",
+			"summary": "Writing articles on predefined topics, defining keywords, SEO-optimization.",
+			"highlights": [
+				""
+			]
+		}
+	],
+	"volunteer": [
+		{
+			"organization": "Component",
+			"position": "contributor",
+			"website": "http://component.io/",
+			"startDate": "2012-01-01",
+			"endDate": "2013-01-01",
+			"summary": "Global movement of free coding clubs for young people.",
+			"highlights": [
+				"Awarded 'Teacher of the Month'"
+			]
+		},
+		{
+			"organization": "Saint-Petersburg College of Naval Instrument-making",
+			"position": "",
+			"website": "",
+			"startDate": "",
+			"endDate": "",
+			"summary": "Student office tasks"
+		},
+		{
+			"organization": "Baltic State Technical University",
+			"position": "Lecturer",
+			"website": "",
+			"startDate": "2009-01-01",
+			"endDate": "",
+			"summary": "Technical drawing course: basic painting, photoshop, design"
+		},,
+		{
+			"organization": "Baltic State Technical University summer camp",
+			"position": "Worker",
+			"website": "",
+			"startDate": "2009-01-01",
+			"endDate": "",
+			"summary": "Cleaning roads, environment, technical jobs"
+		},
+		{
+			"organization": "Baltic State Technical University",
+			"position": "Programmer",
+			"website": "",
+			"startDate": "",
+			"endDate": "",
+			"summary": "Supporting student management system",
+			"highlights": [
+				"Fixing natural language processing algorithm",
+				"Designing & implementing reports",
+				"Designing illustrations for methodical books (2x)"
+			]
+		}
+	],
+	"education": [
+		{
+			"institution": "Baltic State Technical University “Voenmeh”",
+			"area": "Information technologies in computer graphic systems",
+			"studyType": "Magister",
+			"startDate": "2006-09-01",
+			"endDate": "2014-01-01",
+			"gpa": "",
+			"courses": [
+				"DB1101 - Basic SQL",
+				"CS2011 - Java Introduction"
+			]
+		},
+		{
+			"institution": "Saint-Petersburg College of Naval Instrument-making",
+			"area": "Automatic control systems",
+			"studyType": "Specialist",
+			"startDate": "2001-09-01",
+			"endDate": "2006-06-01",
+			"gpa": "",
+			"courses": [
+				"DB1101 - Basic SQL",
+				"CS2011 - Java Introduction"
+			]
+		}
+	],
+	"awards": [],
+	"publications": [
+		{
+			"name": "Photoshop way of creating a background",
+			"publisher": "Hooli",
+			"releaseDate": "2014-10-01",
+			"website": "http://en.wikipedia.org/wiki/Silicon_Valley_(TV_series)",
+			"summary": "Innovative middle-out compression algorithm that changes the way we store data."
+		},
+		{
+			"name": "UX-approach (univ boutiqueland publication)",
+			"publisher": ""
+		}
+	],
+	"skills": [
+		{
+			"name": "Frontend",
+			"level": "Master",
+			"keywords": [
+				"HTML5",
+				"CSS3",
+				"ES6",
+				"npm",
+				"browserify",
+				"node",
+				"mocha",
+				"jQuery"
+			]
+		},
+		{
+			"name": "System administering",
+			"level": "Medium",
+			"keywords": [
+				"Windows", "Linux", "OSX",
+			]
+		},
+		{
+			"name": "GUI",
+			"level": "Medium",
+			"keywords": [
+				"UX", "UI", "IA"
+			]
+		},
+		{
+			"name": "Design",
+			"level": "Medium",
+			"keywords": [
+				"Adobe Photoshop", "Adobe Illustrator", "Adobe Edge", "Corel Draw",
+				"Sketch Pro"
+			]
+		},
+		{
+			"name": "SEO",
+			"level": "Low",
+			"keywords": [
+				"optimization",
+				"keywords",
+				"google page insights"
+			]
+		},
+		{
+			"name": "CMS",
+			"level": "Medium",
+			"keywords": [
+				"wordpress",
+				"drupal",
+
+			]
+		},
+		{
+			"name": "Backend",
+			"level": "Medium",
+			"keywords": [
+				"MongoDB",
+				"PHP",
+				"nginx",
+				"apache",
+				"node",
+				"Python",
+				"Zend Framework",
+				"cowboy"
+			]
+		},
+		{
+			"name": "Programming languages",
+			"level": "Low",
+			"keywords": [
+				"Java", "C", "C++", "Object Pascal", "Action Script",
+				"Erlang", "Python", "PHP", "Perl", "JavaScript", "CoffeeScript", "LiveScript", "VisualBasic", "TypeScript"
+			]
+		}
+	],
+	"languages": [
+		{
+			"language": "English",
+			"fluency": "Advanced"
+		},
+		{
+			"language": "Russian",
+			"fluency": "Native speaker"
+		},
+		{
+			"language": "French",
+			"fluency": "Beginner"
+		}
+	],
+	"interests": [
+		{
+			"name": "Psychology",
+			"keywords": [
+				"Ferrets",
+				"Unicorns"
+			]
+		},
+		{
+			"name": "Literature",
+			"keywords": [
+				"Fiction",
+				"Novels"
+			]
+		},
+		{
+			"name": "Art",
+			"keywords": [
+			]
+		},
+		{
+			"name": "Music",
+			"keywords": [
+				"DJ",
+				"House"
+			]
+		},
+		{
+			"name": "Sports",
+			"keywords": [
+				"running",
+				"marathon",
+				"gym",
+				"swimming",
+				"yoga"
+			]
+		},
+		{
+			"name": "Front-end programming",
+			"keywords": [
+				"javascript",
+				"css3",
+				"html5",
+				"npm",
+				"browserify",
+				"commonjs",
+				"component", "django", "underscore", "closurecompiler", "es6", "bower", "git", "backbone", "modernizr", "github"
+			]
+		}
+	],
+	"references": [
+		{
+			"name": "Sergey Poduzov",
+			"reference": "It is my pleasure to recommend Dmitry, his performance working as a consultant for Main St. Company proved that he will be a valuable addition to any company."
+		},
+		{
+			"name": "Alex Prokofiev",
+			"reference": "It is my pleasure to recommend Dmitry, his performance working as a consultant for Main St. Company proved that he will be a valuable addition to any company."
+		}
+	]
+}
