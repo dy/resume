@@ -49,6 +49,11 @@
 	},
 	"work": [
 		{
+			"company": "Beeline",
+			"position": "salesman",
+			"website": "http://beeline.com"
+		},
+		{
 			"company": "KudaGo Inc.",
 			"position": "web-developer",
 			"website": "http://kudago.com",
@@ -129,11 +134,11 @@
 		},
 		{
 			"company": "STC pro",
-			"position": "Internship",
-			"summary": "",
+			"position": "Design",
+			"summary": "Design tasks in marketing department",
 			"highlights": [
 				"Design & development of interactive guide for SpeechPro VoiceKey, using flash technology",
-				"Developing batch scripts on visual basic to handle massive data",
+				"Developing batch scripts with visual basic to handle massive excel data",
 				"Supporting web-site (gallery)"
 			]
 		},
@@ -180,6 +185,11 @@
 			"highlights": [
 				""
 			]
+		},
+		{
+			"company": "Elis",
+			"position": "Worker (разнорабочий)",
+			"website": "elis.ru"
 		}
 	],
 	"volunteer": [
@@ -220,15 +230,15 @@
 		},
 		{
 			"organization": "Baltic State Technical University",
-			"position": "Programmer",
+			"position": "Scientific research intern",
 			"website": "",
 			"startDate": "",
 			"endDate": "",
 			"summary": "Supporting student management system",
 			"highlights": [
 				"Fixing natural language processing algorithm",
-				"Designing & implementing reports",
-				"Designing illustrations for methodical books (2x)"
+				"Designing database reports",
+				"Creating illustrations for methodical books"
 			]
 		}
 	],
