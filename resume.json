@@ -1,34 +1,29 @@
 {
 	"basics": {
-		"name": "Dmitry Ywanov",
-		"label": "Frontend developer",
-		"picture": "https://cdn.rawgit.com/dfcreative/resume/master/face.jpg",
+		"name": "Dmitry Yvanow",
+		"label": "Some russian programmer",
+		"picture": "https://raw.githubusercontent.com/dfcreative/resume/master/index.jpg",
 		"email": "df.creative@gmail.com",
-		"phone": "+7 (952) 215-52-48",
+		"phone": "+1 514 632-83-76",
 		"website": "http://dfcreative.github.com",
-		"summary": "Dmitry Ywanov hails from Saint-Petersburg. He has earned degrees from the Baltic State Technical University and Marine Instrumentation College. Before starting KudaGo.com, he worked as a freelance software developer and conducted side voluntary jobs. While his work primarily focuses on frontend web-development (JS, HTML, CSS) and secondary on user experience, interfaces and design, his non-work interests range widely, everything from quantum computing to chaos theory.",
+		"summary": "Dmitry Yvanow is from Saint-Petersburg. He earned technical degrees in a couple of russian universities. He started career as a freelance designer and later founded some russian startup, where performed as a frontend developer. After the startup became successful, he moved to Canada, MTL, where started enjoying life, loving people, studying French, quantum mechanics and music technologies.",
 		"location": {
-			"address": "Pribrezhnaya st., 1, 131",
-			"postalCode": "192076",
-			"city": "Saint-Petersburg",
-			"countryCode": "RU",
-			"region": ""
+			"address": "5526, rue Laurendau, app. 205",
+			"postalCode": "H4E3W1",
+			"city": "Montreal",
+			"countryCode": "CA",
+			"region": "Québec"
 		},
 		"profiles": [
-			{
-				"network": "Twitter",
-				"username": "projectire",
-				"url": "https://twitter.com/projectire"
-			},
 			{
 				"network": "Github",
 				"username": "dfcreative",
 				"url": "https://github.com/dfcreative"
 			},
 			{
-				"network": "Vk",
-				"username": "dfcreative",
-				"url": "http://vk.com/dfcreative"
+				"network": "Twitter",
+				"username": "projectire",
+				"url": "https://twitter.com/projectire"
 			},
 			{
 				"network": "Facebook",
@@ -41,6 +36,11 @@
 				"url": "http://instagram.com/maladyn"
 			},
 			{
+				"network": "Vk",
+				"username": "dfcreative",
+				"url": "http://vk.com/dfcreative"
+			},
+			{
 				"network": "Habrahabr",
 				"username": "dmitry_f",
 				"url": "http://habrahabr.ru/users/dmitry_f/"
@@ -49,35 +49,73 @@
 	},
 	"work": [
 		{
+			"company": "Self-employed",
+			"position": "CEO",
+			"website": "http://dfcreative.github.io",
+			"startDate": "2015-03-01",
+			"endDate": "2016-01-01",
+			"summary": "Developing various opensource projects in domains of musical and creative technologies.",
+			"highlights": [
+				"Audio processing toolkit",
+				"Color processing toolkit",
+				"Natural language processing algorithms"
+			],
+			"keywords": [
+				"dsp",
+				"audio",
+				"sound",
+				"color"
+			]
+		},
+		{
 			"company": "Beeline",
-			"position": "salesman",
-			"website": "http://beeline.com"
+			"position": "Sales person",
+			"website": "http://beeline.com",
+			"startDate": "2015-01-12",
+			"endDate": "2015-03-01",
+			"summary": "Beeline is a telecom provider like Videotron, but in Russia. The salesman position was held within the working pilgrimage program, in order to study various fields of business different from IT.",
+			"highlights": [
+				"Reading 5 books on sales",
+				"Redesign of the shopwindow and product labels",
+				"Helping lots of people to set up internet connection in their phones"
+			],
+			"keywords": [
+				"what are those cell phones?",
+				"fix my phone please!",
+				"can I charge my phone at you?",
+				"please change me a sim card!",
+				"my internet connection does not work :("
+			]
 		},
 		{
 			"company": "KudaGo Inc.",
-			"position": "web-developer",
+			"position": "Frontend developer",
 			"website": "http://kudago.com",
 			"startDate": "2012-03-01",
 			"endDate": "2015-01-12",
-			"summary": "Kudago is an information agency and a web-site covering city events all over the world.",
+			"summary": "Kudago is an agency and a web-site covering cultural events in mainly russian cities. It became the biggest russian event-related agency for the 2 years. Each day of these years it required frontend tasks having done for it’s web and mobile sites, which was my main duty as a frontend slave.",
 			"highlights": [
 				"UX, UI and IA of kudago.com",
-				"implementing frontend of kudago.com",
-				"recruiting specialists",
-				"developing mobile version of a site",
-				"getting 100 of 100 in google page insights",
-				"introducing frontend building process",
-				"Mobile version for kudago.com, jQuery-less, optimized for speed, based on components."
+				"Developing frontend of desktop kudago.com",
+				"Developing frontend of mobile kudago.com",
+				"Getting 100 of 100 in google page insights",
+				"Recruiting tech guys",
+				"Learning the frontend technology stack"
 			],
 			"keywords": [
+				"ASAP",
+				"agile",
+				"scrum",
 				"javascript",
 				"css3",
 				"html5",
+				"don’t distract Dmitry",
 				"npm",
 				"less",
 				"browserify",
 				"commonjs",
 				"jquery",
+				"that’s just your opinion",
 				"component",
 				"django",
 				"underscore",
@@ -92,22 +130,28 @@
 		},
 		{
 			"company": "LLC Revan",
-			"position": "web-designer",
-			"summary": "Revan internet agency as a front-end developer",
+			"position": "Web designer",
+			"summary": "Revan was a small internet startup making efforts in various domains, from banking to SEO, which later grown to kudago.com. Now it is just an issue tracker for kudago.com.",
+			"website": "http://revan.ru",
 			"startDate": "2012-02-04",
 			"endDate": "2013-03-01",
 			"highlights": [
-				"ipoteka-vam.ru - prototyping, design, development",
-				"to-travel.ru - prototyping, design",
-				"to-create.ru - branding, prototyping, design",
-				"tm-print.ru - designing logo, redesign of web-site",
-				"design for likemeter application",
-				"implementing statistics diagram for likemeter app"
+				"ipoteka-vam.ru — prototyping, design, development",
+				"to-travel.ru — prototyping, design",
+				"to-create.ru — branding, prototyping, design",
+				"tm-print.ru — designing logo, redesign of web-site",
+				"Design for likemeter application in facebook.com/vk.com",
+				"Stats UI for likemeter application"
+			],
+			"keywords": [
+				"please design this logo ASAP",
+				"should we really pay for that typeface?",
+				"we don’t have budged for a commercial software"
 			]
 		},
 		{
 			"company": "Freelance",
-			"position": "Web-designer",
+			"position": "Web developer",
 			"summary": "Taking up different web-design and web-development jobs, including mockups, prototyping, HTML, CSS, JS, PHP. Setting up, configuring and developing themes and plugins for wordpress. Experience with other CMS: modx, drupal, subdreamer. Setting up server-side environment: Apache, nginx, MySQL.",
 			"highlights": [
 				"rsua.ru - design, web-development",
@@ -134,19 +178,19 @@
 		},
 		{
 			"company": "STC pro",
-			"position": "Design",
-			"summary": "Design tasks in marketing department",
+			"position": "Intern",
+			"summary": "STC is a Speech Technology Center, an enterprise specialising in speech recognition technologies. There was a lot of design and bureaucracy-related tasks in marketing department, which were my primary duty.",
 			"highlights": [
-				"Design & development of interactive guide for SpeechPro VoiceKey, using flash technology",
-				"Developing batch scripts with visual basic to handle massive excel data",
-				"Supporting web-site (gallery)"
+				"Implementation of interactive guide for SpeechPro VoiceKey, using Adobe® Flash®",
+				"Developing batch scripts in Visual Basic to handle massive Microsoft Office Excel data.",
+				"Supporting web-site."
 			]
 		},
 		{
 			"company": "Ingria",
 			"position": "Technical director",
-			"website": "",
-			"summary": "",
+			"website": "http://ingria-startup.ru/",
+			"summary": "Ingria is a startup incubator, like Y-combinator, but in Russia. There was a startup for shopping malls called 'BoutiqueLand', where I was responsible for web-service implementation.",
 			"highlights": [
 				"Developing strategy for Boutiqueland.ru",
 				"Branding & design for boutiqueland.ru",
@@ -154,13 +198,12 @@
 				"Setting up and administrating dev & production for boutiqueland.ru",
 				"Recruiting specialists",
 				"Developing UI-kit for seemedia.ru",
-				"Designing mobile site prototype for boutiqueland.ru",
-				""
+				"Designing mobile site prototype for boutiqueland.ru"
 			]
 		},
 		{
 			"company": "Freelance",
-			"position": "",
+			"position": "Designer",
 			"website": "https://www.fl.ru/users/Dmitry_f",
 			"startDate": "2009-01-01",
 			"endDate": "2012-03-01",
@@ -183,57 +226,72 @@
 			"endDate": "2008-04-01",
 			"summary": "Writing articles on predefined topics, defining keywords, SEO-optimization.",
 			"highlights": [
-				""
+				"Experience as a copywrighter"
 			]
 		},
 		{
 			"company": "Elis",
-			"position": "Worker (разнорабочий)",
-			"website": "elis.ru"
+			"position": "Worker",
+			"website": "elis.ru",
+			"highlights": [
+				"Cleaning buildings",
+				"Land works"
+			]
 		}
 	],
 	"volunteer": [
 		{
+			"organization": "SciJS",
+			"position": "contributor",
+			"website": "http://github.com/scijs",
+			"startDate": "2015-11-01",
+			"endDate": "2015-12-01",
+			"summary": "Donating and supporting color-related packages",
+			"highlights": [
+				"The world biggest javascript collection of color spaces"
+			]
+		},
+		{
 			"organization": "Component",
 			"position": "contributor",
 			"website": "http://component.io/",
-			"startDate": "2012-01-01",
-			"endDate": "2013-01-01",
-			"summary": "Global movement of free coding clubs for young people.",
+			"startDate": "2015-01-01",
+			"endDate": "2015-01-01",
+			"summary": "Global movement of free coding young people.",
 			"highlights": [
-				"Awarded 'Teacher of the Month'"
+				"Fixing bugs of various components"
 			]
 		},
 		{
 			"organization": "Saint-Petersburg College of Naval Instrument-making",
-			"position": "",
+			"position": "Bureocracy worker",
 			"website": "",
-			"startDate": "",
-			"endDate": "",
+			"startDate": "2007-01-01",
+			"endDate": "2007-02-01",
 			"summary": "Student office tasks"
 		},
 		{
 			"organization": "Baltic State Technical University",
-			"position": "Pedagogical Internship",
+			"position": "Pedagogical internship",
 			"website": "",
-			"startDate": "4 weeks",
-			"endDate": "",
+			"startDate": "2010-01-01",
+			"endDate": "2011-01-01",
 			"summary": "Technical drawing course: basic painting, photoshop, design"
 		},
 		{
 			"organization": "Baltic State Technical University summer camp",
-			"position": "Worker",
+			"position": "Land worker",
 			"website": "",
 			"startDate": "2009-01-01",
-			"endDate": "",
+			"endDate": "2009-02-01",
 			"summary": "Cleaning roads, environment, technical jobs"
 		},
 		{
 			"organization": "Baltic State Technical University",
 			"position": "Scientific research intern",
 			"website": "",
-			"startDate": "",
-			"endDate": "",
+			"startDate": "2010-07-01",
+			"endDate": "2010-08-01",
 			"summary": "Supporting student management system",
 			"highlights": [
 				"Fixing natural language processing algorithm",
@@ -255,8 +313,8 @@
 		},
 		{
 			"institution": "Baltic State Technical University “Voenmeh”",
-			"area": "Information science and computers, Intellectual systems",
-			"studyType": "Master’s degree",
+			"area": "Information science and computers, intellectual systems",
+			"studyType": "Master",
 			"startDate": "2010-09-01",
 			"endDate": "2012-06-14",
 			"gpa": "",
@@ -266,7 +324,7 @@
 		{
 			"institution": "Baltic State Technical University “Voenmeh”",
 			"area": "Information and computer science",
-			"studyType": "Bachelor’s degree",
+			"studyType": "Bachelor",
 			"startDate": "2006-09-01",
 			"endDate": "2010-06-14",
 			"gpa": "",
@@ -284,7 +342,7 @@
 			]
 		},
 		{
-			"institution": "School #569",
+			"institution": "School №569",
 			"area": "General",
 			"studyType": "Basic secondary education",
 			"startDate": "1994-09-01",
@@ -297,15 +355,13 @@
 	"awards": [],
 	"publications": [
 		{
-			"name": "Photoshop way of creating a background",
-			"publisher": "Hooli",
-			"releaseDate": "2014-10-01",
-			"website": "http://en.wikipedia.org/wiki/Silicon_Valley_(TV_series)",
-			"summary": "Innovative middle-out compression algorithm that changes the way we store data."
+			"name": "A method of creating wall background in photoshop"
 		},
 		{
-			"name": "UX-approach (univ boutiqueland publication)",
-			"publisher": ""
+			"name": "UX-approach (univ boutiqueland publication)"
+		},
+		{
+			"name": "Drag n drop in applications"
 		}
 	],
 	"skills": [
@@ -331,7 +387,7 @@
 			]
 		},
 		{
-			"name": "GUI",
+			"name": "UI",
 			"level": "Medium",
 			"keywords": [
 				"UX", "UI", "IA"
@@ -341,8 +397,7 @@
 			"name": "Design",
 			"level": "Medium",
 			"keywords": [
-				"Adobe Photoshop", "Adobe Illustrator", "Adobe Edge", "Corel Draw",
-				"Sketch Pro"
+				"Calligraphy", "Typographics", "Color schemes", "Graphic design"
 			]
 		},
 		{
@@ -398,67 +453,59 @@
 		},
 		{
 			"language": "French",
-			"fluency": "Beginner"
+			"fluency": "Intermediate"
 		}
 	],
 	"interests": [
 		{
-			"name": "Psychology",
+			"name": "Quantum Mechanics",
 			"keywords": [
-				"Ferrets",
-				"Unicorns"
+				"atomic orbitals",
+				"finite potential well",
+				"schrödinger equation"
 			]
 		},
 		{
-			"name": "Literature",
+			"name": "Music Technology",
 			"keywords": [
-				"Fiction",
-				"Novels"
+				"DSP",
+				"synthesis",
+				"harmonic analysis"
 			]
 		},
 		{
-			"name": "Art",
+			"name": "Metaphysics",
 			"keywords": [
-			]
-		},
-		{
-			"name": "Music",
-			"keywords": [
-				"DJ",
-				"House"
+				"Alan Watts",
+				"Buddhism",
+				"Yoga",
+				"Ekhart Tholle"
 			]
 		},
 		{
 			"name": "Sports",
 			"keywords": [
-				"running",
 				"marathon",
-				"gym",
-				"swimming",
-				"yoga"
+				"yoga",
+				"jogging"
 			]
 		},
 		{
-			"name": "Front-end programming",
+			"name": "JavaScript",
 			"keywords": [
-				"javascript",
-				"css3",
-				"html5",
-				"npm",
-				"browserify",
-				"commonjs",
-				"component", "django", "underscore", "closurecompiler", "es6", "bower", "git", "backbone", "modernizr", "github"
+				"node",
+				"webgl"
 			]
 		}
 	],
 	"references": [
 		{
 			"name": "Sergey Poduzov",
-			"reference": "It is my pleasure to recommend Dmitry, his performance working as a consultant for Main St. Company proved that he will be a valuable addition to any company."
+			"reference": "By request."
 		},
 		{
 			"name": "Alex Prokofiev",
-			"reference": "It is my pleasure to recommend Dmitry, his performance working as a consultant for Main St. Company proved that he will be a valuable addition to any company."
+			"reference": "By request."
 		}
 	]
 }
