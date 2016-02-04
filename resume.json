@@ -1,7 +1,7 @@
 {
 	"basics": {
 		"name": "Dmitry Yvanow",
-		"label": "Some russian programmer",
+		"label": "A shade of you",
 		"picture": "https://raw.githubusercontent.com/dfcreative/resume/master/index.jpg",
 		"email": "df.creative@gmail.com",
 		"phone": "+1 514 632-83-76",
@@ -54,7 +54,7 @@
 			"website": "http://dfcreative.github.io",
 			"startDate": "2015-03-01",
 			"endDate": "2016-01-01",
-			"summary": "Developing various opensource projects in domains of musical and creative technologies.",
+			"summary": "Developing various open-source projects in domains of musical and creative technologies.",
 			"highlights": [
 				"Audio processing toolkit",
 				"Color processing toolkit",
@@ -355,13 +355,13 @@
 	"awards": [],
 	"publications": [
 		{
-			"name": "A method of creating wall background in photoshop"
+			"name": "A method of creating wall background in Adobe® Photoshop®"
 		},
 		{
-			"name": "UX-approach (univ boutiqueland publication)"
+			"name": "UX approach in product design"
 		},
 		{
-			"name": "Drag n drop in applications"
+			"name": "Drag-n-drop in web-applications"
 		}
 	],
 	"skills": [
