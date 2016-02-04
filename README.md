@@ -1,4 +1,4 @@
-# [My CV](http://registry.jsonresume.org/dfcreative)
+# [CV](http://registry.jsonresume.org/dfcreative)
 
 [jsonresume.org](https://jsonresume.org/schema/) schema is used.
 
