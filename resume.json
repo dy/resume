@@ -1,16 +1,16 @@
 {
 	"basics": {
 		"name": "Dima Yv",
-		"label": "An internet user",
+		"label": "Web-developer",
 		"picture": "https://raw.githubusercontent.com/dfcreative/resume/master/index.jpg",
 		"email": "df.creative@gmail.com",
 		"phone": "+1 514 632-83-76",
 		"website": "http://github.com/dfcreative",
-		"summary": "Dima Yv hails from Saint-Petersburg. He earned technical degrees in computer graphics and information technologies at Baltic State Technical University. He started his career as a freelance web-developer and later founded startup kudago.com, where performed as a frontend developer. After the startup established well on the russian market, he moved to Canada, Montreal, where he started studying music technologies and developing related projects, as well as helping out TTBA group with websites for living.",
+		"summary": "Dima Yv hails from Saint-Petersburg. He earned technical degrees at Baltic Technical University. He started career as a freelance designer and later founded startup kudago.com, where performed as a frontend developer. After the startup established well on russian market, he moved to Canada, Montreal, where he started actively contributing to open-source projects, studying french and taking up website-related jobs.",
 		"location": {
 			"address": "5526, rue Laurendau, app. 205",
 			"postalCode": "H4E3W1",
-			"city": "Montreal",
+			"city": "Montréal",
 			"countryCode": "CA",
 			"region": "Québec"
 		},
@@ -34,16 +34,6 @@
 				"network": "Instagram",
 				"username": "maladyn",
 				"url": "http://instagram.com/maladyn"
-			},
-			{
-				"network": "Vk",
-				"username": "dfcreative",
-				"url": "http://vk.com/dfcreative"
-			},
-			{
-				"network": "Habrahabr",
-				"username": "dmitry_f",
-				"url": "http://habrahabr.ru/users/dmitry_f/"
 			}
 		]
 	},
@@ -53,16 +43,16 @@
 			"position": "Web-developer",
 			"website": "http://ttbagroup.com/",
 			"startDate": "2016-03-01",
-			"endDate": "now",
-			"summary": "Web agency, taking up website-related jobs such as marketing, website development, advertising, SEO etc.",
+			"endDate": "2016-08-13",
+			"summary": "Web agency taking up web-related jobs: web-design, web-development, SEO, social-media, branding, etc.",
 			"highlights": [
-				"https://coutureonly.com/ redesign and frontend",
-				"https://ecobrandsnow.ca/ redesign and frontend",
-				"http://wishbox.gift frontend",
-				"http://socialboomwifi.com/ web-design",
-				"http://citenova.com/ concours page/slider"
+				"coutureonly.com redesign and frontend",
+				"ecobrandsnow.ca redesign and frontend",
+				"wishbox.gift frontend",
+				"socialboomwifi.com web-design",
+				"citenova.com promo page web-design"
 			],
-			"keywords" : ["wordpress", "shopify", "ux", "analytics", "mailchimp", "", "jquery", "html", "css"]
+			"keywords" : ["wordpress", "shopify", "ux", "analytics", "mailchimp", "jquery", "html", "css"]
 		},
 		{
 			"company": "Amazemontreal Inc.",
@@ -70,7 +60,7 @@
 			"website": "https://amazemontreal.com",
 			"startDate": "2016-02-01",
 			"endDate": "2016-03-01",
-			"summary": "Optimizing and redesing of ",
+			"summary": "Amaze Escape Game and Rage Axe Throwing Academy is an enterprise running two unique venues in Montreal, they have two promo websites which required upgrading.",
 			"highlights": [
 				"Optimization amazemontreal.com for google page insights (92/100)",
 				"Redesign and optimization of ragemontreal.com"
@@ -83,10 +73,12 @@
 			"website": "http://audio-lab.github.io",
 			"startDate": "2015-03-01",
 			"endDate": "2016-01-01",
-			"summary": "Developing open-source projects in domains of musical and creative technologies.",
+			"summary": "Open-source organization hosting projects related to musical and creative technologies.",
 			"highlights": [
 				"Fastest FFT implementation",
-				"Largest collection of color space conversions for js",
+				"Largest collection of color spaces",
+				"Stream-based audio processing components",
+				"WebGL-based audio visualizers: spectrum, spectrogram, waveform",
 				"GLSL to JS compiler"
 			],
 			"keywords": [
@@ -104,12 +96,12 @@
 			"website": "http://beeline.com",
 			"startDate": "2015-01-12",
 			"endDate": "2015-03-01",
-			"summary": "Beeline is a telecom provider like Videotron, but in Russia. The salesman position was held in order to get experience in fields outside of IT.",
+			"summary": "Telecom provider like Videotron, but in Russia. Salesman position was held in order to get experience in areas outside of IT.",
 			"highlights": [
-				"Learning the essence of sales and modern sales methodics",
+				"Learning the essence of sales and modern sales methods",
 				"Running mobile salon",
-				"Redesigning shopwindow and product labels",
-				"Helping people set up internet connection and fix issues with their  phones"
+				"Redesigning shop window and product labels",
+				"Helping clients set up internet connection and fix issues with their  phones"
 			],
 			"keywords": [
 				"what are those cell phones?",
@@ -125,14 +117,15 @@
 			"website": "http://kudago.com",
 			"startDate": "2012-03-01",
 			"endDate": "2015-01-12",
-			"summary": "Kudago is an agency and a web-site covering cultural events in mainly russian cities. It became the biggest russian event-related agency for the 2 years. Each day of these years it required frontend tasks having done for it’s web and mobile sites, which was my main duty as a frontend slave.",
+			"summary": "Kudago is an agency and a web-site covering cultural events in big cities in Russia, Europe and USA. It became the biggest russian event-related startup for the 2 years.",
 			"highlights": [
-				"UX, UI and IA of kudago.com",
-				"Developing frontend of desktop kudago.com",
-				"Developing frontend of mobile kudago.com",
+				"Design, UX, UI and IA of kudago.com",
+				"Developing desktop and mobile kudago.com",
+				"Optimization of mobile website, getting under 20kb of javascript",
 				"Getting 100 of 100 in google page insights",
 				"Recruiting tech guys",
-				"Learning the frontend technology stack"
+				"Setting up development process in team",
+				"Learning multitude of frontend methodologies and stacks"
 			],
 			"keywords": [
 				"ASAP",
@@ -162,8 +155,8 @@
 		},
 		{
 			"company": "LLC Revan",
-			"position": "Web designer",
-			"summary": "Revan was an internet startup making efforts in domains from banking to SEO, which later grown to kudago.com.",
+			"position": "Web-designer",
+			"summary": "Revan was a startup making jobs in domains from banking to SEO, which later grown to kudago.com.",
 			"website": "http://revan.ru",
 			"startDate": "2012-02-04",
 			"endDate": "2013-03-01",
@@ -183,13 +176,15 @@
 		},
 		{
 			"company": "Freelance",
-			"position": "Web developer",
-			"summary": "Taking up web-development jobs, including mockups, prototyping, HTML, CSS, JS, PHP. Setting up, configuring and developing themes and plugins for wordpress. Experience with CMS: modx, drupal, subdreamer. Setting up server-side environment: Apache, nginx, MySQL. Studying various",
+			"position": "Web-developer",
+			"startDate": "2012-02-04",
+			"endDate": "2013-03-01",
+			"summary": "Web-development freelance jobs, including design mockups, UI prototyping, HTML, CSS, JS, wordpress.",
 			"highlights": [
-				"rsua.ru - design, web-development",
-				"postavokna.ru - design, site",
-				"gildiya-masterov.ru - design, site",
-				"arkon-okna.ru - design, site",
+				"rsua.ru - design, developing",
+				"postavokna.ru - design, developing",
+				"gildiya-masterov.ru - design, developing",
+				"arkon-okna.ru - design, developing",
 				"SmartMedia - design",
 				"Law services site - design",
 				"LeGran - design",
@@ -205,33 +200,39 @@
 				"dverka.ru - logo & business cards design",
 				"sayhello.ru - prototyping, design",
 				"zpapa.ru - prototyping, design",
-				"productinsignt.ru - prototyping, design"
+				"productinsignt.ru - prototyping, design",
+				"Experience with modx, drupal, subdreamer CMS",
+				"Setting up server-side environment: Apache, nginx, MySQL"
 			],
 			"keywords": ["Zend Framework", "PHP"]
-		},
-		{
-			"company": "STC pro",
-			"position": "Intern",
-			"summary": "STC is a Speech Technology Center, an enterprise specialising in speech recognition technologies. There was a lot of design and bureaucracy-related tasks in marketing department, which were my primary duty.",
-			"highlights": [
-				"Implementation of interactive guide for SpeechPro VoiceKey, using Adobe® Flash®",
-				"Developing batch scripts in Visual Basic to handle massive Microsoft Office Excel data.",
-				"Supporting web-site."
-			]
 		},
 		{
 			"company": "Ingria",
 			"position": "Technical director",
 			"website": "http://ingria-startup.ru/",
-			"summary": "Ingria is a startup incubator, like Y-combinator, but in Russia. There was a startup for shopping malls called 'BoutiqueLand', where I was responsible for web-service implementation.",
+			"startDate": "2012-02-04",
+			"endDate": "2013-03-01",
+			"summary": "Ingria is a startup incubator like Y-combinator, but in Russia. My responsibilities there were web-service implementation for boutiqueland.ru startup.",
 			"highlights": [
-				"Developing strategy for Boutiqueland.ru",
+				"Developing market strategy for Boutiqueland",
 				"Branding & design for boutiqueland.ru",
-				"Supporting site seemedia.ru",
 				"Setting up and administrating dev & production for boutiqueland.ru",
-				"Recruiting specialists",
-				"Developing UI-kit for seemedia.ru",
-				"Designing mobile site prototype for boutiqueland.ru"
+				"Recruiting IT specialists",
+				"Supporting site seemedia.ru",
+				"Developing UI kit for seemedia.ru",
+				"Designing prototype of mobile site for boutiqueland.ru"
+			]
+		},
+		{
+			"company": "STC pro",
+			"position": "Intern",
+			"startDate": "2012-02-04",
+			"endDate": "2013-03-01",
+			"summary": "STC is a Speech Technology Center, an enterprise specialising in speech recognition technologies. The position was held in marketing department, related to web-sites and promotion pages design.",
+			"highlights": [
+				"Implementation of interactive guide for SpeechPro VoiceKey, using Adobe® Flash®",
+				"Developing batch scripts in Visual Basic to handle massive Microsoft Office Excel data.",
+				"Supporting stcpro.ru web-site."
 			]
 		},
 		{
@@ -240,36 +241,36 @@
 			"website": "https://www.fl.ru/users/Dmitry_f",
 			"startDate": "2009-01-01",
 			"endDate": "2012-03-01",
-			"summary": "Taking up different design tasks, improving design mastery",
+			"summary": "Design jobs",
 			"highlights": [
 				"Designing GUI elements for application package “Pure Office”",
-				"Designing icons for mobile portal kilowap.ru",
-				"Designing icons for project gloricism.com",
+				"Designing UI icons for mobile portal kilowap.ru",
+				"Designing UI icons for project gloricism.com",
 				"Designing layout of book “Childhood”, author Andreeva L.",
-				"Designing and maintaining web site www.le-gran.spb.ru, JSC Masterskaya",
-				"Creating 3d model of radar device for  navy simulator, JSC Sistema",
-				"Illustrating textbook of methods on hydrodynamics, BSTU Voenmeh"
+				"Designing and maintaining web-site www.le-gran.spb.ru, JSC Masterskaya",
+				"Creating 3d model of radar device for navy simulator, JSC Sistema",
+				"Illustrating textbook of methods of hydrodynamics, BSTU Voenmeh"
 			]
 		},
 		{
 			"company": "JSC Master",
-			"position": "web-master",
+			"position": "copyrighter",
 			"website": "http://macter.ru/",
 			"startDate": "2007-09-01",
 			"endDate": "2008-04-01",
 			"summary": "Writing articles on predefined topics, defining keywords, SEO-optimization.",
 			"highlights": [
-				"Experience as a copywrighter"
+				"Massive extending of russian language thesaurus and synonims specifically",
+				"Studying basic principles of SEO-texts writing"
 			]
 		},
 		{
 			"company": "Elis",
 			"position": "Builder",
 			"website": "elis.ru",
-			"highlights": [
-				"Cleaning buildings",
-				"Land works"
-			]
+			"startDate": "2005-02-04",
+			"endDate": "2006-03-01",
+			"summary": "Clearing buildings, rust removal, land works and other construction-related works"
 		}
 	],
 	"volunteer": [
@@ -277,30 +278,33 @@
 			"organization": "Lidia Varbanova — Individual entrepreneur",
 			"website": "http://lidiavarbanova.com",
 			"startDate": "2016-08-01",
-			"endDate": "now",
-			"summary": "Redesign and retargeting of website",
-			"highlights": []
+			"endDate": "2016-08-13",
+			"summary": "Lidia is a professor of Marketing and Economics in Arts and Creative Industries.",
+			"highlights": ["Renovation of lidiavarbanova.com"]
 		},
 		{
-			"organization": "MIRCA — Morgan Initiative on Russian Cultural Affairs",
+			"organization": "MIRCA",
 			"website": "http://mirca.ca",
-			"startDate": "",
-			"endDate": "",
-			"summary": "Concept, design and developing of logotype and website for russian culture club.",
-			"highlights": []
+			"startDate": "2016-08-01",
+			"endDate": "2016-08-13",
+			"summary": "Morgan Initiative on Russian Cultural Affairs is russian culture institute in future and russial speaking club now",
+			"highlights": ["Concept, design and developing of logotype and website"]
 		},
 		{
-			"organization": "StackGL"
+			"organization": "StackGL",
+			"startDate": "2016-08-01",
+			"endDate": "2016-08-13",
+			"summary": "Webgl-related components.",
+			"highlights": ["GLSL to JS transpiler"]
 		},
 		{
 			"organization": "SciJS",
-			"position": "contributor",
 			"website": "http://github.com/scijs",
 			"startDate": "2015-11-01",
 			"endDate": "2015-12-01",
-			"summary": "Donating and supporting color-related packages",
+			"summary": "Scientific javascript open-source projects",
 			"highlights": [
-				"The world biggest javascript collection of color spaces"
+				"color-space component, the world's biggest javascript collection of color space conversions"
 			]
 		},
 		{
@@ -309,9 +313,9 @@
 			"website": "http://component.io/",
 			"startDate": "2015-01-01",
 			"endDate": "2015-01-01",
-			"summary": "Global movement of free coding young people.",
+			"summary": "Global movement of free coding young people",
 			"highlights": [
-				"Fixing bugs of various components"
+				"Fixing bugs of tip, dialog, overflow, modal and other components"
 			]
 		},
 		{
@@ -320,7 +324,7 @@
 			"website": "",
 			"startDate": "2007-01-01",
 			"endDate": "2007-02-01",
-			"summary": "Student office tasks"
+			"summary": "Student office tasks."
 		},
 		{
 			"organization": "Baltic State Technical University",
@@ -328,7 +332,7 @@
 			"website": "",
 			"startDate": "2010-01-01",
 			"endDate": "2011-01-01",
-			"summary": "Technical drawing course: basic painting, photoshop, design"
+			"summary": "Technical drawing course: basic painting, photoshop, design."
 		},
 		{
 			"organization": "Baltic State Technical University summer camp",
@@ -336,7 +340,7 @@
 			"website": "",
 			"startDate": "2009-01-01",
 			"endDate": "2009-02-01",
-			"summary": "Cleaning roads, environment, technical jobs"
+			"summary": "Cleaning roads, taking care of environment, technical jobs."
 		},
 		{
 			"organization": "Baltic State Technical University",
@@ -344,25 +348,20 @@
 			"website": "",
 			"startDate": "2010-07-01",
 			"endDate": "2010-08-01",
-			"summary": "Supporting student management system",
+			"summary": "Supporting local CRM.",
 			"highlights": [
 				"Fixing natural language processing algorithm",
 				"Designing database reports",
-				"Creating illustrations for methodical books"
+				"Creating illustrations for methodical books",
+				"A method of creating wall background in Adobe® Photoshop®",
+				"An article: UX approach in product design",
+				"An article: Drag-n-drop in web-applications"
 			]
 		}
 	],
+	"publications": [],
+	"awards": [],
 	"education": [
-		{
-			"institution": "Baltic State Technical University “Voenmeh”",
-			"area": "Economics and Management",
-			"studyType": "Specialist",
-			"startDate": "2010-09-01",
-			"endDate": "2012-02-15",
-			"gpa": "",
-			"courses": [
-			]
-		},
 		{
 			"institution": "Baltic State Technical University “Voenmeh”",
 			"area": "Information science and computers, intellectual systems",
@@ -394,26 +393,14 @@
 			]
 		},
 		{
-			"institution": "School №569",
-			"area": "General",
-			"studyType": "Basic secondary education",
-			"startDate": "1994-09-01",
-			"endDate": "2002-06-01",
+			"institution": "Baltic State Technical University “Voenmeh”",
+			"area": "Economics and Management",
+			"studyType": "Specialist",
+			"startDate": "2010-09-01",
+			"endDate": "2012-02-15",
 			"gpa": "",
 			"courses": [
 			]
-		}
-	],
-	"awards": [],
-	"publications": [
-		{
-			"name": "A method of creating wall background in Adobe® Photoshop®"
-		},
-		{
-			"name": "UX approach in product design"
-		},
-		{
-			"name": "Drag-n-drop in web-applications"
 		}
 	],
 	"skills": [
@@ -427,40 +414,43 @@
 				"npm",
 				"browserify",
 				"node",
-				"tdd",
+				"TDD",
 				"webgl",
-				"web-audio",
-				"jQuery"
-			]
-		},
-		{
-			"name": "System administering",
-			"level": "Medium",
-			"keywords": [
-				"Windows", "Linux", "OSX"
-			]
-		},
-		{
-			"name": "UI",
-			"level": "Medium",
-			"keywords": [
-				"UX", "UI", "IA"
+				"web-audio"
 			]
 		},
 		{
 			"name": "Design",
 			"level": "Medium",
 			"keywords": [
-				"Calligraphy", "Typographics", "Color schemes", "Graphic design"
+				"UX", "UI", "IA", "prototyping", "graphic design"
 			]
 		},
 		{
-			"name": "SEO",
+			"name": "Backend",
+			"level": "Medium",
+			"keywords": [
+				"nodejs",
+				"meteor",
+				"MongoDB",
+				"Redis",
+				"PHP",
+				"nginx",
+				"apache",
+				"Python",
+				"Zend Framework",
+				"cowboy",
+				"Django"
+			]
+		},
+		{
+			"name": "Analytics and SEO",
 			"level": "Low",
 			"keywords": [
 				"optimization",
+				"copyright",
 				"keywords",
-				"google page insights"
+				"page insights"
 			]
 		},
 		{
@@ -476,29 +466,6 @@
 				"jekyll",
 				"liquid",
 				"github-pages"
-			]
-		},
-		{
-			"name": "Backend",
-			"level": "Medium",
-			"keywords": [
-				"nodejs",
-				"meteor",
-				"MongoDB",
-				"PHP",
-				"nginx",
-				"apache",
-				"node",
-				"Python",
-				"Zend Framework",
-				"cowboy"
-			]
-		},
-		{
-			"name": "Programming languages",
-			"level": "Low",
-			"keywords": [
-				"Erlang", "Python", "PHP", "C", "C++", "Java", "Object Pascal", "Action Script", "Perl", "JavaScript", "CoffeeScript", "TypeScript", "LiveScript", "VisualBasic"
 			]
 		}
 	],
@@ -518,15 +485,7 @@
 	],
 	"interests": [
 		{
-			"name": "Quantum Mechanics",
-			"keywords": [
-				"atomic orbitals",
-				"finite potential well",
-				"schrödinger equation"
-			]
-		},
-		{
-			"name": "Musical Technologies",
+			"name": "Music Technologies",
 			"keywords": [
 				"DSP",
 				"synthesis",
@@ -536,8 +495,16 @@
 			]
 		},
 		{
-			"name": "intellectual Technologies",
-			"keywords": ["Deep Learning", "Neural Networks", "Recommendation systems"]
+			"name": "Intellectual Technologies",
+			"keywords": ["Deep Learning", "Neural Networks", "Recommendation systems", "Clusterizing and Classification", "NLP"]
+		},
+		{
+			"name": "Physics & Math",
+			"keywords": [
+				"Quantum Mechanics",
+				"Color",
+				"Sound"
+			]
 		},
 		{
 			"name": "Metaphysics",
@@ -548,18 +515,14 @@
 			]
 		},
 		{
-			"name": "Sports",
+			"name": "Health living",
 			"keywords": [
-				"marathon",
-				"yoga",
-				"jogging"
-			]
-		},
-		{
-			"name": "JavaScript",
-			"keywords": [
-				"node",
-				"webgl"
+				"Running",
+				"Yoga",
+				"Vegetarianism",
+				"Forest",
+				"Trees",
+				"Insects"
 			]
 		}
 	],
