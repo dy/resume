@@ -1,12 +1,12 @@
 {
 	"basics": {
-		"name": "Dima Yv",
-		"label": "An internet user",
+		"name": "Dmitry Yvanow",
+		"label": "Programmeur web",
 		"picture": "https://raw.githubusercontent.com/dfcreative/resume/master/index.jpg",
 		"email": "df.creative@gmail.com",
 		"phone": "+1 514 632-83-76",
 		"website": "http://github.com/dfcreative",
-		"summary": "Dima Yv hails from Saint-Petersburg. He earned technical degrees in computer graphics and information technologies at Baltic State Technical University. He started his career as a freelance web-developer and later founded startup kudago.com, where performed as a frontend developer. After the startup established well on the russian market, he moved to Canada, Montreal, where he started studying music technologies and developing related projects, as well as helping out TTBA group with websites for living.",
+		"summary": "Dmitry Yvanow is from Saint-Petersburg. He earned technical degrees in a couple of russian universities. He started career as a freelance designer and later founded some russian startup, where performed as a frontend developer. After the startup became successful, he moved to Canada, MTL, where started enjoying life, loving people, studying French, quantum mechanics and music technologies.",
 		"location": {
 			"address": "5526, rue Laurendau, app. 205",
 			"postalCode": "H4E3W1",
@@ -49,49 +49,18 @@
 	},
 	"work": [
 		{
-			"company": "TTBA group",
-			"position": "Web-developer",
-			"website": "http://ttbagroup.com/",
-			"startDate": "2016-03-01",
-			"endDate": "now",
-			"summary": "Web agency, taking up website-related jobs such as marketing, website development, advertising, SEO etc.",
-			"highlights": [
-				"https://coutureonly.com/ redesign and frontend",
-				"https://ecobrandsnow.ca/ redesign and frontend",
-				"http://wishbox.gift frontend",
-				"http://socialboomwifi.com/ web-design",
-				"http://citenova.com/ concours page/slider"
-			],
-			"keywords" : ["wordpress", "shopify", "ux", "analytics", "mailchimp", "", "jquery", "html", "css"]
-		},
-		{
-			"company": "Amazemontreal Inc.",
-			"position": "Web-developer",
-			"website": "https://amazemontreal.com",
-			"startDate": "2016-02-01",
-			"endDate": "2016-03-01",
-			"summary": "Optimizing and redesing of ",
-			"highlights": [
-				"Optimization amazemontreal.com for google page insights (92/100)",
-				"Redesign and optimization of ragemontreal.com"
-			],
-			"keywords": ["optimization", "page insights"]
-		},
-		{
-			"company": "Audio-lab",
-			"position": "",
-			"website": "http://audio-lab.github.io",
+			"company": "Self-employed",
+			"position": "CEO",
+			"website": "http://dfcreative.github.io",
 			"startDate": "2015-03-01",
 			"endDate": "2016-01-01",
-			"summary": "Developing open-source projects in domains of musical and creative technologies.",
+			"summary": "Developing various open-source projects in domains of musical and creative technologies.",
 			"highlights": [
-				"Fastest FFT implementation",
-				"Largest collection of color space conversions for js",
-				"GLSL to JS compiler"
+				"Audio processing toolkit",
+				"Color processing toolkit",
+				"Natural language processing algorithms"
 			],
 			"keywords": [
-				"nodejs",
-				"javascript",
 				"dsp",
 				"audio",
 				"sound",
@@ -104,12 +73,11 @@
 			"website": "http://beeline.com",
 			"startDate": "2015-01-12",
 			"endDate": "2015-03-01",
-			"summary": "Beeline is a telecom provider like Videotron, but in Russia. The salesman position was held in order to get experience in fields outside of IT.",
+			"summary": "Beeline is a telecom provider like Videotron, but in Russia. The salesman position was held within the working pilgrimage program, in order to study various fields of business different from IT.",
 			"highlights": [
-				"Learning the essence of sales and modern sales methodics",
-				"Running mobile salon",
-				"Redesigning shopwindow and product labels",
-				"Helping people set up internet connection and fix issues with their  phones"
+				"Reading 5 books on sales",
+				"Redesign of the shopwindow and product labels",
+				"Helping lots of people to set up internet connection in their phones"
 			],
 			"keywords": [
 				"what are those cell phones?",
@@ -163,7 +131,7 @@
 		{
 			"company": "LLC Revan",
 			"position": "Web designer",
-			"summary": "Revan was an internet startup making efforts in domains from banking to SEO, which later grown to kudago.com.",
+			"summary": "Revan was a small internet startup making efforts in various domains, from banking to SEO, which later grown to kudago.com. Now it is just an issue tracker for kudago.com.",
 			"website": "http://revan.ru",
 			"startDate": "2012-02-04",
 			"endDate": "2013-03-01",
@@ -184,7 +152,7 @@
 		{
 			"company": "Freelance",
 			"position": "Web developer",
-			"summary": "Taking up web-development jobs, including mockups, prototyping, HTML, CSS, JS, PHP. Setting up, configuring and developing themes and plugins for wordpress. Experience with CMS: modx, drupal, subdreamer. Setting up server-side environment: Apache, nginx, MySQL. Studying various",
+			"summary": "Taking up different web-design and web-development jobs, including mockups, prototyping, HTML, CSS, JS, PHP. Setting up, configuring and developing themes and plugins for wordpress. Experience with other CMS: modx, drupal, subdreamer. Setting up server-side environment: Apache, nginx, MySQL.",
 			"highlights": [
 				"rsua.ru - design, web-development",
 				"postavokna.ru - design, site",
@@ -206,8 +174,7 @@
 				"sayhello.ru - prototyping, design",
 				"zpapa.ru - prototyping, design",
 				"productinsignt.ru - prototyping, design"
-			],
-			"keywords": ["Zend Framework", "PHP"]
+			]
 		},
 		{
 			"company": "STC pro",
@@ -264,7 +231,7 @@
 		},
 		{
 			"company": "Elis",
-			"position": "Builder",
+			"position": "Worker",
 			"website": "elis.ru",
 			"highlights": [
 				"Cleaning buildings",
@@ -273,25 +240,6 @@
 		}
 	],
 	"volunteer": [
-		{
-			"organization": "Lidia Varbanova — Individual entrepreneur",
-			"website": "http://lidiavarbanova.com",
-			"startDate": "2016-08-01",
-			"endDate": "now",
-			"summary": "Redesign and retargeting of website",
-			"highlights": []
-		},
-		{
-			"organization": "MIRCA — Morgan Initiative on Russian Cultural Affairs",
-			"website": "http://mirca.ca",
-			"startDate": "",
-			"endDate": "",
-			"summary": "Concept, design and developing of logotype and website for russian culture club.",
-			"highlights": []
-		},
-		{
-			"organization": "StackGL"
-		},
 		{
 			"organization": "SciJS",
 			"position": "contributor",
@@ -316,7 +264,7 @@
 		},
 		{
 			"organization": "Saint-Petersburg College of Naval Instrument-making",
-			"position": "Burocracy worker",
+			"position": "Bureocracy worker",
 			"website": "",
 			"startDate": "2007-01-01",
 			"endDate": "2007-02-01",
@@ -421,15 +369,13 @@
 			"name": "Frontend",
 			"level": "Master",
 			"keywords": [
-				"html",
-				"css",
-				"js",
+				"HTML5",
+				"CSS3",
+				"ES6",
 				"npm",
 				"browserify",
 				"node",
-				"tdd",
-				"webgl",
-				"web-audio",
+				"mocha",
 				"jQuery"
 			]
 		},
@@ -470,20 +416,13 @@
 				"wordpress",
 				"drupal",
 				"modx",
-				"subdreamer",
-				"ecommerce",
-				"shopify",
-				"jekyll",
-				"liquid",
-				"github-pages"
+				"subdreamer"
 			]
 		},
 		{
 			"name": "Backend",
 			"level": "Medium",
 			"keywords": [
-				"nodejs",
-				"meteor",
 				"MongoDB",
 				"PHP",
 				"nginx",
@@ -498,7 +437,8 @@
 			"name": "Programming languages",
 			"level": "Low",
 			"keywords": [
-				"Erlang", "Python", "PHP", "C", "C++", "Java", "Object Pascal", "Action Script", "Perl", "JavaScript", "CoffeeScript", "TypeScript", "LiveScript", "VisualBasic"
+				"Java", "C", "C++", "Object Pascal", "Action Script",
+				"Erlang", "Python", "PHP", "Perl", "JavaScript", "CoffeeScript", "LiveScript", "VisualBasic", "TypeScript"
 			]
 		}
 	],
@@ -513,7 +453,7 @@
 		},
 		{
 			"language": "French",
-			"fluency": "Basic"
+			"fluency": "Intermediate"
 		}
 	],
 	"interests": [
@@ -526,24 +466,19 @@
 			]
 		},
 		{
-			"name": "Musical Technologies",
+			"name": "Music Technology",
 			"keywords": [
 				"DSP",
 				"synthesis",
-				"harmonic analysis",
-				"fft",
-				"wavelets"
+				"harmonic analysis"
 			]
-		},
-		{
-			"name": "intellectual Technologies",
-			"keywords": ["Deep Learning", "Neural Networks", "Recommendation systems"]
 		},
 		{
 			"name": "Metaphysics",
 			"keywords": [
 				"Alan Watts",
 				"Buddhism",
+				"Yoga",
 				"Ekhart Tholle"
 			]
 		},
@@ -565,20 +500,12 @@
 	],
 	"references": [
 		{
-			"name": "Alex Tsyrfa",
-			"reference": "by request"
-		},
-		{
-			"name": "Alex Reverse",
-			"reference": "by request"
-		},
-		{
 			"name": "Sergey Poduzov",
-			"reference": "by request"
+			"reference": "By request."
 		},
 		{
 			"name": "Alex Prokofiev",
-			"reference": "by request"
+			"reference": "By request."
 		}
 	]
 }
