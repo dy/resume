@@ -44,7 +44,7 @@
 			"website": "http://ttbagroup.com/",
 			"startDate": "2016-03-01",
 			"endDate": "2016-08-13",
-			"summary": "Web agency taking up web-related jobs: web-design, web-development, SEO, social-media, branding, etc.",
+			"summary": "Web agency taking up web-related jobs from web-design to social media marketing. My responsibilities include developing web-sites.",
 			"highlights": [
 				"coutureonly.com redesign and frontend",
 				"ecobrandsnow.ca redesign and frontend",
@@ -57,7 +57,7 @@
 		{
 			"company": "Amazemontreal Inc.",
 			"position": "Web-developer",
-			"website": "https://amazemontreal.com",
+			"website": "http://amazemontreal.com",
 			"startDate": "2016-02-01",
 			"endDate": "2016-03-01",
 			"summary": "Amaze Escape Game and Rage Axe Throwing Academy is an enterprise running two unique venues in Montreal, they have two promo websites which required upgrading.",
@@ -73,7 +73,7 @@
 			"website": "http://audio-lab.github.io",
 			"startDate": "2015-03-01",
 			"endDate": "2016-01-01",
-			"summary": "Open-source organization hosting projects related to musical and creative technologies.",
+			"summary": "Open-source organization hosting projects related to musical and creative technologies, I am the main contributor.",
 			"highlights": [
 				"Fastest FFT implementation",
 				"Largest collection of color spaces",
@@ -117,7 +117,7 @@
 			"website": "http://kudago.com",
 			"startDate": "2012-03-01",
 			"endDate": "2015-01-12",
-			"summary": "Kudago is an agency and a web-site covering cultural events in big cities in Russia, Europe and USA. It became the biggest russian event-related startup for the 2 years.",
+			"summary": "Kudago is an agency and a web-site covering cultural events in big cities in Russia, Europe and USA, it is the biggest russian event-related website. I was responsible for the frontend and design.",
 			"highlights": [
 				"Design, UX, UI and IA of kudago.com",
 				"Developing desktop and mobile kudago.com",
@@ -156,7 +156,7 @@
 		{
 			"company": "LLC Revan",
 			"position": "Web-designer",
-			"summary": "Revan was a startup making jobs in domains from banking to SEO, which later grown to kudago.com.",
+			"summary": "Revan was a startup making jobs in domains from banking to SEO, which later grown to kudago.com, I played role of designer and web-developer.",
 			"website": "http://revan.ru",
 			"startDate": "2012-02-04",
 			"endDate": "2013-03-01",
@@ -212,7 +212,7 @@
 			"website": "http://ingria-startup.ru/",
 			"startDate": "2012-02-04",
 			"endDate": "2013-03-01",
-			"summary": "Ingria is a startup incubator like Y-combinator, but in Russia. My responsibilities there were web-service implementation for boutiqueland.ru startup.",
+			"summary": "Ingria is a startup incubator like Y-combinator, but in Russia. My responsibilities included web-service implementation for boutiqueland.ru startup.",
 			"highlights": [
 				"Developing market strategy for Boutiqueland",
 				"Branding & design for boutiqueland.ru",
