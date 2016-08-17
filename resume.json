@@ -24,16 +24,6 @@
 				"network": "Twitter",
 				"username": "projectire",
 				"url": "https://twitter.com/projectire"
-			},
-			{
-				"network": "Facebook",
-				"username": "Dima Ivanov",
-				"url": "https://www.facebook.com/dmitry.ivanov.92798"
-			},
-			{
-				"network": "Instagram",
-				"username": "maladyn",
-				"url": "http://instagram.com/maladyn"
 			}
 		]
 	},
@@ -44,7 +34,7 @@
 			"website": "http://ttbagroup.com/",
 			"startDate": "2016-03-01",
 			"endDate": "2016-08-13",
-			"summary": "Web agency taking up web-related jobs from web-design to social media marketing. My responsibilities include developing web-sites.",
+			"summary": "Web agency specializing in web-design, advertisment and social media marketing. My responsibilities include developing and optimizing web-sites.",
 			"highlights": [
 				"coutureonly.com redesign and frontend",
 				"ecobrandsnow.ca redesign and frontend",
@@ -63,7 +53,7 @@
 			"summary": "Amaze Escape Game and Rage Axe Throwing Academy is an enterprise running two unique venues in Montreal, they have two promo websites which required upgrading.",
 			"highlights": [
 				"Optimization amazemontreal.com for google page insights (92/100)",
-				"Redesign and optimization of ragemontreal.com"
+				"Redesign and optimization of ragemontreal.com, same digits"
 			],
 			"keywords": ["optimization", "page insights"]
 		},
@@ -73,7 +63,7 @@
 			"website": "http://audio-lab.github.io",
 			"startDate": "2015-03-01",
 			"endDate": "2016-01-01",
-			"summary": "Open-source organization hosting projects related to musical and creative technologies, I am the main contributor.",
+			"summary": "Open-source organization hosting music-related projects. I am the main contributor.",
 			"highlights": [
 				"Fastest FFT implementation",
 				"Largest collection of color spaces",
