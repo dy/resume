@@ -29,6 +29,20 @@
 	},
 	"work": [
 		{
+			"company": "Plotly Inc",
+			"position": "JS developer",
+			"website": "http://plot.ly",
+			"startDate": "2016-09-01",
+			"endDate": "2018-01-01",
+			"summary": "Plotly.js is javascript graphing library that powers plotly.",
+			"highlights": [
+				"Rewrite WebGL core components with regl",
+				"Mobile version of plotly.js",
+				"Lasso selection tool"
+			],
+			"keywords": ["WebGL"]
+		},
+		{
 			"company": "TTBA group",
 			"position": "Web-developer",
 			"website": "http://ttbagroup.com/",
@@ -36,6 +50,8 @@
 			"endDate": "2016-08-13",
 			"summary": "Web agency specializing in web-design, advertisment and social media marketing. My responsibilities include developing and optimizing web-sites.",
 			"highlights": [
+				"shopsvelte.com redesign, frontend and optimization",
+				"pegasie.com optimization",
 				"coutureonly.com redesign and frontend",
 				"ecobrandsnow.ca redesign and frontend",
 				"wishbox.gift frontend",
