@@ -2,10 +2,10 @@
 	"basics": {
 		"name": "Dmitry Yvanow",
 		"label": "Programmeur web",
-		"picture": "https://raw.githubusercontent.com/dfcreative/resume/master/index.jpg",
+		"picture": "https://raw.githubusercontent.com/dy/resume/master/index.jpg",
 		"email": "df.creative@gmail.com",
 		"phone": "+1 514 632-83-76",
-		"website": "http://github.com/dfcreative",
+		"website": "http://github.com/dy",
 		"summary": "Dmitry Yvanow is from Saint-Petersburg. He earned technical degrees in a couple of russian universities. He started career as a freelance designer and later founded some russian startup, where performed as a frontend developer. After the startup became successful, he moved to Canada, MTL, where started enjoying life, loving people, studying French, quantum mechanics and music technologies.",
 		"location": {
 			"address": "5526, rue Laurendau, app. 205",
@@ -18,7 +18,7 @@
 			{
 				"network": "Github",
 				"username": "dfcreative",
-				"url": "https://github.com/dfcreative"
+				"url": "https://github.com/dy"
 			},
 			{
 				"network": "Twitter",
@@ -51,7 +51,7 @@
 		{
 			"company": "Self-employed",
 			"position": "CEO",
-			"website": "http://dfcreative.github.io",
+			"website": "http://dy.github.io",
 			"startDate": "2015-03-01",
 			"endDate": "2016-01-01",
 			"summary": "Developing various open-source projects in domains of musical and creative technologies.",
