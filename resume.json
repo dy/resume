@@ -32,8 +32,8 @@
 			"company": "Vectioneer",
 			"position": "WebGL specialist",
 			"website": "http://plot.ly",
-			"startDate": "2016-09-01",
-			"endDate": "2018-01-01",
+			"startDate": "2018-09-01",
+			"endDate": "2018-11-31",
 			"summary": "Vectioneer is robotics company based in Netherlands, needed performant waveform renderer, 1kHz update rate.",
 			"highlights": [
 				"Optimal waveform renderer",
