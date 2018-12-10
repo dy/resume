@@ -6,7 +6,7 @@
 		"email": "df.creative@gmail.com",
 		"phone": "+1 514 7755-376",
 		"website": "http://github.com/dy",
-		"summary": "Originally from Saint-Petersburg, Russia. Earned Master degree at Baltic Technical University. Started career as a freelance designer, founded kudago.com and performed there as a frontend engineer. After the startup established on the market, moved to Canada, Montreal, where actively contributed to open-source and took part in local startups. Developed a set of audio/visual components.",
+		"summary": "Originally from Saint-Petersburg, Russia. Earned Master degree in Computer Graphics at Baltic State Technical University. Started career as a freelance designer, founded kudago.com and performed there as a frontend engineer. After the startup established on the market, moved to Canada, Montreal, where actively contributed to open-source and took part in local startups. Developed a set of audio/visual components.",
 		"location": {
 			"address": "650, jean d'Estrees, app. 601",
 			"postalCode": "H4E3W1",
@@ -31,7 +31,7 @@
 		{
 			"company": "Vectioneer",
 			"position": "WebGL specialist",
-			"website": "http://plot.ly",
+			"website": "http://Vectioneer.com",
 			"startDate": "2018-09-01",
 			"endDate": "2018-11-31",
 			"summary": "Vectioneer is robotics company based in Netherlands, needed performant waveform renderer, 1kHz update rate.",
@@ -60,7 +60,7 @@
 			"company": "TTBA group",
 			"position": "Web-developer",
 			"website": "http://ttbagroup.com/",
-			"startDate": "2016-03-01",
+			"startDate": "2016-05-01",
 			"endDate": "2016-08-13",
 			"summary": "Web agency specializing in web-design, advertisment and social media marketing. My responsibilities include developing and optimizing web-sites.",
 			"highlights": [
@@ -73,6 +73,17 @@
 				"citenova.com promo page web-design"
 			],
 			"keywords" : ["wordpress", "shopify", "ux", "analytics", "mailchimp", "jquery", "html", "css"]
+		},
+		{
+			"company": "Rage Axe Throwing",
+			"position": "Web-developer",
+			"website": "https://www.rageaxethrowing.com/",
+			"startDate": "2016-05-01",
+			"endDate": "2016-08-01",
+			"summary": "Development of mobile app game for tracking game score.",
+			"highlights": [
+			],
+			"keywords": ["optimization", "page insights"]
 		},
 		{
 			"company": "Amazemontreal Inc.",
@@ -108,27 +119,6 @@
 				"audio",
 				"sound",
 				"color"
-			]
-		},
-		{
-			"company": "Beeline",
-			"position": "Sales person",
-			"website": "http://beeline.com",
-			"startDate": "2015-01-12",
-			"endDate": "2015-03-01",
-			"summary": "Telecom provider like Videotron, but in Russia. Salesman position was held in order to get experience in areas outside of IT.",
-			"highlights": [
-				"Learning the essence of sales and modern sales methods",
-				"Running mobile salon",
-				"Redesigning shop window and product labels",
-				"Helping clients set up internet connection and fix issues with their  phones"
-			],
-			"keywords": [
-				"what are those cell phones?",
-				"fix my phone please!",
-				"can I charge my phone at you?",
-				"please change me a sim card!",
-				"my internet connection does not work :("
 			]
 		},
 		{
