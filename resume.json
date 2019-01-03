@@ -423,22 +423,24 @@
 				"js",
 				"npm",
 				"browserify",
-				"node",
+				"nodejs",
 				"TDD",
 				"webgl",
-				"web-audio"
+				"web-audio",
+				"react",
+				"virtual-dom"
 			]
 		},
 		{
 			"name": "Design",
-			"level": "Medium",
+			"level": "Advanced",
 			"keywords": [
 				"UX", "UI", "IA", "prototyping", "graphic design", "figma", "framer", "sketch"
 			]
 		},
 		{
 			"name": "Backend",
-			"level": "Medium",
+			"level": "Low",
 			"keywords": [
 				"nodejs",
 				"meteor",
@@ -447,7 +449,6 @@
 				"PHP",
 				"nginx",
 				"apache",
-				"Python",
 				"Zend Framework",
 				"cowboy",
 				"Django"
@@ -517,12 +518,8 @@
 			]
 		},
 		{
-			"name": "Metaphysics",
-			"keywords": [
-				"Alan Watts",
-				"Buddhism",
-				"Ekhart Tholle"
-			]
+			"name": "Spirituality",
+			"keywords": []
 		},
 		{
 			"name": "Health living",
