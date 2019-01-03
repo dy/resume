@@ -1,0 +1,20 @@
+{
+  "name": "cv",
+  "version": "1.0.0",
+  "description": "My cv",
+  "main": "index.js",
+  "scripts": {
+    "build": "resume export index.html"
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dy/resume.git"
+  },
+  "author": "ΔY",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dy/resume/issues"
+  },
+  "homepage": "https://github.com/dy/resume#readme"
+}
