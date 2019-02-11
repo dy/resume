@@ -29,6 +29,16 @@
 	},
 	"work": [
 		{
+			"company": "Mobeewave",
+			"position": "Frontend engineer",
+			"website": "https://mobeewave.com",
+			"startDate": "2019-01-15",
+			"endDate": "current",
+			"summary": "",
+			"highlights": ["Refactored angularjs to latest 1.x", "Updated webpack to the latest version", "Developed best in class forms"],
+			"keywords": ["react", "angular", "webpack"]
+		},
+		{
 			"company": "Vectioneer",
 			"position": "WebGL specialist",
 			"website": "http://vectioneer.com",
@@ -418,16 +428,21 @@
 			"name": "Frontend",
 			"level": "Master",
 			"keywords": [
+				"angularjs",
+				"webpack",
+				"react",
+				"evergreen-ui",
+				"redux",
+				"styled-components",
 				"html",
 				"css",
 				"js",
 				"npm",
 				"browserify",
 				"nodejs",
-				"TDD",
+				"tdd",
 				"webgl",
 				"web-audio",
-				"react",
 				"virtual-dom"
 			]
 		},
