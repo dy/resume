@@ -428,22 +428,25 @@
 			"name": "Frontend",
 			"level": "Master",
 			"keywords": [
+				"react", "redux", "mobx", "redux-form", "redux-persist", "apisauce", "reduxsauce",
+				"preact", "unistore", "unissist", "zustand", "react-hooks",
 				"angularjs",
 				"webpack",
-				"react",
-				"evergreen-ui",
-				"redux",
-				"styled-components",
+				"evergreen-ui", "material-ui", "blueprint",
+				"styled-components", "styled-system",
+				"typescript",
 				"html",
 				"css",
-				"js",
-				"npm",
+				"javascript",
+				"esnext",
+				"npm", "yarn",
 				"browserify",
 				"nodejs",
 				"tdd",
 				"webgl",
 				"web-audio",
-				"virtual-dom"
+				"virtual-dom",
+				"jquery", "django", "jekyll", "moustache", "backbone", "cordova"
 			]
 		},
 		{
