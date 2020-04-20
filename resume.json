@@ -6,7 +6,7 @@
 		"email": "df.creative@gmail.com",
 		"phone": "+1 514 7755-376",
 		"website": "http://github.com/dy",
-		"summary": "Originally from Saint-Petersburg, Russia. Earned Master's degree in Computer Graphics (CS) at Baltic State Technical University. Started as UI-designer entrepreneur, got solid experience working with various clients/projects, then performed in startup kudago.com as a UI-designer / frontend developer. In course of time moved to Canada, Montreal, where began collaborating to local businesses (TTBA, Amazemontreal, Rage Academy) and contributing to open-source in the meantime. Afterwards worked at Plotly Inc. as WebGL specialist and currently at Mobeewave.",
+		"summary": "Originally from Saint-Petersburg, Russia. Earned Master's degree in Computer Graphics (CS) at Baltic State Technical University. Started as UI freelance designer taking part in local startups and projects, then performed at kudago.com as a UI-designer / frontend developer. In course of time moved to Canada, Montreal, where began collaborating at local businesses (TTBA, Amazemontreal, Rage Academy) and contributing to open-source in the meantime. Afterwards worked at Plotly Inc. as WebGL specialist and currently at Mobeewave.",
 		"location": {
 			"address": "2200, Sherbrook Est, app. 11",
 			"postalCode": "H2K1E1",
@@ -34,14 +34,14 @@
 			"website": "https://mobeewave.com",
 			"startDate": "2019-01-15",
 			"endDate": "current",
-			"summary": "",
+			"summary": "Fintech company specialized on accepting card payments with a phone.",
 			"highlights": [
-				"Refactored and maintained AngularJS dashboards",
-				"Developed Samsung Point of Sale dashboard",
-				"Developed aspect-oriented web-framework",
-				"Developed universal collection of react-compatible hooks",
+				"Samsung Point of Sale web app",
+				"React/redux-based acquirer portal app",
+				"Admin portal app based on aspect-oriented framework",
+				"Provisioning portal angularjs app"
 			],
-			"keywords": ["react", "angularjs", "preact", "lit-html", "polymer", "es6", "evergreen-ui", "material-ui", "material-web"]
+			"keywords": ["react", "preact", "redux", "lit-html", "es6", "material ui", "angularjs", "spectjs"]
 		},
 		{
 			"company": "Vectioneer",
@@ -51,8 +51,8 @@
 			"endDate": "2018-11-31",
 			"summary": "Vectioneer is robotics company based in Netherlands, needed performant waveform renderer, 1kHz update rate.",
 			"highlights": [
-				"Optimal waveform renderer",
-				"Image-based TDD components"
+				"Performant webgl waveform renderer",
+				"Testing tools for image comparisons"
 			],
 			"keywords": ["WebGL"]
 		},
@@ -64,10 +64,10 @@
 			"endDate": "2018-09-01",
 			"summary": "Plotly.js is javascript graphing library that powers plotly.",
 			"highlights": [
-				"Rewrite WebGL core components with regl",
+				"Rewriting WebGL core components with regl",
 				"Mobile version of plotly.js",
 				"Lasso selection tool",
-				"Fastest 2d graphics components"
+				"Best in class scatterplot point clustering algorithm"
 			],
 			"keywords": ["WebGL"]
 		},
@@ -77,7 +77,7 @@
 			"website": "http://ttbagroup.com/",
 			"startDate": "2016-05-01",
 			"endDate": "2016-08-13",
-			"summary": "Web agency specializing in web-design, advertisment and social media marketing. My responsibilities include developing and optimizing web-sites.",
+			"summary": "Web agency specializing in web-design, advertisment and social media marketing. Responsibilities included developing and optimizing web-sites.",
 			"highlights": [
 				"shopsvelte.com redesign, frontend and optimization",
 				"pegasie.com optimization",
@@ -96,8 +96,7 @@
 			"startDate": "2016-05-01",
 			"endDate": "2016-08-01",
 			"summary": "Development of mobile app game for tracking game score.",
-			"highlights": [
-			],
+			"highlights": [],
 			"keywords": ["optimization", "page insights"]
 		},
 		{
@@ -106,20 +105,20 @@
 			"website": "http://amazemontreal.com",
 			"startDate": "2016-02-01",
 			"endDate": "2016-03-01",
-			"summary": "Amaze Escape Game and Rage Axe Throwing Academy is an enterprise running two unique venues in Montreal, they have two promo websites which required upgrading.",
+			"summary": "Amaze Escape Game and Rage Axe Throwing Academy is an enterprise running venues in Montreal, had 2 websites that required upgrading.",
 			"highlights": [
 				"Optimization amazemontreal.com for google page insights (92/100)",
-				"Redesign and optimization of ragemontreal.com, same digits"
+				"Redesign and optimization of ragemontreal.com (92/100)"
 			],
 			"keywords": ["optimization", "page insights"]
 		},
 		{
-			"company": "Audio-lab",
+			"company": "Audiojs",
 			"position": "",
 			"website": "http://audio-lab.github.io",
 			"startDate": "2015-03-01",
 			"endDate": "2016-01-01",
-			"summary": "Open-source organization hosting music-related projects. I am the main contributor.",
+			"summary": "Open-source organization hosting audio-related projects.",
 			"highlights": [
 				"Fastest FFT implementation",
 				"Largest collection of color spaces",
@@ -142,18 +141,14 @@
 			"website": "http://kudago.com",
 			"startDate": "2012-03-01",
 			"endDate": "2015-01-12",
-			"summary": "Kudago is an agency and a web-site covering cultural events in big cities in Russia, Europe and USA, it is the biggest russian event-related website. I was responsible for the frontend and design.",
+			"summary": "Kudago is an agency and a web-site covering cultural events, the biggest russian event-related website. Responsibilities included frontend and design.",
 			"highlights": [
 				"Design, UX, UI and IA of kudago.com",
-				"Developing desktop and mobile kudago.com",
-				"Optimization of mobile website, getting under 20kb of javascript",
-				"Getting 100 of 100 in google page insights",
-				"Recruiting tech guys",
-				"Setting up development process in team",
-				"Learning multitude of frontend methodologies and stacks"
+				"Desktop and mobile kudago.com website",
+				"<20kb of javascript in mobile website",
+				"100/100 in google page insights"
 			],
 			"keywords": [
-				"ASAP",
 				"agile",
 				"scrum",
 				"javascript",
@@ -181,7 +176,7 @@
 		{
 			"company": "LLC Revan",
 			"position": "Web-designer",
-			"summary": "Revan was a startup making jobs in domains from banking to SEO, which later grown to kudago.com, I played role of designer and web-developer.",
+			"summary": "Revan was a startup providing web-services for businesses from banking to SEO, which later grown to kudago.com. The role of designer and web-developer.",
 			"website": "http://revan.ru",
 			"startDate": "2012-02-04",
 			"endDate": "2013-03-01",
@@ -204,7 +199,7 @@
 			"position": "Web-developer",
 			"startDate": "2012-02-04",
 			"endDate": "2013-03-01",
-			"summary": "Web-development freelance jobs, including design mockups, UI prototyping, HTML, CSS, JS, wordpress.",
+			"summary": "Various webdev freelance jobs - design mockups, UI prototyping, HTML, CSS, JS, wordpress.",
 			"highlights": [
 				"rsua.ru - design, developing",
 				"postavokna.ru - design, developing",
@@ -237,7 +232,7 @@
 			"website": "http://ingria-startup.ru/",
 			"startDate": "2012-02-04",
 			"endDate": "2013-03-01",
-			"summary": "Ingria is a startup incubator like Y-combinator, but in Russia. My responsibilities included web-service implementation for boutiqueland.ru startup.",
+			"summary": "Ingria is Russian startup incubator like Y-combinator. Responsibilities included web-service implementation for boutiqueland.ru startup.",
 			"highlights": [
 				"Developing market strategy for Boutiqueland",
 				"Branding & design for boutiqueland.ru",
@@ -253,7 +248,7 @@
 			"position": "Intern",
 			"startDate": "2012-02-04",
 			"endDate": "2013-03-01",
-			"summary": "STC is a Speech Technology Center, an enterprise specialising in speech recognition technologies. The position was held in marketing department, related to web-sites and promotion pages design.",
+			"summary": "STC is Speech Technology Center, an enterprise specialising in speech recognition technologies. The position was held in marketing department, related to web-sites and promotion pages design.",
 			"highlights": [
 				"Implementation of interactive guide for SpeechPro VoiceKey, using Adobe® Flash®",
 				"Developing batch scripts in Visual Basic to handle massive Microsoft Office Excel data.",
@@ -300,20 +295,18 @@
 	],
 	"volunteer": [
 		{
-			"organization": "Lidia Varbanova — Individual entrepreneur",
-			"website": "http://lidiavarbanova.com",
-			"startDate": "2016-08-01",
-			"endDate": "2016-08-13",
-			"summary": "Lidia is a professor of Marketing and Economics in Arts and Creative Industries.",
-			"highlights": ["Renovation of lidiavarbanova.com"]
+			"organization": "Wishbox",
+			"startDate": "2019-09-01",
+			"endDate": "2020-02-01",
+			"summary": "Preact-based wishbox.gift website",
+			"highlights": []
 		},
 		{
-			"organization": "MIRCA",
-			"website": "http://mirca.ca",
+			"organization": "StackGL",
 			"startDate": "2016-08-01",
 			"endDate": "2016-08-13",
-			"summary": "Morgan Initiative on Russian Cultural Affairs is russian culture institute in future and russial speaking club now",
-			"highlights": ["Concept, design and developing of logotype and website"]
+			"summary": "Webgl-related components.",
+			"highlights": ["GLSL to JS transpiler"]
 		},
 		{
 			"organization": "StackGL",
@@ -329,19 +322,24 @@
 			"endDate": "2015-12-01",
 			"summary": "Scientific javascript open-source projects",
 			"highlights": [
-				"color-space component, the world's biggest javascript collection of color space conversions"
+				"color-space component, collection of color space conversions"
 			]
 		},
 		{
-			"organization": "Component",
-			"position": "contributor",
-			"website": "http://component.io/",
-			"startDate": "2015-01-01",
-			"endDate": "2015-01-01",
-			"summary": "Global movement of free coding young people",
-			"highlights": [
-				"Fixing bugs of tip, dialog, overflow, modal and other components"
-			]
+			"organization": "Lidia Varbanova — Individual entrepreneur",
+			"website": "http://lidiavarbanova.com",
+			"startDate": "2016-08-01",
+			"endDate": "2016-08-13",
+			"summary": "Lidia is a professor of Marketing and Economics in Arts and Creative Industries.",
+			"highlights": ["Renovation of lidiavarbanova.com"]
+		},
+		{
+			"organization": "MIRCA",
+			"website": "http://mirca.ca",
+			"startDate": "2016-08-01",
+			"endDate": "2016-08-13",
+			"summary": "Morgan Initiative on Russian Cultural Affairs is russian culture institute in future and russial speaking club now",
+			"highlights": ["Concept, design and developing of logotype and website"]
 		},
 		{
 			"organization": "Saint-Petersburg College of Naval Instrument-making",
@@ -431,13 +429,13 @@
 	"skills": [
 		{
 			"name": "Frontend",
-			"level": "Master",
+			"level": "senior",
 			"keywords": [
-				"react", "redux", "mobx", "redux-form", "redux-persist", "apisauce", "reduxsauce",
-				"preact", "unistore", "unissist", "zustand", "react-hooks",
+				"react", "redux", "preact",
 				"angularjs",
-				"webpack",
-				"evergreen-ui", "material-ui", "blueprint",
+				"spectjs", "rxjs", "observable",
+				"webpack", "rollup", "browserify",
+				"material-ui", "blueprint",
 				"styled-components", "styled-system",
 				"typescript",
 				"html",
@@ -445,25 +443,23 @@
 				"javascript",
 				"esnext",
 				"npm", "yarn",
-				"browserify",
 				"nodejs",
 				"tdd",
 				"webgl",
 				"web-audio",
-				"virtual-dom",
 				"jquery", "django", "jekyll", "moustache", "backbone", "cordova"
 			]
 		},
 		{
 			"name": "Design",
-			"level": "Advanced",
+			"level": "middle",
 			"keywords": [
 				"UX", "UI", "IA", "prototyping", "graphic design", "figma", "framer", "sketch"
 			]
 		},
 		{
 			"name": "Backend",
-			"level": "Low",
+			"level": "middle",
 			"keywords": [
 				"nodejs",
 				"meteor",
@@ -479,7 +475,7 @@
 		},
 		{
 			"name": "Analytics and SEO",
-			"level": "Low",
+			"level": "junior",
 			"keywords": [
 				"optimization",
 				"copyright",
@@ -489,7 +485,7 @@
 		},
 		{
 			"name": "CMS",
-			"level": "Medium",
+			"level": "middle",
 			"keywords": [
 				"wordpress",
 				"drupal",
@@ -506,15 +502,15 @@
 	"languages": [
 		{
 			"language": "English",
-			"fluency": "Advanced"
+			"fluency": "ok"
 		},
 		{
 			"language": "Russian",
-			"fluency": "Native speaker"
+			"fluency": "native"
 		},
 		{
 			"language": "French",
-			"fluency": "Basic"
+			"fluency": "basic"
 		}
 	],
 	"interests": [
@@ -541,22 +537,15 @@
 			]
 		},
 		{
-			"name": "Spirituality",
-			"keywords": []
-		},
-		{
-			"name": "Health living",
-			"keywords": [
-				"Running",
-				"Yoga",
-				"Vegetarianism",
-				"Forest",
-				"Trees",
-				"Insects"
-			]
+			"name": "Bhakti",
+			"keywords": ["Sattvic food"]
 		}
 	],
 	"references": [
+		{
+			"name": "Mario Ramos",
+			"reference": "by request"
+		},
 		{
 			"name": "Alex Tsyrfa",
 			"reference": "by request"
