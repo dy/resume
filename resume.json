@@ -40,7 +40,6 @@
 				"React/redux-based acquirer portal app",
 				"Admin portal app based on aspect-oriented framework",
 				"Provisioning portal angularjs app",
-				"Aspect-oriented peformant DOM framework spectjs",
 				"Universal framework hooks library unihooks"
 			],
 			"keywords": ["react", "preact", "redux", "lit-html", "es6", "material ui", "angularjs", "spectjs"]
@@ -64,9 +63,9 @@
 			"website": "http://plot.ly",
 			"startDate": "2016-09-01",
 			"endDate": "2018-09-01",
-			"summary": "Plotly.js is javascript graphing library that powers plotly.",
+			"summary": "Plotly.js is javascript graphing library that powers plotly. Held position of resident webgl specialist.",
 			"highlights": [
-				"Regl-based WebGL core components",
+				"Regl-based WebGL core components - scatter, line, splom",
 				"Mobile version of plotly.js",
 				"Best in class scatterplot point clustering algorithm",
 				"Lasso selection tool"
@@ -79,18 +78,19 @@
 			"website": "http://ttbagroup.com/",
 			"startDate": "2016-05-01",
 			"endDate": "2016-08-13",
-			"summary": "Web agency specializing in web-design, advertisment and social media marketing. Responsibilities included developing and optimizing web-sites. Within projects: shopsvelte.com, pegasie.com, coutureonly.com, socialboomwifi.com, citenova.com, wishbox.gift, ecobrandshow.ca",
+			"summary": "Web agency specializing in web-design, advertisment and social media marketing. Responsibilities included developing and optimizing web-sites.",
+			"highlights": ["Design, markup and maintenance of shopsvelte.com, pegasie.com, coutureonly.com, socialboomwifi.com, citenova.com, wishbox.gift, ecobrandshow.ca"],
 			"keywords" : ["wordpress", "shopify", "ux", "analytics", "mailchimp", "jquery", "html", "css"]
 		},
 		{
-			"company": "Rage Axe Throwing",
+			"company": "Rage Academy",
 			"position": "Web-developer",
 			"website": "https://www.rageaxethrowing.com/",
 			"startDate": "2016-05-01",
 			"endDate": "2016-08-01",
-			"summary": "Development of mobile app game for tracking game score.",
-			"highlights": [],
-			"keywords": ["optimization", "page insights"]
+			"summary": "Axe throwing venue based in Montreal",
+			"highlights": ["Game score tracking app"],
+			"keywords": ["choojs"]
 		},
 		{
 			"company": "Amazemontreal Inc.",
@@ -98,7 +98,7 @@
 			"website": "http://amazemontreal.com",
 			"startDate": "2016-02-01",
 			"endDate": "2016-03-01",
-			"summary": "Amaze Escape Game and Rage Axe Throwing Academy is an enterprise running venues in Montreal, had 2 websites that required upgrading.",
+			"summary": "Amaze Escape Game is an enterprise running venues in Montreal, 2 websites needed upgrading.",
 			"highlights": [
 				"Optimization amazemontreal.com for google page insights (92/100)",
 				"Redesign and optimization of ragemontreal.com (92/100)"
@@ -111,7 +111,7 @@
 			"website": "http://audio-lab.github.io",
 			"startDate": "2015-03-01",
 			"endDate": "2016-01-01",
-			"summary": "Open-source organization hosting audio-related projects.",
+			"summary": "Open-source organization hosting audio-related projects. Held as side-practice during French classes.",
 			"highlights": [
 				"Performant FFT implementation",
 				"Largest collection of color spaces",
@@ -134,7 +134,7 @@
 			"website": "http://kudago.com",
 			"startDate": "2012-03-01",
 			"endDate": "2015-01-12",
-			"summary": "Kudago is an agency and a web-site covering cultural events, the biggest russian event-related website. Responsibilities included frontend and design.",
+			"summary": "Kudago is an agency and a web-site covering cultural events, the biggest Russian events website. Responsibilities included frontend and design.",
 			"highlights": [
 				"Design, UX, UI and IA of kudago.com",
 				"Desktop and mobile kudago.com website",
@@ -169,11 +169,12 @@
 		{
 			"company": "LLC Revan",
 			"position": "Web-designer",
-			"summary": "Revan was a startup providing web-services for businesses from banking to SEO, which later grown to kudago.com. The role performed of designer and web-developer. The projects included ipoteka-vam.ru, to-travel.ru, to-create.ru, tm-print.ru, likemeter vk/facebook app",
+			"summary": "Revan was a startup providing web-services for businesses from banking to SEO, which later grown to kudago.com. The role performed of designer and web-developer.",
 			"website": "http://revan.ru",
 			"startDate": "2012-02-04",
 			"endDate": "2013-03-01",
 			"highlights": [
+				"Design/markup for ipoteka-vam.ru, to-travel.ru, to-create.ru, tm-print.ru websites.",
 				"Statistical dashboard for likemeter application"
 			],
 			"keywords": [
@@ -187,9 +188,10 @@
 			"position": "Web-developer",
 			"startDate": "2012-02-04",
 			"endDate": "2013-03-01",
-			"summary": "Various webdev freelance jobs - design mockups, UI prototyping, HTML, CSS, JS, wordpress. The projects: rsua.ru, gildiya-masterov.ru, arkon-okna.ru, postavokna.ru, okonka.ru, jumpingclay.ru, aurama.ru, podsoblyaev.ru, biletron.ru, concertinfo.ru, ditspb.ru, rukasil.ru, voenmeh.ru, dverka.ru, sayhello.ru, zpapa.ru, productinsignt.ru, smartmedia, legran doors.",
+			"summary": "Webdev freelance jobs - design mockups, UI prototyping, HTML, CSS, JS, wordpress.",
 			"highlights": [
-				"Perfected skills at modx, drupal, subdreamer CMS, wordpress",
+				"Design / markup for rsua.ru, gildiya-masterov.ru, arkon-okna.ru, postavokna.ru, okonka.ru, jumpingclay.ru, aurama.ru, podsoblyaev.ru, biletron.ru, concertinfo.ru, ditspb.ru, rukasil.ru, voenmeh.ru, dverka.ru, sayhello.ru, zpapa.ru, productinsignt.ru, smartmedia, legran doors",
+				"Perfected skills at modx, drupal, subdreamer, wordpress",
 				"Setting up server environment: apache, nginx, MySQL"
 			],
 			"keywords": ["Zend Framework", "PHP"]
@@ -200,15 +202,10 @@
 			"website": "http://ingria-startup.ru/",
 			"startDate": "2012-02-04",
 			"endDate": "2013-03-01",
-			"summary": "Ingria is Russian startup incubator like Y-combinator. Responsibilities included web-service implementation for boutiqueland.ru startup.",
+			"summary": "Ingria is Russian startup incubator like Y-combinator. Responsibilities included web-service implementation for boutiqueland.ru, interviewing IT staff.",
 			"highlights": [
-				"Developing market strategy for Boutiqueland",
-				"Branding & design for boutiqueland.ru",
-				"Setting up and administrating dev & production for boutiqueland.ru",
-				"Recruiting IT specialists",
-				"Supporting site seemedia.ru",
-				"Developing UI kit for seemedia.ru",
-				"Designing prototype of mobile site for boutiqueland.ru"
+				"Branding / design for boutiqueland.ru mobile & desktop",
+				"UI kit for seemedia.ru"
 			]
 		},
 		{
@@ -218,9 +215,9 @@
 			"endDate": "2013-03-01",
 			"summary": "STC is Speech Technology Center, an enterprise specialising in speech recognition technologies. The position was held in marketing department, related to web-sites and promotion pages design.",
 			"highlights": [
-				"Implementation of interactive guide for SpeechPro VoiceKey, using Adobe® Flash®",
+				"Creation of interactive guide for SpeechPro VoiceKey, using Adobe® Flash®",
 				"Developing batch scripts in Visual Basic to handle massive Microsoft Office Excel data.",
-				"Supporting stcpro.ru web-site."
+				"Maintenance of stcpro.ru."
 			]
 		},
 		{
@@ -231,12 +228,12 @@
 			"endDate": "2012-03-01",
 			"summary": "Design jobs",
 			"highlights": [
-				"Designing GUI elements for application package “Pure Office”",
-				"Designing UI icons for mobile portal kilowap.ru",
-				"Designing UI icons for project gloricism.com",
-				"Designing layout of book “Childhood”, author Andreeva L.",
-				"Designing and maintaining web-site www.le-gran.spb.ru, JSC Masterskaya",
-				"Creating 3d model of radar device for navy simulator, JSC Sistema",
+				"GUI elements for application package “Pure Office”",
+				"UI icons for mobile portal kilowap.ru",
+				"UI icons for project gloricism.com",
+				"Design / markup of book “Childhood”, author Andreeva L.",
+				"Design / markup of www.le-gran.spb.ru, JSC Masterskaya",
+				"Creating radar 3d model for navy simulator, JSC Sistema",
 				"Illustrating textbook of methods of hydrodynamics, BSTU Voenmeh"
 			]
 		},
