@@ -29,6 +29,21 @@
 	},
 	"work": [
 		{
+			"company": "Apple",
+			"position": "Software Engineer",
+			"website": "https://apple.com",
+			"startDate": "2020-05-01",
+			"endDate": "2022-10-01",
+			"summary": "Apple Wallet / Apple Pay teams web projects",
+			"highlights": [
+				"Web push provisioning UI flow",
+				"Internal portals",
+				"Apple Pay web-component",
+				"Template instantiation library"
+			],
+			"keywords": ["react", "vue", "graphQL", "web-components"]
+		},
+		{
 			"company": "Mobeewave",
 			"position": "Frontend engineer",
 			"website": "https://mobeewave.com",
@@ -42,7 +57,7 @@
 				"Provisioning portal angularjs app",
 				"Universal framework hooks library unihooks"
 			],
-			"keywords": ["react", "preact", "redux", "lit-html", "es6", "material ui", "angularjs", "spectjs"]
+			"keywords": ["react", "preact", "redux", "styled-components", "lit-html", "es6", "material ui", "angularjs", "spectjs"]
 		},
 		{
 			"company": "Vectioneer",
@@ -390,23 +405,16 @@
 			"name": "Frontend",
 			"level": "senior",
 			"keywords": [
+				"vue",
 				"react", "redux", "preact",
 				"angularjs",
-				"spectjs", "rxjs", "observable",
-				"webpack", "rollup", "browserify",
-				"material-ui", "blueprint",
-				"styled-components", "styled-system",
+				"rxjs", "signals", "observable",
+				"esbuild", "webpack", "rollup", "browserify",
+				"material-ui",
 				"typescript",
-				"html",
-				"css",
-				"javascript",
-				"esnext",
-				"npm", "yarn",
-				"nodejs",
-				"tdd",
 				"webgl",
 				"web-audio",
-				"jquery", "django", "jekyll", "moustache", "backbone", "cordova"
+				"jquery", "django", "jekyll", "cordova", "stencil"
 			]
 		},
 		{
@@ -421,37 +429,22 @@
 			"level": "middle",
 			"keywords": [
 				"nodejs",
-				"meteor",
-				"MongoDB",
-				"Redis",
-				"PHP",
-				"nginx",
-				"apache",
-				"Zend Framework",
-				"cowboy",
-				"Django"
-			]
-		},
-		{
-			"name": "Analytics and SEO",
-			"level": "junior",
-			"keywords": [
-				"optimization",
-				"copyright",
-				"keywords",
-				"page insights"
+				"Python", "Django",
+				"Mongo", "Redis", "MySQL"
+				"PHP", "Zend",
+				"nginx", "apache"
 			]
 		},
 		{
 			"name": "CMS",
 			"level": "middle",
 			"keywords": [
+				"shopify",
 				"wordpress",
 				"drupal",
 				"modx",
 				"subdreamer",
 				"ecommerce",
-				"shopify",
 				"jekyll",
 				"liquid",
 				"github-pages"
@@ -474,18 +467,21 @@
 	],
 	"interests": [
 		{
+			"name": "Computer Science",
+			"keywords": ["Compilers"]
+		},
+		{
 			"name": "Music Technologies",
 			"keywords": [
 				"DSP",
 				"synthesis",
 				"harmonic analysis",
-				"fft",
 				"wavelets"
 			]
 		},
 		{
 			"name": "Intellectual Technologies",
-			"keywords": ["Deep Learning", "Neural Networks", "Recommendation systems", "Clusterizing and Classification", "NLP"]
+			"keywords": ["AI", "Deep Learning", "Neural Networks", "NLP"]
 		},
 		{
 			"name": "Physics & Math",
@@ -497,10 +493,14 @@
 		},
 		{
 			"name": "Bhakti",
-			"keywords": ["Sattvic food"]
+			"keywords": ["Sattvic food", "Kirtan", "Mridanga", "Carnatic music"]
 		}
 	],
 	"references": [
+		{
+			"name": "Matt Buyington",
+			"reference": "by request"
+		},
 		{
 			"name": "Mario Ramos",
 			"reference": "by request"
