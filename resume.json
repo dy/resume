@@ -6,7 +6,7 @@
 		"email": "df.creative@gmail.com",
 		"phone": "+1 514 7755-376",
 		"website": "http://github.com/dy",
-		"summary": "Originally from Saint-Petersburg, Russia. Earned Master's degree in Computer Graphics (CS) at Baltic State Technical University. Started as UI freelance designer taking part in local startups and projects, then performed at kudago.com as a UI-designer / frontend developer. Later moved to Canada, Montreal, where collaborated with local businesses (TTBA, Amazemontreal, Rage Academy) and contributed to open-source. Afterwards worked at Plotly Inc. as WebGL specialist and currently at Mobeewave.",
+		"summary": "Originally from Saint-Petersburg, Russia. Earned Master's degree in Computer Graphics (CS) at Baltic State Technical University. Started as UI freelance designer taking part in local startups and projects, then performed at kudago.com as a UI-designer / frontend developer. Later moved to Canada, Montreal, where collaborated with local businesses (TTBA, Amazemontreal, Rage Academy) and contributed to open-source. Afterwards worked at Plotly Inc. as WebGL specialist. Then at Mobeewave, specialized in payments systems, later transitioned to Apple into Wallet and Payments teams. Currently at Elevenlabs, working on sound processing technologies.",
 		"location": {
 			"address": "2200, Sherbrook Est, app. 11",
 			"postalCode": "H2K1E1",
@@ -28,6 +28,17 @@
 		]
 	},
 	"work": [
+		{
+			"company": "Eleven Labs",
+			"position": "Frontend Engineer",
+			"website": "https://elevenlabs.io",
+			"startDate": "2022-10-01",
+			"endDate": "",
+			"summary": "",
+			"highlights": [
+			],
+			"keywords": []
+		},
 		{
 			"company": "Apple",
 			"position": "Software Engineer",
