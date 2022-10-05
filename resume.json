@@ -52,7 +52,7 @@
 				"Apple Pay web-component",
 				"Template instantiation library"
 			],
-			"keywords": ["react", "vue", "graphQL", "web-components"]
+			"keywords": ["react", "vue", "graphQL", "web-components", "stencil", "cypress", "puppeteer"]
 		},
 		{
 			"company": "Mobeewave",
@@ -68,7 +68,7 @@
 				"Provisioning portal angularjs app",
 				"Universal framework hooks library unihooks"
 			],
-			"keywords": ["react", "preact", "redux", "styled-components", "lit-html", "es6", "material ui", "angularjs", "spectjs"]
+			"keywords": ["react", "preact", "redux", "styled-components", "lit-html", "es6", "material ui", "angularjs"]
 		},
 		{
 			"company": "Vectioneer",
