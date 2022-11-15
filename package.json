@@ -4,7 +4,7 @@
   "description": "My cv",
   "main": "index.js",
   "scripts": {
-    "build": "resume export index.html"
+    "build": "resume export index.html",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/dy/resume/issues"
   },
-  "homepage": "https://github.com/dy/resume#readme"
+  "homepage": "https://github.com/dy/resume#readme",
+  "dependencies": {
+    "jsonresume-theme-even": "^0.17.1"
+  }
 }

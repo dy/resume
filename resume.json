@@ -2,13 +2,13 @@
 	"basics": {
 		"name": "Dmitry Ivanov",
 		"label": "Software Engineer",
-		"picture": "https://raw.githubusercontent.com/dy/resume/master/index.jpg",
+		"image": "https://raw.githubusercontent.com/dy/resume/master/index.jpg",
 		"email": "df.creative@gmail.com",
 		"phone": "+1 514 7755-376",
-		"website": "http://github.com/dy",
-		"summary": "Originally from Saint-Petersburg, Russia. Earned Master's degree in Computer Graphics (CS) at Baltic State Technical University. Started as UI freelance designer taking part in local startups and projects, then performed at kudago.com as a UI-designer / frontend developer. Later moved to Canada, Montreal, where collaborated with local businesses (TTBA, Amazemontreal, Rage Academy) and contributed to open-source. Afterwards worked at Plotly Inc. as WebGL specialist. Then at Mobeewave, specialized in payments systems, later transitioned to Apple into Wallet and Payments teams. Currently at Elevenlabs, working on sound processing technologies.",
+		"url": "http://github.com/dy",
+		"summary": "Originally from Saint-Petersburg, Russia. Earned Master's degree in Computer Graphics (CS) at Baltic State Technical University. Started as UI freelance designer taking part in local startups and projects, then performed at kudago.com as a UI-designer / frontend developer. Later moved to Canada, Montreal, where collaborated with local businesses (TTBA, Amazemontreal, Rage Academy) and contributed to open-source. Afterwards worked at Plotly Inc. as WebGL specialist. Then at Mobeewave, specialized in payments systems, later transitioned to Apple into Wallet and Payments teams. Then tried luck at Elevenlabs, working on text to speech generation.",
 		"location": {
-			"address": "2200, Sherbrook Est, app. 11",
+			"address": "520 de Gaspe, #106",
 			"postalCode": "H2K1E1",
 			"city": "Montréal",
 			"countryCode": "CA",
@@ -29,35 +29,40 @@
 	},
 	"work": [
 		{
-			"company": "Eleven Labs",
+			"name": "Eleven Labs",
 			"position": "Frontend Engineer",
-			"website": "https://elevenlabs.io",
+			"url": "https://elevenlabs.io",
 			"startDate": "2022-10-01",
-			"endDate": "",
-			"summary": "",
+			"endDate": "2022-11-22",
+			"summary": "AI Voice generation startup.",
 			"highlights": [
+				"Designing, developing and launching speech generation SAAS."
 			],
-			"keywords": []
+			"keywords": [
+				"preact", "alpinojs", "signals", "tailwindcss", "11ty"
+			]
 		},
 		{
-			"company": "Apple",
+			"name": "Apple",
 			"position": "Software Engineer",
-			"website": "https://apple.com",
+			"url": "https://apple.com",
 			"startDate": "2020-05-01",
 			"endDate": "2022-10-01",
 			"summary": "Apple Wallet / Apple Pay teams web projects",
 			"highlights": [
 				"Web push provisioning UI flow",
-				"Internal portals",
-				"Apple Pay web-component",
-				"Template instantiation library"
+				"Apple Business Registry portal frontend work",
+				"Payments portal design & development",
+				"Internal admin dashboard development",
+				"Apple Pay widget: design, development",
+				"Template instantiation web-standard proposal polyfill"
 			],
-			"keywords": ["react", "vue", "graphQL", "web-components", "stencil", "cypress", "puppeteer"]
+			"keywords": ["react", "vue", "python", "django", "graphQL", "web-components", "stencil", "cypress", "puppeteer"]
 		},
 		{
-			"company": "Mobeewave",
+			"name": "Mobeewave",
 			"position": "Frontend engineer",
-			"website": "https://mobeewave.com",
+			"url": "https://mobeewave.com",
 			"startDate": "2019-01-15",
 			"endDate": "2020-05-01",
 			"summary": "Fintech company specialized on accepting card payments with a phone.",
@@ -71,9 +76,9 @@
 			"keywords": ["react", "preact", "redux", "styled-components", "lit-html", "es6", "material ui", "angularjs"]
 		},
 		{
-			"company": "Vectioneer",
+			"name": "Vectioneer",
 			"position": "WebGL specialist",
-			"website": "http://vectioneer.com",
+			"url": "http://vectioneer.com",
 			"startDate": "2018-09-01",
 			"endDate": "2018-11-31",
 			"summary": "Vectioneer is robotics company based in Netherlands, needed performant waveform renderer, 1kHz update rate.",
@@ -84,9 +89,9 @@
 			"keywords": ["WebGL"]
 		},
 		{
-			"company": "Plotly Inc",
+			"name": "Plotly Inc",
 			"position": "Software Engineer",
-			"website": "http://plot.ly",
+			"url": "http://plot.ly",
 			"startDate": "2016-09-01",
 			"endDate": "2018-09-01",
 			"summary": "Plotly.js is javascript graphing library that powers plotly. Held position of resident webgl specialist.",
@@ -99,9 +104,9 @@
 			"keywords": ["WebGL", "Datavis"]
 		},
 		{
-			"company": "TTBA group",
+			"name": "TTBA group",
 			"position": "Web-developer",
-			"website": "http://ttbagroup.com/",
+			"url": "http://ttbagroup.com/",
 			"startDate": "2016-05-01",
 			"endDate": "2016-08-13",
 			"summary": "Web agency specializing in web-design, advertisment and social media marketing. Responsibilities included developing and optimizing web-sites.",
@@ -109,9 +114,9 @@
 			"keywords" : ["wordpress", "shopify", "ux", "analytics", "mailchimp", "jquery", "html", "css"]
 		},
 		{
-			"company": "Rage Academy",
+			"name": "Rage Academy",
 			"position": "Web-developer",
-			"website": "https://www.rageaxethrowing.com/",
+			"url": "https://www.rageaxethrowing.com/",
 			"startDate": "2016-05-01",
 			"endDate": "2016-08-01",
 			"summary": "Axe throwing venue based in Montreal",
@@ -119,9 +124,9 @@
 			"keywords": ["choojs"]
 		},
 		{
-			"company": "Amazemontreal Inc.",
+			"name": "Amazemontreal Inc.",
 			"position": "Web-developer",
-			"website": "http://amazemontreal.com",
+			"url": "http://amazemontreal.com",
 			"startDate": "2016-02-01",
 			"endDate": "2016-03-01",
 			"summary": "Amaze Escape Game is an enterprise running venues in Montreal, 2 websites needed upgrading.",
@@ -132,9 +137,9 @@
 			"keywords": ["optimization", "page insights"]
 		},
 		{
-			"company": "Audiojs",
+			"name": "Audiojs",
 			"position": "",
-			"website": "http://audio-lab.github.io",
+			"url": "http://audio-lab.github.io",
 			"startDate": "2015-03-01",
 			"endDate": "2016-01-01",
 			"summary": "Open-source organization hosting audio-related projects. Held as side-practice during French classes.",
@@ -155,9 +160,9 @@
 			]
 		},
 		{
-			"company": "KudaGo Inc.",
+			"name": "KudaGo Inc.",
 			"position": "Frontend developer",
-			"website": "http://kudago.com",
+			"url": "http://kudago.com",
 			"startDate": "2012-03-01",
 			"endDate": "2015-01-12",
 			"summary": "Kudago is an agency and a web-site covering cultural events, the biggest Russian events website. Responsibilities included frontend and design.",
@@ -193,10 +198,10 @@
 			]
 		},
 		{
-			"company": "LLC Revan",
+			"name": "LLC Revan",
 			"position": "Web-designer",
 			"summary": "Revan was a startup providing web-services for businesses from banking to SEO, which later grown to kudago.com. The role performed of designer and web-developer.",
-			"website": "http://revan.ru",
+			"url": "http://revan.ru",
 			"startDate": "2012-02-04",
 			"endDate": "2013-03-01",
 			"highlights": [
@@ -210,7 +215,7 @@
 			]
 		},
 		{
-			"company": "Freelance",
+			"name": "Freelance",
 			"position": "Web-developer",
 			"startDate": "2012-02-04",
 			"endDate": "2013-03-01",
@@ -223,9 +228,9 @@
 			"keywords": ["Zend Framework", "PHP"]
 		},
 		{
-			"company": "Ingria",
+			"name": "Ingria",
 			"position": "Techlead",
-			"website": "http://ingria-startup.ru/",
+			"url": "http://ingria-startup.ru/",
 			"startDate": "2012-02-04",
 			"endDate": "2013-03-01",
 			"summary": "Ingria is Russian startup incubator like Y-combinator. Responsibilities included web-service implementation for boutiqueland.ru, interviewing IT staff.",
@@ -235,7 +240,7 @@
 			]
 		},
 		{
-			"company": "STC pro",
+			"name": "STC pro",
 			"position": "Intern",
 			"startDate": "2012-02-04",
 			"endDate": "2013-03-01",
@@ -247,9 +252,9 @@
 			]
 		},
 		{
-			"company": "Freelance",
+			"name": "Freelance",
 			"position": "Designer",
-			"website": "https://www.fl.ru/users/Dmitry_f",
+			"url": "https://www.fl.ru/users/Dmitry_f",
 			"startDate": "2009-01-01",
 			"endDate": "2012-03-01",
 			"summary": "Design jobs",
@@ -264,9 +269,9 @@
 			]
 		},
 		{
-			"company": "JSC Master",
+			"name": "JSC Master",
 			"position": "copyrighter",
-			"website": "http://macter.ru/",
+			"url": "http://macter.ru/",
 			"startDate": "2007-09-01",
 			"endDate": "2008-04-01",
 			"summary": "Writing articles on predefined topics, defining keywords, SEO-optimization.",
@@ -293,7 +298,7 @@
 		},
 		{
 			"organization": "SciJS",
-			"website": "http://github.com/scijs",
+			"url": "http://github.com/scijs",
 			"startDate": "2015-11-01",
 			"endDate": "2015-12-01",
 			"summary": "Scientific javascript open-source projects",
@@ -304,7 +309,7 @@
 		},
 		{
 			"organization": "Lidia Varbanova",
-			"website": "http://lidiavarbanova.com",
+			"url": "http://lidiavarbanova.com",
 			"startDate": "2016-08-01",
 			"endDate": "2016-08-13",
 			"summary": "Lidia is a professor of Marketing and Economics in Arts and Creative Industries.",
@@ -312,7 +317,7 @@
 		},
 		{
 			"organization": "MIRCA",
-			"website": "http://mirca.ca",
+			"url": "http://mirca.ca",
 			"startDate": "2016-08-01",
 			"endDate": "2016-08-13",
 			"summary": "Morgan Initiative on Russian Cultural Affairs is russian culture institute in future and russial speaking club now",
@@ -321,7 +326,7 @@
 		{
 			"organization": "Saint-Petersburg College of Naval Instrument-making",
 			"position": "Clerk",
-			"website": "",
+			"url": "",
 			"startDate": "2007-01-01",
 			"endDate": "2007-02-01",
 			"summary": "Student office tasks."
@@ -329,7 +334,7 @@
 		{
 			"organization": "Baltic State Technical University",
 			"position": "Pedagogical internship",
-			"website": "",
+			"url": "",
 			"startDate": "2010-01-01",
 			"endDate": "2011-01-01",
 			"summary": "Technical drawing course: basic painting, photoshop, design."
@@ -337,7 +342,7 @@
 		{
 			"organization": "Baltic State Technical University summer camp",
 			"position": "Land worker",
-			"website": "",
+			"url": "",
 			"startDate": "2009-01-01",
 			"endDate": "2009-02-01",
 			"summary": "Cleaning roads, taking care of environment, technical jobs."
@@ -345,7 +350,7 @@
 		{
 			"organization": "Baltic State Technical University",
 			"position": "Scientific research intern",
-			"website": "",
+			"url": "",
 			"startDate": "2010-07-01",
 			"endDate": "2010-08-01",
 			"summary": "Supporting local CRM.",
@@ -359,9 +364,9 @@
 			]
 		},
 		{
-			"company": "Elis",
+			"name": "Elis",
 			"position": "Builder",
-			"website": "elis.ru",
+			"url": "elis.ru",
 			"startDate": "2005-02-04",
 			"endDate": "2006-03-01",
 			"summary": "Clearing buildings, rust removal, land works and other construction-related works"
@@ -376,7 +381,7 @@
 			"studyType": "Master",
 			"startDate": "2010-09-01",
 			"endDate": "2012-06-14",
-			"gpa": "",
+			"score": "",
 			"courses": [
 			]
 		},
@@ -386,7 +391,7 @@
 			"studyType": "Bachelor",
 			"startDate": "2006-09-01",
 			"endDate": "2010-06-14",
-			"gpa": "",
+			"score": "",
 			"courses": [
 			]
 		},
@@ -396,7 +401,7 @@
 			"studyType": "Secondary professional education, technic",
 			"startDate": "2002-09-01",
 			"endDate": "2006-06-01",
-			"gpa": "",
+			"score": "",
 			"courses": [
 			]
 		},
@@ -406,7 +411,7 @@
 			"studyType": "Specialist",
 			"startDate": "2010-09-01",
 			"endDate": "2012-02-15",
-			"gpa": "",
+			"score": "",
 			"courses": [
 			]
 		}
@@ -416,16 +421,17 @@
 			"name": "Frontend",
 			"level": "senior",
 			"keywords": [
-				"vue",
+				"vue", "alpinojs",
 				"react", "redux", "preact",
-				"angularjs",
 				"rxjs", "signals", "observable",
 				"esbuild", "webpack", "rollup", "browserify",
+				"angularjs", "tailwindcss",
 				"material-ui",
 				"typescript",
 				"webgl",
 				"web-audio",
-				"jquery", "django", "jekyll", "cordova", "stencil"
+				"jquery", "django", "jekyll", "cordova", "stencil",
+				"cypress"
 			]
 		},
 		{
@@ -441,7 +447,7 @@
 			"keywords": [
 				"nodejs",
 				"Python", "Django",
-				"Mongo", "Redis", "MySQL"
+				"Mongo", "Redis", "MySQL",
 				"PHP", "Zend",
 				"nginx", "apache"
 			]
