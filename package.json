@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/dy/resume#readme",
   "dependencies": {
-    "jsonresume-theme-even": "^0.17.1"
+    "jsonresume-theme-even": "^0.17.1",
+    "resume-cli": "^3.0.8"
   }
 }
