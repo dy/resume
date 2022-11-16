@@ -39,7 +39,7 @@
 				"Designing, developing and launching speech generation SAAS."
 			],
 			"keywords": [
-				"preact", "alpinojs", "signals", "tailwindcss", "11ty"
+				"tailwindcss", "firebase", "preact/signals", "alpinojs", "11ty"
 			]
 		},
 		{
