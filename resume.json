@@ -6,7 +6,7 @@
 		"email": "df.creative@gmail.com",
 		"phone": "+1 514 7755-376",
 		"url": "http://github.com/dy",
-		"summary": "Originally from Saint-Petersburg, Russia. Earned Master's degree in Computer Graphics (CS) at Baltic State Technical University. Started as UI freelance designer taking part in local startups and projects, then performed at kudago.com as a UI-designer / frontend developer. Later moved to Canada, Montreal, where collaborated with local businesses (TTBA, Amazemontreal, Rage Academy) and contributed to open-source. Afterwards worked at Plotly Inc. as WebGL specialist. Then at Mobeewave, specialized in payments systems, later transitioned to Apple into Wallet and Payments teams. Then tried luck at Elevenlabs, working on text to speech generation.",
+		"summary": "Originally from Saint-Petersburg, Russia. Earned Master's degree in Computer Graphics (CS) at Baltic State Technical University. Started as UI freelance designer taking part in local startups and projects, then performed at kudago.com as a UI-designer / frontend developer. Dmitry moved to Montreal, Canada, where he collaborated with local businesses (TTBA, Amazemontreal, Rage Academy) and contributed to open-source. Afterwards he worked at Plotly Inc. as WebGL specialist, then at Mobeewave, specialized in payments systems, later transitioned to Apple into Wallet and Payments teams.",
 		"location": {
 			"address": "520 de Gaspe, #106",
 			"postalCode": "H2K1E1",
@@ -29,20 +29,6 @@
 	},
 	"work": [
 		{
-			"name": "Eleven Labs",
-			"position": "Frontend Engineer",
-			"url": "https://elevenlabs.io",
-			"startDate": "2022-10-01",
-			"endDate": "2022-11-22",
-			"summary": "AI Voice generation startup.",
-			"highlights": [
-				"Designing, developing and launching speech generation SAAS."
-			],
-			"keywords": [
-				"tailwindcss", "firebase", "preact/signals", "alpinojs", "11ty"
-			]
-		},
-		{
 			"name": "Apple",
 			"position": "Software Engineer",
 			"url": "https://apple.com",
@@ -57,7 +43,7 @@
 				"Apple Pay widget: design, development",
 				"Template instantiation web-standard proposal polyfill"
 			],
-			"keywords": ["react", "vue", "python", "django", "graphQL", "web-components", "stencil", "cypress", "puppeteer"]
+			"keywords": ["tailwindcss", "firebase", "preact/signals", "alpinojs", "11ty", "react", "vue", "python", "django", "graphQL", "web-components", "stencil", "cypress", "puppeteer"]
 		},
 		{
 			"name": "Mobeewave",
@@ -76,19 +62,6 @@
 			"keywords": ["react", "preact", "redux", "styled-components", "lit-html", "es6", "material ui", "angularjs"]
 		},
 		{
-			"name": "Vectioneer",
-			"position": "WebGL specialist",
-			"url": "http://vectioneer.com",
-			"startDate": "2018-09-01",
-			"endDate": "2018-11-31",
-			"summary": "Vectioneer is robotics company based in Netherlands, needed performant waveform renderer, 1kHz update rate.",
-			"highlights": [
-				"Performant webgl waveform renderer https://a-vis.github.io/gl-waveform/",
-				"Testing tools for image comparisons"
-			],
-			"keywords": ["WebGL"]
-		},
-		{
 			"name": "Plotly Inc",
 			"position": "Software Engineer",
 			"url": "http://plot.ly",
@@ -96,6 +69,8 @@
 			"endDate": "2018-09-01",
 			"summary": "Plotly.js is javascript graphing library that powers plotly. Held position of resident webgl specialist.",
 			"highlights": [
+				"Performant webgl waveform renderer https://a-vis.github.io/gl-waveform/",
+				"Testing tools for image comparisons",
 				"Regl-based WebGL core components - scatter, line, splom",
 				"Mobile version of plotly.js",
 				"Best in class scatterplot point clustering algorithm",
@@ -114,16 +89,6 @@
 			"keywords" : ["wordpress", "shopify", "ux", "analytics", "mailchimp", "jquery", "html", "css"]
 		},
 		{
-			"name": "Rage Academy",
-			"position": "Web-developer",
-			"url": "https://www.rageaxethrowing.com/",
-			"startDate": "2016-05-01",
-			"endDate": "2016-08-01",
-			"summary": "Axe throwing venue based in Montreal",
-			"highlights": ["Game score tracking app"],
-			"keywords": ["choojs"]
-		},
-		{
 			"name": "Amazemontreal Inc.",
 			"position": "Web-developer",
 			"url": "http://amazemontreal.com",
@@ -132,9 +97,10 @@
 			"summary": "Amaze Escape Game is an enterprise running venues in Montreal, 2 websites needed upgrading.",
 			"highlights": [
 				"Optimization amazemontreal.com for google page insights (92/100)",
-				"Redesign and optimization of ragemontreal.com (92/100)"
+				"Redesign and optimization of ragemontreal.com (92/100)",
+				"Game score tracking app"
 			],
-			"keywords": ["optimization", "page insights"]
+			"keywords": ["optimization", "page insights", "choojs"]
 		},
 		{
 			"name": "Audiojs",
@@ -170,7 +136,9 @@
 				"Design, UX, UI and IA of kudago.com",
 				"Desktop and mobile kudago.com website",
 				"<20kb of javascript in mobile website",
-				"100/100 in google page insights"
+				"100/100 in google page insights",
+				"Design/markup for ipoteka-vam.ru, to-travel.ru, to-create.ru, tm-print.ru websites.",
+				"Statistical dashboard for likemeter application"
 			],
 			"keywords": [
 				"agile",
@@ -198,23 +166,6 @@
 			]
 		},
 		{
-			"name": "LLC Revan",
-			"position": "Web-designer",
-			"summary": "Revan was a startup providing web-services for businesses from banking to SEO, which later grown to kudago.com. The role performed of designer and web-developer.",
-			"url": "http://revan.ru",
-			"startDate": "2012-02-04",
-			"endDate": "2013-03-01",
-			"highlights": [
-				"Design/markup for ipoteka-vam.ru, to-travel.ru, to-create.ru, tm-print.ru websites.",
-				"Statistical dashboard for likemeter application"
-			],
-			"keywords": [
-				"please design this logo ASAP",
-				"should we really pay for that typeface?",
-				"we don’t have budged for a commercial software"
-			]
-		},
-		{
 			"name": "Freelance",
 			"position": "Web-developer",
 			"startDate": "2012-02-04",
@@ -223,7 +174,14 @@
 			"highlights": [
 				"Design / markup for rsua.ru, gildiya-masterov.ru, arkon-okna.ru, postavokna.ru, okonka.ru, jumpingclay.ru, aurama.ru, podsoblyaev.ru, biletron.ru, concertinfo.ru, ditspb.ru, rukasil.ru, voenmeh.ru, dverka.ru, sayhello.ru, zpapa.ru, productinsignt.ru, smartmedia, legran doors",
 				"Perfected skills at modx, drupal, subdreamer, wordpress",
-				"Setting up server environment: apache, nginx, MySQL"
+				"Setting up server environment: apache, nginx, MySQL",
+				"GUI elements for application package “Pure Office”",
+				"UI icons for mobile portal kilowap.ru",
+				"UI icons for project gloricism.com",
+				"Design / markup of book “Childhood”, author Andreeva L.",
+				"Design / markup of www.le-gran.spb.ru, JSC Masterskaya",
+				"Creating radar 3d model for navy simulator, JSC Sistema",
+				"Illustrating textbook of methods of hydrodynamics, BSTU Voenmeh"
 			],
 			"keywords": ["Zend Framework", "PHP"]
 		},
@@ -250,23 +208,6 @@
 				"Creation of interactive guide for SpeechPro VoiceKey, using Adobe® Flash®",
 				"Developing batch scripts in Visual Basic to handle massive Microsoft Office Excel data.",
 				"Maintenance of speechpro.com."
-			]
-		},
-		{
-			"name": "Freelance",
-			"position": "Designer",
-			"url": "https://www.fl.ru/users/Dmitry_f",
-			"startDate": "2009-01-01",
-			"endDate": "2012-03-01",
-			"summary": "Design jobs",
-			"highlights": [
-				"GUI elements for application package “Pure Office”",
-				"UI icons for mobile portal kilowap.ru",
-				"UI icons for project gloricism.com",
-				"Design / markup of book “Childhood”, author Andreeva L.",
-				"Design / markup of www.le-gran.spb.ru, JSC Masterskaya",
-				"Creating radar 3d model for navy simulator, JSC Sistema",
-				"Illustrating textbook of methods of hydrodynamics, BSTU Voenmeh"
 			]
 		},
 		{
