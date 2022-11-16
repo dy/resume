@@ -138,7 +138,7 @@
 		},
 		{
 			"name": "Audiojs",
-			"position": "",
+			"position": "Founder",
 			"url": "http://audio-lab.github.io",
 			"startDate": "2015-03-01",
 			"endDate": "2016-01-01",
@@ -240,15 +240,16 @@
 			]
 		},
 		{
-			"name": "STC pro",
+			"name": "Speech pro",
 			"position": "Intern",
 			"startDate": "2012-02-04",
 			"endDate": "2013-03-01",
-			"summary": "STC is Speech Technology Center, an enterprise specialising in speech recognition technologies. The position was held in marketing department, related to web-sites and promotion pages design.",
+			"url": "speechpro.com",
+			"summary": "Speech Technology Center is an enterprise specialising in speech recognition technologies. The position was held in marketing department, related to web-sites and promotion pages design.",
 			"highlights": [
 				"Creation of interactive guide for SpeechPro VoiceKey, using Adobe® Flash®",
 				"Developing batch scripts in Visual Basic to handle massive Microsoft Office Excel data.",
-				"Maintenance of stcpro.ru."
+				"Maintenance of speechpro.com."
 			]
 		},
 		{
@@ -270,7 +271,7 @@
 		},
 		{
 			"name": "JSC Master",
-			"position": "copyrighter",
+			"position": "Copywriter",
 			"url": "http://macter.ru/",
 			"startDate": "2007-09-01",
 			"endDate": "2008-04-01",
@@ -284,6 +285,7 @@
 	"volunteer": [
 		{
 			"organization": "Wishbox.gift",
+			"position": "Web-developer",
 			"startDate": "2019-09-01",
 			"endDate": "2020-02-01",
 			"summary": "Preact-based core website, integration with API",
@@ -291,6 +293,7 @@
 		},
 		{
 			"organization": "StackGL",
+			"position": "Contributor",
 			"startDate": "2016-08-01",
 			"endDate": "2016-08-13",
 			"summary": "Webgl-related components.",
@@ -298,6 +301,7 @@
 		},
 		{
 			"organization": "SciJS",
+			"position": "Contributor",
 			"url": "http://github.com/scijs",
 			"startDate": "2015-11-01",
 			"endDate": "2015-12-01",
@@ -309,6 +313,7 @@
 		},
 		{
 			"organization": "Lidia Varbanova",
+			"position": "Web-designer",
 			"url": "http://lidiavarbanova.com",
 			"startDate": "2016-08-01",
 			"endDate": "2016-08-13",
@@ -317,6 +322,7 @@
 		},
 		{
 			"organization": "MIRCA",
+			"position": "Web-designer",
 			"url": "http://mirca.ca",
 			"startDate": "2016-08-01",
 			"endDate": "2016-08-13",
@@ -325,7 +331,7 @@
 		},
 		{
 			"organization": "Saint-Petersburg College of Naval Instrument-making",
-			"position": "Clerk",
+			"position": "Assistant",
 			"url": "",
 			"startDate": "2007-01-01",
 			"endDate": "2007-02-01",
@@ -341,7 +347,7 @@
 		},
 		{
 			"organization": "Baltic State Technical University summer camp",
-			"position": "Land worker",
+			"position": "Landscape designer",
 			"url": "",
 			"startDate": "2009-01-01",
 			"endDate": "2009-02-01",
@@ -365,7 +371,7 @@
 		},
 		{
 			"name": "Elis",
-			"position": "Builder",
+			"position": "Construction worker",
 			"url": "elis.ru",
 			"startDate": "2005-02-04",
 			"endDate": "2006-03-01",
@@ -421,24 +427,23 @@
 			"name": "Frontend",
 			"level": "senior",
 			"keywords": [
-				"vue", "alpinojs",
-				"react", "redux", "preact",
-				"rxjs", "signals", "observable",
-				"esbuild", "webpack", "rollup", "browserify",
-				"angularjs", "tailwindcss",
-				"material-ui",
-				"typescript",
-				"webgl",
-				"web-audio",
-				"jquery", "django", "jekyll", "cordova", "stencil",
-				"cypress"
+				"vue", "alpinojs", "react", "preact", "angularjs",
+				"rxjs", "redux", "mobx", "signals", "observable",
+				"GraphQL", "REST",
+				"esbuild", "webpack", "rollup", "parcel", "browserify",
+				"tailwindcss", "material-ui", "evergreen", "semantic-ui",
+				"typescript", "livescript", "coffeescript",
+				"webgl", "three-js",
+				"web-audio-api", "howler", "tuna",
+				"jquery", "django", "jekyll", "stencil",
+				"cypress", "jasmine", "karma", "mocha", "TDD", "BDD", "E2E testing"
 			]
 		},
 		{
 			"name": "Design",
 			"level": "middle",
 			"keywords": [
-				"UX", "UI", "IA", "prototyping", "graphic design", "figma", "framer", "sketch"
+				"UX", "UI", "IA", "prototyping", "graphic design", "figma", "sketch"
 			]
 		},
 		{
@@ -485,32 +490,21 @@
 	"interests": [
 		{
 			"name": "Computer Science",
-			"keywords": ["Compilers"]
+			"keywords": ["Compilers", "DSP", "AI", "NN"]
 		},
 		{
 			"name": "Music Technologies",
 			"keywords": [
-				"DSP",
 				"synthesis",
 				"harmonic analysis",
+				"spectrograms",
+				"audio-vis",
 				"wavelets"
 			]
 		},
 		{
-			"name": "Intellectual Technologies",
-			"keywords": ["AI", "Deep Learning", "Neural Networks", "NLP"]
-		},
-		{
-			"name": "Physics & Math",
-			"keywords": [
-				"Quantum Mechanics",
-				"Color",
-				"Sound"
-			]
-		},
-		{
 			"name": "Bhakti",
-			"keywords": ["Sattvic food", "Kirtan", "Mridanga", "Carnatic music"]
+			"keywords": ["Prasadam", "Kirtan", "Mridanga", "Arati"]
 		}
 	],
 	"references": [
