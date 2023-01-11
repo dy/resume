@@ -29,6 +29,18 @@
 	},
 	"work": [
 		{
+			"name": "Brainfinance",
+			"position": "Senior Frontent Engineer",
+			"url": "https://brainfinance.com",
+			"startDate": "2022-11-01",
+			"endDate": "",
+			"summary": "Fintech company specialized in providing smart loans",
+			"highlights": [
+				"iCASH 2.0 web application UI frontend"
+			],
+			"keywords": ["tailwindcss", "firebase", "preact/signals", "alpinojs", "11ty", "vercel", "nextjs", "typescript"]
+		},
+		{
 			"name": "Apple",
 			"position": "Software Engineer",
 			"url": "https://apple.com",
@@ -37,13 +49,13 @@
 			"summary": "Apple Wallet / Apple Pay teams web projects",
 			"highlights": [
 				"Web push provisioning UI flow",
-				"Apple Business Registry portal frontend work",
+				"Apple Business Registry portal frontend",
 				"Payments portal design & development",
 				"Internal admin dashboard development",
-				"Apple Pay widget: design, development",
+				"Apple Pay widget design & development",
 				"Template instantiation web-standard proposal polyfill"
 			],
-			"keywords": ["tailwindcss", "firebase", "preact/signals", "alpinojs", "11ty", "react", "vue", "python", "django", "graphQL", "web-components", "stencil", "cypress", "puppeteer"]
+			"keywords": ["react", "vue", "python", "django", "graphQL", "web-components", "stencil", "cypress", "puppeteer"]
 		},
 		{
 			"name": "Mobeewave",
