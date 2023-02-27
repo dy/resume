@@ -6,7 +6,7 @@
 		"email": "df.creative@gmail.com",
 		"phone": "+1 514 7755-376",
 		"url": "",
-		"summary": "Originally from Saint-Petersburg, earned Master's degree in Computer Graphics (CS) at Baltic State Technical University. Started his career as UI / Web designer collaborating at local startups, prominently kudago.com, with hobby passion for open-source. Afterwards moved to Montreal, Canada, where first collaborated with local businesses (TTBA, Amaze) as frontend / web engineer, then found an opportunity at Plotly Inc as WebGL specialist. Later switched to fintech at Mobeewave, that merged into Apple, Wallet and Payments teams. Currently focused at audio / vis tech at elevenlabs.io and open-source projects.",
+		"summary": "Originally from Saint-Petersburg, earned Master's degree in Computer Graphics (CS) at Baltic State Technical University. Started his career as UI / Web designer collaborating at local startups, prominently kudago.com, with hobby passion for open-source. Afterwards moved to Montreal, Canada, where first collaborated with local businesses (TTBA, Amaze) as frontend / web engineer, then found an opportunity at Plotly Inc as WebGL specialist. Later switched to fintech at Mobeewave, that merged into Apple Wallet and Payments teams. Currently focused at audio / vis tech at elevenlabs.io and open-source projects.",
 		"location": {
 			"address": "520 de Gaspe, #106",
 			"postalCode": "H2K1E1",
@@ -104,14 +104,12 @@
 			"url": "http://kudago.com",
 			"startDate": "2012-03-01",
 			"endDate": "2015-01-12",
-			"summary": "Kudago is an agency and a web-site covering cultural events, the biggest Russian events website. Responsibilities included frontend and design.",
+			"summary": "Kudago is an agency and media covering cultural events in European countries. ",
 			"highlights": [
 				"Design, UX, UI and IA of kudago.com",
 				"Desktop and mobile kudago.com website",
 				"<20kb of javascript in mobile website",
-				"100/100 in google page insights",
-				"Design/markup for ipoteka-vam.ru, to-travel.ru, to-create.ru, tm-print.ru websites.",
-				"Statistical dashboard for likemeter application"
+				"100/100 in google page insights"
 			],
 			"keywords": [
 				"less",
@@ -134,6 +132,8 @@
 			"endDate": "2014-03-01",
 			"summary": "Webdev freelance jobs - design mockups, UI prototyping, HTML, CSS, JS, wordpress.",
 			"highlights": [
+				"Design/markup for ipoteka-vam.ru, to-travel.ru, to-create.ru, tm-print.ru.",
+				"Statistical dashboard for likemeter application",
 				"boutiqueland.ru: mobile & desktop designs",
 				"seemedia.ru: UI components kit",
 				"Design / markup for rsua.ru, gildiya-masterov.ru, arkon-okna.ru, postavokna.ru, okonka.ru, jumpingclay.ru, aurama.ru, podsoblyaev.ru, biletron.ru, concertinfo.ru, ditspb.ru, rukasil.ru, voenmeh.ru, dverka.ru, sayhello.ru, zpapa.ru, productinsignt.ru, smartmedia, legran doors",
@@ -168,8 +168,7 @@
 			"endDate": "2008-04-01",
 			"summary": "Writing articles on predefined topics, defining keywords, SEO-optimization.",
 			"highlights": [
-				"Massive extending of russian language thesaurus and synonims specifically",
-				"Studying basic principles of SEO-texts writing"
+				"Thousands of SEO-optimized texts"
 			]
 		}
 	],
@@ -254,7 +253,7 @@
 		{
 			"institution": "Saint-Petersburg College of Marine Instrumentation",
 			"area": "Automatic control systems",
-			"studyType": "Secondary professional education, technic",
+			"studyType": "Secondary professional education, technician",
 			"startDate": "2002-09-01",
 			"endDate": "2006-06-01",
 			"score": "",
