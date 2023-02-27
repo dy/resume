@@ -30,15 +30,29 @@
 	"work": [
 		{
 			"name": "Brainfinance",
-			"position": "Senior Frontent Engineer",
+			"position": "Senior Frontend Engineer",
 			"url": "https://brainfinance.com",
 			"startDate": "2022-11-01",
 			"endDate": "",
 			"summary": "Fintech company specialized in providing smart loans",
 			"highlights": [
-				"iCASH 2.0 web application UI frontend"
+				"iCASH 2.0 website UI frontend",
+				"Maintenance of internal components framework"
 			],
-			"keywords": ["tailwindcss", "firebase", "preact/signals", "alpinojs", "11ty", "vercel", "nextjs", "typescript"]
+			"keywords": ["tailwindcss", "playwright", "vercel", "nextjs", "typescript"]
+		},
+		{
+			"name": "Elevenlabs",
+			"position": "Frontend Engineer",
+			"url": "https://elevenlabs.io",
+			"startDate": "2022-10-01",
+			"endDate": "",
+			"summary": "AI voice startup providing high-end text-to-speech technology",
+			"highlights": [
+				"elevenlabs.io website design & frontend",
+				"multiline waveform player https://dy.github.io/wavearea"
+			],
+			"keywords": ["tailwindcss", "tailwindui", "firebase", "signals", "alpinojs", "11ty"]
 		},
 		{
 			"name": "Apple",
@@ -46,7 +60,7 @@
 			"url": "https://apple.com",
 			"startDate": "2020-05-01",
 			"endDate": "2022-10-01",
-			"summary": "Apple Wallet / Apple Pay teams web projects",
+			"summary": "Apple Wallet / Apple Pay teams web services.",
 			"highlights": [
 				"Web push provisioning UI flow",
 				"Apple Business Registry portal frontend",
@@ -63,7 +77,7 @@
 			"url": "https://mobeewave.com",
 			"startDate": "2019-01-15",
 			"endDate": "2020-05-01",
-			"summary": "Fintech company specialized on accepting card payments with a phone.",
+			"summary": "Fintech company specialized on accepting card payments with mobile devices.",
 			"highlights": [
 				"Samsung Point of Sale web app",
 				"React/redux-based acquirer portal app",
@@ -81,14 +95,14 @@
 			"endDate": "2018-09-01",
 			"summary": "Plotly.js is javascript graphing library that powers plotly. Held position of resident webgl specialist.",
 			"highlights": [
-				"Performant webgl waveform renderer https://a-vis.github.io/gl-waveform/",
+				"Performant webgl waveform renderer https://dy.github.io/gl-waveform/",
 				"Testing tools for image comparisons",
 				"Regl-based WebGL core components - scatter, line, splom",
 				"Mobile version of plotly.js",
 				"Best in class scatterplot point clustering algorithm",
 				"Lasso selection tool"
 			],
-			"keywords": ["WebGL", "Datavis"]
+			"keywords": ["WebGL", "regl", "stackgl", "d3", "browserify", "Datavis"]
 		},
 		{
 			"name": "TTBA group",
@@ -97,7 +111,10 @@
 			"startDate": "2016-05-01",
 			"endDate": "2016-08-13",
 			"summary": "Web agency specializing in web-design, advertisment and social media marketing. Responsibilities included developing and optimizing web-sites.",
-			"highlights": ["Design, markup and maintenance of shopsvelte.com, pegasie.com, coutureonly.com, socialboomwifi.com, citenova.com, wishbox.gift, ecobrandshow.ca"],
+			"highlights": [
+				"Design, markup and maintenance of shopsvelte.com, pegasie.com, coutureonly.com, socialboomwifi.com, citenova.com, wishbox.gift, ecobrandshow.ca",
+				"Wishbox.gift website, design, preact-based core, integration with API"
+			],
 			"keywords" : ["wordpress", "shopify", "ux", "analytics", "mailchimp", "jquery", "html", "css"]
 		},
 		{
@@ -106,7 +123,7 @@
 			"url": "http://amazemontreal.com",
 			"startDate": "2016-02-01",
 			"endDate": "2016-03-01",
-			"summary": "Amaze Escape Game is an enterprise running venues in Montreal, 2 websites needed upgrading.",
+			"summary": "Amaze  is an enterprise running venues in Montreal",
 			"highlights": [
 				"Optimization amazemontreal.com for google page insights (92/100)",
 				"Redesign and optimization of ragemontreal.com (92/100)",
@@ -117,10 +134,10 @@
 		{
 			"name": "Audiojs",
 			"position": "Founder",
-			"url": "http://audio-lab.github.io",
+			"url": "http://github.com/audiojs",
 			"startDate": "2015-03-01",
 			"endDate": "2016-01-01",
-			"summary": "Open-source organization hosting audio-related projects. Held as side-practice during French classes.",
+			"summary": "Open-source organization hosting audio-related projects.",
 			"highlights": [
 				"Performant FFT implementation",
 				"Largest collection of color spaces",
@@ -153,25 +170,14 @@
 				"Statistical dashboard for likemeter application"
 			],
 			"keywords": [
-				"agile",
-				"scrum",
-				"javascript",
-				"css3",
-				"html5",
-				"don’t distract Dmitry",
-				"npm",
 				"less",
 				"browserify",
-				"commonjs",
 				"jquery",
-				"that’s just your opinion",
-				"component",
 				"django",
 				"underscore",
 				"closurecompiler",
 				"es6",
 				"bower",
-				"git",
 				"backbone",
 				"modernizr",
 				"github"
@@ -237,12 +243,7 @@
 	],
 	"volunteer": [
 		{
-			"organization": "Wishbox.gift",
-			"position": "Web-developer",
-			"startDate": "2019-09-01",
-			"endDate": "2020-02-01",
-			"summary": "Preact-based core website, integration with API",
-			"highlights": []
+
 		},
 		{
 			"organization": "StackGL",
@@ -299,14 +300,6 @@
 			"summary": "Technical drawing course: basic painting, photoshop, design."
 		},
 		{
-			"organization": "Baltic State Technical University summer camp",
-			"position": "Landscape designer",
-			"url": "",
-			"startDate": "2009-01-01",
-			"endDate": "2009-02-01",
-			"summary": "Cleaning roads, taking care of environment, technical jobs."
-		},
-		{
 			"organization": "Baltic State Technical University",
 			"position": "Scientific research intern",
 			"url": "",
@@ -321,14 +314,6 @@
 				"An article: UX approach in product design",
 				"An article: Drag-n-drop in web-applications"
 			]
-		},
-		{
-			"name": "Elis",
-			"position": "Construction worker",
-			"url": "elis.ru",
-			"startDate": "2005-02-04",
-			"endDate": "2006-03-01",
-			"summary": "Clearing buildings, rust removal, land works and other construction-related works"
 		}
 	],
 	"publications": [],
