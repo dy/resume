@@ -5,8 +5,8 @@
 		"image": "https://raw.githubusercontent.com/dy/resume/master/index.png",
 		"email": "df.creative@gmail.com",
 		"phone": "+1 514 7755-376",
-		"url": "http://github.com/dy",
-		"summary": "Originally from Saint-Petersburg, earned Master's degree in Computer Graphics (CS) at Baltic State Technical University. Started his career as UI / Web designer collaborating at local startups, prominently kudago.com, with hobby passion for open-source. Afterwards moved to Montreal, Canada, where first collaborated with local businesses (TTBA, Amaze) as frontend / web engineer, then found an opportunity at Plotly Inc as WebGL specialist. Later switched to fintech at Mobeewave, that merged into Apple, Wallet and Payments teams. Currently focused at audio / vis tech at elevenlabs.io and open-source.",
+		"url": "",
+		"summary": "Originally from Saint-Petersburg, earned Master's degree in Computer Graphics (CS) at Baltic State Technical University. Started his career as UI / Web designer collaborating at local startups, prominently kudago.com, with hobby passion for open-source. Afterwards moved to Montreal, Canada, where first collaborated with local businesses (TTBA, Amaze) as frontend / web engineer, then found an opportunity at Plotly Inc as WebGL specialist. Later switched to fintech at Mobeewave, that merged into Apple, Wallet and Payments teams. Currently focused at audio / vis tech at elevenlabs.io and open-source projects.",
 		"location": {
 			"address": "520 de Gaspe, #106",
 			"postalCode": "H2K1E1",
@@ -34,21 +34,27 @@
 			"url": "https://elevenlabs.io",
 			"startDate": "2022-10-01",
 			"endDate": "",
-			"summary": "AI voice startup providing high-end text-to-speech technology",
+			"summary": "AI voice tech startup providing high-end text-to-speech service",
 			"highlights": [
 				"elevenlabs.io website design & frontend",
-				"multiline waveform player https://dy.github.io/wavearea"
+				"Integrating firebase auth / payments",
+				"Multiline waveform player https://dy.github.io/wavearea"
 			],
 			"keywords": ["tailwindcss", "tailwindui", "firebase", "signals", "alpinojs", "11ty"]
 		},
 		{
-			"name": "Apple",
+			"name": "Apple / Mobeewave",
 			"position": "Software Engineer",
 			"url": "https://apple.com",
-			"startDate": "2020-05-01",
+			"startDate": "2019-01-15",
 			"endDate": "2022-10-01",
-			"summary": "Apple Wallet / Apple Pay teams web services.",
+			"summary": "Fintech startup Mobeewave that merged into Apple Wallet / Apple Pay.",
 			"highlights": [
+				"Samsung Point of Sale web app",
+				"React/redux-based acquirer portal app",
+				"Spect - frontend AOP framerowk",
+				"Admin portal app - based on spect",
+				"Provisioning portal - angularjs app",
 				"Web push provisioning UI flow",
 				"Apple Business Registry portal frontend",
 				"Payments portal design & development",
@@ -56,90 +62,41 @@
 				"Apple Pay widget design & development",
 				"Template instantiation web-standard proposal polyfill"
 			],
-			"keywords": ["react", "vue", "python", "django", "graphQL", "web-components", "stencil", "cypress", "puppeteer"]
-		},
-		{
-			"name": "Mobeewave",
-			"position": "Frontend engineer",
-			"url": "https://mobeewave.com",
-			"startDate": "2019-01-15",
-			"endDate": "2020-05-01",
-			"summary": "Fintech company specialized on accepting card payments with mobile devices.",
-			"highlights": [
-				"Samsung Point of Sale web app",
-				"React/redux-based acquirer portal app",
-				"Admin portal app based on aspect-oriented framework",
-				"Provisioning portal angularjs app",
-				"Universal framework hooks library unihooks"
-			],
-			"keywords": ["react", "preact", "redux", "styled-components", "lit-html", "es6", "material ui", "angularjs"]
+			"keywords": ["react", "preact", "vue", "python", "django", "graphQL", "web-components", "stencil", "cypress", "puppeteer", "redux", "styled-components", "lit-html", "es6", "material ui", "angularjs"]
 		},
 		{
 			"name": "Plotly Inc",
-			"position": "Software Engineer",
+			"position": "WebGL engineer",
 			"url": "http://plot.ly",
 			"startDate": "2016-09-01",
 			"endDate": "2018-09-01",
-			"summary": "Plotly.js is javascript graphing library that powers plotly. Held position of resident webgl specialist.",
+			"summary": "Plotly.js scientific graphing library.",
 			"highlights": [
-				"Performant webgl waveform renderer https://dy.github.io/gl-waveform/",
+				"Performant webgl waveform renderer",
 				"Testing tools for image comparisons",
 				"Regl-based WebGL core components - scatter, line, splom",
 				"Mobile version of plotly.js",
-				"Best in class scatterplot point clustering algorithm",
-				"Lasso selection tool"
+				"Scatterplot point clustering algorithm enabling 1B data points",
+				"Lasso selection tool",
+				"Stack-gl and regl contributions"
 			],
 			"keywords": ["webgl", "regl", "stackgl", "d3", "datavis"]
 		},
 		{
-			"name": "TTBA group",
+			"name": "TTBA Group",
 			"position": "Web-developer",
 			"url": "http://ttbagroup.com/",
-			"startDate": "2016-05-01",
+			"startDate": "2015-01-01",
 			"endDate": "2016-08-13",
-			"summary": "Web agency specializing in web-design, advertisment and social media marketing. Responsibilities included developing and optimizing web-sites.",
+			"summary": "Web agency specializing in web-design, promotion and SMM.",
 			"highlights": [
-				"Design, markup and maintenance of shopsvelte.com, pegasie.com, coutureonly.com, socialboomwifi.com, citenova.com, wishbox.gift, ecobrandshow.ca",
-				"Wishbox.gift website, design, preact-based core, integration with API"
+				"Design & frontend of shopsvelte.com, pegasie.com, coutureonly.com, socialboomwifi.com, citenova.com, wishbox.gift, ecobrandshow.ca",
+				"Wishbox.gift website, design, preact-based core, integration with API",
+				"Optimization amazemontreal.com for google page insights",
+				"Redesign and optimization of ragemontreal.com",
+				"Rage Academy - game score tracking app"
 			],
-			"keywords" : ["wordpress", "shopify", "ux", "analytics", "mailchimp", "jquery", "html", "css"]
-		},
-		{
-			"name": "Amazemontreal Inc.",
-			"position": "Web-developer",
-			"url": "http://amazemontreal.com",
-			"startDate": "2016-02-01",
-			"endDate": "2016-03-01",
-			"summary": "Amaze  is an enterprise running venues in Montreal",
-			"highlights": [
-				"Optimization amazemontreal.com for google page insights (92/100)",
-				"Redesign and optimization of ragemontreal.com (92/100)",
-				"Game score tracking app"
-			],
-			"keywords": ["optimization", "page insights", "choojs"]
-		},
-		{
-			"name": "Audiojs",
-			"position": "Founder",
-			"url": "http://github.com/audiojs",
-			"startDate": "2015-03-01",
-			"endDate": "2016-01-01",
-			"summary": "Open-source organization hosting audio-related projects.",
-			"highlights": [
-				"Performant FFT implementation",
-				"Largest collection of color spaces",
-				"Stream-based audio processing components",
-				"WebGL-based audio visualizers: spectrum, spectrogram, waveform",
-				"GLSL to JS compiler"
-			],
-			"keywords": [
-				"nodejs",
-				"javascript",
-				"dsp",
-				"audio",
-				"sound",
-				"color"
-			]
+			"keywords" : ["wordpress", "shopify", "ux", "analytics", "mailchimp", "jquery", "html", "css", "optimization", "page insights", "choojs"]
 		},
 		{
 			"name": "KudaGo Inc.",
@@ -173,13 +130,13 @@
 		{
 			"name": "Freelance",
 			"position": "Web-developer",
-			"startDate": "2012-02-04",
-			"endDate": "2013-03-01",
+			"startDate": "2012-03-01",
+			"endDate": "2014-03-01",
 			"summary": "Webdev freelance jobs - design mockups, UI prototyping, HTML, CSS, JS, wordpress.",
 			"highlights": [
+				"boutiqueland.ru: mobile & desktop designs",
+				"seemedia.ru: UI components kit",
 				"Design / markup for rsua.ru, gildiya-masterov.ru, arkon-okna.ru, postavokna.ru, okonka.ru, jumpingclay.ru, aurama.ru, podsoblyaev.ru, biletron.ru, concertinfo.ru, ditspb.ru, rukasil.ru, voenmeh.ru, dverka.ru, sayhello.ru, zpapa.ru, productinsignt.ru, smartmedia, legran doors",
-				"Perfected skills at modx, drupal, subdreamer, wordpress",
-				"Setting up server environment: apache, nginx, MySQL",
 				"GUI elements for application package “Pure Office”",
 				"UI icons for mobile portal kilowap.ru",
 				"UI icons for project gloricism.com",
@@ -191,22 +148,10 @@
 			"keywords": ["Zend Framework", "PHP"]
 		},
 		{
-			"name": "Ingria",
-			"position": "Techlead",
-			"url": "http://ingria-startup.ru/",
-			"startDate": "2012-02-04",
-			"endDate": "2013-03-01",
-			"summary": "Ingria is Russian startup incubator like Y-combinator. Responsibilities included web-service implementation for boutiqueland.ru, interviewing IT staff.",
-			"highlights": [
-				"Branding / design for boutiqueland.ru mobile & desktop",
-				"UI kit for seemedia.ru"
-			]
-		},
-		{
 			"name": "Speech pro",
 			"position": "Intern",
-			"startDate": "2012-02-04",
-			"endDate": "2013-03-01",
+			"startDate": "2012-02-01",
+			"endDate": "2012-03-01",
 			"url": "speechpro.com",
 			"summary": "Speech Technology Center is an enterprise specialising in speech recognition technologies. The position was held in marketing department, related to web-sites and promotion pages design.",
 			"highlights": [
@@ -230,73 +175,56 @@
 	],
 	"volunteer": [
 		{
-			"organization": "StackGL",
+			"organization": "Open-Source (Github)",
 			"position": "Contributor",
 			"startDate": "2016-08-01",
-			"endDate": "2016-08-13",
-			"summary": "Webgl-related components.",
-			"highlights": ["GLSL to JS transpiler"]
-		},
-		{
-			"organization": "SciJS",
-			"position": "Contributor",
-			"url": "http://github.com/scijs",
-			"startDate": "2015-11-01",
 			"endDate": "2015-12-01",
-			"summary": "Scientific javascript open-source projects",
+			"summary": "Webgl-related components.",
 			"highlights": [
-				"library of color space conversions",
-				"performant FFT implementation"
+				"Stackgl: GLSL to JS compiler glsl-transpiler",
+				"ColorJS: Color spaces conversions color-space.js",
+				"SciJS: Performant FFT implementation",
+				"AudioJS: Stream-based audio processing components",
+				"Audio-Vis: WebGL-based audio visualizers: spectrum, spectrogram, waveform"
+			],
+			"keywords": [
+				"nodejs",
+				"javascript",
+				"dsp",
+				"audio",
+				"sound",
+				"color"
 			]
 		},
 		{
-			"organization": "Lidia Varbanova",
+			"organization": "Web Being",
 			"position": "Web-designer",
-			"url": "http://lidiavarbanova.com",
 			"startDate": "2016-08-01",
-			"endDate": "2016-08-13",
-			"summary": "Lidia is a professor of Marketing and Economics in Arts and Creative Industries.",
-			"highlights": ["Renovation of lidiavarbanova.com"]
-		},
-		{
-			"organization": "MIRCA",
-			"position": "Web-designer",
-			"url": "http://mirca.ca",
-			"startDate": "2016-08-01",
-			"endDate": "2016-08-13",
-			"summary": "Morgan Initiative on Russian Cultural Affairs is russian culture institute in future and russial speaking club now",
-			"highlights": ["Concept, design and developing of logotype and website"]
-		},
-		{
-			"organization": "Saint-Petersburg College of Naval Instrument-making",
-			"position": "Assistant",
-			"url": "",
-			"startDate": "2007-01-01",
-			"endDate": "2007-02-01",
-			"summary": "Student office tasks."
-		},
-		{
-			"organization": "Baltic State Technical University",
-			"position": "Pedagogical internship",
-			"url": "",
-			"startDate": "2010-01-01",
-			"endDate": "2011-01-01",
-			"summary": "Technical drawing course: basic painting, photoshop, design."
+			"endDate": "2015-12-01",
+			"summary": "Websites for friends & good people",
+			"highlights": [
+				"Design & frontend of Lidia Varbanova's personal website lidiavarbanova.com",
+				"Concept, design and website for MIRCA - Russian speaking / culture club",
+				"Website design / development for transmission repair service - proakpp.ru"
+			]
 		},
 		{
 			"organization": "Baltic State Technical University",
 			"position": "Scientific research intern",
 			"url": "",
 			"startDate": "2010-07-01",
-			"endDate": "2010-08-01",
+			"endDate": "2011-01-01",
 			"summary": "Supporting local CRM.",
 			"highlights": [
-				"Fixing natural language processing algorithm",
-				"Designing database reports",
-				"Creating illustrations for methodical books",
+				"Pedagogical internship: technical drawing course.",
+				"IT department website design & implementation",
+				"Fixing natural language processing algorithm.",
+				"Designing database reports.",
+				"Creating illustrations for methodical books.",
 				"A method of creating wall background in Adobe® Photoshop®",
 				"An article: UX approach in product design",
-				"An article: Drag-n-drop in web-applications"
+				"An article: Drag-n-drop in web-applications",
+				"Saint-Petersburg College of Naval Instrument-making: office tasks."
 			]
 		}
 	],
@@ -347,7 +275,7 @@
 	"skills": [
 		{
 			"name": "Frontend",
-			"level": "senior",
+			"level": "Senior",
 			"keywords": [
 				"react", "preact", "vue", "alpine", "web-components",
 				"signals", "observable", "rxjs", "graph-ql",
@@ -392,7 +320,7 @@
 	"languages": [
 		{
 			"language": "English",
-			"fluency": "ok"
+			"fluency": "fluent"
 		},
 		{
 			"language": "Russian",
@@ -419,7 +347,7 @@
 			]
 		},
 		{
-			"name": "Bhakti",
+			"name": "Bhakti Yoga",
 			"keywords": ["Prasadam", "Kirtan", "Mridanga", "Arati"]
 		}
 	],
