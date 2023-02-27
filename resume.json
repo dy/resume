@@ -29,19 +29,6 @@
 	},
 	"work": [
 		{
-			"name": "Brainfinance",
-			"position": "Senior Frontend Engineer",
-			"url": "https://brainfinance.com",
-			"startDate": "2022-11-01",
-			"endDate": "",
-			"summary": "Fintech company specialized in providing smart loans",
-			"highlights": [
-				"iCASH 2.0 website UI frontend",
-				"Maintenance of internal components framework"
-			],
-			"keywords": ["tailwindcss", "playwright", "vercel", "nextjs", "typescript"]
-		},
-		{
 			"name": "Elevenlabs",
 			"position": "Frontend Engineer",
 			"url": "https://elevenlabs.io",
