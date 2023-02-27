@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "build": "resume export index.html",
+    "build-pdf": "resume export resume.pdf --format pdf --theme actual",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -18,6 +19,7 @@
   },
   "homepage": "https://github.com/dy/resume#readme",
   "dependencies": {
+    "jsonresume-theme-actual": "^0.2.1",
     "jsonresume-theme-even": "^0.17.1",
     "resume-cli": "^3.0.8"
   }

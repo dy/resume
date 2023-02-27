@@ -349,23 +349,21 @@
 			"name": "Frontend",
 			"level": "senior",
 			"keywords": [
-				"vue", "alpinojs", "react", "preact", "angularjs",
-				"rxjs", "redux", "mobx", "signals", "observable",
-				"GraphQL", "REST",
-				"esbuild", "webpack", "rollup", "parcel", "browserify",
-				"tailwindcss", "material-ui", "evergreen", "semantic-ui",
-				"typescript", "livescript", "coffeescript",
-				"webgl", "three-js",
+				"react", "preact", "vue", "alpine", "web-components",
+				"signals", "observable", "rxjs", "graph-ql",
+				"esbuild", "webpack", "rollup", "browserify",
+				"tailwind", "material-ui", "evergreen", "semantic-ui",
+				"typescript", "webgl", "three-js",
 				"web-audio-api", "howler", "tuna",
-				"jquery", "django", "jekyll", "stencil",
-				"cypress", "jasmine", "karma", "mocha", "TDD", "BDD", "E2E testing"
+				"jquery", "liquid",
+				"cypress", "playwright", "tape"
 			]
 		},
 		{
 			"name": "Design",
 			"level": "middle",
 			"keywords": [
-				"UX", "UI", "IA", "prototyping", "graphic design", "figma", "sketch"
+				"UX", "UI", "IA", "figma", "sketch"
 			]
 		},
 		{
@@ -374,8 +372,7 @@
 			"keywords": [
 				"nodejs",
 				"Python", "Django",
-				"Mongo", "Redis", "MySQL",
-				"PHP", "Zend",
+				"Mongo", "Redis", "SQL",
 				"nginx", "apache"
 			]
 		},
@@ -383,15 +380,12 @@
 			"name": "CMS",
 			"level": "middle",
 			"keywords": [
-				"shopify",
-				"wordpress",
-				"drupal",
-				"modx",
-				"subdreamer",
-				"ecommerce",
 				"jekyll",
 				"liquid",
-				"github-pages"
+				"github-pages",
+				"shopify",
+				"wordpress",
+				"drupal"
 			]
 		}
 	],
