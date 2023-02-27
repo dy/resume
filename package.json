@@ -4,9 +4,9 @@
   "description": "My cv",
   "main": "index.js",
   "scripts": {
-    "build": "resume export index.html",
-    "build-pdf": "resume export resume.pdf --format pdf --theme actual",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "npm run build-html && npm run build-pdf",
+    "build-html": "resume export index.html --format html --theme actual",
+    "build-pdf": "resume export resume.pdf --format pdf --theme actual"
   },
   "repository": {
     "type": "git",

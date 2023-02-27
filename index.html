@@ -1,922 +1,380 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-      <title>Dmitry Ivanov</title>
-      <meta name="description" content="Originally from Saint-Petersburg, Russia. Earned Master&#x27;s degree in Computer Graphics (CS) at Baltic State Technical University. Started as UI freelance designer taking part in local startups and projects, then performed at kudago.com as a UI-designer / frontend developer. Dmitry moved to Montreal, Canada, where he collaborated with local businesses (TTBA, Amazemontreal, Rage Academy) and contributed to open-source. Afterwards he worked at Plotly Inc. as WebGL specialist, then at Mobeewave, specialized in payments systems, later transitioned to Apple into Wallet and Payments teams.">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700&display=swap">
-    <style>:root {
-  color-scheme: light dark;
-
-  --color-background: #ffffff; /* White */
-  --color-muted: #f3f4f5; /* Light Gray 200 */
-  --color-primary: #191e23; /* Dark Gray 900 */
-  --color-secondary: #6c7781; /* Dark Gray 300 */
-  --color-accent: #ffb900; /* Accent Yellow */
-  --color-link: #46b450; /* Accent Green */
-
-  --scale-ratio: 1.25;
-  --scale0: 1rem;
-  --scale1: calc(var(--scale0) * var(--scale-ratio));
-  --scale2: calc(var(--scale1) * var(--scale-ratio));
-  --scale3: calc(var(--scale2) * var(--scale-ratio));
-  --scale4: calc(var(--scale3) * var(--scale-ratio));
-  --scale5: calc(var(--scale4) * var(--scale-ratio));
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --color-background: #191e23; /* Dark Gray 900 */
-    --color-muted: #23282d; /* Dark Gray 800 */
-    --color-primary: #fbfbfc; /* Light Gray 100 */
-    --color-secondary: #ccd0d4; /* Light Gray 700 */
-  }
-}
-
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><style>@charset "UTF-8";
+/* Workaround for 'break-before:avoid' */
 * {
-  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+}
+
+ul, li {
   margin: 0;
   padding: 0;
 }
 
-html {
+span, q {
+  display: block;
+}
+
+p {
+  margin: 0;
+}
+
+@page {
+  size: A4;
+  margin: 15mm 0 20mm 0;
+}
+@page :first {
+  margin-top: 10mm;
+}
+a {
+  color: #222222;
+  font-weight: inherit;
+  text-decoration: none;
+}
+a[href] {
+  text-decoration: underline;
+  text-decoration-color: #888888;
+}
+
+p, q {
+  line-height: 1.25em;
+}
+
+li {
+  line-height: 1.35em;
+}
+li:first-child {
+  margin-top: 0;
+}
+
+.content {
+  width: 1000px;
+  height: auto;
+  padding: 0 50px;
+  margin: 0 auto;
+  font-family: Helvetica, Arial, sans-serif;
+  color: #222222;
+}
+
+.table {
+  width: 100%;
+  display: table;
+}
+.table .main {
+  display: table-cell;
+  width: 70%;
+  padding-right: 50px;
+}
+.table .side {
+  display: table-cell;
+  width: 30%;
+  padding-left: 50px;
+  text-align: right;
+}
+
+.summary {
+  font-size: 15px;
+}
+.summary:empty {
+  display: none;
+}
+
+.section-title {
+  font-size: 26px;
+  font-weight: normal;
+  margin: 0 0 20px 0;
+}
+
+.margin-container-2:not(:first-child) {
+  margin-top: 20px;
+}
+
+.margin-container-3:not(:first-child) {
+  margin-top: 30px;
+}
+
+.margin-container-4:not(:first-child) {
+  margin-top: 50px;
+}
+
+.padding-container-2 {
+  padding: 20px 0;
+}
+
+.margin-text-1 {
+  margin-top: 2px;
+}
+.margin-text-1:empty {
+  display: none;
+}
+
+.margin-text-2 {
+  margin-top: 4px;
+}
+.margin-text-2:empty {
+  display: none;
+}
+
+.margin-text-3 {
+  margin-top: 6px;
+}
+.margin-text-3:empty {
+  display: none;
+}
+
+.margin-text-4 {
+  margin-top: 8px;
+}
+.margin-text-4:empty {
+  display: none;
+}
+
+.margin-text-5 {
+  margin-top: 14px;
+}
+.margin-text-5:empty {
+  display: none;
+}
+
+.no-break {
+  break-inside: avoid;
+}
+
+.no-alone-1 {
+  break-inside: avoid;
+}
+.no-alone-1::after {
+  content: "";
+  display: block;
+  height: 75px;
+  margin-bottom: -75px;
+}
+
+.no-alone-2 {
+  break-inside: avoid;
+}
+.no-alone-2::after {
+  content: "";
+  display: block;
+  height: 150px;
+  margin-bottom: -150px;
+}
+
+.markdown h1 {
+  font-size: 160%;
+  font-weight: bolder;
+}
+.markdown h2 {
+  font-size: 150%;
+  font-weight: bolder;
+}
+.markdown h3 {
+  font-size: 140%;
+  font-weight: bolder;
+}
+.markdown h4 {
+  font-size: 130%;
+  font-weight: bold;
+}
+.markdown h5 {
+  font-size: 120%;
+  font-weight: bold;
+}
+.markdown h6 {
+  font-size: 110%;
+  font-weight: bold;
+}
+.markdown ul, .markdown ol {
+  margin-left: 20px;
+}
+.markdown img {
+  display: block;
+  margin: 20px auto;
+  max-width: 1000px;
+  text-align: center;
+}
+.markdown blockquote {
+  margin: 20px 0;
+  padding: 15px 20px;
+}
+.markdown blockquote p {
+  display: inline;
+}
+.markdown code {
+  font-family: monospace;
+}
+
+.main .highlights {
+  width: auto;
+  display: block;
+  padding: 0 10px;
+  margin-bottom: 0;
+  columns: 2;
+  column-width: 310px;
+  column-gap: 10px;
+}
+.main .highlights li {
+  font-size: 14px;
+  list-style: none;
+}
+.main .highlights li:before {
+  content: "· ";
+  vertical-align: middle;
+}
+.main .left {
+  display: table-cell;
+}
+.main .left .title {
+  font-size: 18px;
+  font-weight: bold;
+  display: block;
+}
+.main .left .subtitle {
+  font-size: 16px;
+  font-weight: lighter;
+  display: block;
+}
+.main .right {
+  text-align: right;
+  display: table-cell;
+}
+.main .right .date {
+  font-size: 15px;
+  font-weight: lighter;
+  white-space: nowrap;
+}
+
+.basics .main {
+  vertical-align: middle;
+}
+.basics .main .name {
+  font-size: 80px;
+  line-height: 1em;
+  font-weight: bold;
+  display: block;
+  margin-left: -5.6px;
+}
+.basics .main .label {
+  font-size: 40px;
+  line-height: 1em;
+  font-weight: lighter;
+  display: block;
+  margin-left: -1.6px;
+}
+.basics .side {
+  vertical-align: middle;
+  padding-left: 0;
+  padding-top: 15px;
+}
+.basics .side .contact {
+  list-style-type: none;
+}
+.basics .side .contact li {
+  font-size: 18px;
+  line-height: 1.6em;
+}
+
+.links ul {
+  list-style: none;
+}
+.links ul li {
   font-size: 14px;
 }
 
-body {
-  background: var(--color-background);
-  color: var(--color-primary);
-  display: grid;
-  font: 1em/1.5 Lato, sans-serif;
-  gap: 2em;
-  grid-template-columns:
-    [full-start]
-    1fr
-    [main-start side-start]
-    minmax(min-content, 12em)
-    [side-end content-start]
-    minmax(min-content, 36em)
-    [main-end content-end]
-    1fr
-    [full-end];
-  grid-template-rows: auto [content] 0;
-  margin-bottom: 4em;
+.education .title {
+  font-size: 15px;
+}
+.education .institution {
+  font-size: 15px;
+  font-weight: lighter;
 }
 
-body::before {
-  content: '';
-  grid-column: full;
-  grid-row: content;
+.awards .header .title {
+  font-size: 15px;
+}
+.awards .header .awarder {
+  font-size: 15px;
+  font-weight: lighter;
+}
+.awards .summary {
+  font-size: 14px;
 }
 
-ol,
-ul {
-  padding-left: 1em;
+.certificates .name {
+  font-size: 15px;
+}
+.certificates .issuer {
+  font-size: 15px;
+  font-weight: lighter;
 }
 
-:not(.icon-list, .tag-list) > li + li {
-  margin-top: 0.4em;
+.skills .section-title {
+  margin: 0;
 }
-
-li::marker,
-.network {
-  color: var(--color-secondary);
+.skills .container {
+  display: block;
+  columns: 2;
+  column-gap: 10px;
 }
-
-a {
-  color: var(--color-link);
-  text-decoration: none;
-  transition: color 0.2s;
+.skills .container .article {
+  break-inside: avoid-column;
+  min-width: 120px;
+  padding-top: 20px;
 }
-
-a:focus,
-a:hover {
-  color: var(--color-accent);
+.skills .container .article span {
+  display: block;
+  font-size: 18px;
+  font-weight: lighter;
 }
-
-h1,
-h2,
-h3,
-h5 {
-  font-weight: normal;
-}
-
-h1,
-h2,
-h3 {
-  line-height: 1.2;
-}
-
-h1 {
-  font-size: var(--scale5);
-}
-
-h2 {
-  color: var(--color-secondary);
-  font-size: var(--scale4);
-}
-
-h3 {
-  color: var(--color-accent);
-  font-size: var(--scale3);
-  grid-column: side;
-  margin-bottom: 1rem;
-}
-
-h4 {
-  font-size: var(--scale2);
-}
-
-h5 {
-  font-size: var(--scale1);
-}
-
-h6 {
-  font-size: var(--scale0);
-}
-
-blockquote {
-  border-left: 0.2em solid var(--color-muted);
-  padding-left: 1em;
-}
-
-cite {
-  color: var(--color-secondary);
-  font-style: inherit;
-}
-
-cite::before {
-  content: '— ';
-}
-
-svg {
-  margin-right: 0.2em;
-  vertical-align: -0.2em;
-}
-
-.masthead {
-  background: var(--color-muted);
-  display: inherit;
-  gap: inherit;
-  grid-column: full;
-  grid-template-columns: inherit;
-  padding: 4em 0;
-  text-align: center;
-}
-
-.masthead > *,
-section {
-  grid-column: main;
-}
-
-.masthead > img {
-  border-radius: 50%;
-  margin: 0 auto;
-  max-width: 12em;
-}
-
-article > * + *,
-blockquote > * + * {
-  margin-top: 0.6em;
-}
-
-.meta {
-  color: var(--color-secondary);
-}
-
-.stack {
-  display: grid;
-  gap: 1.5em;
-}
-
-.icon-list {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.4em 1em;
-  justify-content: center;
+.skills .container .article li {
+  font-size: 14px;
   list-style: none;
-  padding: 0;
 }
 
-.grid-list {
-  display: grid;
-  gap: 1em;
-}
-
-.tag-list {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.4em;
+.languages ul {
   list-style: none;
-  padding: 0;
+}
+.languages ul li {
+  font-size: 14px;
 }
 
-.tag-list > li {
-  background: var(--color-muted);
-  border-radius: 0.2em;
-  padding: 0.2em 0.6em;
+.interests ul {
+  list-style: none;
+}
+.interests ul li {
+  font-size: 14px;
 }
 
-.bullet-item:not(:first-child)::before {
-  content: '· ';
-  margin: 0 0.2em;
+.references .name {
+  font-size: 15px;
 }
-
-@media print, (min-width: 48em) {
-  h3 {
-    text-align: right;
-    margin-bottom: inherit;
-  }
-
-  .masthead {
-    text-align: inherit;
-  }
-
-  .masthead > *,
-  section {
-    grid-column: content;
-  }
-
-  .masthead img {
-    grid-column: side;
-    grid-row: span 2;
-    max-width: 100%;
-  }
-
-  section {
-    display: contents;
-  }
-
-  .icon-list {
-    flex-direction: column;
-  }
-
-  .grid-list {
-    grid-template-columns: repeat(
-      auto-fit,
-      minmax(calc((100% - 1em) / 2), 1fr)
-    );
-  }
-}
-</style>
-  </head>
-  <body>
-      <header class="masthead">
-          <img src="https://raw.githubusercontent.com/dy/resume/master/index.png" alt="">
-        <div>
-            <h1>Dmitry Ivanov</h1>
-            <h2>Software Engineer</h2>
-        </div>
-          <article>
-            <p>Originally from Saint-Petersburg, Russia. Earned Master's degree in Computer Graphics (CS) at Baltic State Technical University. Started as UI freelance designer taking part in local startups and projects, then performed at kudago.com as a UI-designer / frontend developer. Dmitry moved to Montreal, Canada, where he collaborated with local businesses (TTBA, Amazemontreal, Rage Academy) and contributed to open-source. Afterwards he worked at Plotly Inc. as WebGL specialist, then at Mobeewave, specialized in payments systems, later transitioned to Apple into Wallet and Payments teams.</p>
-          </article>
-        <ul class="icon-list">
-              <li>
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-map-pin"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
-                Montréal, Canada
-              </li>
-            <li>
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-mail"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
-              <a href="mailto:df.creative@gmail.com">df.creative@gmail.com</a>
-            </li>
-            <li>
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-phone"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
-              <a href="tel:+15147755376">+1 514 7755-376</a>
-            </li>
-            <li>
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-link"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg>
-              <a href="http://github.com/dy">github.com/dy</a>
-            </li>
-            <li>
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-github"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
-                  <a href="https://github.com/dy">dy</a>
-                <span class="network">(Github)</span>
-            </li>
-            <li>
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-twitter"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path></svg>
-                  <a href="https://twitter.com/dimayv">dimayv</a>
-                <span class="network">(Twitter)</span>
-            </li>
-        </ul>
-      </header>
-
-      <section id="work">
-        <h3>Work</h3>
-        <div class="stack">
-            <article>
-              <header>
-                <h4>Frontend Engineer</h4>
-                <div class="meta">
-                  <div>
-                    <strong><a href="https://elevenlabs.io">Elevenlabs</a></strong>
-                  </div>
-                  <div>
-                    <time datetime="2022-10-01">Oct 2022</time> –
-                    Present
-                  </div>
-                </div>
-              </header>
-                <p>AI voice startup providing high-end text-to-speech technology</p>
-                <ul>
-                    <li><p>elevenlabs.io website design &amp; frontend</p></li>
-                    <li><p>multiline waveform player https://dy.github.io/wavearea</p></li>
-                </ul>
-            </article>
-            <article>
-              <header>
-                <h4>Software Engineer</h4>
-                <div class="meta">
-                  <div>
-                    <strong><a href="https://apple.com">Apple</a></strong>
-                  </div>
-                  <div>
-                    <time datetime="2020-05-01">May 2020</time> –
-                    <time datetime="2022-10-01">Oct 2022</time>
-                  </div>
-                </div>
-              </header>
-                <p>Apple Wallet / Apple Pay teams web services.</p>
-                <ul>
-                    <li><p>Web push provisioning UI flow</p></li>
-                    <li><p>Apple Business Registry portal frontend</p></li>
-                    <li><p>Payments portal design &amp; development</p></li>
-                    <li><p>Internal admin dashboard development</p></li>
-                    <li><p>Apple Pay widget design &amp; development</p></li>
-                    <li><p>Template instantiation web-standard proposal polyfill</p></li>
-                </ul>
-            </article>
-            <article>
-              <header>
-                <h4>Frontend engineer</h4>
-                <div class="meta">
-                  <div>
-                    <strong><a href="https://mobeewave.com">Mobeewave</a></strong>
-                  </div>
-                  <div>
-                    <time datetime="2019-01-15">Jan 2019</time> –
-                    <time datetime="2020-05-01">May 2020</time>
-                  </div>
-                </div>
-              </header>
-                <p>Fintech company specialized on accepting card payments with mobile devices.</p>
-                <ul>
-                    <li><p>Samsung Point of Sale web app</p></li>
-                    <li><p>React/redux-based acquirer portal app</p></li>
-                    <li><p>Admin portal app based on aspect-oriented framework</p></li>
-                    <li><p>Provisioning portal angularjs app</p></li>
-                    <li><p>Universal framework hooks library unihooks</p></li>
-                </ul>
-            </article>
-            <article>
-              <header>
-                <h4>Software Engineer</h4>
-                <div class="meta">
-                  <div>
-                    <strong><a href="http://plot.ly">Plotly Inc</a></strong>
-                  </div>
-                  <div>
-                    <time datetime="2016-09-01">Sep 2016</time> –
-                    <time datetime="2018-09-01">Sep 2018</time>
-                  </div>
-                </div>
-              </header>
-                <p>Plotly.js is javascript graphing library that powers plotly. Held position of resident webgl specialist.</p>
-                <ul>
-                    <li><p>Performant webgl waveform renderer https://dy.github.io/gl-waveform/</p></li>
-                    <li><p>Testing tools for image comparisons</p></li>
-                    <li><p>Regl-based WebGL core components - scatter, line, splom</p></li>
-                    <li><p>Mobile version of plotly.js</p></li>
-                    <li><p>Best in class scatterplot point clustering algorithm</p></li>
-                    <li><p>Lasso selection tool</p></li>
-                </ul>
-            </article>
-            <article>
-              <header>
-                <h4>Web-developer</h4>
-                <div class="meta">
-                  <div>
-                    <strong><a href="http://ttbagroup.com/">TTBA group</a></strong>
-                  </div>
-                  <div>
-                    <time datetime="2016-05-01">May 2016</time> –
-                    <time datetime="2016-08-13">Aug 2016</time>
-                  </div>
-                </div>
-              </header>
-                <p>Web agency specializing in web-design, advertisment and social media marketing. Responsibilities included developing and optimizing web-sites.</p>
-                <ul>
-                    <li><p>Design, markup and maintenance of shopsvelte.com, pegasie.com, coutureonly.com, socialboomwifi.com, citenova.com, wishbox.gift, ecobrandshow.ca</p></li>
-                    <li><p>Wishbox.gift website, design, preact-based core, integration with API</p></li>
-                </ul>
-            </article>
-            <article>
-              <header>
-                <h4>Web-developer</h4>
-                <div class="meta">
-                  <div>
-                    <strong><a href="http://amazemontreal.com">Amazemontreal Inc.</a></strong>
-                  </div>
-                  <div>
-                    <time datetime="2016-02-01">Feb 2016</time> –
-                    <time datetime="2016-03-01">Mar 2016</time>
-                  </div>
-                </div>
-              </header>
-                <p>Amaze  is an enterprise running venues in Montreal</p>
-                <ul>
-                    <li><p>Optimization amazemontreal.com for google page insights (92/100)</p></li>
-                    <li><p>Redesign and optimization of ragemontreal.com (92/100)</p></li>
-                    <li><p>Game score tracking app</p></li>
-                </ul>
-            </article>
-            <article>
-              <header>
-                <h4>Founder</h4>
-                <div class="meta">
-                  <div>
-                    <strong><a href="http://github.com/audiojs">Audiojs</a></strong>
-                  </div>
-                  <div>
-                    <time datetime="2015-03-01">Mar 2015</time> –
-                    <time datetime="2016-01-01">Jan 2016</time>
-                  </div>
-                </div>
-              </header>
-                <p>Open-source organization hosting audio-related projects.</p>
-                <ul>
-                    <li><p>Performant FFT implementation</p></li>
-                    <li><p>Largest collection of color spaces</p></li>
-                    <li><p>Stream-based audio processing components</p></li>
-                    <li><p>WebGL-based audio visualizers: spectrum, spectrogram, waveform</p></li>
-                    <li><p>GLSL to JS compiler</p></li>
-                </ul>
-            </article>
-            <article>
-              <header>
-                <h4>Frontend developer</h4>
-                <div class="meta">
-                  <div>
-                    <strong><a href="http://kudago.com">KudaGo Inc.</a></strong>
-                  </div>
-                  <div>
-                    <time datetime="2012-03-01">Mar 2012</time> –
-                    <time datetime="2015-01-12">Jan 2015</time>
-                  </div>
-                </div>
-              </header>
-                <p>Kudago is an agency and a web-site covering cultural events, the biggest Russian events website. Responsibilities included frontend and design.</p>
-                <ul>
-                    <li><p>Design, UX, UI and IA of kudago.com</p></li>
-                    <li><p>Desktop and mobile kudago.com website</p></li>
-                    <li><p>&lt;20kb of javascript in mobile website</p></li>
-                    <li><p>100/100 in google page insights</p></li>
-                    <li><p>Design/markup for ipoteka-vam.ru, to-travel.ru, to-create.ru, tm-print.ru websites.</p></li>
-                    <li><p>Statistical dashboard for likemeter application</p></li>
-                </ul>
-            </article>
-            <article>
-              <header>
-                <h4>Web-developer</h4>
-                <div class="meta">
-                  <div>
-                    <strong>Freelance</strong>
-                  </div>
-                  <div>
-                    <time datetime="2012-02-04">Feb 2012</time> –
-                    <time datetime="2013-03-01">Mar 2013</time>
-                  </div>
-                </div>
-              </header>
-                <p>Webdev freelance jobs - design mockups, UI prototyping, HTML, CSS, JS, wordpress.</p>
-                <ul>
-                    <li><p>Design / markup for rsua.ru, gildiya-masterov.ru, arkon-okna.ru, postavokna.ru, okonka.ru, jumpingclay.ru, aurama.ru, podsoblyaev.ru, biletron.ru, concertinfo.ru, ditspb.ru, rukasil.ru, voenmeh.ru, dverka.ru, sayhello.ru, zpapa.ru, productinsignt.ru, smartmedia, legran doors</p></li>
-                    <li><p>Perfected skills at modx, drupal, subdreamer, wordpress</p></li>
-                    <li><p>Setting up server environment: apache, nginx, MySQL</p></li>
-                    <li><p>GUI elements for application package “Pure Office”</p></li>
-                    <li><p>UI icons for mobile portal kilowap.ru</p></li>
-                    <li><p>UI icons for project gloricism.com</p></li>
-                    <li><p>Design / markup of book “Childhood”, author Andreeva L.</p></li>
-                    <li><p>Design / markup of www.le-gran.spb.ru, JSC Masterskaya</p></li>
-                    <li><p>Creating radar 3d model for navy simulator, JSC Sistema</p></li>
-                    <li><p>Illustrating textbook of methods of hydrodynamics, BSTU Voenmeh</p></li>
-                </ul>
-            </article>
-            <article>
-              <header>
-                <h4>Techlead</h4>
-                <div class="meta">
-                  <div>
-                    <strong><a href="http://ingria-startup.ru/">Ingria</a></strong>
-                  </div>
-                  <div>
-                    <time datetime="2012-02-04">Feb 2012</time> –
-                    <time datetime="2013-03-01">Mar 2013</time>
-                  </div>
-                </div>
-              </header>
-                <p>Ingria is Russian startup incubator like Y-combinator. Responsibilities included web-service implementation for boutiqueland.ru, interviewing IT staff.</p>
-                <ul>
-                    <li><p>Branding / design for boutiqueland.ru mobile &amp; desktop</p></li>
-                    <li><p>UI kit for seemedia.ru</p></li>
-                </ul>
-            </article>
-            <article>
-              <header>
-                <h4>Intern</h4>
-                <div class="meta">
-                  <div>
-                    <strong><a href="speechpro.com">Speech pro</a></strong>
-                  </div>
-                  <div>
-                    <time datetime="2012-02-04">Feb 2012</time> –
-                    <time datetime="2013-03-01">Mar 2013</time>
-                  </div>
-                </div>
-              </header>
-                <p>Speech Technology Center is an enterprise specialising in speech recognition technologies. The position was held in marketing department, related to web-sites and promotion pages design.</p>
-                <ul>
-                    <li><p>Creation of interactive guide for SpeechPro VoiceKey, using Adobe® Flash®</p></li>
-                    <li><p>Developing batch scripts in Visual Basic to handle massive Microsoft Office Excel data.</p></li>
-                    <li><p>Maintenance of speechpro.com.</p></li>
-                </ul>
-            </article>
-            <article>
-              <header>
-                <h4>Copywriter</h4>
-                <div class="meta">
-                  <div>
-                    <strong><a href="http://macter.ru/">JSC Master</a></strong>
-                  </div>
-                  <div>
-                    <time datetime="2007-09-01">Sep 2007</time> –
-                    <time datetime="2008-04-01">Apr 2008</time>
-                  </div>
-                </div>
-              </header>
-                <p>Writing articles on predefined topics, defining keywords, SEO-optimization.</p>
-                <ul>
-                    <li><p>Massive extending of russian language thesaurus and synonims specifically</p></li>
-                    <li><p>Studying basic principles of SEO-texts writing</p></li>
-                </ul>
-            </article>
-        </div>
-      </section>
-      <section id="volunteer">
-        <h3>Volunteer</h3>
-        <div class="stack">
-            <article>
-              <header>
-                <h4>Contributor</h4>
-                <div class="meta">
-                  <strong>StackGL</strong>
-                  <div>
-                    <time datetime="2016-08-01">Aug 2016</time> –
-                    <time datetime="2016-08-13">Aug 2016</time>
-                  </div>
-                </div>
-              </header>
-                <p>Webgl-related components.</p>
-                <ul>
-                    <li><p>GLSL to JS transpiler</p></li>
-                </ul>
-            </article>
-            <article>
-              <header>
-                <h4>Contributor</h4>
-                <div class="meta">
-                  <strong><a href="http://github.com/scijs">SciJS</a></strong>
-                  <div>
-                    <time datetime="2015-11-01">Nov 2015</time> –
-                    <time datetime="2015-12-01">Dec 2015</time>
-                  </div>
-                </div>
-              </header>
-                <p>Scientific javascript open-source projects</p>
-                <ul>
-                    <li><p>library of color space conversions</p></li>
-                    <li><p>performant FFT implementation</p></li>
-                </ul>
-            </article>
-            <article>
-              <header>
-                <h4>Web-designer</h4>
-                <div class="meta">
-                  <strong><a href="http://lidiavarbanova.com">Lidia Varbanova</a></strong>
-                  <div>
-                    <time datetime="2016-08-01">Aug 2016</time> –
-                    <time datetime="2016-08-13">Aug 2016</time>
-                  </div>
-                </div>
-              </header>
-                <p>Lidia is a professor of Marketing and Economics in Arts and Creative Industries.</p>
-                <ul>
-                    <li><p>Renovation of lidiavarbanova.com</p></li>
-                </ul>
-            </article>
-            <article>
-              <header>
-                <h4>Web-designer</h4>
-                <div class="meta">
-                  <strong><a href="http://mirca.ca">MIRCA</a></strong>
-                  <div>
-                    <time datetime="2016-08-01">Aug 2016</time> –
-                    <time datetime="2016-08-13">Aug 2016</time>
-                  </div>
-                </div>
-              </header>
-                <p>Morgan Initiative on Russian Cultural Affairs is russian culture institute in future and russial speaking club now</p>
-                <ul>
-                    <li><p>Concept, design and developing of logotype and website</p></li>
-                </ul>
-            </article>
-            <article>
-              <header>
-                <h4>Assistant</h4>
-                <div class="meta">
-                  <strong>Saint-Petersburg College of Naval Instrument-making</strong>
-                  <div>
-                    <time datetime="2007-01-01">Jan 2007</time> –
-                    <time datetime="2007-02-01">Feb 2007</time>
-                  </div>
-                </div>
-              </header>
-                <p>Student office tasks.</p>
-            </article>
-            <article>
-              <header>
-                <h4>Pedagogical internship</h4>
-                <div class="meta">
-                  <strong>Baltic State Technical University</strong>
-                  <div>
-                    <time datetime="2010-01-01">Jan 2010</time> –
-                    <time datetime="2011-01-01">Jan 2011</time>
-                  </div>
-                </div>
-              </header>
-                <p>Technical drawing course: basic painting, photoshop, design.</p>
-            </article>
-            <article>
-              <header>
-                <h4>Scientific research intern</h4>
-                <div class="meta">
-                  <strong>Baltic State Technical University</strong>
-                  <div>
-                    <time datetime="2010-07-01">Jul 2010</time> –
-                    <time datetime="2010-08-01">Aug 2010</time>
-                  </div>
-                </div>
-              </header>
-                <p>Supporting local CRM.</p>
-                <ul>
-                    <li><p>Fixing natural language processing algorithm</p></li>
-                    <li><p>Designing database reports</p></li>
-                    <li><p>Creating illustrations for methodical books</p></li>
-                    <li><p>A method of creating wall background in Adobe® Photoshop®</p></li>
-                    <li><p>An article: UX approach in product design</p></li>
-                    <li><p>An article: Drag-n-drop in web-applications</p></li>
-                </ul>
-            </article>
-        </div>
-      </section>
-      <section id="education">
-        <h3>Education</h3>
-        <div class="stack">
-            <article>
-              <header>
-                <h4>Baltic State Technical University “Voenmeh”</h4>
-                <div class="meta">
-                    <strong>Information science and computers, intellectual systems</strong>
-                  <div>
-                    <time datetime="2010-09-01">Sep 2010</time> –
-                    <time datetime="2012-06-14">Jun 2012</time>
-                  </div>
-                </div>
-              </header>
-                <p>Master</p>
-            </article>
-            <article>
-              <header>
-                <h4>Baltic State Technical University “Voenmeh”</h4>
-                <div class="meta">
-                    <strong>Information and computer science</strong>
-                  <div>
-                    <time datetime="2006-09-01">Sep 2006</time> –
-                    <time datetime="2010-06-14">Jun 2010</time>
-                  </div>
-                </div>
-              </header>
-                <p>Bachelor</p>
-            </article>
-            <article>
-              <header>
-                <h4>Saint-Petersburg College of Marine Instrumentation</h4>
-                <div class="meta">
-                    <strong>Automatic control systems</strong>
-                  <div>
-                    <time datetime="2002-09-01">Sep 2002</time> –
-                    <time datetime="2006-06-01">Jun 2006</time>
-                  </div>
-                </div>
-              </header>
-                <p>Secondary professional education, technic</p>
-            </article>
-            <article>
-              <header>
-                <h4>Baltic State Technical University “Voenmeh”</h4>
-                <div class="meta">
-                    <strong>Economics and Management</strong>
-                  <div>
-                    <time datetime="2010-09-01">Sep 2010</time> –
-                    <time datetime="2012-02-15">Feb 2012</time>
-                  </div>
-                </div>
-              </header>
-                <p>Specialist</p>
-            </article>
-        </div>
-      </section>
-      <section id="skills">
-        <h3>Skills</h3>
-        <div class="grid-list">
-            <div>
-                <h4>Frontend</h4>
-                <ul class="tag-list">
-                    <li>vue</li>
-                    <li>alpinojs</li>
-                    <li>react</li>
-                    <li>preact</li>
-                    <li>angularjs</li>
-                    <li>rxjs</li>
-                    <li>redux</li>
-                    <li>mobx</li>
-                    <li>signals</li>
-                    <li>observable</li>
-                    <li>GraphQL</li>
-                    <li>REST</li>
-                    <li>esbuild</li>
-                    <li>webpack</li>
-                    <li>rollup</li>
-                    <li>parcel</li>
-                    <li>browserify</li>
-                    <li>tailwindcss</li>
-                    <li>material-ui</li>
-                    <li>evergreen</li>
-                    <li>semantic-ui</li>
-                    <li>typescript</li>
-                    <li>livescript</li>
-                    <li>coffeescript</li>
-                    <li>webgl</li>
-                    <li>three-js</li>
-                    <li>web-audio-api</li>
-                    <li>howler</li>
-                    <li>tuna</li>
-                    <li>jquery</li>
-                    <li>django</li>
-                    <li>jekyll</li>
-                    <li>stencil</li>
-                    <li>cypress</li>
-                    <li>jasmine</li>
-                    <li>karma</li>
-                    <li>mocha</li>
-                    <li>TDD</li>
-                    <li>BDD</li>
-                    <li>E2E testing</li>
-                </ul>
-            </div>
-            <div>
-                <h4>Design</h4>
-                <ul class="tag-list">
-                    <li>UX</li>
-                    <li>UI</li>
-                    <li>IA</li>
-                    <li>prototyping</li>
-                    <li>graphic design</li>
-                    <li>figma</li>
-                    <li>sketch</li>
-                </ul>
-            </div>
-            <div>
-                <h4>Backend</h4>
-                <ul class="tag-list">
-                    <li>nodejs</li>
-                    <li>Python</li>
-                    <li>Django</li>
-                    <li>Mongo</li>
-                    <li>Redis</li>
-                    <li>MySQL</li>
-                    <li>PHP</li>
-                    <li>Zend</li>
-                    <li>nginx</li>
-                    <li>apache</li>
-                </ul>
-            </div>
-            <div>
-                <h4>CMS</h4>
-                <ul class="tag-list">
-                    <li>shopify</li>
-                    <li>wordpress</li>
-                    <li>drupal</li>
-                    <li>modx</li>
-                    <li>subdreamer</li>
-                    <li>ecommerce</li>
-                    <li>jekyll</li>
-                    <li>liquid</li>
-                    <li>github-pages</li>
-                </ul>
-            </div>
-        </div>
-      </section>
-      <section id="languages">
-        <h3>Languages</h3>
-        <div class="grid-list">
-            <div>
-                <h4>English</h4>
-              ok
-            </div>
-            <div>
-                <h4>Russian</h4>
-              native
-            </div>
-            <div>
-                <h4>French</h4>
-              basic
-            </div>
-        </div>
-      </section>
-      <section id="interests">
-        <h3>Interests</h3>
-        <div class="grid-list">
-            <div>
-                <h4>Computer Science</h4>
-                <ul class="tag-list">
-                    <li>Compilers</li>
-                    <li>DSP</li>
-                    <li>AI</li>
-                    <li>NN</li>
-                </ul>
-            </div>
-            <div>
-                <h4>Music Technologies</h4>
-                <ul class="tag-list">
-                    <li>synthesis</li>
-                    <li>harmonic analysis</li>
-                    <li>spectrograms</li>
-                    <li>audio-vis</li>
-                    <li>wavelets</li>
-                </ul>
-            </div>
-            <div>
-                <h4>Bhakti</h4>
-                <ul class="tag-list">
-                    <li>Prasadam</li>
-                    <li>Kirtan</li>
-                    <li>Mridanga</li>
-                    <li>Arati</li>
-                </ul>
-            </div>
-        </div>
-      </section>
-      <section id="references">
-        <h3>References</h3>
-        <div class="stack">
-              <blockquote>
-                <p>by request</p>
-                  <p>
-                    <cite>Matt Buyington</cite>
-                  </p>
-              </blockquote>
-              <blockquote>
-                <p>by request</p>
-                  <p>
-                    <cite>Mario Ramos</cite>
-                  </p>
-              </blockquote>
-              <blockquote>
-                <p>by request</p>
-                  <p>
-                    <cite>Alex Tsyrfa</cite>
-                  </p>
-              </blockquote>
-              <blockquote>
-                <p>by request</p>
-                  <p>
-                    <cite>Alex Reverse</cite>
-                  </p>
-              </blockquote>
-              <blockquote>
-                <p>by request</p>
-                  <p>
-                    <cite>Sergey Poduzov</cite>
-                  </p>
-              </blockquote>
-              <blockquote>
-                <p>by request</p>
-                  <p>
-                    <cite>Alex Prokofiev</cite>
-                  </p>
-              </blockquote>
-        </div>
-      </section>
-  </body>
-</html>
+.references q {
+  font-size: 14.5px;
+  font-weight: lighter;
+  font-style: italic;
+}</style><title>Resume Dmitry Ivanov – Software Engineer</title></head><body><div class="content"><div class="basics"><div class="table padding-container-2"><div class="main"><span class="name">Dmitry Ivanov</span><span class="label">Software Engineer</span></div><div class="side"><ul class="contact"><li>+1 514 7755-376</li><li>df.creative@gmail.com</li><li class="margin-text-5">Montréal, Québec, CA</li></ul></div></div><div class="summary markdown padding-container-2"><p>Originally from Saint-Petersburg, Russia. Earned Master's degree in Computer Graphics (CS) at Baltic State Technical University. Started as UI freelance designer taking part in local startups and projects, then performed at kudago.com as a UI-designer / frontend developer. Dmitry moved to Montreal, Canada, where he collaborated with local businesses (TTBA, Amazemontreal, Rage Academy) and contributed to open-source. Afterwards he worked at Plotly Inc. as WebGL specialist, then at Mobeewave, specialized in payments systems, later transitioned to Apple into Wallet and Payments teams.</p>
+</div></div><div class="table padding-container-2"><div class="main"><div class="work margin-container-4"><p class="section-title no-alone-2">Experience</p><div class="container"><div class="article margin-container-3"><div class="header no-alone-1"><div class="table"><div class="left"><span class="title">Frontend Engineer</span><span class="subtitle margin-text-1"><a href="https://elevenlabs.io">Elevenlabs</a></span></div><div class="right"><span class="date">Oct 2022 - Present</span></div></div></div><div class="summary markdown margin-text-4"><p>AI voice startup providing high-end text-to-speech technology</p>
+</div><ul class="highlights margin-text-4 no-break"><li>elevenlabs.io website design &amp; frontend</li><li>multiline waveform player https://dy.github.io/wavearea</li></ul></div><div class="article margin-container-3"><div class="header no-alone-1"><div class="table"><div class="left"><span class="title">Software Engineer</span><span class="subtitle margin-text-1"><a href="https://apple.com">Apple</a></span></div><div class="right"><span class="date">May 2020 - Oct 2022</span></div></div></div><div class="summary markdown margin-text-4"><p>Apple Wallet / Apple Pay teams web services.</p>
+</div><ul class="highlights margin-text-4 no-break"><li>Web push provisioning UI flow</li><li>Apple Business Registry portal frontend</li><li>Payments portal design &amp; development</li><li>Internal admin dashboard development</li><li>Apple Pay widget design &amp; development</li><li>Template instantiation web-standard proposal polyfill</li></ul></div><div class="article margin-container-3"><div class="header no-alone-1"><div class="table"><div class="left"><span class="title">Frontend engineer</span><span class="subtitle margin-text-1"><a href="https://mobeewave.com">Mobeewave</a></span></div><div class="right"><span class="date">Jan 2019 - May 2020</span></div></div></div><div class="summary markdown margin-text-4"><p>Fintech company specialized on accepting card payments with mobile devices.</p>
+</div><ul class="highlights margin-text-4 no-break"><li>Samsung Point of Sale web app</li><li>React/redux-based acquirer portal app</li><li>Admin portal app based on aspect-oriented framework</li><li>Provisioning portal angularjs app</li><li>Universal framework hooks library unihooks</li></ul></div><div class="article margin-container-3"><div class="header no-alone-1"><div class="table"><div class="left"><span class="title">Software Engineer</span><span class="subtitle margin-text-1"><a href="http://plot.ly">Plotly Inc</a></span></div><div class="right"><span class="date">Sep 2016 - Sep 2018</span></div></div></div><div class="summary markdown margin-text-4"><p>Plotly.js is javascript graphing library that powers plotly. Held position of resident webgl specialist.</p>
+</div><ul class="highlights margin-text-4 no-break"><li>Performant webgl waveform renderer https://dy.github.io/gl-waveform/</li><li>Testing tools for image comparisons</li><li>Regl-based WebGL core components - scatter, line, splom</li><li>Mobile version of plotly.js</li><li>Best in class scatterplot point clustering algorithm</li><li>Lasso selection tool</li></ul></div><div class="article margin-container-3"><div class="header no-alone-1"><div class="table"><div class="left"><span class="title">Web-developer</span><span class="subtitle margin-text-1"><a href="http://ttbagroup.com/">TTBA group</a></span></div><div class="right"><span class="date">May 2016 - Aug 2016</span></div></div></div><div class="summary markdown margin-text-4"><p>Web agency specializing in web-design, advertisment and social media marketing. Responsibilities included developing and optimizing web-sites.</p>
+</div><ul class="highlights margin-text-4 no-break"><li>Design, markup and maintenance of shopsvelte.com, pegasie.com, coutureonly.com, socialboomwifi.com, citenova.com, wishbox.gift, ecobrandshow.ca</li><li>Wishbox.gift website, design, preact-based core, integration with API</li></ul></div><div class="article margin-container-3"><div class="header no-alone-1"><div class="table"><div class="left"><span class="title">Web-developer</span><span class="subtitle margin-text-1"><a href="http://amazemontreal.com">Amazemontreal Inc.</a></span></div><div class="right"><span class="date">Feb 2016 - Mar 2016</span></div></div></div><div class="summary markdown margin-text-4"><p>Amaze  is an enterprise running venues in Montreal</p>
+</div><ul class="highlights margin-text-4 no-break"><li>Optimization amazemontreal.com for google page insights (92/100)</li><li>Redesign and optimization of ragemontreal.com (92/100)</li><li>Game score tracking app</li></ul></div><div class="article margin-container-3"><div class="header no-alone-1"><div class="table"><div class="left"><span class="title">Founder</span><span class="subtitle margin-text-1"><a href="http://github.com/audiojs">Audiojs</a></span></div><div class="right"><span class="date">Mar 2015 - Jan 2016</span></div></div></div><div class="summary markdown margin-text-4"><p>Open-source organization hosting audio-related projects.</p>
+</div><ul class="highlights margin-text-4 no-break"><li>Performant FFT implementation</li><li>Largest collection of color spaces</li><li>Stream-based audio processing components</li><li>WebGL-based audio visualizers: spectrum, spectrogram, waveform</li><li>GLSL to JS compiler</li></ul></div><div class="article margin-container-3"><div class="header no-alone-1"><div class="table"><div class="left"><span class="title">Frontend developer</span><span class="subtitle margin-text-1"><a href="http://kudago.com">KudaGo Inc.</a></span></div><div class="right"><span class="date">Mar 2012 - Jan 2015</span></div></div></div><div class="summary markdown margin-text-4"><p>Kudago is an agency and a web-site covering cultural events, the biggest Russian events website. Responsibilities included frontend and design.</p>
+</div><ul class="highlights margin-text-4 no-break"><li>Design, UX, UI and IA of kudago.com</li><li>Desktop and mobile kudago.com website</li><li>&lt;20kb of javascript in mobile website</li><li>100/100 in google page insights</li><li>Design/markup for ipoteka-vam.ru, to-travel.ru, to-create.ru, tm-print.ru websites.</li><li>Statistical dashboard for likemeter application</li></ul></div><div class="article margin-container-3"><div class="header no-alone-1"><div class="table"><div class="left"><span class="title">Web-developer</span><span class="subtitle margin-text-1"><a>Freelance</a></span></div><div class="right"><span class="date">Feb 2012 - Mar 2013</span></div></div></div><div class="summary markdown margin-text-4"><p>Webdev freelance jobs - design mockups, UI prototyping, HTML, CSS, JS, wordpress.</p>
+</div><ul class="highlights margin-text-4 no-break"><li>Design / markup for rsua.ru, gildiya-masterov.ru, arkon-okna.ru, postavokna.ru, okonka.ru, jumpingclay.ru, aurama.ru, podsoblyaev.ru, biletron.ru, concertinfo.ru, ditspb.ru, rukasil.ru, voenmeh.ru, dverka.ru, sayhello.ru, zpapa.ru, productinsignt.ru, smartmedia, legran doors</li><li>Perfected skills at modx, drupal, subdreamer, wordpress</li><li>Setting up server environment: apache, nginx, MySQL</li><li>GUI elements for application package “Pure Office”</li><li>UI icons for mobile portal kilowap.ru</li><li>UI icons for project gloricism.com</li><li>Design / markup of book “Childhood”, author Andreeva L.</li><li>Design / markup of www.le-gran.spb.ru, JSC Masterskaya</li><li>Creating radar 3d model for navy simulator, JSC Sistema</li><li>Illustrating textbook of methods of hydrodynamics, BSTU Voenmeh</li></ul></div><div class="article margin-container-3"><div class="header no-alone-1"><div class="table"><div class="left"><span class="title">Techlead</span><span class="subtitle margin-text-1"><a href="http://ingria-startup.ru/">Ingria</a></span></div><div class="right"><span class="date">Feb 2012 - Mar 2013</span></div></div></div><div class="summary markdown margin-text-4"><p>Ingria is Russian startup incubator like Y-combinator. Responsibilities included web-service implementation for boutiqueland.ru, interviewing IT staff.</p>
+</div><ul class="highlights margin-text-4 no-break"><li>Branding / design for boutiqueland.ru mobile &amp; desktop</li><li>UI kit for seemedia.ru</li></ul></div><div class="article margin-container-3"><div class="header no-alone-1"><div class="table"><div class="left"><span class="title">Intern</span><span class="subtitle margin-text-1"><a href="speechpro.com">Speech pro</a></span></div><div class="right"><span class="date">Feb 2012 - Mar 2013</span></div></div></div><div class="summary markdown margin-text-4"><p>Speech Technology Center is an enterprise specialising in speech recognition technologies. The position was held in marketing department, related to web-sites and promotion pages design.</p>
+</div><ul class="highlights margin-text-4 no-break"><li>Creation of interactive guide for SpeechPro VoiceKey, using Adobe® Flash®</li><li>Developing batch scripts in Visual Basic to handle massive Microsoft Office Excel data.</li><li>Maintenance of speechpro.com.</li></ul></div><div class="article margin-container-3"><div class="header no-alone-1"><div class="table"><div class="left"><span class="title">Copywriter</span><span class="subtitle margin-text-1"><a href="http://macter.ru/">JSC Master</a></span></div><div class="right"><span class="date">Sep 2007 - Apr 2008</span></div></div></div><div class="summary markdown margin-text-4"><p>Writing articles on predefined topics, defining keywords, SEO-optimization.</p>
+</div><ul class="highlights margin-text-4 no-break"><li>Massive extending of russian language thesaurus and synonims specifically</li><li>Studying basic principles of SEO-texts writing</li></ul></div></div></div><div class="volunteer margin-container-4"><p class="section-title no-alone-2">Volunteer</p><div class="container"><div class="article margin-container-3"><div class="header no-alone-1"><div class="table"><div class="left"><span class="title">Contributor</span><span class="subtitle margin-text-1"><a>StackGL</a></span></div><div class="right"><span class="date">Aug 2016 - Aug 2016</span></div></div></div><div class="summary markdown margin-text-4"><p>Webgl-related components.</p>
+</div><ul class="highlights margin-text-4 no-break"><li>GLSL to JS transpiler</li></ul></div><div class="article margin-container-3"><div class="header no-alone-1"><div class="table"><div class="left"><span class="title">Contributor</span><span class="subtitle margin-text-1"><a href="http://github.com/scijs">SciJS</a></span></div><div class="right"><span class="date">Nov 2015 - Dec 2015</span></div></div></div><div class="summary markdown margin-text-4"><p>Scientific javascript open-source projects</p>
+</div><ul class="highlights margin-text-4 no-break"><li>library of color space conversions</li><li>performant FFT implementation</li></ul></div><div class="article margin-container-3"><div class="header no-alone-1"><div class="table"><div class="left"><span class="title">Web-designer</span><span class="subtitle margin-text-1"><a href="http://lidiavarbanova.com">Lidia Varbanova</a></span></div><div class="right"><span class="date">Aug 2016 - Aug 2016</span></div></div></div><div class="summary markdown margin-text-4"><p>Lidia is a professor of Marketing and Economics in Arts and Creative Industries.</p>
+</div><ul class="highlights margin-text-4 no-break"><li>Renovation of lidiavarbanova.com</li></ul></div><div class="article margin-container-3"><div class="header no-alone-1"><div class="table"><div class="left"><span class="title">Web-designer</span><span class="subtitle margin-text-1"><a href="http://mirca.ca">MIRCA</a></span></div><div class="right"><span class="date">Aug 2016 - Aug 2016</span></div></div></div><div class="summary markdown margin-text-4"><p>Morgan Initiative on Russian Cultural Affairs is russian culture institute in future and russial speaking club now</p>
+</div><ul class="highlights margin-text-4 no-break"><li>Concept, design and developing of logotype and website</li></ul></div><div class="article margin-container-3"><div class="header no-alone-1"><div class="table"><div class="left"><span class="title">Assistant</span><span class="subtitle margin-text-1"><a href="">Saint-Petersburg College of Naval Instrument-making</a></span></div><div class="right"><span class="date">Jan 2007 - Feb 2007</span></div></div></div><div class="summary markdown margin-text-4"><p>Student office tasks.</p>
+</div></div><div class="article margin-container-3"><div class="header no-alone-1"><div class="table"><div class="left"><span class="title">Pedagogical internship</span><span class="subtitle margin-text-1"><a href="">Baltic State Technical University</a></span></div><div class="right"><span class="date">Jan 2010 - Jan 2011</span></div></div></div><div class="summary markdown margin-text-4"><p>Technical drawing course: basic painting, photoshop, design.</p>
+</div></div><div class="article margin-container-3"><div class="header no-alone-1"><div class="table"><div class="left"><span class="title">Scientific research intern</span><span class="subtitle margin-text-1"><a href="">Baltic State Technical University</a></span></div><div class="right"><span class="date">Jul 2010 - Aug 2010</span></div></div></div><div class="summary markdown margin-text-4"><p>Supporting local CRM.</p>
+</div><ul class="highlights margin-text-4 no-break"><li>Fixing natural language processing algorithm</li><li>Designing database reports</li><li>Creating illustrations for methodical books</li><li>A method of creating wall background in Adobe® Photoshop®</li><li>An article: UX approach in product design</li><li>An article: Drag-n-drop in web-applications</li></ul></div></div></div></div><div class="side"><div class="skills margin-container-4"><p class="section-title no-alone-1">Skills</p><div class="container"><div class="article no-break"><span>Frontend</span><ul class="margin-text-2"><li>react</li><li>preact</li><li>vue</li><li>alpine</li><li>web-components</li><li>signals</li><li>observable</li><li>rxjs</li><li>graph-ql</li><li>esbuild</li><li>webpack</li><li>rollup</li><li>browserify</li><li>tailwind</li><li>material-ui</li><li>evergreen</li><li>semantic-ui</li><li>typescript</li><li>webgl</li><li>three-js</li><li>web-audio-api</li><li>howler</li><li>tuna</li><li>jquery</li><li>liquid</li><li>cypress</li><li>playwright</li><li>tape</li></ul></div><div class="article no-break"><span>Design</span><ul class="margin-text-2"><li>UX</li><li>UI</li><li>IA</li><li>figma</li><li>sketch</li></ul></div><div class="article no-break"><span>Backend</span><ul class="margin-text-2"><li>nodejs</li><li>Python</li><li>Django</li><li>Mongo</li><li>Redis</li><li>SQL</li><li>nginx</li><li>apache</li></ul></div><div class="article no-break"><span>CMS</span><ul class="margin-text-2"><li>jekyll</li><li>liquid</li><li>github-pages</li><li>shopify</li><li>wordpress</li><li>drupal</li></ul></div></div></div><div class="education margin-container-4"><p class="section-title no-alone-1">Education</p><div class="container"><div class="article margin-container-2 no-break"><div class="title markdown"><p>Master, Information science and computers, intellectual systems</p>
+</div><span class="institution margin-text-2"><a>Baltic State Technical University “Voenmeh”</a></span></div><div class="article margin-container-2 no-break"><div class="title markdown"><p>Bachelor, Information and computer science</p>
+</div><span class="institution margin-text-2"><a>Baltic State Technical University “Voenmeh”</a></span></div><div class="article margin-container-2 no-break"><div class="title markdown"><p>Secondary professional education, technic, Automatic control systems</p>
+</div><span class="institution margin-text-2"><a>Saint-Petersburg College of Marine Instrumentation</a></span></div><div class="article margin-container-2 no-break"><div class="title markdown"><p>Specialist, Economics and Management</p>
+</div><span class="institution margin-text-2"><a>Baltic State Technical University “Voenmeh”</a></span></div></div></div><div class="references margin-container-4"><p class="section-title no-alone-2">References</p><div class="container"><div class="article margin-container-2 no-break"><span class="name">Matt Buyington</span><q class="margin-text-2">by request</q></div><div class="article margin-container-2 no-break"><span class="name">Mario Ramos</span><q class="margin-text-2">by request</q></div><div class="article margin-container-2 no-break"><span class="name">Alex Tsyrfa</span><q class="margin-text-2">by request</q></div><div class="article margin-container-2 no-break"><span class="name">Alex Reverse</span><q class="margin-text-2">by request</q></div><div class="article margin-container-2 no-break"><span class="name">Sergey Poduzov</span><q class="margin-text-2">by request</q></div><div class="article margin-container-2 no-break"><span class="name">Alex Prokofiev</span><q class="margin-text-2">by request</q></div></div></div><div class="languages margin-container-4 no-break"><p class="section-title no-alone-1">Languages</p><div class="container"><ul><li class="article margin-text-2">English · ok</li><li class="article margin-text-2">Russian · native</li><li class="article margin-text-2">French · basic</li></ul></div></div><div class="interests margin-container-4 no-break"><p class="section-title no-alone-1">Interests</p><div class="container"><ul><li class="article margin-text-2">Computer Science</li><li class="article margin-text-2">Music Technologies</li><li class="article margin-text-2">Bhakti</li></ul></div></div><div class="links margin-container-4 no-break"><p class="section-title no-alone-1">Links</p><div class="container"><ul><li class="article"><a href="http://github.com/dy"><strong>github.com</strong>/dy</a></li><li class="article margin-text-4"><a href="https://github.com/dy"><strong>github.com</strong>/dy</a></li><li class="article margin-text-4"><a href="https://twitter.com/dimayv"><strong>twitter.com</strong>/dimayv</a></li></ul></div></div></div></div></div></body></html>
