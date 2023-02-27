@@ -89,7 +89,7 @@
 				"Best in class scatterplot point clustering algorithm",
 				"Lasso selection tool"
 			],
-			"keywords": ["WebGL", "regl", "stackgl", "d3", "browserify", "Datavis"]
+			"keywords": ["webgl", "regl", "stackgl", "d3", "datavis"]
 		},
 		{
 			"name": "TTBA group",
@@ -229,9 +229,6 @@
 		}
 	],
 	"volunteer": [
-		{
-
-		},
 		{
 			"organization": "StackGL",
 			"position": "Contributor",
