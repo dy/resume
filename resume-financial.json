@@ -36,11 +36,12 @@
 			"endDate": "",
 			"summary": "Smart payments solution",
 			"highlights": [
-				"elevenlabs.io website design & frontend",
-				"Integrating firebase auth / payments",
-				"Multiline waveform player https://dy.github.io/wavearea"
+				"icash.ca landing website design & frontend, enhanced user engagement and conversion rates.",
+				"Loan application process development & improvements, reduced UI friction",
+				"Contract signature form improvements, improved user satisfaction",
+				"UI/UX enhancements across both the mobile and web applications, improving the overall user experience."
 			],
-			"keywords": ["tailwindcss", "tailwindui", "nextjs", "vercel", "react", "firebase", "signals", "alpinojs"]
+			"keywords": ["tailwindcss", "tailwindui", "nextjs", "vercel", "react", "firebase", "contentful", "signals", "alpinojs"]
 		},
 		{
 			"name": "Mobeewave",
@@ -50,17 +51,17 @@
 			"endDate": "2022-10-01",
 			"summary": "Fintech startup Mobeewave that merged into Apple Wallet / Apple Pay.",
 			"highlights": [
-				"Samsung Point of Sale web app",
-				"React/redux-based acquirer portal app",
-				"Spect - frontend AOP framerowk",
-				"Admin portal app - based on spect",
-				"Provisioning portal - angularjs app",
-				"Web push provisioning UI flow",
-				"Apple Business Registry portal frontend",
-				"Payments portal design & development",
-				"Internal admin dashboard development",
-				"Apple Pay widget design & development",
-				"Template instantiation web-standard proposal polyfill"
+				"Developed Samsung Point of Sale web app",
+				"Created React/redux-based acquirer portal app",
+				"Implemented Spect - frontend AOP framerowk",
+				"Built an admin portal app - based on Spect",
+				"Developed a provisioning portal using AngularJS",
+				"Implemented the web push provisioning UI flow",
+				"Developed the frontend for Apple Business Registry portal",
+				"Designed and developed payments portal",
+				"Created internal admin dashboard",
+				"Designed and developed an Apple Pay Later widget",
+				"Developed a polyfill for the template instantiation web-standard proposal."
 			],
 			"keywords": ["react", "preact", "vue", "python", "django", "graphQL", "web-components", "stencil", "cypress", "puppeteer", "redux", "styled-components", "lit-html", "es6", "material ui", "angularjs"]
 		},
