@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "build": "npm run build-html && npm run build-pdf",
-    "build-html": "resume export index.html --format html --theme actual",
-    "build-pdf": "resume export resume.pdf --format pdf --theme actual"
+    "build-html": "resume export index.html --format html --theme joeytall",
+    "build-pdf": "resume export resume.pdf --format pdf --theme joeytall"
   },
   "repository": {
     "type": "git",
@@ -21,6 +21,8 @@
   "dependencies": {
     "jsonresume-theme-actual": "^0.2.1",
     "jsonresume-theme-even": "^0.17.1",
+    "jsonresume-theme-joeytall": "^1.0.1",
+    "jsonresume-theme-tachyons-clean": "^0.0.9",
     "resume-cli": "^3.0.8"
   }
 }

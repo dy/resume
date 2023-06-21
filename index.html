@@ -1,372 +1,668 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><style>@charset "UTF-8";
-/* Workaround for 'break-before:avoid' */
-* {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-}
+<!doctype html>
+<html>
+	<head>
 
-ul, li {
-  margin: 0;
-  padding: 0;
-}
+	<meta charset='utf-8'>
+	<meta name='viewport' content='width=device-width, user-scalable=no, minimal-ui'>
 
-span, q {
-  display: block;
-}
+	<title>Dmitry Ivanov</title>
 
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" crossorigin="anonymous">
+	<style>
+	body {
+  background: #EEEEEE;
+  font: 14px "Arial", Times, sans-serif;
+  line-height: 1.4;
+  margin: 40px 0;
+}
+em {
+  color: #999;
+}
 p {
-  margin: 0;
+  line-height: 1.4;
 }
-
-@page {
-  size: A4;
-  margin: 15mm 0 20mm 0;
+ul {
+  margin-bottom: 0;
 }
-@page :first {
-  margin-top: 10mm;
+li {
+  margin-bottom: 2px;
 }
 a {
-  color: #222222;
-  font-weight: inherit;
   text-decoration: none;
 }
-a[href] {
-  text-decoration: underline;
-  text-decoration-color: #888888;
-}
 
-p, q {
-  line-height: 1.25em;
-}
-
-li {
-  line-height: 1.35em;
-}
-li:first-child {
-  margin-top: 0;
-}
-
-.content {
-  width: 1000px;
-  height: auto;
-  padding: 0 50px;
+#resume {
   margin: 0 auto;
-  font-family: Helvetica, Arial, sans-serif;
-  color: #222222;
+  max-width: 800px;
+  padding: 80px 100px;
+  background: #fff;
+  border: 1px solid #ccc;
+  box-shadow: 2px 2px 4px #aaa;
+  -webkit-box-shadow: 2px 2px 4px #aaa;
 }
 
-.table {
+.coursesList {
+  width: 28%;
+  vertical-align: top;
+  display: inline-block;
+}
+
+.largeFont {
+  font-size: 30px;
+}
+
+.smallFont {
+  font-size: 12px;
+}
+
+.url a {
+  font-size: 25px;
+  margin: 5px;
+}
+
+#basicsBlock{
+  display: flex;
+  justify-content: space-between;
+  height:20px;
+}
+
+#profilesBlock {
+  margin-top: -20px;
+}
+
+.blockHeader {
+  display: flex;
+  justify-content: space-between;
+}
+
+.sectionBlock {
+  display: flex;
   width: 100%;
-  display: table;
 }
-.table .main {
-  display: table-cell;
-  width: 70%;
-  padding-right: 50px;
+
+.sectionName {
+  width: 18%;
+  vertical-align: top;
+  display: inline-block;
 }
-.table .side {
-  display: table-cell;
-  width: 30%;
-  padding-left: 50px;
-  text-align: right;
+
+.sectionContent {
+  width: 80%;
+  vertical-align: top;
+  display: inline-block;
+}
+
+.sectionContent ul {
+  padding-left: 20px;
+  margin-top: 6px;
+  list-style-type: disc;
+}
+
+.position,
+.sectionContent .title {
+  font-weight: bold;
+}
+
+.sectionContent .date {
+  float: right;
+}
+
+.sectionContent .separator {
+  height: 14px;
+}
+
+.sectionContent.full{
+  width: 100%;
+}
+
+.keywords,
+.skill-details {
+  float: right;
+}
+
+.sectionLine {
+  border-style: dashed;
+  border-width: 1px;
+  border-color: #CFCFCF;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.divider {
+  font-weight: bold;
+  margin-left: 5px;
+  margin-right: 5px;
 }
 
 .summary {
-  font-size: 15px;
-}
-.summary:empty {
-  display: none;
-}
-
-.section-title {
-  font-size: 26px;
-  font-weight: normal;
-  margin: 0 0 20px 0;
-}
-
-.margin-container-2:not(:first-child) {
-  margin-top: 20px;
-}
-
-.margin-container-3:not(:first-child) {
-  margin-top: 30px;
-}
-
-.margin-container-4:not(:first-child) {
-  margin-top: 50px;
-}
-
-.padding-container-2 {
-  padding: 20px 0;
-}
-
-.margin-text-1 {
-  margin-top: 2px;
-}
-.margin-text-1:empty {
-  display: none;
-}
-
-.margin-text-2 {
-  margin-top: 4px;
-}
-.margin-text-2:empty {
-  display: none;
-}
-
-.margin-text-3 {
   margin-top: 6px;
 }
-.margin-text-3:empty {
-  display: none;
+
+.skillBlock {
+  margin-bottom: 4px;
 }
 
-.margin-text-4 {
-  margin-top: 8px;
-}
-.margin-text-4:empty {
-  display: none;
+.jobBlock {
+  page-break-inside: avoid;
 }
 
-.margin-text-5 {
-  margin-top: 14px;
-}
-.margin-text-5:empty {
-  display: none;
-}
-
-.no-break {
-  break-inside: avoid;
-}
-
-.no-alone-1 {
-  break-inside: avoid;
-}
-.no-alone-1::after {
-  content: "";
-  display: block;
-  height: 75px;
-  margin-bottom: -75px;
-}
-
-.no-alone-2 {
-  break-inside: avoid;
-}
-.no-alone-2::after {
-  content: "";
-  display: block;
-  height: 150px;
-  margin-bottom: -150px;
+/* Media Queries */
+@media only screen and (max-width: 40em) {
+  body {
+    margin: 0;
+    font-size: 14px;
+  }
+  #resume {
+    margin: 0 auto;
+    max-width: 600px;
+    padding: 0.5em 1em;
+    border: none;
+  }
+  .sectionContent {
+    width: 100%;
+  }
+  .sectionContent .date {
+    padding-right: 2em;
+  }
+  .sectionName {
+    width: auto;
+  }
+  .largeFont {
+    font-size: 20px;
+  }
+  .smallFont {
+    font-size: 14px;
+  }
 }
 
-.markdown h1 {
-  font-size: 160%;
-  font-weight: bolder;
-}
-.markdown h2 {
-  font-size: 150%;
-  font-weight: bolder;
-}
-.markdown h3 {
-  font-size: 140%;
-  font-weight: bolder;
-}
-.markdown h4 {
-  font-size: 130%;
-  font-weight: bold;
-}
-.markdown h5 {
-  font-size: 120%;
-  font-weight: bold;
-}
-.markdown h6 {
-  font-size: 110%;
-  font-weight: bold;
-}
-.markdown ul, .markdown ol {
-  margin-left: 20px;
-}
-.markdown img {
-  display: block;
-  margin: 20px auto;
-  max-width: 1000px;
-  text-align: center;
-}
-.markdown blockquote {
-  margin: 20px 0;
-  padding: 15px 20px;
-}
-.markdown blockquote p {
-  display: inline;
-}
-.markdown code {
-  font-family: monospace;
+@media print {
+  #resume {
+    margin: 0 auto;
+    max-width: 600px;
+    padding: 0px 0px;
+    border: 0px;
+    background: #fff;
+    box-shadow: none;
+    -webkit-box-shadow: none;
+  }
+
+  a {
+    color: black;
+  }
 }
 
-.main .highlights {
-  width: auto;
-  display: block;
-  padding: 0 10px;
-  margin-bottom: 0;
-  columns: 2;
-  column-width: 310px;
-  column-gap: 10px;
-}
-.main .highlights li {
-  font-size: 14px;
-  list-style: none;
-}
-.main .highlights li:before {
-  content: "· ";
-  vertical-align: middle;
-}
-.main .left {
-  display: table-cell;
-}
-.main .left .title {
-  font-size: 18px;
-  font-weight: bold;
-  display: block;
-}
-.main .left .subtitle {
-  font-size: 16px;
-  font-weight: lighter;
-  display: block;
-}
-.main .right {
-  text-align: right;
-  display: table-cell;
-}
-.main .right .date {
-  font-size: 15px;
-  font-weight: lighter;
-  white-space: nowrap;
-}
 
-.basics .main {
-  vertical-align: middle;
-}
-.basics .main .name {
-  font-size: 80px;
-  line-height: 1em;
-  font-weight: bold;
-  display: block;
-  margin-left: -5.6px;
-}
-.basics .main .label {
-  font-size: 40px;
-  line-height: 1em;
-  font-weight: lighter;
-  display: block;
-  margin-left: -1.6px;
-}
-.basics .side {
-  vertical-align: middle;
-  padding-left: 0;
-  padding-top: 15px;
-}
-.basics .side .contact {
-  list-style-type: none;
-}
-.basics .side .contact li {
-  font-size: 18px;
-  line-height: 1.6em;
-}
 
-.links ul {
-  list-style: none;
-}
-.links ul li {
-  font-size: 14px;
-}
+	</style>
 
-.education .title {
-  font-size: 15px;
-}
-.education .institution {
-  font-size: 15px;
-  font-weight: lighter;
-}
+	</head>
+	<body>
 
-.awards .header .title {
-  font-size: 15px;
-}
-.awards .header .awarder {
-  font-size: 15px;
-  font-weight: lighter;
-}
-.awards .summary {
-  font-size: 14px;
-}
+	<div id='resume'>
+  <div id='nameBlock' class='largeFont'>
+    <span class='name'>
+      Dmitry Ivanov,
+    </span>
+    <span class='label'>Software Engineer</span>
+  </div>
+  <div id='basicsBlock' class='smallFont'>
+    <div class='contactBlock'>
+      <span class='email'>df.creative@gmail.com</span>
+      <span class='divider'>|</span>
+      <span class='phone'>+1 514 7755-376</span>
+        <span class='divider'>|</span>
+        <span class='address'>
+          Montréal, Québec, CA
+        </span>
+    </div>
+      <div id='profilesBlock'>
+            <span class='url'>
+              <a class='fa fa-' href='https://github.com/dy'></a>
+            </span>
+            <span class='url'>
+              <a class='fa fa-' href='https://twitter.com/dimayv'></a>
+            </span>
+      </div>
+  </div>
+  <div class='sectionLine'></div>
 
-.certificates .name {
-  font-size: 15px;
-}
-.certificates .issuer {
-  font-size: 15px;
-  font-weight: lighter;
-}
+  <div id='summaryBlock' class="sectionBlock">
+    <div class='sectionContent full'>
+      <span>Saint-Petersburg ➜ Master&#x27;s in Computer Graphics ➜ UI/Web designer at kudago.com ➜ Montreal ➜ Frontend/Web engineer for TTBA and Amaze ➜ WebGL specialist at Plotly Inc ➜ Fintech at Mobeewave ➜ Currently at brainfinance. Versatile professional in computer graphics, UI/Web design, frontend engineering, and fintech, with expertise in mobile payments. Committed to innovation and seeking opportunities in relevant fields.</span>
+    </div>
+  </div>
+  <div class='sectionLine'></div>
 
-.skills .section-title {
-  margin: 0;
-}
-.skills .container {
-  display: block;
-  columns: 2;
-  column-gap: 10px;
-}
-.skills .container .article {
-  break-inside: avoid-column;
-  min-width: 120px;
-  padding-top: 20px;
-}
-.skills .container .article span {
-  display: block;
-  font-size: 18px;
-  font-weight: lighter;
-}
-.skills .container .article li {
-  font-size: 14px;
-  list-style: none;
-}
+  <div id='workBlock' class="sectionBlock">
+    <div class='sectionContent full'>
+			<div class="jobBlock">
+	      <div class='blockHeader'>
+                <div class="company">
+                  <span class='position'>Senior Frontend Engineer @ </span>
+                  <a class='title' href=''>  </a>
+                  </div>
+	        <span class='date'>
+	          2022-10-01 &mdash; Present
+	        </span>
+	      </div>
+	      <ul class='highlights'>
+	        <li>Smart payments solution</li>
+	        <li>icash.ca landing website design &amp; frontend, enhanced user engagement and conversion rates.</li>
+	        <li>Loan application process development &amp; improvements, reduced UI friction</li>
+	        <li>Contract signature form improvements, improved user satisfaction</li>
+	        <li>UI/UX enhancements across both the mobile and web applications, improving the overall user experience.</li>
+	      </ul>
+	      <div class='separator'></div>
+			</div>
+			<div class="jobBlock">
+	      <div class='blockHeader'>
+                <div class="company">
+                  <span class='position'>Software Engineer @ </span>
+                  <a class='title' href=''>  </a>
+                  </div>
+	        <span class='date'>
+	          2019-01-15 &mdash; 2022-10-01
+	        </span>
+	      </div>
+	      <ul class='highlights'>
+	        <li>Fintech startup Mobeewave that merged into Apple Wallet / Apple Pay.</li>
+	        <li>Developed Samsung Point of Sale web app</li>
+	        <li>Created React/redux-based acquirer portal app</li>
+	        <li>Implemented Spect - frontend AOP framerowk</li>
+	        <li>Built an admin portal app - based on Spect</li>
+	        <li>Developed a provisioning portal using AngularJS</li>
+	        <li>Implemented the web push provisioning UI flow</li>
+	        <li>Developed the frontend for Apple Business Registry portal</li>
+	        <li>Designed and developed payments portal</li>
+	        <li>Created internal admin dashboard</li>
+	        <li>Designed and developed an Apple Pay Later widget</li>
+	        <li>Developed a polyfill for the template instantiation web-standard proposal.</li>
+	      </ul>
+	      <div class='separator'></div>
+			</div>
+			<div class="jobBlock">
+	      <div class='blockHeader'>
+                <div class="company">
+                  <span class='position'>WebGL engineer @ </span>
+                  <a class='title' href=''>  </a>
+                  </div>
+	        <span class='date'>
+	          2016-09-01 &mdash; 2018-09-01
+	        </span>
+	      </div>
+	      <ul class='highlights'>
+	        <li>Plotly.js scientific graphing library.</li>
+	        <li>Performant webgl waveform renderer</li>
+	        <li>Testing tools for image comparisons</li>
+	        <li>Regl-based WebGL core components - scatter, line, splom</li>
+	        <li>Mobile version of plotly.js</li>
+	        <li>Scatterplot point clustering algorithm enabling 1B data points</li>
+	        <li>Lasso selection tool</li>
+	        <li>Stack-gl and regl contributions</li>
+	      </ul>
+	      <div class='separator'></div>
+			</div>
+			<div class="jobBlock">
+	      <div class='blockHeader'>
+                <div class="company">
+                  <span class='position'>Web-developer @ </span>
+                  <a class='title' href=''>  </a>
+                  </div>
+	        <span class='date'>
+	          2015-01-01 &mdash; 2016-08-13
+	        </span>
+	      </div>
+	      <ul class='highlights'>
+	        <li>Web agency specializing in web-design, promotion and SMM.</li>
+	        <li>Design &amp; frontend of shopsvelte.com, pegasie.com, coutureonly.com, socialboomwifi.com, citenova.com, wishbox.gift, ecobrandshow.ca</li>
+	        <li>Wishbox.gift website, design, preact-based core, integration with API</li>
+	        <li>Optimization amazemontreal.com for google page insights</li>
+	        <li>Redesign and optimization of ragemontreal.com</li>
+	        <li>Rage Academy - game score tracking app</li>
+	      </ul>
+	      <div class='separator'></div>
+			</div>
+			<div class="jobBlock">
+	      <div class='blockHeader'>
+                <div class="company">
+                  <span class='position'>Frontend developer @ </span>
+                  <a class='title' href=''>  </a>
+                  </div>
+	        <span class='date'>
+	          2012-03-01 &mdash; 2015-01-12
+	        </span>
+	      </div>
+	      <ul class='highlights'>
+	        <li>Kudago is an agency and media covering cultural events in European countries. </li>
+	        <li>Design, UX, UI and IA of kudago.com</li>
+	        <li>Desktop and mobile kudago.com website</li>
+	        <li>&lt;20kb of javascript in mobile website</li>
+	        <li>100/100 in google page insights</li>
+	      </ul>
+	      <div class='separator'></div>
+			</div>
+			<div class="jobBlock">
+	      <div class='blockHeader'>
+                <div class="company">
+                  <span class='position'>Web-developer @ </span>
+                  <a class='title' href=''>  </a>
+                  </div>
+	        <span class='date'>
+	          2012-03-01 &mdash; 2014-03-01
+	        </span>
+	      </div>
+	      <ul class='highlights'>
+	        <li>Webdev freelance jobs - design mockups, UI prototyping, HTML, CSS, JS, wordpress.</li>
+	        <li>Design/markup for ipoteka-vam.ru, to-travel.ru, to-create.ru, tm-print.ru.</li>
+	        <li>Statistical dashboard for likemeter application</li>
+	        <li>boutiqueland.ru: mobile &amp; desktop designs</li>
+	        <li>seemedia.ru: UI components kit</li>
+	        <li>Design / markup for rsua.ru, gildiya-masterov.ru, arkon-okna.ru, postavokna.ru, okonka.ru, jumpingclay.ru, aurama.ru, podsoblyaev.ru, biletron.ru, concertinfo.ru, ditspb.ru, rukasil.ru, voenmeh.ru, dverka.ru, sayhello.ru, zpapa.ru, productinsignt.ru, smartmedia, legran doors</li>
+	        <li>GUI elements for application package “Pure Office”</li>
+	        <li>UI icons for mobile portal kilowap.ru</li>
+	        <li>UI icons for project gloricism.com</li>
+	        <li>Design / markup of book “Childhood”, author Andreeva L.</li>
+	        <li>Design / markup of www.le-gran.spb.ru, JSC Masterskaya</li>
+	        <li>Creating radar 3d model for navy simulator, JSC Sistema</li>
+	        <li>Illustrating textbook of methods of hydrodynamics, BSTU Voenmeh</li>
+	      </ul>
+	      <div class='separator'></div>
+			</div>
+			<div class="jobBlock">
+	      <div class='blockHeader'>
+                <div class="company">
+                  <span class='position'>Intern @ </span>
+                  <a class='title' href=''>  </a>
+                  </div>
+	        <span class='date'>
+	          2012-02-01 &mdash; 2012-03-01
+	        </span>
+	      </div>
+	      <ul class='highlights'>
+	        <li>Speech Technology Center is an enterprise specialising in speech recognition technologies. The position was held in marketing department, related to web-sites and promotion pages design.</li>
+	        <li>Creation of interactive guide for SpeechPro VoiceKey, using Adobe® Flash®</li>
+	        <li>Developing batch scripts in Visual Basic to handle massive Microsoft Office Excel data.</li>
+	        <li>Maintenance of speechpro.com.</li>
+	      </ul>
+	      <div class='separator'></div>
+			</div>
+			<div class="jobBlock">
+	      <div class='blockHeader'>
+                <div class="company">
+                  <span class='position'>Copywriter @ </span>
+                  <a class='title' href=''>  </a>
+                  </div>
+	        <span class='date'>
+	          2007-09-01 &mdash; 2008-04-01
+	        </span>
+	      </div>
+	      <ul class='highlights'>
+	        <li>Writing articles on predefined topics, defining keywords, SEO-optimization.</li>
+	        <li>Thousands of SEO-optimized texts</li>
+	      </ul>
+	      
+			</div>
+    </div>
+  </div>
+  <div class='sectionLine'></div>
 
-.languages ul {
-  list-style: none;
-}
-.languages ul li {
-  font-size: 14px;
-}
 
-.interests ul {
-  list-style: none;
-}
-.interests ul li {
-  font-size: 14px;
-}
+	<div id='skills' class="sectionBlock">
+    <div class='sectionContent full'>
+      <div class='skillBlock'>
+        <span class='title'>Frontend <em>(Senior)</em>:</span>
+          <div class="skill-details">
+          <span>react</span>, 
+          <span>preact</span>, 
+          <span>vue</span>, 
+          <span>alpine</span>, 
+          <span>web-components</span>, 
+          <span>signals</span>, 
+          <span>observable</span>, 
+          <span>rxjs</span>, 
+          <span>graph-ql</span>, 
+          <span>esbuild</span>, 
+          <span>webpack</span>, 
+          <span>rollup</span>, 
+          <span>browserify</span>, 
+          <span>tailwind</span>, 
+          <span>material-ui</span>, 
+          <span>evergreen</span>, 
+          <span>semantic-ui</span>, 
+          <span>typescript</span>, 
+          <span>webgl</span>, 
+          <span>three-js</span>, 
+          <span>web-audio-api</span>, 
+          <span>howler</span>, 
+          <span>tuna</span>, 
+          <span>jquery</span>, 
+          <span>liquid</span>, 
+          <span>cypress</span>, 
+          <span>playwright</span>, 
+          <span>tape</span>
+      </div>
+      </div>
+      <div class='skillBlock'>
+        <span class='title'>Design <em>(middle)</em>:</span>
+          <div class="skill-details">
+          <span>UX</span>, 
+          <span>UI</span>, 
+          <span>IA</span>, 
+          <span>figma</span>, 
+          <span>sketch</span>
+      </div>
+      </div>
+      <div class='skillBlock'>
+        <span class='title'>Backend <em>(middle)</em>:</span>
+          <div class="skill-details">
+          <span>nodejs</span>, 
+          <span>Python</span>, 
+          <span>Django</span>, 
+          <span>Mongo</span>, 
+          <span>Redis</span>, 
+          <span>SQL</span>, 
+          <span>nginx</span>, 
+          <span>apache</span>
+      </div>
+      </div>
+      <div class='skillBlock'>
+        <span class='title'>CMS <em>(middle)</em>:</span>
+          <div class="skill-details">
+          <span>jekyll</span>, 
+          <span>liquid</span>, 
+          <span>github-pages</span>, 
+          <span>shopify</span>, 
+          <span>wordpress</span>, 
+          <span>drupal</span>
+      </div>
+      </div>
+    </div>
+	</div>
+  <div class='sectionLine'></div>
 
-.references .name {
-  font-size: 15px;
-}
-.references q {
-  font-size: 14.5px;
-  font-weight: lighter;
-  font-style: italic;
-}</style><title>Resume Dmitry Ivanov – Software Engineer</title></head><body><div class="content"><div class="basics"><div class="table padding-container-2"><div class="main"><span class="name">Dmitry Ivanov</span><span class="label">Software Engineer</span></div><div class="side"><ul class="contact"><li>+1 514 7755-376</li><li>df.creative@gmail.com</li><li class="margin-text-5">Montréal, Québec, CA</li></ul></div></div><div class="summary markdown padding-container-2"><p>Originally from Saint-Petersburg, earned Master's degree in Computer Graphics (CS) at Baltic State Technical University. Started his career as UI / Web designer collaborating at local startups, prominently kudago.com, with hobby passion for open-source. Afterwards moved to Montreal, Canada, where first collaborated with local businesses (TTBA, Amaze) as frontend / web engineer, then found an opportunity at Plotly Inc as WebGL specialist. Later switched to fintech at Mobeewave, that merged into Apple Wallet and Payments teams. Currently focused at audio / vis tech at elevenlabs.io and open-source projects.</p>
-</div></div><div class="table padding-container-2"><div class="main"><div class="work margin-container-4"><p class="section-title no-alone-2">Experience</p><div class="container"><div class="article margin-container-3"><div class="header no-alone-1"><div class="table"><div class="left"><span class="title">Frontend Engineer</span><span class="subtitle margin-text-1"><a href="https://elevenlabs.io">Elevenlabs</a></span></div><div class="right"><span class="date">Oct 2022 - Present</span></div></div></div><div class="summary markdown margin-text-4"><p>AI voice tech startup providing high-end text-to-speech service</p>
-</div><ul class="highlights margin-text-4 no-break"><li>elevenlabs.io website design &amp; frontend</li><li>Integrating firebase auth / payments</li><li>Multiline waveform player https://dy.github.io/wavearea</li></ul></div><div class="article margin-container-3"><div class="header no-alone-1"><div class="table"><div class="left"><span class="title">Software Engineer</span><span class="subtitle margin-text-1"><a href="https://apple.com">Apple / Mobeewave</a></span></div><div class="right"><span class="date">Jan 2019 - Oct 2022</span></div></div></div><div class="summary markdown margin-text-4"><p>Fintech startup Mobeewave that merged into Apple Wallet / Apple Pay.</p>
-</div><ul class="highlights margin-text-4 no-break"><li>Samsung Point of Sale web app</li><li>React/redux-based acquirer portal app</li><li>Spect - frontend AOP framerowk</li><li>Admin portal app - based on spect</li><li>Provisioning portal - angularjs app</li><li>Web push provisioning UI flow</li><li>Apple Business Registry portal frontend</li><li>Payments portal design &amp; development</li><li>Internal admin dashboard development</li><li>Apple Pay widget design &amp; development</li><li>Template instantiation web-standard proposal polyfill</li></ul></div><div class="article margin-container-3"><div class="header no-alone-1"><div class="table"><div class="left"><span class="title">WebGL engineer</span><span class="subtitle margin-text-1"><a href="http://plot.ly">Plotly Inc</a></span></div><div class="right"><span class="date">Sep 2016 - Sep 2018</span></div></div></div><div class="summary markdown margin-text-4"><p>Plotly.js scientific graphing library.</p>
-</div><ul class="highlights margin-text-4 no-break"><li>Performant webgl waveform renderer</li><li>Testing tools for image comparisons</li><li>Regl-based WebGL core components - scatter, line, splom</li><li>Mobile version of plotly.js</li><li>Scatterplot point clustering algorithm enabling 1B data points</li><li>Lasso selection tool</li><li>Stack-gl and regl contributions</li></ul></div><div class="article margin-container-3"><div class="header no-alone-1"><div class="table"><div class="left"><span class="title">Web-developer</span><span class="subtitle margin-text-1"><a href="http://ttbagroup.com/">TTBA Group</a></span></div><div class="right"><span class="date">Jan 2015 - Aug 2016</span></div></div></div><div class="summary markdown margin-text-4"><p>Web agency specializing in web-design, promotion and SMM.</p>
-</div><ul class="highlights margin-text-4 no-break"><li>Design &amp; frontend of shopsvelte.com, pegasie.com, coutureonly.com, socialboomwifi.com, citenova.com, wishbox.gift, ecobrandshow.ca</li><li>Wishbox.gift website, design, preact-based core, integration with API</li><li>Optimization amazemontreal.com for google page insights</li><li>Redesign and optimization of ragemontreal.com</li><li>Rage Academy - game score tracking app</li></ul></div><div class="article margin-container-3"><div class="header no-alone-1"><div class="table"><div class="left"><span class="title">Frontend developer</span><span class="subtitle margin-text-1"><a href="http://kudago.com">KudaGo Inc.</a></span></div><div class="right"><span class="date">Mar 2012 - Jan 2015</span></div></div></div><div class="summary markdown margin-text-4"><p>Kudago is an agency and media covering cultural events in European countries.</p>
-</div><ul class="highlights margin-text-4 no-break"><li>Design, UX, UI and IA of kudago.com</li><li>Desktop and mobile kudago.com website</li><li>&lt;20kb of javascript in mobile website</li><li>100/100 in google page insights</li></ul></div><div class="article margin-container-3"><div class="header no-alone-1"><div class="table"><div class="left"><span class="title">Web-developer</span><span class="subtitle margin-text-1"><a>Freelance</a></span></div><div class="right"><span class="date">Mar 2012 - Mar 2014</span></div></div></div><div class="summary markdown margin-text-4"><p>Webdev freelance jobs - design mockups, UI prototyping, HTML, CSS, JS, wordpress.</p>
-</div><ul class="highlights margin-text-4 no-break"><li>Design/markup for ipoteka-vam.ru, to-travel.ru, to-create.ru, tm-print.ru.</li><li>Statistical dashboard for likemeter application</li><li>boutiqueland.ru: mobile &amp; desktop designs</li><li>seemedia.ru: UI components kit</li><li>Design / markup for rsua.ru, gildiya-masterov.ru, arkon-okna.ru, postavokna.ru, okonka.ru, jumpingclay.ru, aurama.ru, podsoblyaev.ru, biletron.ru, concertinfo.ru, ditspb.ru, rukasil.ru, voenmeh.ru, dverka.ru, sayhello.ru, zpapa.ru, productinsignt.ru, smartmedia, legran doors</li><li>GUI elements for application package “Pure Office”</li><li>UI icons for mobile portal kilowap.ru</li><li>UI icons for project gloricism.com</li><li>Design / markup of book “Childhood”, author Andreeva L.</li><li>Design / markup of www.le-gran.spb.ru, JSC Masterskaya</li><li>Creating radar 3d model for navy simulator, JSC Sistema</li><li>Illustrating textbook of methods of hydrodynamics, BSTU Voenmeh</li></ul></div><div class="article margin-container-3"><div class="header no-alone-1"><div class="table"><div class="left"><span class="title">Intern</span><span class="subtitle margin-text-1"><a href="speechpro.com">Speech pro</a></span></div><div class="right"><span class="date">Feb 2012 - Mar 2012</span></div></div></div><div class="summary markdown margin-text-4"><p>Speech Technology Center is an enterprise specialising in speech recognition technologies. The position was held in marketing department, related to web-sites and promotion pages design.</p>
-</div><ul class="highlights margin-text-4 no-break"><li>Creation of interactive guide for SpeechPro VoiceKey, using Adobe® Flash®</li><li>Developing batch scripts in Visual Basic to handle massive Microsoft Office Excel data.</li><li>Maintenance of speechpro.com.</li></ul></div><div class="article margin-container-3"><div class="header no-alone-1"><div class="table"><div class="left"><span class="title">Copywriter</span><span class="subtitle margin-text-1"><a href="http://macter.ru/">JSC Master</a></span></div><div class="right"><span class="date">Sep 2007 - Apr 2008</span></div></div></div><div class="summary markdown margin-text-4"><p>Writing articles on predefined topics, defining keywords, SEO-optimization.</p>
-</div><ul class="highlights margin-text-4 no-break"><li>Thousands of SEO-optimized texts</li></ul></div></div></div><div class="volunteer margin-container-4"><p class="section-title no-alone-2">Volunteer</p><div class="container"><div class="article margin-container-3"><div class="header no-alone-1"><div class="table"><div class="left"><span class="title">Contributor</span><span class="subtitle margin-text-1"><a>Open-Source (Github)</a></span></div><div class="right"><span class="date">Aug 2016 - Dec 2015</span></div></div></div><div class="summary markdown margin-text-4"><p>Webgl-related components.</p>
-</div><ul class="highlights margin-text-4 no-break"><li>Stackgl: GLSL to JS compiler glsl-transpiler</li><li>ColorJS: Color spaces conversions color-space.js</li><li>SciJS: Performant FFT implementation</li><li>AudioJS: Stream-based audio processing components</li><li>Audio-Vis: WebGL-based audio visualizers: spectrum, spectrogram, waveform</li></ul></div><div class="article margin-container-3"><div class="header no-alone-1"><div class="table"><div class="left"><span class="title">Web-designer</span><span class="subtitle margin-text-1"><a>Web Being</a></span></div><div class="right"><span class="date">Aug 2016 - Dec 2015</span></div></div></div><div class="summary markdown margin-text-4"><p>Websites for friends &amp; good people</p>
-</div><ul class="highlights margin-text-4 no-break"><li>Design &amp; frontend of Lidia Varbanova's personal website lidiavarbanova.com</li><li>Concept, design and website for MIRCA - Russian speaking / culture club</li><li>Website design / development for transmission repair service - proakpp.ru</li></ul></div><div class="article margin-container-3"><div class="header no-alone-1"><div class="table"><div class="left"><span class="title">Scientific research intern</span><span class="subtitle margin-text-1"><a href="">Baltic State Technical University</a></span></div><div class="right"><span class="date">Jul 2010 - Jan 2011</span></div></div></div><div class="summary markdown margin-text-4"><p>Supporting local CRM.</p>
-</div><ul class="highlights margin-text-4 no-break"><li>Pedagogical internship: technical drawing course.</li><li>IT department website design &amp; implementation</li><li>Fixing natural language processing algorithm.</li><li>Designing database reports.</li><li>Creating illustrations for methodical books.</li><li>A method of creating wall background in Adobe® Photoshop®</li><li>An article: UX approach in product design</li><li>An article: Drag-n-drop in web-applications</li><li>Saint-Petersburg College of Naval Instrument-making: office tasks.</li></ul></div></div></div></div><div class="side"><div class="skills margin-container-4"><p class="section-title no-alone-1">Skills</p><div class="container"><div class="article no-break"><span>Frontend</span><ul class="margin-text-2"><li>react</li><li>preact</li><li>vue</li><li>alpine</li><li>web-components</li><li>signals</li><li>observable</li><li>rxjs</li><li>graph-ql</li><li>esbuild</li><li>webpack</li><li>rollup</li><li>browserify</li><li>tailwind</li><li>material-ui</li><li>evergreen</li><li>semantic-ui</li><li>typescript</li><li>webgl</li><li>three-js</li><li>web-audio-api</li><li>howler</li><li>tuna</li><li>jquery</li><li>liquid</li><li>cypress</li><li>playwright</li><li>tape</li></ul></div><div class="article no-break"><span>Design</span><ul class="margin-text-2"><li>UX</li><li>UI</li><li>IA</li><li>figma</li><li>sketch</li></ul></div><div class="article no-break"><span>Backend</span><ul class="margin-text-2"><li>nodejs</li><li>Python</li><li>Django</li><li>Mongo</li><li>Redis</li><li>SQL</li><li>nginx</li><li>apache</li></ul></div><div class="article no-break"><span>CMS</span><ul class="margin-text-2"><li>jekyll</li><li>liquid</li><li>github-pages</li><li>shopify</li><li>wordpress</li><li>drupal</li></ul></div></div></div><div class="education margin-container-4"><p class="section-title no-alone-1">Education</p><div class="container"><div class="article margin-container-2 no-break"><div class="title markdown"><p>Master, Information science and computers, intellectual systems</p>
-</div><span class="institution margin-text-2"><a>Baltic State Technical University “Voenmeh”</a></span></div><div class="article margin-container-2 no-break"><div class="title markdown"><p>Bachelor, Information and computer science</p>
-</div><span class="institution margin-text-2"><a>Baltic State Technical University “Voenmeh”</a></span></div><div class="article margin-container-2 no-break"><div class="title markdown"><p>Secondary professional education, technician, Automatic control systems</p>
-</div><span class="institution margin-text-2"><a>Saint-Petersburg College of Marine Instrumentation</a></span></div><div class="article margin-container-2 no-break"><div class="title markdown"><p>Specialist, Economics and Management</p>
-</div><span class="institution margin-text-2"><a>Baltic State Technical University “Voenmeh”</a></span></div></div></div><div class="references margin-container-4"><p class="section-title no-alone-2">References</p><div class="container"><div class="article margin-container-2 no-break"><span class="name">Matt Buyington</span><q class="margin-text-2">by request</q></div><div class="article margin-container-2 no-break"><span class="name">Mario Ramos</span><q class="margin-text-2">by request</q></div><div class="article margin-container-2 no-break"><span class="name">Alex Tsyrfa</span><q class="margin-text-2">by request</q></div><div class="article margin-container-2 no-break"><span class="name">Alex Reverse</span><q class="margin-text-2">by request</q></div><div class="article margin-container-2 no-break"><span class="name">Sergey Poduzov</span><q class="margin-text-2">by request</q></div><div class="article margin-container-2 no-break"><span class="name">Alex Prokofiev</span><q class="margin-text-2">by request</q></div></div></div><div class="languages margin-container-4 no-break"><p class="section-title no-alone-1">Languages</p><div class="container"><ul><li class="article margin-text-2">English · fluent</li><li class="article margin-text-2">Russian · native</li><li class="article margin-text-2">French · basic</li></ul></div></div><div class="interests margin-container-4 no-break"><p class="section-title no-alone-1">Interests</p><div class="container"><ul><li class="article margin-text-2">Computer Science</li><li class="article margin-text-2">Music Technologies</li><li class="article margin-text-2">Bhakti Yoga</li></ul></div></div><div class="links margin-container-4 no-break"><p class="section-title no-alone-1">Links</p><div class="container"><ul><li class="article margin-text-4"><a href="https://github.com/dy"><strong>github.com</strong>/dy</a></li><li class="article margin-text-4"><a href="https://twitter.com/dimayv"><strong>twitter.com</strong>/dimayv</a></li></ul></div></div></div></div></div></body></html>
+
+	<div id='volunteer' class="sectionBlock">
+    <div class='sectionName'>
+      <span>VOLUNTEERING</span>
+    </div>
+    <div class='sectionContent'>
+      <div class='blockHeader'>
+        <span class='title'>Open-Source (Github), Contributor</span>
+        <span class='date'>
+          2016-08-01 &mdash; 2015-12-01
+        </span>
+        <ul class='highlights'>
+          <li>Webgl-related components.</li>
+          <li>Stackgl: GLSL to JS compiler glsl-transpiler</li>
+          <li>ColorJS: Color spaces conversions color-space.js</li>
+          <li>SciJS: Performant FFT implementation</li>
+          <li>AudioJS: Stream-based audio processing components</li>
+          <li>Audio-Vis: WebGL-based audio visualizers: spectrum, spectrogram, waveform</li>
+        </ul>
+      </div>
+      <div class='separator'></div>
+      <div class='blockHeader'>
+        <span class='title'>Web Being, Web-designer</span>
+        <span class='date'>
+          2016-08-01 &mdash; 2015-12-01
+        </span>
+        <ul class='highlights'>
+          <li>Websites for friends &amp; good people</li>
+          <li>Design &amp; frontend of Lidia Varbanova&#x27;s personal website lidiavarbanova.com</li>
+          <li>Concept, design and website for MIRCA - Russian speaking / culture club</li>
+          <li>Website design / development for transmission repair service - proakpp.ru</li>
+        </ul>
+      </div>
+      <div class='separator'></div>
+      <div class='blockHeader'>
+        <span class='title'>Baltic State Technical University, Scientific research intern</span>
+        <span class='date'>
+          2010-07-01 &mdash; 2011-01-01
+        </span>
+        <ul class='highlights'>
+          <li>Supporting local CRM.</li>
+          <li>Pedagogical internship: technical drawing course.</li>
+          <li>IT department website design &amp; implementation</li>
+          <li>Fixing natural language processing algorithm.</li>
+          <li>Designing database reports.</li>
+          <li>Creating illustrations for methodical books.</li>
+          <li>A method of creating wall background in Adobe® Photoshop®</li>
+          <li>An article: UX approach in product design</li>
+          <li>An article: Drag-n-drop in web-applications</li>
+          <li>Saint-Petersburg College of Naval Instrument-making: office tasks.</li>
+        </ul>
+      </div>
+      
+    </div>
+	</div>
+  <div class='sectionLine'></div>
+
+	<div id='education' class="sectionBlock">
+    <div class='sectionName'>
+      <span>EDUCATION</span>
+    </div>
+    <div class='sectionContent'>
+      <div class='educationBlock'>
+        <span class='title'>
+          Baltic State Technical University “Voenmeh”
+        </span>
+        <span class='date'>
+          2010-09-01 &mdash; 2012-06-14
+        </span>
+        <div class=''>
+          Master  - Information science and computers, intellectual systems
+        </div>
+      </div>
+      <div class='separator'></div>
+      <div class='educationBlock'>
+        <span class='title'>
+          Baltic State Technical University “Voenmeh”
+        </span>
+        <span class='date'>
+          2006-09-01 &mdash; 2010-06-14
+        </span>
+        <div class=''>
+          Bachelor  - Information and computer science
+        </div>
+      </div>
+      <div class='separator'></div>
+      <div class='educationBlock'>
+        <span class='title'>
+          Saint-Petersburg College of Marine Instrumentation
+        </span>
+        <span class='date'>
+          2002-09-01 &mdash; 2006-06-01
+        </span>
+        <div class=''>
+          Secondary professional education, technician  - Automatic control systems
+        </div>
+      </div>
+      <div class='separator'></div>
+      <div class='educationBlock'>
+        <span class='title'>
+          Baltic State Technical University “Voenmeh”
+        </span>
+        <span class='date'>
+          2010-09-01 &mdash; 2012-02-15
+        </span>
+        <div class=''>
+          Specialist  - Economics and Management
+        </div>
+      </div>
+      
+    </div>
+	</div>
+  <div class='sectionLine'></div>
+
+          <div id='languages' class="sectionBlock">
+    <div class='sectionName'>
+      <span>LANGUAGES</span>
+    </div>
+    <div class='sectionContent'>
+      <span class='language'>English</span>
+      <span class='fluency'><em>(fluent)</em></span>
+      <span>,</span>
+      <span class='language'>Russian</span>
+      <span class='fluency'><em>(native)</em></span>
+      <span>,</span>
+      <span class='language'>French</span>
+      <span class='fluency'><em>(basic)</em></span>
+      
+    </div>
+  </div>
+    <div class='sectionLine'></div>
+
+    <div id='interests' class="sectionBlock">
+    <div class='sectionName'>
+      <span>INTERESTS</span>
+    </div>
+    <div class='sectionContent'>
+        <div class="interest">
+      <span class='name'>Computer Science</span><!--
+      --><span class='keywords'> <em>
+        Compilers<!--
+        -->, 
+        DSP<!--
+        -->, 
+        AI<!--
+        -->, 
+        NN<!--
+        -->
+      </em></span><!--
+      --><span> </span>
+        </div>
+        <div class="interest">
+      <span class='name'>Music Technologies</span><!--
+      --><span class='keywords'> <em>
+        synthesis<!--
+        -->, 
+        harmonic analysis<!--
+        -->, 
+        spectrograms<!--
+        -->, 
+        audio-vis<!--
+        -->, 
+        wavelets<!--
+        -->
+      </em></span><!--
+      --><span> </span>
+        </div>
+        <div class="interest">
+      <span class='name'>Bhakti Yoga</span><!--
+      --><span class='keywords'> <em>
+        Prasadam<!--
+        -->, 
+        Kirtan<!--
+        -->, 
+        Mridanga<!--
+        -->, 
+        Arati<!--
+        -->
+      </em></span><!--
+      -->
+        </div>
+    </div>
+	</div>
+
+	</body>
+</html>
