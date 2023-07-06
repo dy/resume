@@ -6,7 +6,7 @@
 		"email": "df.creative@gmail.com",
 		"phone": "+1 514 7755-376",
 		"url": "",
-		"summary": "Saint-Petersburg ➜ Master's in Computer Graphics ➜ UI/Web designer at kudago.com ➜ Montreal ➜ Frontend/Web engineer for TTBA and Amaze ➜ WebGL specialist at Plotly Inc ➜ Fintech at Mobeewave ➜ Currently at brainfinance. Versatile professional in computer graphics, UI/Web design, frontend engineering, and fintech, with expertise in mobile payments. Committed to innovation and seeking opportunities in relevant fields.",
+		"summary": "Saint-Petersburg ➜ Master's in Computer Graphics ➜ UI/Web designer at kudago.com ➜ Montreal ➜ Frontend/Web engineer for TTBA and Amaze ➜ WebGL specialist at Plotly Inc ➜ Frontend at Mobeewave/Apple ➜ Senior Frontend Engineer at Elevenlabs. Versatile professional in computer graphics, UI/Web design, audio/DSP, frontend engineering, with expertise in fintech and mobile payments. Committed to innovation and seeking opportunities in relevant fields.",
 		"location": {
 			"address": "520 de Gaspe, #106",
 			"postalCode": "H2K1E1",
@@ -29,22 +29,21 @@
 	},
 	"work": [
 		{
-			"name": "Brainfinance",
+			"name": "Elevenlabs",
 			"position": "Senior Frontend Engineer",
-			"url": "https://brainfinance.com",
+			"url": "https://elevenlabs.com",
 			"startDate": "2022-10-01",
 			"endDate": "",
-			"summary": "Smart payments solution",
+			"summary": "Elevenlabs - Text to Speech and Voice Cloning AI.",
 			"highlights": [
-				"icash.ca landing website design & frontend, enhanced user engagement and conversion rates.",
-				"Loan application process development & improvements, reduced UI friction",
-				"Contract signature form improvements, improved user satisfaction",
-				"UI/UX enhancements across both the mobile and web applications, improving the overall user experience."
+				"Designing & developing web front, conveying spirit of audio / speech tech.",
+				"Firebase integration: auth, payments, user management.",
+				"Audio streaming technology, connecting to backend API"
 			],
-			"keywords": ["tailwindcss", "tailwindui", "nextjs", "vercel", "react", "firebase", "contentful", "signals", "alpinojs"]
+			"keywords": ["tailwindcss", "tailwindui", "react", "firebase", "signals", "alpinojs"]
 		},
 		{
-			"name": "Mobeewave",
+			"name": "Mobeewave / Apple",
 			"position": "Software Engineer",
 			"url": "https://www.linkedin.com/company/mobeewave/about/",
 			"startDate": "2019-01-15",
@@ -181,10 +180,10 @@
 			"endDate": "2015-12-01",
 			"summary": "Webgl-related components.",
 			"highlights": [
+				"AudioJS: Stream-based audio processing components",
 				"Stackgl: GLSL to JS compiler glsl-transpiler",
 				"ColorJS: Color spaces conversions color-space.js",
 				"SciJS: Performant FFT implementation",
-				"AudioJS: Stream-based audio processing components",
 				"Audio-Vis: WebGL-based audio visualizers: spectrum, spectrogram, waveform"
 			],
 			"keywords": [
@@ -198,9 +197,9 @@
 		},
 		{
 			"organization": "Web Being",
-			"position": "Web-designer",
+			"position": "Web-developer",
 			"startDate": "2016-08-01",
-			"endDate": "2015-12-01",
+			"endDate": "",
 			"summary": "Websites for friends & good people",
 			"highlights": [
 				"Design & frontend of Lidia Varbanova's personal website lidiavarbanova.com",
