@@ -1,12 +1,12 @@
 {
 	"basics": {
 		"name": "Dmitry Ivanov",
-		"label": "Software Engineer",
+		"label": "Frontend/Software Engineer",
 		"image": "https://raw.githubusercontent.com/dy/resume/master/index.png",
 		"email": "df.creative@gmail.com",
 		"phone": "+1 514 7755-376",
 		"url": "",
-		"summary": "Saint-Petersburg ➜ Master's in Computer Graphics ➜ UI/Web designer at kudago.com ➜ Montreal ➜ Frontend/Web engineer for TTBA and Amaze ➜ WebGL specialist at Plotly Inc ➜ Frontend at Mobeewave/Apple ➜ Senior Frontend Engineer at Elevenlabs. Versatile professional in computer graphics, UI/Web design, audio/DSP, frontend engineering, with expertise in fintech and mobile payments. Committed to innovation and seeking opportunities in relevant fields.",
+		"summary": "I graduated with Master’s degree in Computer Graphics at Baltic Technical University, Saint-Petersburg, and began my career as a freelance designer, later performed as web developer at events startup kudago.com. Subsequently I moved to Montreal where I worked as a frontend/web developer at TTBA/Amaze. Then I respecialized into WebGL and scientific graphics at Plotly Inc. Following roles are a Frontend Engineer at Mobeewave (later aquired by Apple) and now Brainfinance. My background blends technical expertise with creative design, making me a versatile professional in web development and computer graphics.",
 		"location": {
 			"address": "520 de Gaspe, #106",
 			"postalCode": "H2K1E1",
@@ -22,25 +22,39 @@
 			},
 			{
 				"network": "Twitter",
-				"username": "dimayv",
-				"url": "https://twitter.com/dimayv"
+				"username": "dmitryiv_",
+				"url": "https://twitter.com/dmitryiv_"
 			}
 		]
 	},
 	"work": [
 		{
-			"name": "Elevenlabs",
+			"name": "Brainfinance",
 			"position": "Senior Frontend Engineer",
-			"url": "https://elevenlabs.com",
-			"startDate": "2022-10-01",
-			"endDate": "",
-			"summary": "Elevenlabs - Text to Speech and Voice Cloning AI.",
+			"url": "https://brainfinance.com",
+			"startDate": "2022-11-01",
+			"endDate": "now",
+			"summary": "Frontend and UI/UX tasks for Brainfinance - smart credit solutions, delivering user experience for web/mobile platforms.",
 			"highlights": [
-				"Designing & developing web front, conveying spirit of audio / speech tech.",
-				"Firebase integration: auth, payments, user management.",
-				"Audio streaming technology, connecting to backend API"
+				"Designed and developed earna.ca dashboard and landing page, desktop/mobile.",
+				"Designed and developed earna.ca design system / UI framework.",
+				"Implemented icash.ca landing frontend.",
+				"Reimplemented icash contract process UI, resulting in increased user satisfaction.",
+				"UI/UX improvements across mobile and web applications, enhancing the overall user experience."
 			],
-			"keywords": ["tailwindcss", "tailwindui", "react", "firebase", "signals", "alpinojs"]
+			"keywords": [
+				"shadcn",
+				"design systems",
+				"Tailwind CSS",
+				"Tailwind UI",
+				"Next.js",
+				"Vercel",
+				"React",
+				"Firebase",
+				"Contentful",
+				"Signals",
+				"Alpino.js"
+			]
 		},
 		{
 			"name": "Mobeewave / Apple",
@@ -48,21 +62,37 @@
 			"url": "https://www.linkedin.com/company/mobeewave/about/",
 			"startDate": "2019-01-15",
 			"endDate": "2022-10-01",
-			"summary": "Fintech startup Mobeewave that merged into Apple Wallet / Apple Pay.",
+			"summary": "Performed as frontend engineer at fintech startup Mobeewave, specialized on mobile point-of-sale solutions, later acquired by Apple Pay.",
 			"highlights": [
-				"Developed Samsung Point of Sale web app",
-				"Created React/redux-based acquirer portal app",
-				"Implemented Spect - frontend AOP framerowk",
-				"Built an admin portal app - based on Spect",
-				"Developed a provisioning portal using AngularJS",
-				"Implemented the web push provisioning UI flow",
-				"Developed the frontend for Apple Business Registry portal",
-				"Designed and developed payments portal",
-				"Created internal admin dashboard",
-				"Designed and developed an Apple Pay Later widget",
-				"Developed a polyfill for the template instantiation web-standard proposal."
+				"Developed Samsung Point of Sale web app, enabling secure mobile payments.",
+				"Created a React/Redux-based acquirer portal app to streamline transaction processing.",
+				"Designed and developed Spect - a frontend AOP framework.",
+				"Built an admin portal app utilizing the spect framework for internal management.",
+				"Developed a provisioning portal using AngularJS.",
+				"Implemented Apple Wallet web push provisioning UI flow.",
+				"Developed the frontend for the Apple Business Registry portal, enabling seamless integration.",
+				"Designed and developed Apple payments portal to manage transactions and analytics.",
+				"Designed and developed an Apple Pay Later widget, enhancing payment options for users.",
+				"Developed a polyfill for the Template Instantiation web standard proposal."
 			],
-			"keywords": ["react", "preact", "vue", "python", "django", "graphQL", "web-components", "stencil", "cypress", "puppeteer", "redux", "styled-components", "lit-html", "es6", "material ui", "angularjs"]
+			"keywords": [
+				"React",
+				"Preact",
+				"Vue",
+				"Python",
+				"Django",
+				"GraphQL",
+				"Web Components",
+				"Stencil",
+				"Cypress",
+				"Puppeteer",
+				"Redux",
+				"Styled-components",
+				"Lit-html",
+				"ES6",
+				"Material UI",
+				"AngularJS"
+			]
 		},
 		{
 			"name": "Plotly Inc",
@@ -70,7 +100,7 @@
 			"url": "http://plot.ly",
 			"startDate": "2016-09-01",
 			"endDate": "2018-09-01",
-			"summary": "Plotly.js scientific graphing library.",
+			"summary": "Plotly.js scientific graphing library. Performed as WebGL / SVG specialist, specialized in optimal computer graphics algorithms.",
 			"highlights": [
 				"Performant webgl waveform renderer",
 				"Testing tools for image comparisons",
@@ -80,7 +110,13 @@
 				"Lasso selection tool",
 				"Stack-gl and regl contributions"
 			],
-			"keywords": ["webgl", "regl", "stackgl", "d3", "datavis"]
+			"keywords": [
+				"webgl",
+				"regl",
+				"stackgl",
+				"d3",
+				"datavis"
+			]
 		},
 		{
 			"name": "TTBA Group",
@@ -88,7 +124,7 @@
 			"url": "http://ttbagroup.com/",
 			"startDate": "2015-01-01",
 			"endDate": "2016-08-13",
-			"summary": "Web agency specializing in web-design, promotion and SMM.",
+			"summary": "Web agency specializing in web-design, promotion and SMM. Performed role of web-developer, implementing website designs for multiple small/medium-business clients.",
 			"highlights": [
 				"Design & frontend of shopsvelte.com, pegasie.com, coutureonly.com, socialboomwifi.com, citenova.com, wishbox.gift, ecobrandshow.ca",
 				"Wishbox.gift website, design, preact-based core, integration with API",
@@ -96,7 +132,19 @@
 				"Redesign and optimization of ragemontreal.com",
 				"Rage Academy - game score tracking app"
 			],
-			"keywords" : ["wordpress", "shopify", "ux", "analytics", "mailchimp", "jquery", "html", "css", "optimization", "page insights", "choojs"]
+			"keywords": [
+				"wordpress",
+				"shopify",
+				"ux",
+				"analytics",
+				"mailchimp",
+				"jquery",
+				"html",
+				"css",
+				"optimization",
+				"page insights",
+				"choojs"
+			]
 		},
 		{
 			"name": "KudaGo Inc.",
@@ -104,7 +152,7 @@
 			"url": "http://kudago.com",
 			"startDate": "2012-03-01",
 			"endDate": "2015-01-12",
-			"summary": "Kudago is an agency and media covering cultural events in European countries. ",
+			"summary": "Kudago is an agency and media covering cultural events in European countries. Performed roles of web-designer and frontend engineer.",
 			"highlights": [
 				"Design, UX, UI and IA of kudago.com",
 				"Desktop and mobile kudago.com website",
@@ -145,14 +193,17 @@
 				"Creating radar 3d model for navy simulator, JSC Sistema",
 				"Illustrating textbook of methods of hydrodynamics, BSTU Voenmeh"
 			],
-			"keywords": ["Zend Framework", "PHP"]
+			"keywords": [
+				"Zend Framework",
+				"PHP"
+			]
 		},
 		{
 			"name": "Speech pro",
 			"position": "Intern",
 			"startDate": "2012-02-01",
 			"endDate": "2012-03-01",
-			"url": "speechpro.com",
+			"url": "http://speechpro.com",
 			"summary": "Speech Technology Center is an enterprise specialising in speech recognition technologies. The position was held in marketing department, related to web-sites and promotion pages design.",
 			"highlights": [
 				"Creation of interactive guide for SpeechPro VoiceKey, using Adobe® Flash®",
@@ -177,7 +228,7 @@
 			"organization": "Open-Source (Github)",
 			"position": "Contributor",
 			"startDate": "2016-08-01",
-			"endDate": "2015-12-01",
+			"endDate": "",
 			"summary": "Webgl-related components.",
 			"highlights": [
 				"AudioJS: Stream-based audio processing components",
@@ -237,8 +288,7 @@
 			"startDate": "2010-09-01",
 			"endDate": "2012-06-14",
 			"score": "",
-			"courses": [
-			]
+			"courses": []
 		},
 		{
 			"institution": "Baltic State Technical University “Voenmeh”",
@@ -247,8 +297,7 @@
 			"startDate": "2006-09-01",
 			"endDate": "2010-06-14",
 			"score": "",
-			"courses": [
-			]
+			"courses": []
 		},
 		{
 			"institution": "Saint-Petersburg College of Marine Instrumentation",
@@ -257,8 +306,7 @@
 			"startDate": "2002-09-01",
 			"endDate": "2006-06-01",
 			"score": "",
-			"courses": [
-			]
+			"courses": []
 		},
 		{
 			"institution": "Baltic State Technical University “Voenmeh”",
@@ -267,8 +315,7 @@
 			"startDate": "2010-09-01",
 			"endDate": "2012-02-15",
 			"score": "",
-			"courses": [
-			]
+			"courses": []
 		}
 	],
 	"skills": [
@@ -276,21 +323,51 @@
 			"name": "Frontend",
 			"level": "Senior",
 			"keywords": [
-				"react", "preact", "vue", "alpine", "web-components",
-				"signals", "observable", "rxjs", "graph-ql",
-				"esbuild", "webpack", "rollup", "browserify",
-				"tailwind", "material-ui", "evergreen", "semantic-ui",
-				"typescript", "webgl", "three-js",
-				"web-audio-api", "howler", "tuna",
-				"jquery", "liquid",
-				"cypress", "playwright", "tape"
+				"nextjs",
+				"typescript",
+				"react",
+				"SSR",
+				"vercel",
+				"github actions",
+				"preact",
+				"signals",
+				"vue",
+				"alpinejs",
+				"web-components",
+				"observable",
+				"rxjs",
+				"graph-ql",
+				"esbuild",
+				"webpack",
+				"rollup",
+				"esbuild",
+				"browserify",
+				"tailwind",
+				"material-ui",
+				"evergreen",
+				"semantic-ui",
+				"webgl",
+				"three-js",
+				"web-audio-api",
+				"jquery",
+				"liquid",
+				"nunjucks",
+				"eleventy",
+				"cypress",
+				"playwright",
+				"tape"
 			]
 		},
 		{
 			"name": "Design",
 			"level": "middle",
 			"keywords": [
-				"UX", "UI", "IA", "figma", "sketch"
+				"UX",
+				"UI",
+				"IA",
+				"figma",
+				"sketch",
+				"Photoshop"
 			]
 		},
 		{
@@ -298,9 +375,13 @@
 			"level": "middle",
 			"keywords": [
 				"nodejs",
-				"Python", "Django",
-				"Mongo", "Redis", "SQL",
-				"nginx", "apache"
+				"Python",
+				"Django",
+				"Mongo",
+				"Redis",
+				"SQL",
+				"nginx",
+				"apache"
 			]
 		},
 		{
@@ -309,6 +390,7 @@
 			"keywords": [
 				"jekyll",
 				"liquid",
+				"eleventy",
 				"github-pages",
 				"shopify",
 				"wordpress",
@@ -333,24 +415,26 @@
 	"interests": [
 		{
 			"name": "Computer Science",
-			"keywords": ["Compilers", "DSP", "AI", "NN"]
-		},
-		{
-			"name": "Music Technologies",
 			"keywords": [
-				"synthesis",
-				"harmonic analysis",
-				"spectrograms",
-				"audio-vis",
-				"wavelets"
+				"WASM",
+				"DSP",
+				"AI"
 			]
 		},
 		{
 			"name": "Bhakti Yoga",
-			"keywords": ["Prasadam", "Kirtan", "Mridanga", "Arati"]
+			"keywords": [
+				"Meditation",
+				"Spirituality",
+				"Kirtan"
+			]
 		}
 	],
 	"references": [
+		{
+			"name": "Jordane Belanger",
+			"reference": "by request"
+		},
 		{
 			"name": "Matt Buyington",
 			"reference": "by request"
