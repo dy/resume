@@ -1,667 +1,731 @@
 <!doctype html>
 <html>
 	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, user-scalable=no, minimal-ui">
+		<title>Dmitry Ivanov</title>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.2.0/css/bootstrap.min.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/octicons/2.0.2/octicons.min.css">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400..800&display=swap" rel="stylesheet">
+		<style type="text/css">
+		@import url(https://fonts.googleapis.com/css?family=Lato:400,700
+);
 
-	<meta charset='utf-8'>
-	<meta name='viewport' content='width=device-width, user-scalable=no, minimal-ui'>
+body {
+	background: #fff;
+	/* font-family: Lato, sans-serif; */
+	font-family: "Syne", sans-serif;
+	font-optical-sizing: auto;
+	font-weight: 400;
+	font-style: normal;
+	margin: 0 0 80px;
+}
 
-	<title>Dmitry Ivanov</title>
-
-      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" crossorigin="anonymous">
-	<style>
-	body {
-  background: #EEEEEE;
-  font: 14px "Arial", Times, sans-serif;
-  line-height: 1.4;
-  margin: 40px 0;
-}
-em {
-  color: #999;
-}
-p {
-  line-height: 1.4;
-}
-ul {
-  margin-bottom: 0;
-}
-li {
-  margin-bottom: 2px;
-}
 a {
-  text-decoration: none;
+	color: #2ecc71;
 }
 
-#resume {
-  margin: 0 auto;
-  max-width: 800px;
-  padding: 80px 100px;
-  background: #fff;
-  border: 1px solid #ccc;
-  box-shadow: 2px 2px 4px #aaa;
-  -webkit-box-shadow: 2px 2px 4px #aaa;
+a:focus,
+a:hover {
+	color: #f1c40f;
+	text-decoration: none;
 }
 
-.coursesList {
-  width: 28%;
-  vertical-align: top;
-  display: inline-block;
+/* Prevent URLs from showing up in parentheses during printing */
+a[href]:after {
+	content: none !important;
 }
 
-.largeFont {
-  font-size: 30px;
+p {
+	line-height: 1.5;
+	margin: 0;
 }
 
-.smallFont {
-  font-size: 12px;
+p+p {
+	margin-top: 10px;
 }
 
-.url a {
-  font-size: 25px;
-  margin: 5px;
+h1,
+h2,
+h3,
+h4 {
+	margin-top: 0
 }
 
-#basicsBlock{
-  display: flex;
-  justify-content: space-between;
-  height:20px;
+section {
+	margin-top: 30px;
 }
 
-#profilesBlock {
-  margin-top: -20px;
+li {
+	line-height: 1.8;
+	list-style: none;
 }
 
-.blockHeader {
-  display: flex;
-  justify-content: space-between;
+li:before {
+	content: "\f052";
+	float: left;
+	font: 13px Octicons;
+	margin-top: 6px;
+	margin-left: -20px;
+	opacity: .1;
+	position: absolute;
 }
 
-.sectionBlock {
-  display: flex;
-  width: 100%;
+blockquote {
+	border-left: 5px solid #e7e9ec;
+	font-size: 14px;
 }
 
-.sectionName {
-  width: 18%;
-  vertical-align: top;
-  display: inline-block;
+em {
+	color: #95a5a6;
+	font-weight: normal;
+	font-style: normal;
 }
 
-.sectionContent {
-  width: 80%;
-  vertical-align: top;
-  display: inline-block;
+h4 span:first-child {
+	color: #000;
+	font-weight: bold;
 }
 
-.sectionContent ul {
-  padding-left: 20px;
-  margin-top: 6px;
-  list-style-type: disc;
+.container {
+	max-width: 750px;
+	padding: 0 30px;
 }
 
-.position,
-.sectionContent .title {
-  font-weight: bold;
+.col-sm-6 {
+	margin-bottom: 10px;
 }
 
-.sectionContent .date {
-  float: right;
+.col-sm-12 h4 {
+	margin-top: 12px;
 }
 
-.sectionContent .separator {
-  height: 14px;
+.col-sm-12+.col-sm-12 {
+	margin-top: 30px;
 }
 
-.sectionContent.full{
-  width: 100%;
+#header {
+	background: #f4f6f6;
+	padding: 50px 0;
+	margin-bottom: 30px;
 }
 
-.keywords,
-.skill-details {
-  float: right;
+#header h2 {
+	color: #95a5a6;
+	font-size: 24px;
 }
 
-.sectionLine {
-  border-style: dashed;
-  border-width: 1px;
-  border-color: #CFCFCF;
-  margin-top: 10px;
-  margin-bottom: 10px;
+#content h3 {
+	color: #f1c40f;
+	font-size: 26px;
+	margin-top: -4px;
 }
 
-.divider {
-  font-weight: bold;
-  margin-left: 5px;
-  margin-right: 5px;
+#content aside {
+	text-align: right;
+	padding-right: 30px;
 }
 
-.summary {
-  margin-top: 6px;
+#profiles .network {
+	text-transform: capitalize;
 }
 
-.skillBlock {
-  margin-bottom: 4px;
+#work .position,
+#volunteer .position {
+	font-weight: bold;
+	margin-bottom: 8px;
 }
 
-.jobBlock {
-  page-break-inside: avoid;
+#education .area {
+	font-weight: bold;
 }
 
-/* Media Queries */
-@media only screen and (max-width: 40em) {
-  body {
-    margin: 0;
-    font-size: 14px;
-  }
-  #resume {
-    margin: 0 auto;
-    max-width: 600px;
-    padding: 0.5em 1em;
-    border: none;
-  }
-  .sectionContent {
-    width: 100%;
-  }
-  .sectionContent .date {
-    padding-right: 2em;
-  }
-  .sectionName {
-    width: auto;
-  }
-  .largeFont {
-    font-size: 20px;
-  }
-  .smallFont {
-    font-size: 14px;
-  }
+#education .area:before {
+	content: "\f0d7";
+	font: 16px Octicons;
+	margin-right: 6px;
 }
 
-@media print {
-  #resume {
-    margin: 0 auto;
-    max-width: 600px;
-    padding: 0px 0px;
-    border: 0px;
-    background: #fff;
-    box-shadow: none;
-    -webkit-box-shadow: none;
-  }
-
-  a {
-    color: black;
-  }
+#education .studyType {
+	margin-left: 25px;
 }
 
+#awards .summary,
+#publications .summary {
+	margin-top: 8px;
+}
 
+#publications .website a:before {
+	content: attr(href);
+}
 
-	</style>
+@media (min-width: 480px) {
+	.strike-through {
+		border-top: 1px solid #f4f6f6;
+		height: 20px;
+		margin-top: 12px;
+		margin-bottom: -2px;
+		position: relative;
+	}
 
+	.strike-through span,
+	.strike-through a {
+		background: #fff;
+		position: absolute;
+	}
+
+	.strike-through span:first-child {
+		padding-right: 20px;
+		margin-top: -12px;
+	}
+
+	.strike-through span+span {
+		font-size: 14px;
+		margin-top: -10px;
+		padding-left: 20px;
+		right: 0;
+	}
+}
+
+@media (max-width: 768px) {
+	.col-sm-6:last-child {
+		margin-bottom: 0px;
+	}
+
+	#content aside {
+		margin-bottom: 20px;
+		padding-right: 0;
+		text-align: left;
+	}
+
+	#publications .website a:before {
+		content: "View publication";
+	}
+}
+
+@media (max-width: 480px) {
+	h1 {
+		font-size: 26px;
+	}
+
+	.date {
+		font-size: 14px;
+		margin-bottom: 5px;
+	}
+
+	.strike-through span:first-child {
+		margin-bottom: 7px;
+	}
+
+	.strike-through span {
+		display: block;
+	}
+
+	#header {
+		margin-bottom: 10px;
+		padding: 40px 0;
+	}
+
+	#actions {
+		display: none;
+	}
+}
+
+		</style>
 	</head>
 	<body>
-
-	<div id='resume'>
-  <div id='nameBlock' class='largeFont'>
-    <span class='name'>
-      Dmitry Ivanov,
-    </span>
-    <span class='label'>Software Engineer</span>
-  </div>
-  <div id='basicsBlock' class='smallFont'>
-    <div class='contactBlock'>
-      <span class='email'>df.creative@gmail.com</span>
-      <span class='divider'>|</span>
-      <span class='phone'>+1 514 7755-376</span>
-        <span class='divider'>|</span>
-        <span class='address'>
-          Montréal, Québec, CA
-        </span>
-    </div>
-      <div id='profilesBlock'>
-            <span class='url'>
-              <a class='fa fa-' href='https://github.com/dy'></a>
-            </span>
-            <span class='url'>
-              <a class='fa fa-' href='https://twitter.com/dimayv'></a>
-            </span>
-      </div>
-  </div>
-  <div class='sectionLine'></div>
-
-  <div id='summaryBlock' class="sectionBlock">
-    <div class='sectionContent full'>
-      <span>Saint-Petersburg ➜ Master&#x27;s in Computer Graphics ➜ UI/Web designer at kudago.com ➜ Montreal ➜ Frontend/Web engineer for TTBA and Amaze ➜ WebGL specialist at Plotly Inc ➜ Frontend at Mobeewave/Apple ➜ Senior Frontend Engineer at Elevenlabs. Versatile professional in computer graphics, UI/Web design, audio/DSP, frontend engineering, with expertise in fintech and mobile payments. Committed to innovation and seeking opportunities in relevant fields.</span>
-    </div>
-  </div>
-  <div class='sectionLine'></div>
-
-  <div id='workBlock' class="sectionBlock">
-    <div class='sectionContent full'>
-			<div class="jobBlock">
-	      <div class='blockHeader'>
-                <div class="company">
-                  <span class='position'>Senior Frontend Engineer @ </span>
-                  <a class='title' href=''>  </a>
-                  </div>
-	        <span class='date'>
-	          2022-10-01 &mdash; Present
-	        </span>
-	      </div>
-	      <ul class='highlights'>
-	        <li>Elevenlabs - Text to Speech and Voice Cloning AI.</li>
-	        <li>Designing &amp; developing web front, conveying spirit of audio / speech tech.</li>
-	        <li>Firebase integration: auth, payments, user management.</li>
-	        <li>Audio streaming technology, connecting to backend API</li>
-	      </ul>
-	      <div class='separator'></div>
+		<header id="header">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-9 col-sm-push-3">
+						<h1>Dmitry Ivanov</h1>
+						<h2>Frontend/Software Engineer</h2>
+					</div>
+				</div>
 			</div>
-			<div class="jobBlock">
-	      <div class='blockHeader'>
-                <div class="company">
-                  <span class='position'>Software Engineer @ </span>
-                  <a class='title' href=''>  </a>
-                  </div>
-	        <span class='date'>
-	          2019-01-15 &mdash; 2022-10-01
-	        </span>
-	      </div>
-	      <ul class='highlights'>
-	        <li>Fintech startup Mobeewave that merged into Apple Wallet / Apple Pay.</li>
-	        <li>Developed Samsung Point of Sale web app</li>
-	        <li>Created React/redux-based acquirer portal app</li>
-	        <li>Implemented Spect - frontend AOP framerowk</li>
-	        <li>Built an admin portal app - based on Spect</li>
-	        <li>Developed a provisioning portal using AngularJS</li>
-	        <li>Implemented the web push provisioning UI flow</li>
-	        <li>Developed the frontend for Apple Business Registry portal</li>
-	        <li>Designed and developed payments portal</li>
-	        <li>Created internal admin dashboard</li>
-	        <li>Designed and developed an Apple Pay Later widget</li>
-	        <li>Developed a polyfill for the template instantiation web-standard proposal.</li>
-	      </ul>
-	      <div class='separator'></div>
-			</div>
-			<div class="jobBlock">
-	      <div class='blockHeader'>
-                <div class="company">
-                  <span class='position'>WebGL engineer @ </span>
-                  <a class='title' href=''>  </a>
-                  </div>
-	        <span class='date'>
-	          2016-09-01 &mdash; 2018-09-01
-	        </span>
-	      </div>
-	      <ul class='highlights'>
-	        <li>Plotly.js scientific graphing library.</li>
-	        <li>Performant webgl waveform renderer</li>
-	        <li>Testing tools for image comparisons</li>
-	        <li>Regl-based WebGL core components - scatter, line, splom</li>
-	        <li>Mobile version of plotly.js</li>
-	        <li>Scatterplot point clustering algorithm enabling 1B data points</li>
-	        <li>Lasso selection tool</li>
-	        <li>Stack-gl and regl contributions</li>
-	      </ul>
-	      <div class='separator'></div>
-			</div>
-			<div class="jobBlock">
-	      <div class='blockHeader'>
-                <div class="company">
-                  <span class='position'>Web-developer @ </span>
-                  <a class='title' href=''>  </a>
-                  </div>
-	        <span class='date'>
-	          2015-01-01 &mdash; 2016-08-13
-	        </span>
-	      </div>
-	      <ul class='highlights'>
-	        <li>Web agency specializing in web-design, promotion and SMM.</li>
-	        <li>Design &amp; frontend of shopsvelte.com, pegasie.com, coutureonly.com, socialboomwifi.com, citenova.com, wishbox.gift, ecobrandshow.ca</li>
-	        <li>Wishbox.gift website, design, preact-based core, integration with API</li>
-	        <li>Optimization amazemontreal.com for google page insights</li>
-	        <li>Redesign and optimization of ragemontreal.com</li>
-	        <li>Rage Academy - game score tracking app</li>
-	      </ul>
-	      <div class='separator'></div>
-			</div>
-			<div class="jobBlock">
-	      <div class='blockHeader'>
-                <div class="company">
-                  <span class='position'>Frontend developer @ </span>
-                  <a class='title' href=''>  </a>
-                  </div>
-	        <span class='date'>
-	          2012-03-01 &mdash; 2015-01-12
-	        </span>
-	      </div>
-	      <ul class='highlights'>
-	        <li>Kudago is an agency and media covering cultural events in European countries. </li>
-	        <li>Design, UX, UI and IA of kudago.com</li>
-	        <li>Desktop and mobile kudago.com website</li>
-	        <li>&lt;20kb of javascript in mobile website</li>
-	        <li>100/100 in google page insights</li>
-	      </ul>
-	      <div class='separator'></div>
-			</div>
-			<div class="jobBlock">
-	      <div class='blockHeader'>
-                <div class="company">
-                  <span class='position'>Web-developer @ </span>
-                  <a class='title' href=''>  </a>
-                  </div>
-	        <span class='date'>
-	          2012-03-01 &mdash; 2014-03-01
-	        </span>
-	      </div>
-	      <ul class='highlights'>
-	        <li>Webdev freelance jobs - design mockups, UI prototyping, HTML, CSS, JS, wordpress.</li>
-	        <li>Design/markup for ipoteka-vam.ru, to-travel.ru, to-create.ru, tm-print.ru.</li>
-	        <li>Statistical dashboard for likemeter application</li>
-	        <li>boutiqueland.ru: mobile &amp; desktop designs</li>
-	        <li>seemedia.ru: UI components kit</li>
-	        <li>Design / markup for rsua.ru, gildiya-masterov.ru, arkon-okna.ru, postavokna.ru, okonka.ru, jumpingclay.ru, aurama.ru, podsoblyaev.ru, biletron.ru, concertinfo.ru, ditspb.ru, rukasil.ru, voenmeh.ru, dverka.ru, sayhello.ru, zpapa.ru, productinsignt.ru, smartmedia, legran doors</li>
-	        <li>GUI elements for application package “Pure Office”</li>
-	        <li>UI icons for mobile portal kilowap.ru</li>
-	        <li>UI icons for project gloricism.com</li>
-	        <li>Design / markup of book “Childhood”, author Andreeva L.</li>
-	        <li>Design / markup of www.le-gran.spb.ru, JSC Masterskaya</li>
-	        <li>Creating radar 3d model for navy simulator, JSC Sistema</li>
-	        <li>Illustrating textbook of methods of hydrodynamics, BSTU Voenmeh</li>
-	      </ul>
-	      <div class='separator'></div>
-			</div>
-			<div class="jobBlock">
-	      <div class='blockHeader'>
-                <div class="company">
-                  <span class='position'>Intern @ </span>
-                  <a class='title' href=''>  </a>
-                  </div>
-	        <span class='date'>
-	          2012-02-01 &mdash; 2012-03-01
-	        </span>
-	      </div>
-	      <ul class='highlights'>
-	        <li>Speech Technology Center is an enterprise specialising in speech recognition technologies. The position was held in marketing department, related to web-sites and promotion pages design.</li>
-	        <li>Creation of interactive guide for SpeechPro VoiceKey, using Adobe® Flash®</li>
-	        <li>Developing batch scripts in Visual Basic to handle massive Microsoft Office Excel data.</li>
-	        <li>Maintenance of speechpro.com.</li>
-	      </ul>
-	      <div class='separator'></div>
-			</div>
-			<div class="jobBlock">
-	      <div class='blockHeader'>
-                <div class="company">
-                  <span class='position'>Copywriter @ </span>
-                  <a class='title' href=''>  </a>
-                  </div>
-	        <span class='date'>
-	          2007-09-01 &mdash; 2008-04-01
-	        </span>
-	      </div>
-	      <ul class='highlights'>
-	        <li>Writing articles on predefined topics, defining keywords, SEO-optimization.</li>
-	        <li>Thousands of SEO-optimized texts</li>
-	      </ul>
-	      
-			</div>
-    </div>
-  </div>
-  <div class='sectionLine'></div>
+		</header>
+
+		<div id="content" class="container">
+			<section id="contact" class="row">
+				<aside class="col-sm-3">
+					<h3>Contact</h3>
+				</aside>
+				<div class="col-sm-9">
+					<div class="row">
+						<div class="col-sm-6">
+							<strong>Email</strong>
+							<div class="email">df.creative@gmail.com</div>
+						</div>
+						<div class="col-sm-6">
+							<strong>Phone</strong>
+							<div class="phone">+1 514 7755-376</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section id="about" class="row">
+				<aside class="col-sm-3">
+					<h3>About</h3>
+				</aside>
+				<div class="col-sm-9">
+					<p>I graduated with Master’s degree in Computer Graphics at Baltic Technical University, Saint-Petersburg, and began my career as a freelance designer, later performed as web developer at events startup kudago.com. Subsequently I moved to Montreal where I worked as a frontend/web developer at TTBA/Amaze. Then I respecialized into WebGL and scientific graphics at Plotly Inc. Following roles are a Frontend Engineer at Mobeewave (later aquired by Apple) and now Brainfinance. My background blends technical expertise with creative design, making me a versatile professional in web development and computer graphics.</p>
+				</div>
+			</section>
+
+			<section id="profiles" class="row">
+				<aside class="col-sm-3">
+					<h3>Profiles</h3>
+				</aside>
+				<div class="col-sm-9">
+					<div class="row">
+						<div class="col-sm-6">
+							<strong>Github</strong>
+							<div class="username">
+								<a href="https://github.com/dy">dy</a>
+							</div>
+						</div>
+						<div class="col-sm-6">
+							<strong>Twitter</strong>
+							<div class="username">
+								<a href="https://twitter.com/dmitryiv_">dmitryiv_</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section id="work" class="row">
+				<aside class="col-sm-3">
+					<h3>Work</h3>
+				</aside>
+				<div class="col-sm-9">
+					<div class="row">
+						<div class="col-sm-12">
+							<h4 class="strike-through">
+								<span>Brainfinance</span>
+								<span class="date">2022-11-01 — now</span>
+							</h4>
+							<a href="https://brainfinance.com">brainfinance.com</a>
+							<div>Senior Frontend Engineer</div>
+							<p>Frontend and UI/UX tasks for Brainfinance - smart credit solutions, delivering user experience for web/mobile platforms.</p>
+							<h4>Highlights</h4>
+							<ul>
+								<li>Designed and developed earna.ca dashboard and landing page, desktop/mobile.</li>
+								<li>Designed and developed earna.ca design system / UI framework.</li>
+								<li>Implemented icash.ca landing frontend.</li>
+								<li>Reimplemented icash contract process UI, resulting in increased user satisfaction.</li>
+								<li>UI/UX improvements across mobile and web applications, enhancing the overall user experience.</li>
+							</ul>
+						</div>
+						<div class="col-sm-12">
+							<h4 class="strike-through">
+								<span>Mobeewave / Apple</span>
+								<span class="date">2019-01-15 — 2022-10-01</span>
+							</h4>
+							<a href="https://www.linkedin.com/company/mobeewave/about/">linkedin.com/company/mobeewave/about</a>
+							<div>Software Engineer</div>
+							<p>Performed as frontend engineer at fintech startup Mobeewave, specialized on mobile point-of-sale solutions, later acquired by Apple Pay.</p>
+							<h4>Highlights</h4>
+							<ul>
+								<li>Developed Samsung Point of Sale web app, enabling secure mobile payments.</li>
+								<li>Created a React/Redux-based acquirer portal app to streamline transaction processing.</li>
+								<li>Designed and developed Spect - a frontend AOP framework.</li>
+								<li>Built an admin portal app utilizing the spect framework for internal management.</li>
+								<li>Developed a provisioning portal using AngularJS.</li>
+								<li>Implemented Apple Wallet web push provisioning UI flow.</li>
+								<li>Developed the frontend for the Apple Business Registry portal, enabling seamless integration.</li>
+								<li>Designed and developed Apple payments portal to manage transactions and analytics.</li>
+								<li>Designed and developed an Apple Pay Later widget, enhancing payment options for users.</li>
+								<li>Developed a polyfill for the Template Instantiation web standard proposal.</li>
+							</ul>
+						</div>
+						<div class="col-sm-12">
+							<h4 class="strike-through">
+								<span>Plotly Inc</span>
+								<span class="date">2016-09-01 — 2018-09-01</span>
+							</h4>
+							<a href="http://plot.ly">plot.ly</a>
+							<div>WebGL engineer</div>
+							<p>Plotly.js scientific graphing library.</p>
+							<h4>Highlights</h4>
+							<ul>
+								<li>Performant webgl waveform renderer</li>
+								<li>Testing tools for image comparisons</li>
+								<li>Regl-based WebGL core components - scatter, line, splom</li>
+								<li>Mobile version of plotly.js</li>
+								<li>Scatterplot point clustering algorithm enabling 1B data points</li>
+								<li>Lasso selection tool</li>
+								<li>Stack-gl and regl contributions</li>
+							</ul>
+						</div>
+						<div class="col-sm-12">
+							<h4 class="strike-through">
+								<span>TTBA Group</span>
+								<span class="date">2015-01-01 — 2016-08-13</span>
+							</h4>
+							<a href="http://ttbagroup.com/">ttbagroup.com</a>
+							<div>Web-developer</div>
+							<p>Web agency specializing in web-design, promotion and SMM.</p>
+							<h4>Highlights</h4>
+							<ul>
+								<li>Design &amp; frontend of shopsvelte.com, pegasie.com, coutureonly.com, socialboomwifi.com, citenova.com, wishbox.gift, ecobrandshow.ca</li>
+								<li>Wishbox.gift website, design, preact-based core, integration with API</li>
+								<li>Optimization amazemontreal.com for google page insights</li>
+								<li>Redesign and optimization of ragemontreal.com</li>
+								<li>Rage Academy - game score tracking app</li>
+							</ul>
+						</div>
+						<div class="col-sm-12">
+							<h4 class="strike-through">
+								<span>KudaGo Inc.</span>
+								<span class="date">2012-03-01 — 2015-01-12</span>
+							</h4>
+							<a href="http://kudago.com">kudago.com</a>
+							<div>Frontend developer</div>
+							<p>Kudago is an agency and media covering cultural events in European countries. </p>
+							<h4>Highlights</h4>
+							<ul>
+								<li>Design, UX, UI and IA of kudago.com</li>
+								<li>Desktop and mobile kudago.com website</li>
+								<li>&lt;20kb of javascript in mobile website</li>
+								<li>100/100 in google page insights</li>
+							</ul>
+						</div>
+						<div class="col-sm-12">
+							<h4 class="strike-through">
+								<span>Freelance</span>
+								<span class="date">2012-03-01 — 2014-03-01</span>
+							</h4>
+							<a href=""></a>
+							<div>Web-developer</div>
+							<p>Webdev freelance jobs - design mockups, UI prototyping, HTML, CSS, JS, wordpress.</p>
+							<h4>Highlights</h4>
+							<ul>
+								<li>Design/markup for ipoteka-vam.ru, to-travel.ru, to-create.ru, tm-print.ru.</li>
+								<li>Statistical dashboard for likemeter application</li>
+								<li>boutiqueland.ru: mobile &amp; desktop designs</li>
+								<li>seemedia.ru: UI components kit</li>
+								<li>Design / markup for rsua.ru, gildiya-masterov.ru, arkon-okna.ru, postavokna.ru, okonka.ru, jumpingclay.ru, aurama.ru, podsoblyaev.ru, biletron.ru, concertinfo.ru, ditspb.ru, rukasil.ru, voenmeh.ru, dverka.ru, sayhello.ru, zpapa.ru, productinsignt.ru, smartmedia, legran doors</li>
+								<li>GUI elements for application package “Pure Office”</li>
+								<li>UI icons for mobile portal kilowap.ru</li>
+								<li>UI icons for project gloricism.com</li>
+								<li>Design / markup of book “Childhood”, author Andreeva L.</li>
+								<li>Design / markup of www.le-gran.spb.ru, JSC Masterskaya</li>
+								<li>Creating radar 3d model for navy simulator, JSC Sistema</li>
+								<li>Illustrating textbook of methods of hydrodynamics, BSTU Voenmeh</li>
+							</ul>
+						</div>
+						<div class="col-sm-12">
+							<h4 class="strike-through">
+								<span>Speech pro</span>
+								<span class="date">2012-02-01 — 2012-03-01</span>
+							</h4>
+							<a href="http://speechpro.com">speechpro.com</a>
+							<div>Intern</div>
+							<p>Speech Technology Center is an enterprise specialising in speech recognition technologies. The position was held in marketing department, related to web-sites and promotion pages design.</p>
+							<h4>Highlights</h4>
+							<ul>
+								<li>Creation of interactive guide for SpeechPro VoiceKey, using Adobe® Flash®</li>
+								<li>Developing batch scripts in Visual Basic to handle massive Microsoft Office Excel data.</li>
+								<li>Maintenance of speechpro.com.</li>
+							</ul>
+						</div>
+						<div class="col-sm-12">
+							<h4 class="strike-through">
+								<span>JSC Master</span>
+								<span class="date">2007-09-01 — 2008-04-01</span>
+							</h4>
+							<a href="http://macter.ru/">macter.ru</a>
+							<div>Copywriter</div>
+							<p>Writing articles on predefined topics, defining keywords, SEO-optimization.</p>
+							<h4>Highlights</h4>
+							<ul>
+								<li>Thousands of SEO-optimized texts</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section id="volunteer" class="row">
+				<aside class="col-sm-3">
+					<h3>Volunteer</h3>
+				</aside>
+				<div class="col-sm-9">
+					<div class="row">
+						<div class="col-sm-12">
+							<h4 class="strike-through">
+								<span>Open-Source (Github)</span>
+								<span class="date">2016-08-01 — </span>
+							</h4>
+							<a href=""></a>
+							<div>Contributor</div>
+							<p>Webgl-related components.</p>
+							<h4>Highlights</h4>
+							<ul>
+								<li>AudioJS: Stream-based audio processing components</li>
+								<li>Stackgl: GLSL to JS compiler glsl-transpiler</li>
+								<li>ColorJS: Color spaces conversions color-space.js</li>
+								<li>SciJS: Performant FFT implementation</li>
+								<li>Audio-Vis: WebGL-based audio visualizers: spectrum, spectrogram, waveform</li>
+							</ul>
+						</div>
+						<div class="col-sm-12">
+							<h4 class="strike-through">
+								<span>Web Being</span>
+								<span class="date">2016-08-01 — </span>
+							</h4>
+							<a href=""></a>
+							<div>Web-developer</div>
+							<p>Websites for friends &amp; good people</p>
+							<h4>Highlights</h4>
+							<ul>
+								<li>Design &amp; frontend of Lidia Varbanova&#x27;s personal website lidiavarbanova.com</li>
+								<li>Concept, design and website for MIRCA - Russian speaking / culture club</li>
+								<li>Website design / development for transmission repair service - proakpp.ru</li>
+							</ul>
+						</div>
+						<div class="col-sm-12">
+							<h4 class="strike-through">
+								<span>Baltic State Technical University</span>
+								<span class="date">2010-07-01 — 2011-01-01</span>
+							</h4>
+							<a href=""></a>
+							<div>Scientific research intern</div>
+							<p>Supporting local CRM.</p>
+							<h4>Highlights</h4>
+							<ul>
+								<li>Pedagogical internship: technical drawing course.</li>
+								<li>IT department website design &amp; implementation</li>
+								<li>Fixing natural language processing algorithm.</li>
+								<li>Designing database reports.</li>
+								<li>Creating illustrations for methodical books.</li>
+								<li>A method of creating wall background in Adobe® Photoshop®</li>
+								<li>An article: UX approach in product design</li>
+								<li>An article: Drag-n-drop in web-applications</li>
+								<li>Saint-Petersburg College of Naval Instrument-making: office tasks.</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section id="education" class="row">
+				<aside class="col-sm-3">
+					<h3>Education</h3>
+				</aside>
+				<div class="col-sm-9">
+					<div class="row">
+						<div class="col-sm-12">
+							<h4 class="strike-through">
+								<span>Baltic State Technical University “Voenmeh”</span>
+								<span class="date">2010-09-01 — 2012-06-14</span>
+							</h4>
+							<div>Information science and computers, intellectual systems</div>
+							<div>Master</div>
+						</div>
+						<div class="col-sm-12">
+							<h4 class="strike-through">
+								<span>Baltic State Technical University “Voenmeh”</span>
+								<span class="date">2006-09-01 — 2010-06-14</span>
+							</h4>
+							<div>Information and computer science</div>
+							<div>Bachelor</div>
+						</div>
+						<div class="col-sm-12">
+							<h4 class="strike-through">
+								<span>Saint-Petersburg College of Marine Instrumentation</span>
+								<span class="date">2002-09-01 — 2006-06-01</span>
+							</h4>
+							<div>Automatic control systems</div>
+							<div>Secondary professional education, technician</div>
+						</div>
+						<div class="col-sm-12">
+							<h4 class="strike-through">
+								<span>Baltic State Technical University “Voenmeh”</span>
+								<span class="date">2010-09-01 — 2012-02-15</span>
+							</h4>
+							<div>Economics and Management</div>
+							<div>Specialist</div>
+						</div>
+					</div>
+				</div>
+			</section>
 
 
-	<div id='skills' class="sectionBlock">
-    <div class='sectionContent full'>
-      <div class='skillBlock'>
-        <span class='title'>Frontend <em>(Senior)</em>:</span>
-          <div class="skill-details">
-          <span>react</span>, 
-          <span>preact</span>, 
-          <span>vue</span>, 
-          <span>alpine</span>, 
-          <span>web-components</span>, 
-          <span>signals</span>, 
-          <span>observable</span>, 
-          <span>rxjs</span>, 
-          <span>graph-ql</span>, 
-          <span>esbuild</span>, 
-          <span>webpack</span>, 
-          <span>rollup</span>, 
-          <span>browserify</span>, 
-          <span>tailwind</span>, 
-          <span>material-ui</span>, 
-          <span>evergreen</span>, 
-          <span>semantic-ui</span>, 
-          <span>typescript</span>, 
-          <span>webgl</span>, 
-          <span>three-js</span>, 
-          <span>web-audio-api</span>, 
-          <span>howler</span>, 
-          <span>tuna</span>, 
-          <span>jquery</span>, 
-          <span>liquid</span>, 
-          <span>cypress</span>, 
-          <span>playwright</span>, 
-          <span>tape</span>
-      </div>
-      </div>
-      <div class='skillBlock'>
-        <span class='title'>Design <em>(middle)</em>:</span>
-          <div class="skill-details">
-          <span>UX</span>, 
-          <span>UI</span>, 
-          <span>IA</span>, 
-          <span>figma</span>, 
-          <span>sketch</span>
-      </div>
-      </div>
-      <div class='skillBlock'>
-        <span class='title'>Backend <em>(middle)</em>:</span>
-          <div class="skill-details">
-          <span>nodejs</span>, 
-          <span>Python</span>, 
-          <span>Django</span>, 
-          <span>Mongo</span>, 
-          <span>Redis</span>, 
-          <span>SQL</span>, 
-          <span>nginx</span>, 
-          <span>apache</span>
-      </div>
-      </div>
-      <div class='skillBlock'>
-        <span class='title'>CMS <em>(middle)</em>:</span>
-          <div class="skill-details">
-          <span>jekyll</span>, 
-          <span>liquid</span>, 
-          <span>github-pages</span>, 
-          <span>shopify</span>, 
-          <span>wordpress</span>, 
-          <span>drupal</span>
-      </div>
-      </div>
-    </div>
-	</div>
-  <div class='sectionLine'></div>
+			<section id="skills" class="row">
+				<aside class="col-sm-3">
+					<h3>Skills</h3>
+				</aside>
+				<div class="col-sm-9">
+					<div class="row">
+						<div class="col-sm-6">
+							<h4>Frontend</h4>
+							<ul>
+								<li>nextjs</li>
+								<li>typescript</li>
+								<li>react</li>
+								<li>SSR</li>
+								<li>vercel</li>
+								<li>github actions</li>
+								<li>preact</li>
+								<li>signals</li>
+								<li>vue</li>
+								<li>alpinejs</li>
+								<li>web-components</li>
+								<li>observable</li>
+								<li>rxjs</li>
+								<li>graph-ql</li>
+								<li>esbuild</li>
+								<li>webpack</li>
+								<li>rollup</li>
+								<li>esbuild</li>
+								<li>browserify</li>
+								<li>tailwind</li>
+								<li>material-ui</li>
+								<li>evergreen</li>
+								<li>semantic-ui</li>
+								<li>webgl</li>
+								<li>three-js</li>
+								<li>web-audio-api</li>
+								<li>jquery</li>
+								<li>liquid</li>
+								<li>nunjucks</li>
+								<li>eleventy</li>
+								<li>cypress</li>
+								<li>playwright</li>
+								<li>tape</li>
+							</ul>
+						</div>
+						<div class="col-sm-6">
+							<h4>Design</h4>
+							<ul>
+								<li>UX</li>
+								<li>UI</li>
+								<li>IA</li>
+								<li>figma</li>
+								<li>sketch</li>
+								<li>Photoshop</li>
+							</ul>
+						</div>
+						<div class="col-sm-6">
+							<h4>Backend</h4>
+							<ul>
+								<li>nodejs</li>
+								<li>Python</li>
+								<li>Django</li>
+								<li>Mongo</li>
+								<li>Redis</li>
+								<li>SQL</li>
+								<li>nginx</li>
+								<li>apache</li>
+							</ul>
+						</div>
+						<div class="col-sm-6">
+							<h4>CMS</h4>
+							<ul>
+								<li>jekyll</li>
+								<li>liquid</li>
+								<li>eleventy</li>
+								<li>github-pages</li>
+								<li>shopify</li>
+								<li>wordpress</li>
+								<li>drupal</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</section>
 
+			<section id="languages" class="row">
+				<aside class="col-sm-3">
+					<h3>Languages</h3>
+				</aside>
+				<div class="col-sm-9">
+					<div class="row">
+						<div class="col-sm-6">
+							<strong>English</strong>
+							<div>fluent</div>
+						</div>
+						<div class="col-sm-6">
+							<strong>Russian</strong>
+							<div>native</div>
+						</div>
+						<div class="col-sm-6">
+							<strong>French</strong>
+							<div>basic</div>
+						</div>
+					</div>
+				</div>
+			</section>
 
-	<div id='volunteer' class="sectionBlock">
-    <div class='sectionName'>
-      <span>VOLUNTEERING</span>
-    </div>
-    <div class='sectionContent'>
-      <div class='blockHeader'>
-        <span class='title'>Open-Source (Github), Contributor</span>
-        <span class='date'>
-          2016-08-01 &mdash; 2015-12-01
-        </span>
-        <ul class='highlights'>
-          <li>Webgl-related components.</li>
-          <li>AudioJS: Stream-based audio processing components</li>
-          <li>Stackgl: GLSL to JS compiler glsl-transpiler</li>
-          <li>ColorJS: Color spaces conversions color-space.js</li>
-          <li>SciJS: Performant FFT implementation</li>
-          <li>Audio-Vis: WebGL-based audio visualizers: spectrum, spectrogram, waveform</li>
-        </ul>
-      </div>
-      <div class='separator'></div>
-      <div class='blockHeader'>
-        <span class='title'>Web Being, Web-developer</span>
-        <span class='date'>
-          2016-08-01 &mdash; Present
-        </span>
-        <ul class='highlights'>
-          <li>Websites for friends &amp; good people</li>
-          <li>Design &amp; frontend of Lidia Varbanova&#x27;s personal website lidiavarbanova.com</li>
-          <li>Concept, design and website for MIRCA - Russian speaking / culture club</li>
-          <li>Website design / development for transmission repair service - proakpp.ru</li>
-        </ul>
-      </div>
-      <div class='separator'></div>
-      <div class='blockHeader'>
-        <span class='title'>Baltic State Technical University, Scientific research intern</span>
-        <span class='date'>
-          2010-07-01 &mdash; 2011-01-01
-        </span>
-        <ul class='highlights'>
-          <li>Supporting local CRM.</li>
-          <li>Pedagogical internship: technical drawing course.</li>
-          <li>IT department website design &amp; implementation</li>
-          <li>Fixing natural language processing algorithm.</li>
-          <li>Designing database reports.</li>
-          <li>Creating illustrations for methodical books.</li>
-          <li>A method of creating wall background in Adobe® Photoshop®</li>
-          <li>An article: UX approach in product design</li>
-          <li>An article: Drag-n-drop in web-applications</li>
-          <li>Saint-Petersburg College of Naval Instrument-making: office tasks.</li>
-        </ul>
-      </div>
-      
-    </div>
-	</div>
-  <div class='sectionLine'></div>
+			<section id="interests" class="row">
+				<aside class="col-sm-3">
+					<h3>Interests</h3>
+				</aside>
+				<div class="col-sm-9">
+					<div class="row">
+						<div class="col-sm-6">
+							<h4>Computer Science</h4>
+							<ul>
+								<li>WASM</li>
+								<li>DSP</li>
+								<li>AI</li>
+							</ul>
+						</div>
+						<div class="col-sm-6">
+							<h4>Bhakti Yoga</h4>
+							<ul>
+								<li>Meditation</li>
+								<li>Spirituality</li>
+								<li>Kirtan</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</section>
 
-	<div id='education' class="sectionBlock">
-    <div class='sectionName'>
-      <span>EDUCATION</span>
-    </div>
-    <div class='sectionContent'>
-      <div class='educationBlock'>
-        <span class='title'>
-          Baltic State Technical University “Voenmeh”
-        </span>
-        <span class='date'>
-          2010-09-01 &mdash; 2012-06-14
-        </span>
-        <div class=''>
-          Master  - Information science and computers, intellectual systems
-        </div>
-      </div>
-      <div class='separator'></div>
-      <div class='educationBlock'>
-        <span class='title'>
-          Baltic State Technical University “Voenmeh”
-        </span>
-        <span class='date'>
-          2006-09-01 &mdash; 2010-06-14
-        </span>
-        <div class=''>
-          Bachelor  - Information and computer science
-        </div>
-      </div>
-      <div class='separator'></div>
-      <div class='educationBlock'>
-        <span class='title'>
-          Saint-Petersburg College of Marine Instrumentation
-        </span>
-        <span class='date'>
-          2002-09-01 &mdash; 2006-06-01
-        </span>
-        <div class=''>
-          Secondary professional education, technician  - Automatic control systems
-        </div>
-      </div>
-      <div class='separator'></div>
-      <div class='educationBlock'>
-        <span class='title'>
-          Baltic State Technical University “Voenmeh”
-        </span>
-        <span class='date'>
-          2010-09-01 &mdash; 2012-02-15
-        </span>
-        <div class=''>
-          Specialist  - Economics and Management
-        </div>
-      </div>
-      
-    </div>
-	</div>
-  <div class='sectionLine'></div>
+			<section id="references" class="row">
+				<aside class="col-sm-3">
+					<h3>References</h3>
+				</aside>
+				<div class="col-sm-9">
+					<div class="row">
+						<div class="col-sm-12">
+							<strong>Jordane Belanger</strong>
+							<div>by request</div>
+						</div>
+						<div class="col-sm-12">
+							<strong>Matt Buyington</strong>
+							<div>by request</div>
+						</div>
+						<div class="col-sm-12">
+							<strong>Mario Ramos</strong>
+							<div>by request</div>
+						</div>
+						<div class="col-sm-12">
+							<strong>Alex Tsyrfa</strong>
+							<div>by request</div>
+						</div>
+						<div class="col-sm-12">
+							<strong>Alex Reverse</strong>
+							<div>by request</div>
+						</div>
+						<div class="col-sm-12">
+							<strong>Sergey Poduzov</strong>
+							<div>by request</div>
+						</div>
+						<div class="col-sm-12">
+							<strong>Alex Prokofiev</strong>
+							<div>by request</div>
+						</div>
+					</div>
+				</div>
+			</section>
 
-          <div id='languages' class="sectionBlock">
-    <div class='sectionName'>
-      <span>LANGUAGES</span>
-    </div>
-    <div class='sectionContent'>
-      <span class='language'>English</span>
-      <span class='fluency'><em>(fluent)</em></span>
-      <span>,</span>
-      <span class='language'>Russian</span>
-      <span class='fluency'><em>(native)</em></span>
-      <span>,</span>
-      <span class='language'>French</span>
-      <span class='fluency'><em>(basic)</em></span>
-      
-    </div>
-  </div>
-    <div class='sectionLine'></div>
-
-    <div id='interests' class="sectionBlock">
-    <div class='sectionName'>
-      <span>INTERESTS</span>
-    </div>
-    <div class='sectionContent'>
-        <div class="interest">
-      <span class='name'>Computer Science</span><!--
-      --><span class='keywords'> <em>
-        Compilers<!--
-        -->, 
-        DSP<!--
-        -->, 
-        AI<!--
-        -->, 
-        NN<!--
-        -->
-      </em></span><!--
-      --><span> </span>
-        </div>
-        <div class="interest">
-      <span class='name'>Music Technologies</span><!--
-      --><span class='keywords'> <em>
-        synthesis<!--
-        -->, 
-        harmonic analysis<!--
-        -->, 
-        spectrograms<!--
-        -->, 
-        audio-vis<!--
-        -->, 
-        wavelets<!--
-        -->
-      </em></span><!--
-      --><span> </span>
-        </div>
-        <div class="interest">
-      <span class='name'>Bhakti Yoga</span><!--
-      --><span class='keywords'> <em>
-        Prasadam<!--
-        -->, 
-        Kirtan<!--
-        -->, 
-        Mridanga<!--
-        -->, 
-        Arati<!--
-        -->
-      </em></span><!--
-      -->
-        </div>
-    </div>
-	</div>
-
+		</div>
 	</body>
 </html>
