@@ -33,28 +33,42 @@
 			"position": "Senior Frontend Engineer",
 			"url": "https://brainfinance.com",
 			"startDate": "2022-11-01",
-			"endDate": "now",
-			"summary": "Frontend and UI/UX tasks for Brainfinance - smart credit solutions, delivering user experience for web/mobile platforms.",
+			"endDate": "2025-10-21",
+			"summary": "Frontend for Brainfinance - smart credit solutions, delivering user experience for web/mobile platforms.",
 			"highlights": [
-				"Designed and developed earna.ca dashboard and landing page, desktop/mobile.",
-				"Designed and developed earna.ca design system / UI framework.",
-				"Implemented icash.ca landing frontend.",
-				"Reimplemented icash contract process UI, resulting in increased user satisfaction.",
+				"earna.zone dashboard and landing, desktop/mobile",
+				"earna.zone design system / UI framework",
+				"icash.ca implementation and optimization",
+				"icash contract process flow redesign",
 				"UI/UX improvements across mobile and web applications, enhancing the overall user experience."
 			],
 			"keywords": [
 				"shadcn",
+				"next.js",
+				"vercel",
+				"tailwindcss",
+				"tailwindui",
 				"design systems",
-				"Tailwind CSS",
-				"Tailwind UI",
-				"Next.js",
-				"Vercel",
-				"React",
-				"Firebase",
-				"Contentful",
-				"Signals",
-				"Alpino.js"
+				"react",
+				"firebase",
+				"contentful",
+				"signals",
+				"alpine.js"
 			]
+		},
+		{
+			"name": "Elevenlabs",
+			"position": "Frontend Engineer",
+			"url": "https://elevenlabs.io",
+			"startDate": "2022-10-01",
+			"endDate": "2023-01-01",
+			"summary": "AI voice tech startup providing high-end text-to-speech service",
+			"highlights": [
+				"elevenlabs.io website design & frontend",
+				"Integrating firebase auth / payments",
+				"Multiline waveform player https://dy.github.io/wavearea"
+			],
+			"keywords": ["tailwindcss", "tailwindui", "firebase", "signals", "alpine.js", "11ty"]
 		},
 		{
 			"name": "Mobeewave / Apple",
@@ -64,10 +78,10 @@
 			"endDate": "2022-10-01",
 			"summary": "Performed as frontend engineer at fintech startup Mobeewave, specialized on mobile point-of-sale solutions, later acquired by Apple Pay.",
 			"highlights": [
-				"Developed Samsung Point of Sale web app, enabling secure mobile payments.",
-				"Created a React/Redux-based acquirer portal app to streamline transaction processing.",
+				"Samsung Point of Sale web app, enabling secure mobile payments.",
+				"React/Redux-based acquirer portal app to streamline transaction processing.",
 				"Designed and developed Spect - a frontend AOP framework.",
-				"Built an admin portal app utilizing the spect framework for internal management.",
+				"An admin portal app utilizing the spect framework for internal management.",
 				"Developed a provisioning portal using AngularJS.",
 				"Implemented Apple Wallet web push provisioning UI flow.",
 				"Developed the frontend for the Apple Business Registry portal, enabling seamless integration.",
@@ -76,22 +90,22 @@
 				"Developed a polyfill for the Template Instantiation web standard proposal."
 			],
 			"keywords": [
-				"React",
-				"Preact",
-				"Vue",
-				"Python",
-				"Django",
-				"GraphQL",
-				"Web Components",
-				"Stencil",
-				"Cypress",
-				"Puppeteer",
-				"Redux",
-				"Styled-components",
-				"Lit-html",
-				"ES6",
-				"Material UI",
-				"AngularJS"
+				"react",
+				"preact",
+				"vue",
+				"python",
+				"django",
+				"graphql",
+				"web components",
+				"stencil",
+				"cypress",
+				"puppeteer",
+				"redux",
+				"styled-components",
+				"lit-html",
+				"es6",
+				"material ui",
+				"angularjs"
 			]
 		},
 		{
@@ -191,7 +205,8 @@
 				"Design / markup of book “Childhood”, author Andreeva L.",
 				"Design / markup of www.le-gran.spb.ru, JSC Masterskaya",
 				"Creating radar 3d model for navy simulator, JSC Sistema",
-				"Illustrating textbook of methods of hydrodynamics, BSTU Voenmeh"
+				"Illustrating textbook of methods of hydrodynamics, BSTU Voenmeh",
+				"SEO-optimized texts for JSC Master"
 			],
 			"keywords": [
 				"Zend Framework",
@@ -203,23 +218,12 @@
 			"position": "Intern",
 			"startDate": "2012-02-01",
 			"endDate": "2012-03-01",
-			"url": "http://speechpro.com",
-			"summary": "Speech Technology Center is an enterprise specialising in speech recognition technologies. The position was held in marketing department, related to web-sites and promotion pages design.",
+			"url": "speechpro.com",
+			"summary": "Speech Technology Center is a company specialising in speech recognition technologies. The position was in marketing department, related to web-sites and promotion pages design.",
 			"highlights": [
 				"Creation of interactive guide for SpeechPro VoiceKey, using Adobe® Flash®",
 				"Developing batch scripts in Visual Basic to handle massive Microsoft Office Excel data.",
 				"Maintenance of speechpro.com."
-			]
-		},
-		{
-			"name": "JSC Master",
-			"position": "Copywriter",
-			"url": "http://macter.ru/",
-			"startDate": "2007-09-01",
-			"endDate": "2008-04-01",
-			"summary": "Writing articles on predefined topics, defining keywords, SEO-optimization.",
-			"highlights": [
-				"Thousands of SEO-optimized texts"
 			]
 		}
 	],
@@ -231,11 +235,14 @@
 			"endDate": "",
 			"summary": "Webgl-related components.",
 			"highlights": [
+				"Wavefont, Linefont: data rendering fonts for Google fonts",
+				"Watr: WebAssembly text compiler",
+				"colorjs/color-space: Color spaces conversions",
+				"sprae: DOM tree microhydration",
+				"subscript: Fast expression parser/evaluator",
 				"AudioJS: Stream-based audio processing components",
 				"Stackgl: GLSL to JS compiler glsl-transpiler",
-				"ColorJS: Color spaces conversions color-space.js",
-				"SciJS: Performant FFT implementation",
-				"Audio-Vis: WebGL-based audio visualizers: spectrum, spectrogram, waveform"
+				"SciJS: Performant FFT implementation"
 			],
 			"keywords": [
 				"nodejs",
@@ -251,8 +258,10 @@
 			"position": "Web-developer",
 			"startDate": "2016-08-01",
 			"endDate": "",
-			"summary": "Websites for friends & good people",
+			"summary": "Web presence non-profit organization",
 			"highlights": [
+				"Ventclair: luxury real estate agency website",
+				"Govindas: ISKCON Montreal bistro website",
 				"Design & frontend of Lidia Varbanova's personal website lidiavarbanova.com",
 				"Concept, design and website for MIRCA - Russian speaking / culture club",
 				"Website design / development for transmission repair service - proakpp.ru"
@@ -271,14 +280,23 @@
 				"Fixing natural language processing algorithm.",
 				"Designing database reports.",
 				"Creating illustrations for methodical books.",
-				"A method of creating wall background in Adobe® Photoshop®",
-				"An article: UX approach in product design",
-				"An article: Drag-n-drop in web-applications",
-				"Saint-Petersburg College of Naval Instrument-making: office tasks."
+				"Saint-Petersburg College of Naval Instrument-making: office tasks.",
+				"Speech Pro: GUI design for VoiceKey application, using Adobe® Flash®.",
+				"Speech Pro: maintenance of speechpro.com website"
 			]
 		}
 	],
-	"publications": [],
+	"publications": [
+		{
+			"name": "UX approach in product design"
+		},
+		{
+			"name": "Drag-n-drop in web-applications"
+		},
+		{
+			"name": "A method of creating wall background in Adobe® Photoshop®"
+		}
+	],
 	"awards": [],
 	"education": [
 		{
@@ -328,7 +346,8 @@
 				"react",
 				"SSR",
 				"vercel",
-				"github actions",
+				"tailwind",
+				"storybook",
 				"preact",
 				"signals",
 				"vue",
@@ -340,21 +359,21 @@
 				"esbuild",
 				"webpack",
 				"rollup",
-				"esbuild",
-				"browserify",
-				"tailwind",
+				"shadcn",
+				"vanilla-js",
 				"material-ui",
-				"evergreen",
 				"semantic-ui",
 				"webgl",
 				"three-js",
 				"web-audio-api",
-				"jquery",
 				"liquid",
 				"nunjucks",
 				"eleventy",
+				"jquery",
+				"puppeteer",
 				"cypress",
 				"playwright",
+				"jest",
 				"tape"
 			]
 		},
@@ -388,6 +407,8 @@
 			"name": "CMS",
 			"level": "middle",
 			"keywords": [
+				"contentful",
+				"sanity",
 				"jekyll",
 				"liquid",
 				"eleventy",
@@ -426,7 +447,8 @@
 			"keywords": [
 				"Meditation",
 				"Spirituality",
-				"Kirtan"
+				"Kirtan",
+				"Philosophy"
 			]
 		}
 	],
