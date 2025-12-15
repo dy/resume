@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dmitry Ivanov - Frontend/Software Engineer</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        @page {
+            size: A4;
+            margin: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif;
+            line-height: 1.5;
+            color: #1a1a1a;
+            background: white;
+        }
+
+        .container {
+            max-width: 210mm;
+            margin: 0 auto;
+            padding: 15mm 15mm;
+            background: white;
+        }
+
+        /* Header */
+        .header {
+            margin-bottom: 20px;
+            padding-bottom: 15px;
+            border-bottom: 2px solid #2563eb;
+        }
+
+        .header h1 {
+            font-size: 32px;
+            font-weight: 700;
+            color: #1a1a1a;
+            margin-bottom: 4px;
+        }
+
+        .header .title {
+            font-size: 18px;
+            color: #2563eb;
+            font-weight: 500;
+            margin-bottom: 10px;
+        }
+
+        .contact {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            font-size: 11px;
+            color: #4b5563;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 4px;
+        }
+
+        /* Summary */
+        .summary {
+            margin-bottom: 20px;
+            font-size: 11px;
+            line-height: 1.6;
+            color: #374151;
+        }
+
+        /* Section */
+        .section {
+            margin-bottom: 18px;
+            page-break-inside: avoid;
+        }
+
+        .section-title {
+            font-size: 16px;
+            font-weight: 700;
+            color: #1a1a1a;
+            margin-bottom: 10px;
+            padding-bottom: 4px;
+            border-bottom: 1px solid #e5e7eb;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        /* Experience */
+        .experience-item {
+            margin-bottom: 14px;
+            page-break-inside: avoid;
+        }
+
+        .experience-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 4px;
+        }
+
+        .company-name {
+            font-size: 13px;
+            font-weight: 700;
+            color: #1a1a1a;
+        }
+
+        .position {
+            font-size: 11.5px;
+            color: #2563eb;
+            font-weight: 500;
+            margin-bottom: 2px;
+        }
+
+        .date {
+            font-size: 10px;
+            color: #6b7280;
+            white-space: nowrap;
+        }
+
+        .experience-summary {
+            font-size: 10.5px;
+            color: #4b5563;
+            margin-bottom: 6px;
+            font-style: italic;
+        }
+
+        .highlights {
+            list-style: none;
+            margin-left: 0;
+        }
+
+        .highlights li {
+            font-size: 10.5px;
+            color: #374151;
+            margin-bottom: 3px;
+            padding-left: 12px;
+            position: relative;
+            line-height: 1.5;
+        }
+
+        .highlights li:before {
+            content: "•";
+            position: absolute;
+            left: 0;
+            color: #2563eb;
+            font-weight: bold;
+        }
+
+        .keywords {
+            margin-top: 5px;
+            font-size: 9px;
+            color: #6b7280;
+        }
+
+        .keyword {
+            display: inline-block;
+            background: #f3f4f6;
+            padding: 2px 6px;
+            border-radius: 3px;
+            margin-right: 4px;
+            margin-top: 2px;
+        }
+
+        /* Skills */
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px;
+        }
+
+        .skill-category {
+            margin-bottom: 8px;
+        }
+
+        .skill-name {
+            font-size: 11px;
+            font-weight: 700;
+            color: #1a1a1a;
+            margin-bottom: 4px;
+        }
+
+        .skill-items {
+            font-size: 9.5px;
+            color: #4b5563;
+            line-height: 1.6;
+        }
+
+        /* Education */
+        .education-item {
+            margin-bottom: 10px;
+        }
+
+        .institution {
+            font-size: 12px;
+            font-weight: 700;
+            color: #1a1a1a;
+        }
+
+        .degree {
+            font-size: 11px;
+            color: #2563eb;
+            margin-bottom: 2px;
+        }
+
+        .education-date {
+            font-size: 10px;
+            color: #6b7280;
+        }
+
+        /* Two column layout for bottom sections */
+        .two-column {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+
+        @media print {
+            body {
+                print-color-adjust: exact;
+                -webkit-print-color-adjust: exact;
+            }
+
+            .container {
+                padding: 12mm 12mm;
+            }
+
+            .section {
+                page-break-inside: avoid;
+            }
+
+            .experience-item {
+                page-break-inside: avoid;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <div class="header">
+            <h1>Dmitry Ivanov</h1>
+            <div class="title">Frontend/Software Engineer</div>
+            <div class="contact">
+                <div class="contact-item">📧 df.creative@gmail.com</div>
+                <div class="contact-item">📱 +1 514 775-5376</div>
+                <div class="contact-item">📍 Montréal, QC, Canada</div>
+                <div class="contact-item">🔗 github.com/dy</div>
+                <div class="contact-item">🐦 @dmitryiv_</div>
+            </div>
+        </div>
+
+        <!-- Summary -->
+        <div class="summary">
+            Frontend engineer specializing in performance-critical applications, real-time audio/visual processing, and AI-powered interfaces. Experience across voice AI (Elevenlabs), fintech (Apple acquisition), and scientific visualization (Plotly). Expert in WebGL, Web Audio API, and React/TypeScript with proven ability to optimize applications for Core Web Vitals and accessibility. Strong open-source background in DSP, audio, and graphics.
+        </div>
+
+        <!-- Experience -->
+        <div class="section">
+            <h2 class="section-title">Professional Experience</h2>
+
+            <div class="experience-item">
+                <div class="experience-header">
+                    <div>
+                        <div class="company-name">Brainfinance</div>
+                        <div class="position">Senior Frontend Engineer</div>
+                    </div>
+                    <div class="date">Nov 2022 - Oct 2025</div>
+                </div>
+                <div class="experience-summary">Built high-performance financial platforms serving 100K+ users across web and mobile.</div>
+                <ul class="highlights">
+                    <li>Optimized Core Web Vitals on icash.ca, achieving 95+ PageSpeed scores through code-splitting, lazy loading, and image optimization</li>
+                    <li>Designed and implemented design system for earna.zone using Shadcn/Tailwind with comprehensive Storybook documentation</li>
+                    <li>Rebuilt contract flow UX reducing user drop-off by 40% through A/B testing and analytics</li>
+                    <li>Implemented accessibility improvements (WCAG AA) including semantic HTML, ARIA labels, keyboard navigation</li>
+                    <li>Delivered responsive desktop/mobile experiences with performance monitoring and optimization</li>
+                </ul>
+                <div class="keywords">
+                    <span class="keyword">Next.js</span>
+                    <span class="keyword">TypeScript</span>
+                    <span class="keyword">Tailwind</span>
+                    <span class="keyword">Shadcn</span>
+                    <span class="keyword">Storybook</span>
+                    <span class="keyword">React</span>
+                    <span class="keyword">Firebase</span>
+                    <span class="keyword">Core Web Vitals</span>
+                    <span class="keyword">Accessibility</span>
+                </div>
+            </div>
+
+            <div class="experience-item">
+                <div class="experience-header">
+                    <div>
+                        <div class="company-name">Elevenlabs</div>
+                        <div class="position">Frontend Engineer (Contract)</div>
+                    </div>
+                    <div class="date">Oct 2022 - Jan 2023</div>
+                </div>
+                <div class="experience-summary">Early-stage AI voice generation startup (now valued at $1B+).</div>
+                <ul class="highlights">
+                    <li>Built elevenlabs.io website with Firebase auth and payment integration</li>
+                    <li>Developed multiline waveform player with real-time audio visualization</li>
+                    <li>Implemented responsive UI for AI voice generation dashboard</li>
+                </ul>
+                <div class="keywords">
+                    <span class="keyword">Tailwind</span>
+                    <span class="keyword">Firebase</span>
+                    <span class="keyword">Web Audio API</span>
+                    <span class="keyword">Alpine.js</span>
+                    <span class="keyword">11ty</span>
+                </div>
+            </div>
+
+            <div class="experience-item">
+                <div class="experience-header">
+                    <div>
+                        <div class="company-name">Mobeewave / Apple</div>
+                        <div class="position">Software Engineer</div>
+                    </div>
+                    <div class="date">Jan 2019 - Oct 2022</div>
+                </div>
+                <div class="experience-summary">Frontend engineer at fintech startup acquired by Apple Pay for mobile point-of-sale technology.</div>
+                <ul class="highlights">
+                    <li>Developed Samsung Point of Sale web app enabling secure mobile payments with PCI-DSS compliance</li>
+                    <li>Built React/Redux acquirer portal and admin tools used by 50+ financial institutions</li>
+                    <li>Created Spect - AOP framework for frontend state management and component composition</li>
+                    <li>Implemented Apple Wallet provisioning UI flow and Business Registry portal</li>
+                    <li>Designed Apple Pay Later widget with real-time calculations and A/B tested checkout flows</li>
+                </ul>
+                <div class="keywords">
+                    <span class="keyword">React</span>
+                    <span class="keyword">TypeScript</span>
+                    <span class="keyword">GraphQL</span>
+                    <span class="keyword">Web Components</span>
+                    <span class="keyword">Cypress</span>
+                    <span class="keyword">Redux</span>
+                    <span class="keyword">Material UI</span>
+                </div>
+            </div>
+
+            <div class="experience-item">
+                <div class="experience-header">
+                    <div>
+                        <div class="company-name">Plotly Inc</div>
+                        <div class="position">WebGL Engineer</div>
+                    </div>
+                    <div class="date">Sep 2016 - Sep 2018</div>
+                </div>
+                <div class="experience-summary">WebGL specialist for scientific visualization library (plotly.js - 15K+ GitHub stars).</div>
+                <ul class="highlights">
+                    <li>Built performant WebGL renderers for waveforms, scatter plots, and line charts handling 1B+ data points</li>
+                    <li>Implemented point clustering algorithm enabling interactive exploration of massive datasets</li>
+                    <li>Developed mobile-optimized version with touch interactions and responsive layouts</li>
+                    <li>Created image comparison testing tools for visual regression across 2000+ chart types</li>
+                </ul>
+                <div class="keywords">
+                    <span class="keyword">WebGL</span>
+                    <span class="keyword">Regl</span>
+                    <span class="keyword">D3</span>
+                    <span class="keyword">Canvas</span>
+                    <span class="keyword">Performance</span>
+                    <span class="keyword">Algorithms</span>
+                </div>
+            </div>
+
+            <div class="experience-item">
+                <div class="experience-header">
+                    <div>
+                        <div class="company-name">TTBA Group</div>
+                        <div class="position">Web Developer</div>
+                    </div>
+                    <div class="date">Jan 2015 - Aug 2016</div>
+                </div>
+                <div class="experience-summary">Web agency delivering client websites with emphasis on performance and user experience.</div>
+                <ul class="highlights">
+                    <li>Delivered 10+ client websites achieving 100/100 PageSpeed scores</li>
+                    <li>Built Wishbox.gift e-commerce platform with Preact and custom API integration</li>
+                </ul>
+                <div class="keywords">
+                    <span class="keyword">Preact</span>
+                    <span class="keyword">WordPress</span>
+                    <span class="keyword">Performance</span>
+                </div>
+            </div>
+
+            <div class="experience-item">
+                <div class="experience-header">
+                    <div>
+                        <div class="company-name">KudaGo Inc.</div>
+                        <div class="position">Frontend Developer</div>
+                    </div>
+                    <div class="date">Mar 2012 - Jan 2015</div>
+                </div>
+                <div class="experience-summary">Cultural events platform covering 15+ European cities.</div>
+                <ul class="highlights">
+                    <li>Designed and built kudago.com with <20KB JavaScript bundle achieving 100/100 PageSpeed score</li>
+                    <li>Implemented UX/UI design and information architecture</li>
+                </ul>
+                <div class="keywords">
+                    <span class="keyword">jQuery</span>
+                    <span class="keyword">Browserify</span>
+                    <span class="keyword">Django</span>
+                    <span class="keyword">UX Design</span>
+                </div>
+            </div>
+
+            <div class="experience-item">
+                <div class="experience-header">
+                    <div>
+                        <div class="company-name">Freelance</div>
+                        <div class="position">Web Developer & Designer</div>
+                    </div>
+                    <div class="date">Mar 2012 - Mar 2014</div>
+                </div>
+                <ul class="highlights">
+                    <li>Design and frontend for 15+ client websites including e-commerce, real estate, and corporate sites</li>
+                    <li>Built statistical dashboard for analytics application</li>
+                </ul>
+            </div>
+
+            <div class="experience-item">
+                <div class="experience-header">
+                    <div>
+                        <div class="company-name">Speech Technology Center</div>
+                        <div class="position">Marketing Intern</div>
+                    </div>
+                    <div class="date">Feb 2012 - Mar 2012</div>
+                </div>
+                <div class="experience-summary">Speech recognition and voice biometrics technology company.</div>
+                <ul class="highlights">
+                    <li>Created interactive guide for VoiceKey voice biometrics application</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Open Source -->
+        <div class="section">
+            <h2 class="section-title">Open Source Contributions</h2>
+            <div class="experience-item">
+                <div class="experience-summary">Maintainer of 50+ packages on GitHub/npm focused on WebGL, audio processing, and web standards.</div>
+                <ul class="highlights">
+                    <li><strong>Wavefont, Linefont:</strong> Data rendering fonts for waveforms and line charts</li>
+                    <li><strong>Watr:</strong> WebAssembly text compiler</li>
+                    <li><strong>Sprae:</strong> Lightweight DOM microhydration library (3KB)</li>
+                    <li><strong>AudioJS:</strong> Stream-based audio processing components for Web Audio API</li>
+                    <li><strong>GLSL-transpiler:</strong> GLSL to JavaScript compiler (StackGL contribution)</li>
+                    <li><strong>Color-space:</strong> Color space conversions library</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Skills -->
+        <div class="section">
+            <h2 class="section-title">Technical Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <div class="skill-name">Frontend Core</div>
+                    <div class="skill-items">Next.js, TypeScript, React, Preact, Signals, Vue, Alpine.js, Web Components, SSR, Vercel</div>
+                </div>
+                <div class="skill-category">
+                    <div class="skill-name">Performance & Testing</div>
+                    <div class="skill-items">Core Web Vitals, Lighthouse, Profiling, Jest, Playwright, Cypress, Puppeteer, Bundle Optimization</div>
+                </div>
+                <div class="skill-category">
+                    <div class="skill-name">Graphics & Media</div>
+                    <div class="skill-items">WebGL, Three.js, Regl, Web Audio API, Canvas, SVG, Real-time Rendering, Waveform Rendering</div>
+                </div>
+                <div class="skill-category">
+                    <div class="skill-name">Design Systems & UI</div>
+                    <div class="skill-items">Shadcn, Tailwind, Storybook, Material-UI, Accessibility (WCAG), ARIA, Figma, Responsive Design</div>
+                </div>
+                <div class="skill-category">
+                    <div class="skill-name">Build & DevOps</div>
+                    <div class="skill-items">Webpack, Rollup, esbuild, GitHub Actions, CI/CD, Vercel</div>
+                </div>
+                <div class="skill-category">
+                    <div class="skill-name">Specialized</div>
+                    <div class="skill-items">DSP, Audio Processing, WebAssembly, D3, Recharts, Algorithms, Signal Processing</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Education -->
+        <div class="section">
+            <h2 class="section-title">Education</h2>
+            <div class="education-item">
+                <div class="institution">Baltic State Technical University "Voenmeh"</div>
+                <div class="degree">Master's Degree - Computer Graphics & Intelligent Systems</div>
+                <div class="education-date">2010 - 2012 | Saint-Petersburg, Russia</div>
+            </div>
+            <div class="education-item">
+                <div class="institution">Baltic State Technical University "Voenmeh"</div>
+                <div class="degree">Bachelor's Degree - Information and Computer Science</div>
+                <div class="education-date">2006 - 2010 | Saint-Petersburg, Russia</div>
+            </div>
+            <div class="education-item">
+                <div class="institution">Saint-Petersburg College of Marine Instrumentation</div>
+                <div class="degree">Automatic Control Systems (Signal Processing, Control Theory, Electronics)</div>
+                <div class="education-date">2002 - 2006 | Saint-Petersburg, Russia</div>
+            </div>
+        </div>
+
+        <!-- Two Column Bottom -->
+        <div class="two-column">
+            <div>
+                <h3 class="section-title" style="font-size: 14px;">Languages</h3>
+                <div style="font-size: 10.5px; line-height: 1.8;">
+                    <div><strong>English:</strong> Fluent</div>
+                    <div><strong>Russian:</strong> Native</div>
+                    <div><strong>French:</strong> Basic</div>
+                </div>
+            </div>
+            <div>
+                <h3 class="section-title" style="font-size: 14px;">Interests</h3>
+                <div style="font-size: 10.5px; line-height: 1.8;">
+                    <div><strong>Computer Science:</strong> WebAssembly, DSP, Graphics, AI</div>
+                    <div><strong>HCI:</strong> Voice Interfaces, Emotion AI, Accessibility</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
