@@ -5,7 +5,7 @@
 		"image": "https://raw.githubusercontent.com/dy/resume/master/index.png",
 		"email": "df.creative@gmail.com",
 		"phone": "+1 514 775-5376",
-		"url": "https://github.com/dy",
+		"url": "https://dy.github.io",
 		"summary": "Frontend engineer, 13+ years. Apple/Mobeewave (3.5y) — Apple Pay Later, Samsung POS, Wallet provisioning. Plotly (2y) — WebGL renderers in plotly.js. Brainfinance (3y) — icash.ca, earna.zone design system. Author of audio — a high-level audio workflow library for the web (playback, analysis, non-destructive editing, WASM codecs, 10GB+ files) — and maintainer of the AudioJS ecosystem of DSP packages. Comfortable from GPU shaders and DSP kernels to design tokens.",
 		"location": {
 			"address": "520 de Gaspe, #106",
