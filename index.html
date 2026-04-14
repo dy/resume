@@ -1,731 +1,692 @@
-<!doctype html>
-<html>
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, user-scalable=no, minimal-ui">
-		<title>Dmitry Ivanov</title>
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.2.0/css/bootstrap.min.css">
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/octicons/2.0.2/octicons.min.css">
-		<link rel="preconnect" href="https://fonts.googleapis.com">
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400..800&display=swap" rel="stylesheet">
-		<style type="text/css">
-		@import url(https://fonts.googleapis.com/css?family=Lato:400,700
-);
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+      <title>Dmitry Ivanov</title>
+      <meta name="description" content="Frontend engineer, 13+ years. Apple/Mobeewave (3.5y) — Apple Pay Later, Samsung POS, Wallet provisioning. Plotly (2y) — WebGL renderers in plotly.js. Brainfinance (3y) — icash.ca, earna.zone design system. Author of audio — a high-level audio workflow library for the web (playback, analysis, non-destructive editing, WASM codecs, 10GB+ files) — and maintainer of the AudioJS ecosystem of DSP packages. Comfortable from GPU shaders and DSP kernels to design tokens.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap">
+    <style>:root {
+  color-scheme: light;
+
+  --fg: #111111;
+  --muted: #6b6b6b;
+  --bg: #ffffff;
+  --rule: #111111;
+
+  --gap-x: 2.5em;
+  --col-label: 9.5em;
+  --max-width: 58em;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: clamp(14px, 0.75vw + 11.5px, 18px);
+}
 
 body {
-	background: #fff;
-	/* font-family: Lato, sans-serif; */
-	font-family: "Syne", sans-serif;
-	font-optical-sizing: auto;
-	font-weight: 400;
-	font-style: normal;
-	margin: 0 0 80px;
+  background: var(--bg);
+  color: var(--fg);
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 400;
+  font-size: 1em;
+  line-height: 1.55;
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 3.5em 3.5em 4em;
 }
+
+ol, ul { padding-left: 1.1em; }
+
+li { margin-top: 0.2em; }
+
+li::marker { color: var(--muted); }
 
 a {
-	color: #2ecc71;
+  color: inherit;
+  text-decoration: none;
+  border-bottom: 1px solid currentColor;
+  padding-bottom: 0.5px;
 }
 
-a:focus,
-a:hover {
-	color: #f1c40f;
-	text-decoration: none;
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Space Grotesk', sans-serif;
+  line-height: 1.2;
 }
 
-/* Prevent URLs from showing up in parentheses during printing */
-a[href]:after {
-	content: none !important;
+h1 {
+  font-size: 2.1em;
+  font-weight: 700;
+  letter-spacing: -0.02em;
 }
 
-p {
-	line-height: 1.5;
-	margin: 0;
+h2 {
+  font-size: 1.35em;
+  font-weight: 400;
+  color: var(--fg);
 }
 
-p+p {
-	margin-top: 10px;
+h3 {
+  font-size: 0.72em;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  padding-top: 0.25em;
 }
 
-h1,
-h2,
-h3,
 h4 {
-	margin-top: 0
+  font-size: 1em;
+  font-weight: 700;
+  letter-spacing: -0.005em;
 }
 
-section {
-	margin-top: 30px;
+h5 {
+  font-size: 0.9em;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-top: 0.6em;
 }
 
-li {
-	line-height: 1.8;
-	list-style: none;
-}
-
-li:before {
-	content: "\f052";
-	float: left;
-	font: 13px Octicons;
-	margin-top: 6px;
-	margin-left: -20px;
-	opacity: .1;
-	position: absolute;
+h6 {
+  font-size: 0.85em;
+  font-weight: 600;
 }
 
 blockquote {
-	border-left: 5px solid #e7e9ec;
-	font-size: 14px;
+  border-left: 2px solid var(--fg);
+  padding-left: 1em;
 }
 
-em {
-	color: #95a5a6;
-	font-weight: normal;
-	font-style: normal;
+cite {
+  color: var(--muted);
+  font-style: inherit;
 }
 
-h4 span:first-child {
-	color: #000;
-	font-weight: bold;
+cite::before { content: '— '; }
+
+svg {
+  width: 12px;
+  height: 12px;
+  margin-right: 0.35em;
+  vertical-align: -0.08em;
+  stroke-width: 1.75;
 }
 
-.container {
-	max-width: 750px;
-	padding: 0 30px;
+/* Masthead */
+.masthead {
+  display: grid;
+  grid-template-columns: var(--col-label) 1fr;
+  grid-template-rows: auto auto auto;
+  column-gap: var(--gap-x);
+  row-gap: 1.3em;
+  padding-bottom: 0;
 }
 
-.col-sm-6 {
-	margin-bottom: 10px;
+.masthead > img { display: none; }
+
+.masthead > div {
+  grid-column: 1 / -1;
+  grid-row: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 1em;
+  flex-wrap: wrap;
 }
 
-.col-sm-12 h4 {
-	margin-top: 12px;
+.masthead > article {
+  grid-column: 2;
+  grid-row: 2;
+  color: var(--muted);
+  font-size: 0.92em;
 }
 
-.col-sm-12+.col-sm-12 {
-	margin-top: 30px;
+.masthead > .icon-list {
+  grid-column: 2;
+  grid-row: 3;
 }
 
-#header {
-	background: #f4f6f6;
-	padding: 50px 0;
-	margin-bottom: 30px;
+.masthead::before {
+  content: 'Contact';
+  grid-column: 1;
+  grid-row: 3;
+  font-size: 0.72em;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  padding-top: 0.25em;
 }
 
-#header h2 {
-	color: #95a5a6;
-	font-size: 24px;
+.icon-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35em 1.4em;
+  list-style: none;
+  padding: 0;
+  font-size: 0.9em;
 }
 
-#content h3 {
-	color: #f1c40f;
-	font-size: 26px;
-	margin-top: -4px;
+.icon-list .network { color: var(--muted); }
+
+/* Sections */
+section {
+  display: grid;
+  grid-template-columns: var(--col-label) 1fr;
+  column-gap: var(--gap-x);
+  row-gap: 0.6em;
+  border-top: 1px solid var(--rule);
+  padding-top: 1.6em;
+  margin-top: 1.6em;
 }
 
-#content aside {
-	text-align: right;
-	padding-right: 30px;
+section > h3 { grid-column: 1; }
+
+section > .stack,
+section > .grid-list { grid-column: 2; }
+
+#references { display: none; }
+
+/* Stack of articles (jobs, projects, schools) */
+.stack {
+  display: grid;
+  gap: 1.4em;
 }
 
-#profiles .network {
-	text-transform: capitalize;
+article > * + * { margin-top: 0.45em; }
+
+article > header {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  column-gap: 1em;
+  row-gap: 0.1em;
+  margin-bottom: 0.15em;
 }
 
-#work .position,
-#volunteer .position {
-	font-weight: bold;
-	margin-bottom: 8px;
+article > header > h4 {
+  grid-column: 1;
+  grid-row: 1;
+  align-self: baseline;
 }
 
-#education .area {
-	font-weight: bold;
+article > header > .meta { display: contents; }
+
+article > header > .meta > :first-child {
+  grid-column: 1;
+  grid-row: 2;
+  font-size: 0.92em;
+  color: var(--muted);
 }
 
-#education .area:before {
-	content: "\f0d7";
-	font: 16px Octicons;
-	margin-right: 6px;
+article > header > .meta > :last-child {
+  grid-column: 2;
+  grid-row: 1;
+  font-size: 0.92em;
+  color: var(--muted);
+  white-space: nowrap;
+  align-self: baseline;
 }
 
-#education .studyType {
-	margin-left: 25px;
+.meta strong { font-weight: 400; }
+.meta a { border-bottom-color: var(--muted); }
+
+/* Grid list (skills, languages) */
+.grid-list {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.2em 2em;
 }
 
-#awards .summary,
-#publications .summary {
-	margin-top: 8px;
+.grid-list > div > h4 {
+  font-size: 0.92em;
+  font-weight: 700;
 }
 
-#publications .website a:before {
-	content: attr(href);
+.tag-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.15em 0.5em;
+  list-style: none;
+  padding: 0;
+  font-size: 0.88em;
+  color: var(--muted);
+  margin-top: 0.25em;
 }
 
-@media (min-width: 480px) {
-	.strike-through {
-		border-top: 1px solid #f4f6f6;
-		height: 20px;
-		margin-top: 12px;
-		margin-bottom: -2px;
-		position: relative;
-	}
-
-	.strike-through span,
-	.strike-through a {
-		background: #fff;
-		position: absolute;
-	}
-
-	.strike-through span:first-child {
-		padding-right: 20px;
-		margin-top: -12px;
-	}
-
-	.strike-through span+span {
-		font-size: 14px;
-		margin-top: -10px;
-		padding-left: 20px;
-		right: 0;
-	}
+.tag-list > li:not(:last-child)::after {
+  content: ' ·';
 }
 
-@media (max-width: 768px) {
-	.col-sm-6:last-child {
-		margin-bottom: 0px;
-	}
-
-	#content aside {
-		margin-bottom: 20px;
-		padding-right: 0;
-		text-align: left;
-	}
-
-	#publications .website a:before {
-		content: "View publication";
-	}
+.bullet-item:not(:first-child)::before {
+  content: '· ';
+  margin: 0 0.2em;
 }
 
-@media (max-width: 480px) {
-	h1 {
-		font-size: 26px;
-	}
-
-	.date {
-		font-size: 14px;
-		margin-bottom: 5px;
-	}
-
-	.strike-through span:first-child {
-		margin-bottom: 7px;
-	}
-
-	.strike-through span {
-		display: block;
-	}
-
-	#header {
-		margin-bottom: 10px;
-		padding: 40px 0;
-	}
-
-	#actions {
-		display: none;
-	}
+@media print {
+  html { font-size: 15px; }
+  body { padding: 2.2em 2.6em; max-width: none; }
+  a { border-bottom: none; }
 }
+</style>
+  </head>
+  <body>
+      <header class="masthead">
+          <img src="https://raw.githubusercontent.com/dy/resume/master/index.png" alt="">
+        <div>
+            <h1>Dmitry Ivanov</h1>
+            <h2>Senior Frontend Engineer</h2>
+        </div>
+          <article>
+            <p>Frontend engineer, 13+ years. Apple/Mobeewave (3.5y) — Apple Pay Later, Samsung POS, Wallet provisioning. Plotly (2y) — WebGL renderers in plotly.js. Brainfinance (3y) — icash.ca, earna.zone design system. Author of audio — a high-level audio workflow library for the web (playback, analysis, non-destructive editing, WASM codecs, 10GB+ files) — and maintainer of the AudioJS ecosystem of DSP packages. Comfortable from GPU shaders and DSP kernels to design tokens.</p>
+          </article>
+        <ul class="icon-list">
+              <li>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-map-pin"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                Montréal, Canada
+              </li>
+            <li>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-mail"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+              <a href="mailto:df.creative@gmail.com">df.creative@gmail.com</a>
+            </li>
+            <li>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-phone"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+              <a href="tel:+15147755376">+1 514 775-5376</a>
+            </li>
+            <li>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-link"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg>
+              <a href="https://github.com/dy">github.com/dy</a>
+            </li>
+            <li>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-github"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                  <a href="https://github.com/dy">dy</a>
+                <span class="network">(Github)</span>
+            </li>
+            <li>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-twitter"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path></svg>
+                  <a href="https://twitter.com/dmitryiv_">dmitryiv_</a>
+                <span class="network">(Twitter)</span>
+            </li>
+        </ul>
+      </header>
 
-		</style>
-	</head>
-	<body>
-		<header id="header">
-			<div class="container">
-				<div class="row">
-					<div class="col-sm-9 col-sm-push-3">
-						<h1>Dmitry Ivanov</h1>
-						<h2>Frontend/Software Engineer</h2>
-					</div>
-				</div>
-			</div>
-		</header>
-
-		<div id="content" class="container">
-			<section id="contact" class="row">
-				<aside class="col-sm-3">
-					<h3>Contact</h3>
-				</aside>
-				<div class="col-sm-9">
-					<div class="row">
-						<div class="col-sm-6">
-							<strong>Email</strong>
-							<div class="email">df.creative@gmail.com</div>
-						</div>
-						<div class="col-sm-6">
-							<strong>Phone</strong>
-							<div class="phone">+1 514 7755-376</div>
-						</div>
-					</div>
-				</div>
-			</section>
-
-			<section id="about" class="row">
-				<aside class="col-sm-3">
-					<h3>About</h3>
-				</aside>
-				<div class="col-sm-9">
-					<p>I graduated with Master’s degree in Computer Graphics at Baltic Technical University, Saint-Petersburg, and began my career as a freelance designer, later performed as web developer at events startup kudago.com. Subsequently I moved to Montreal where I worked as a frontend/web developer at TTBA/Amaze. Then I respecialized into WebGL and scientific graphics at Plotly Inc. Following roles are a Frontend Engineer at Mobeewave (later aquired by Apple) and now Brainfinance. My background blends technical expertise with creative design, making me a versatile professional in web development and computer graphics.</p>
-				</div>
-			</section>
-
-			<section id="profiles" class="row">
-				<aside class="col-sm-3">
-					<h3>Profiles</h3>
-				</aside>
-				<div class="col-sm-9">
-					<div class="row">
-						<div class="col-sm-6">
-							<strong>Github</strong>
-							<div class="username">
-								<a href="https://github.com/dy">dy</a>
-							</div>
-						</div>
-						<div class="col-sm-6">
-							<strong>Twitter</strong>
-							<div class="username">
-								<a href="https://twitter.com/dmitryiv_">dmitryiv_</a>
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
-
-			<section id="work" class="row">
-				<aside class="col-sm-3">
-					<h3>Work</h3>
-				</aside>
-				<div class="col-sm-9">
-					<div class="row">
-						<div class="col-sm-12">
-							<h4 class="strike-through">
-								<span>Brainfinance</span>
-								<span class="date">2022-11-01 — now</span>
-							</h4>
-							<a href="https://brainfinance.com">brainfinance.com</a>
-							<div>Senior Frontend Engineer</div>
-							<p>Frontend and UI/UX tasks for Brainfinance - smart credit solutions, delivering user experience for web/mobile platforms.</p>
-							<h4>Highlights</h4>
-							<ul>
-								<li>Designed and developed earna.ca dashboard and landing page, desktop/mobile.</li>
-								<li>Designed and developed earna.ca design system / UI framework.</li>
-								<li>Implemented icash.ca landing frontend.</li>
-								<li>Reimplemented icash contract process UI, resulting in increased user satisfaction.</li>
-								<li>UI/UX improvements across mobile and web applications, enhancing the overall user experience.</li>
-							</ul>
-						</div>
-						<div class="col-sm-12">
-							<h4 class="strike-through">
-								<span>Mobeewave / Apple</span>
-								<span class="date">2019-01-15 — 2022-10-01</span>
-							</h4>
-							<a href="https://www.linkedin.com/company/mobeewave/about/">linkedin.com/company/mobeewave/about</a>
-							<div>Software Engineer</div>
-							<p>Performed as frontend engineer at fintech startup Mobeewave, specialized on mobile point-of-sale solutions, later acquired by Apple Pay.</p>
-							<h4>Highlights</h4>
-							<ul>
-								<li>Developed Samsung Point of Sale web app, enabling secure mobile payments.</li>
-								<li>Created a React/Redux-based acquirer portal app to streamline transaction processing.</li>
-								<li>Designed and developed Spect - a frontend AOP framework.</li>
-								<li>Built an admin portal app utilizing the spect framework for internal management.</li>
-								<li>Developed a provisioning portal using AngularJS.</li>
-								<li>Implemented Apple Wallet web push provisioning UI flow.</li>
-								<li>Developed the frontend for the Apple Business Registry portal, enabling seamless integration.</li>
-								<li>Designed and developed Apple payments portal to manage transactions and analytics.</li>
-								<li>Designed and developed an Apple Pay Later widget, enhancing payment options for users.</li>
-								<li>Developed a polyfill for the Template Instantiation web standard proposal.</li>
-							</ul>
-						</div>
-						<div class="col-sm-12">
-							<h4 class="strike-through">
-								<span>Plotly Inc</span>
-								<span class="date">2016-09-01 — 2018-09-01</span>
-							</h4>
-							<a href="http://plot.ly">plot.ly</a>
-							<div>WebGL engineer</div>
-							<p>Plotly.js scientific graphing library. Performed as WebGL / SVG specialist, specialized in optimal computer graphics algorithms.</p>
-							<h4>Highlights</h4>
-							<ul>
-								<li>Performant webgl waveform renderer</li>
-								<li>Testing tools for image comparisons</li>
-								<li>Regl-based WebGL core components - scatter, line, splom</li>
-								<li>Mobile version of plotly.js</li>
-								<li>Scatterplot point clustering algorithm enabling 1B data points</li>
-								<li>Lasso selection tool</li>
-								<li>Stack-gl and regl contributions</li>
-							</ul>
-						</div>
-						<div class="col-sm-12">
-							<h4 class="strike-through">
-								<span>TTBA Group</span>
-								<span class="date">2015-01-01 — 2016-08-13</span>
-							</h4>
-							<a href="http://ttbagroup.com/">ttbagroup.com</a>
-							<div>Web-developer</div>
-							<p>Web agency specializing in web-design, promotion and SMM. Performed role of web-developer, implementing website designs for multiple small/medium-business clients.</p>
-							<h4>Highlights</h4>
-							<ul>
-								<li>Design &amp; frontend of shopsvelte.com, pegasie.com, coutureonly.com, socialboomwifi.com, citenova.com, wishbox.gift, ecobrandshow.ca</li>
-								<li>Wishbox.gift website, design, preact-based core, integration with API</li>
-								<li>Optimization amazemontreal.com for google page insights</li>
-								<li>Redesign and optimization of ragemontreal.com</li>
-								<li>Rage Academy - game score tracking app</li>
-							</ul>
-						</div>
-						<div class="col-sm-12">
-							<h4 class="strike-through">
-								<span>KudaGo Inc.</span>
-								<span class="date">2012-03-01 — 2015-01-12</span>
-							</h4>
-							<a href="http://kudago.com">kudago.com</a>
-							<div>Frontend developer</div>
-							<p>Kudago is an agency and media covering cultural events in European countries. Performed roles of web-designer and frontend engineer.</p>
-							<h4>Highlights</h4>
-							<ul>
-								<li>Design, UX, UI and IA of kudago.com</li>
-								<li>Desktop and mobile kudago.com website</li>
-								<li>&lt;20kb of javascript in mobile website</li>
-								<li>100/100 in google page insights</li>
-							</ul>
-						</div>
-						<div class="col-sm-12">
-							<h4 class="strike-through">
-								<span>Freelance</span>
-								<span class="date">2012-03-01 — 2014-03-01</span>
-							</h4>
-							<a href=""></a>
-							<div>Web-developer</div>
-							<p>Webdev freelance jobs - design mockups, UI prototyping, HTML, CSS, JS, wordpress.</p>
-							<h4>Highlights</h4>
-							<ul>
-								<li>Design/markup for ipoteka-vam.ru, to-travel.ru, to-create.ru, tm-print.ru.</li>
-								<li>Statistical dashboard for likemeter application</li>
-								<li>boutiqueland.ru: mobile &amp; desktop designs</li>
-								<li>seemedia.ru: UI components kit</li>
-								<li>Design / markup for rsua.ru, gildiya-masterov.ru, arkon-okna.ru, postavokna.ru, okonka.ru, jumpingclay.ru, aurama.ru, podsoblyaev.ru, biletron.ru, concertinfo.ru, ditspb.ru, rukasil.ru, voenmeh.ru, dverka.ru, sayhello.ru, zpapa.ru, productinsignt.ru, smartmedia, legran doors</li>
-								<li>GUI elements for application package “Pure Office”</li>
-								<li>UI icons for mobile portal kilowap.ru</li>
-								<li>UI icons for project gloricism.com</li>
-								<li>Design / markup of book “Childhood”, author Andreeva L.</li>
-								<li>Design / markup of www.le-gran.spb.ru, JSC Masterskaya</li>
-								<li>Creating radar 3d model for navy simulator, JSC Sistema</li>
-								<li>Illustrating textbook of methods of hydrodynamics, BSTU Voenmeh</li>
-							</ul>
-						</div>
-						<div class="col-sm-12">
-							<h4 class="strike-through">
-								<span>Speech pro</span>
-								<span class="date">2012-02-01 — 2012-03-01</span>
-							</h4>
-							<a href="http://speechpro.com">speechpro.com</a>
-							<div>Intern</div>
-							<p>Speech Technology Center is an enterprise specialising in speech recognition technologies. The position was held in marketing department, related to web-sites and promotion pages design.</p>
-							<h4>Highlights</h4>
-							<ul>
-								<li>Creation of interactive guide for SpeechPro VoiceKey, using Adobe® Flash®</li>
-								<li>Developing batch scripts in Visual Basic to handle massive Microsoft Office Excel data.</li>
-								<li>Maintenance of speechpro.com.</li>
-							</ul>
-						</div>
-						<div class="col-sm-12">
-							<h4 class="strike-through">
-								<span>JSC Master</span>
-								<span class="date">2007-09-01 — 2008-04-01</span>
-							</h4>
-							<a href="http://macter.ru/">macter.ru</a>
-							<div>Copywriter</div>
-							<p>Writing articles on predefined topics, defining keywords, SEO-optimization.</p>
-							<h4>Highlights</h4>
-							<ul>
-								<li>Thousands of SEO-optimized texts</li>
-							</ul>
-						</div>
-					</div>
-				</div>
-			</section>
-
-			<section id="volunteer" class="row">
-				<aside class="col-sm-3">
-					<h3>Volunteer</h3>
-				</aside>
-				<div class="col-sm-9">
-					<div class="row">
-						<div class="col-sm-12">
-							<h4 class="strike-through">
-								<span>Open-Source (Github)</span>
-								<span class="date">2016-08-01 — </span>
-							</h4>
-							<a href=""></a>
-							<div>Contributor</div>
-							<p>Webgl-related components.</p>
-							<h4>Highlights</h4>
-							<ul>
-								<li>AudioJS: Stream-based audio processing components</li>
-								<li>Stackgl: GLSL to JS compiler glsl-transpiler</li>
-								<li>ColorJS: Color spaces conversions color-space.js</li>
-								<li>SciJS: Performant FFT implementation</li>
-								<li>Audio-Vis: WebGL-based audio visualizers: spectrum, spectrogram, waveform</li>
-							</ul>
-						</div>
-						<div class="col-sm-12">
-							<h4 class="strike-through">
-								<span>Web Being</span>
-								<span class="date">2016-08-01 — </span>
-							</h4>
-							<a href=""></a>
-							<div>Web-developer</div>
-							<p>Websites for friends &amp; good people</p>
-							<h4>Highlights</h4>
-							<ul>
-								<li>Design &amp; frontend of Lidia Varbanova&#x27;s personal website lidiavarbanova.com</li>
-								<li>Concept, design and website for MIRCA - Russian speaking / culture club</li>
-								<li>Website design / development for transmission repair service - proakpp.ru</li>
-							</ul>
-						</div>
-						<div class="col-sm-12">
-							<h4 class="strike-through">
-								<span>Baltic State Technical University</span>
-								<span class="date">2010-07-01 — 2011-01-01</span>
-							</h4>
-							<a href=""></a>
-							<div>Scientific research intern</div>
-							<p>Supporting local CRM.</p>
-							<h4>Highlights</h4>
-							<ul>
-								<li>Pedagogical internship: technical drawing course.</li>
-								<li>IT department website design &amp; implementation</li>
-								<li>Fixing natural language processing algorithm.</li>
-								<li>Designing database reports.</li>
-								<li>Creating illustrations for methodical books.</li>
-								<li>A method of creating wall background in Adobe® Photoshop®</li>
-								<li>An article: UX approach in product design</li>
-								<li>An article: Drag-n-drop in web-applications</li>
-								<li>Saint-Petersburg College of Naval Instrument-making: office tasks.</li>
-							</ul>
-						</div>
-					</div>
-				</div>
-			</section>
-
-			<section id="education" class="row">
-				<aside class="col-sm-3">
-					<h3>Education</h3>
-				</aside>
-				<div class="col-sm-9">
-					<div class="row">
-						<div class="col-sm-12">
-							<h4 class="strike-through">
-								<span>Baltic State Technical University “Voenmeh”</span>
-								<span class="date">2010-09-01 — 2012-06-14</span>
-							</h4>
-							<div>Information science and computers, intellectual systems</div>
-							<div>Master</div>
-						</div>
-						<div class="col-sm-12">
-							<h4 class="strike-through">
-								<span>Baltic State Technical University “Voenmeh”</span>
-								<span class="date">2006-09-01 — 2010-06-14</span>
-							</h4>
-							<div>Information and computer science</div>
-							<div>Bachelor</div>
-						</div>
-						<div class="col-sm-12">
-							<h4 class="strike-through">
-								<span>Saint-Petersburg College of Marine Instrumentation</span>
-								<span class="date">2002-09-01 — 2006-06-01</span>
-							</h4>
-							<div>Automatic control systems</div>
-							<div>Secondary professional education, technician</div>
-						</div>
-						<div class="col-sm-12">
-							<h4 class="strike-through">
-								<span>Baltic State Technical University “Voenmeh”</span>
-								<span class="date">2010-09-01 — 2012-02-15</span>
-							</h4>
-							<div>Economics and Management</div>
-							<div>Specialist</div>
-						</div>
-					</div>
-				</div>
-			</section>
-
-
-			<section id="skills" class="row">
-				<aside class="col-sm-3">
-					<h3>Skills</h3>
-				</aside>
-				<div class="col-sm-9">
-					<div class="row">
-						<div class="col-sm-6">
-							<h4>Frontend</h4>
-							<ul>
-								<li>nextjs</li>
-								<li>typescript</li>
-								<li>react</li>
-								<li>SSR</li>
-								<li>vercel</li>
-								<li>github actions</li>
-								<li>preact</li>
-								<li>signals</li>
-								<li>vue</li>
-								<li>alpinejs</li>
-								<li>web-components</li>
-								<li>observable</li>
-								<li>rxjs</li>
-								<li>graph-ql</li>
-								<li>esbuild</li>
-								<li>webpack</li>
-								<li>rollup</li>
-								<li>esbuild</li>
-								<li>browserify</li>
-								<li>tailwind</li>
-								<li>material-ui</li>
-								<li>evergreen</li>
-								<li>semantic-ui</li>
-								<li>webgl</li>
-								<li>three-js</li>
-								<li>web-audio-api</li>
-								<li>jquery</li>
-								<li>liquid</li>
-								<li>nunjucks</li>
-								<li>eleventy</li>
-								<li>cypress</li>
-								<li>playwright</li>
-								<li>tape</li>
-							</ul>
-						</div>
-						<div class="col-sm-6">
-							<h4>Design</h4>
-							<ul>
-								<li>UX</li>
-								<li>UI</li>
-								<li>IA</li>
-								<li>figma</li>
-								<li>sketch</li>
-								<li>Photoshop</li>
-							</ul>
-						</div>
-						<div class="col-sm-6">
-							<h4>Backend</h4>
-							<ul>
-								<li>nodejs</li>
-								<li>Python</li>
-								<li>Django</li>
-								<li>Mongo</li>
-								<li>Redis</li>
-								<li>SQL</li>
-								<li>nginx</li>
-								<li>apache</li>
-							</ul>
-						</div>
-						<div class="col-sm-6">
-							<h4>CMS</h4>
-							<ul>
-								<li>jekyll</li>
-								<li>liquid</li>
-								<li>eleventy</li>
-								<li>github-pages</li>
-								<li>shopify</li>
-								<li>wordpress</li>
-								<li>drupal</li>
-							</ul>
-						</div>
-					</div>
-				</div>
-			</section>
-
-			<section id="languages" class="row">
-				<aside class="col-sm-3">
-					<h3>Languages</h3>
-				</aside>
-				<div class="col-sm-9">
-					<div class="row">
-						<div class="col-sm-6">
-							<strong>English</strong>
-							<div>fluent</div>
-						</div>
-						<div class="col-sm-6">
-							<strong>Russian</strong>
-							<div>native</div>
-						</div>
-						<div class="col-sm-6">
-							<strong>French</strong>
-							<div>basic</div>
-						</div>
-					</div>
-				</div>
-			</section>
-
-			<section id="interests" class="row">
-				<aside class="col-sm-3">
-					<h3>Interests</h3>
-				</aside>
-				<div class="col-sm-9">
-					<div class="row">
-						<div class="col-sm-6">
-							<h4>Computer Science</h4>
-							<ul>
-								<li>WASM</li>
-								<li>DSP</li>
-								<li>AI</li>
-							</ul>
-						</div>
-						<div class="col-sm-6">
-							<h4>Bhakti Yoga</h4>
-							<ul>
-								<li>Meditation</li>
-								<li>Spirituality</li>
-								<li>Kirtan</li>
-							</ul>
-						</div>
-					</div>
-				</div>
-			</section>
-
-			<section id="references" class="row">
-				<aside class="col-sm-3">
-					<h3>References</h3>
-				</aside>
-				<div class="col-sm-9">
-					<div class="row">
-						<div class="col-sm-12">
-							<strong>Jordane Belanger</strong>
-							<div>by request</div>
-						</div>
-						<div class="col-sm-12">
-							<strong>Matt Buyington</strong>
-							<div>by request</div>
-						</div>
-						<div class="col-sm-12">
-							<strong>Mario Ramos</strong>
-							<div>by request</div>
-						</div>
-						<div class="col-sm-12">
-							<strong>Alex Tsyrfa</strong>
-							<div>by request</div>
-						</div>
-						<div class="col-sm-12">
-							<strong>Alex Reverse</strong>
-							<div>by request</div>
-						</div>
-						<div class="col-sm-12">
-							<strong>Sergey Poduzov</strong>
-							<div>by request</div>
-						</div>
-						<div class="col-sm-12">
-							<strong>Alex Prokofiev</strong>
-							<div>by request</div>
-						</div>
-					</div>
-				</div>
-			</section>
-
-		</div>
-	</body>
+      <section id="work">
+        <h3>Work</h3>
+        <div class="stack">
+            <article>
+              <header>
+                <h4>Senior Frontend Engineer</h4>
+                <div class="meta">
+                  <div>
+                    <strong><a href="https://brainfinance.com">Brainfinance</a></strong>
+                  </div>
+                  <div>
+                    <time datetime="2022-11-01">Nov 2022</time> –
+                    <time datetime="2025-10-21">Oct 2025</time>
+                  </div>
+                </div>
+              </header>
+                <p>Consumer fintech serving 100K+ Canadian users — icash.ca loans, earna.zone savings.</p>
+                <ul>
+                    <li><p>icash.ca — Core Web Vitals to 95+ PageSpeed via code-splitting, lazy loading, image pipeline</p></li>
+                    <li><p>earna.zone — designed and built the design system from scratch (Shadcn + Tailwind + Storybook)</p></li>
+                    <li><p>Rebuilt the loan contract flow — 40% drop-off reduction, validated by A/B test</p></li>
+                    <li><p>WCAG AA pass across the product — semantic HTML, ARIA, keyboard navigation</p></li>
+                    <li><p>Next.js/Vercel SSR stack, Contentful CMS, Firebase auth</p></li>
+                </ul>
+            </article>
+            <article>
+              <header>
+                <h4>Frontend Engineer (Contract)</h4>
+                <div class="meta">
+                  <div>
+                    <strong><a href="https://elevenlabs.io">Elevenlabs</a></strong>
+                  </div>
+                  <div>
+                    <time datetime="2022-10-01">Oct 2022</time> –
+                    <time datetime="2023-01-01">Jan 2023</time>
+                  </div>
+                </div>
+              </header>
+                <p>3-month contract during pre-seed. Ran in parallel with starting at Brainfinance. Company is now valued $1B+.</p>
+                <ul>
+                    <li><p>Shipped elevenlabs.io — Firebase auth, Stripe payments, 11ty</p></li>
+                    <li><p>Built a multiline waveform player with real-time Web Audio visualization</p></li>
+                    <li><p>Voice generation dashboard UI</p></li>
+                </ul>
+            </article>
+            <article>
+              <header>
+                <h4>Software Engineer</h4>
+                <div class="meta">
+                  <div>
+                    <strong><a href="https://www.linkedin.com/company/mobeewave/about/">Mobeewave / Apple</a></strong>
+                  </div>
+                  <div>
+                    <time datetime="2019-01-15">Jan 2019</time> –
+                    <time datetime="2022-10-01">Oct 2022</time>
+                  </div>
+                </div>
+              </header>
+                <p>Mobile point-of-sale fintech. Acquired by Apple in 2020; stayed through the transition and shipped Apple Pay features to iOS users globally.</p>
+                <ul>
+                    <li><p>Samsung POS — tap-to-pay web app shipped globally in Samsung Wallet, PCI-DSS compliant</p></li>
+                    <li><p>Apple Pay Later — checkout widget with real-time calculations, A/B tested flows</p></li>
+                    <li><p>Apple Wallet provisioning UI flow and Business Registry portal</p></li>
+                    <li><p>Acquirer portal and admin tools used by 50+ financial institutions</p></li>
+                    <li><p>Spect — internal AOP framework for frontend state and component composition</p></li>
+                    <li><p>Template Instantiation polyfill — reference implementation for the W3C proposal</p></li>
+                    <li><p>E2E test suites in Cypress and Puppeteer</p></li>
+                </ul>
+            </article>
+            <article>
+              <header>
+                <h4>WebGL Engineer</h4>
+                <div class="meta">
+                  <div>
+                    <strong><a href="http://plot.ly">Plotly</a></strong>
+                  </div>
+                  <div>
+                    <time datetime="2016-09-01">Sep 2016</time> –
+                    <time datetime="2018-09-01">Sep 2018</time>
+                  </div>
+                </div>
+              </header>
+                <p>WebGL core of plotly.js — the open-source scientific charting library (17K+ stars, used across research and industry).</p>
+                <ul>
+                    <li><p>WebGL renderers for scatter, line, and waveform traces — interactive at 1B+ points</p></li>
+                    <li><p>Point-clustering algorithm enabling real-time exploration of massive datasets</p></li>
+                    <li><p>Mobile build — touch interactions, responsive layouts</p></li>
+                    <li><p>Contributions to regl and the stack-gl ecosystem (modular WebGL)</p></li>
+                    <li><p>Visual regression harness covering 2000+ chart variants</p></li>
+                </ul>
+            </article>
+            <article>
+              <header>
+                <h4>Web Developer</h4>
+                <div class="meta">
+                  <div>
+                    <strong><a href="http://ttbagroup.com/">TTBA Group</a></strong>
+                  </div>
+                  <div>
+                    <time datetime="2015-01-01">Jan 2015</time> –
+                    <time datetime="2016-08-13">Aug 2016</time>
+                  </div>
+                </div>
+              </header>
+                <p>Boutique web agency — performance-first client work.</p>
+                <ul>
+                    <li><p>10+ client sites shipped at 100/100 PageSpeed</p></li>
+                    <li><p>Wishbox.gift — Preact e-commerce platform with custom API</p></li>
+                </ul>
+            </article>
+            <article>
+              <header>
+                <h4>Frontend Developer</h4>
+                <div class="meta">
+                  <div>
+                    <strong><a href="http://kudago.com">KudaGo</a></strong>
+                  </div>
+                  <div>
+                    <time datetime="2012-03-01">Mar 2012</time> –
+                    <time datetime="2015-01-12">Jan 2015</time>
+                  </div>
+                </div>
+              </header>
+                <p>Cultural events platform across 15+ European cities.</p>
+                <ul>
+                    <li><p>kudago.com desktop + mobile — &lt;20KB JS bundle, 100/100 PageSpeed</p></li>
+                    <li><p>UX/UI and information architecture</p></li>
+                </ul>
+            </article>
+            <article>
+              <header>
+                <h4>Web Developer &amp; Designer</h4>
+                <div class="meta">
+                  <div>
+                    <strong>Freelance</strong>
+                  </div>
+                  <div>
+                    <time datetime="2012-03-01">Mar 2012</time> –
+                    <time datetime="2014-03-01">Mar 2014</time>
+                  </div>
+                </div>
+              </header>
+                <p>Design + frontend for 15+ small/medium business sites — e-commerce, real estate, corporate, analytics dashboards.</p>
+            </article>
+        </div>
+      </section>
+      <section id="education">
+        <h3>Education</h3>
+        <div class="stack">
+            <article>
+              <header>
+                <h4>Baltic State Technical University &quot;Voenmeh&quot;</h4>
+                <div class="meta">
+                    <strong>Computer Graphics &amp; Intelligent Systems</strong>
+                  <div>
+                    <time datetime="2010-09-01">Sep 2010</time> –
+                    <time datetime="2012-06-14">Jun 2012</time>
+                  </div>
+                </div>
+              </header>
+                <p>Master</p>
+            </article>
+            <article>
+              <header>
+                <h4>Baltic State Technical University &quot;Voenmeh&quot;</h4>
+                <div class="meta">
+                    <strong>Information and Computer Science</strong>
+                  <div>
+                    <time datetime="2006-09-01">Sep 2006</time> –
+                    <time datetime="2010-06-14">Jun 2010</time>
+                  </div>
+                </div>
+              </header>
+                <p>Bachelor</p>
+            </article>
+            <article>
+              <header>
+                <h4>Saint-Petersburg College of Marine Instrumentation</h4>
+                <div class="meta">
+                    <strong>Automatic Control Systems</strong>
+                  <div>
+                    <time datetime="2002-09-01">Sep 2002</time> –
+                    <time datetime="2006-06-01">Jun 2006</time>
+                  </div>
+                </div>
+              </header>
+                <p>Technician</p>
+                <h5>Courses</h5>
+                <ul>
+                    <li><p>Signal Processing</p></li>
+                    <li><p>Control Theory</p></li>
+                    <li><p>Electronics</p></li>
+                    <li><p>Instrumentation</p></li>
+                </ul>
+            </article>
+        </div>
+      </section>
+      <section id="projects">
+        <h3>Projects</h3>
+        <div class="stack">
+            <article>
+              <header>
+                <h4><a href="https://github.com/dy/wavefont">Wavefont / Linefont</a></h4>
+              </header>
+                <p>Data-rendering fonts — draw waveforms and line charts as text. Used in production by plotly.js and others.</p>
+            </article>
+            <article>
+              <header>
+                <h4><a href="https://github.com/audiojs/audio">audio</a></h4>
+              </header>
+                <p>High-level audio workflow library for the web — playback, analysis, non-destructive editing. <code>audio('voice.mp3').trim().normalize('podcast').fade(0.3, 0.5).save('clean.mp3')</code> — chainable, streaming, tree-shakable.</p>
+                <ul>
+                    <li><p>WASM codecs loaded on demand — no ffmpeg dependency</p></li>
+                    <li><p>Streaming playback begins during decode; page cache handles 10GB+ files</p></li>
+                    <li><p>Non-destructive virtual edits with instant undo</p></li>
+                    <li><p>Audio-first API — works in dB, Hz, LUFS, not byte offsets</p></li>
+                    <li><p>LUFS loudness, spectrum, peak, and descriptor analysis</p></li>
+                    <li><p>Pluggable op architecture; CLI with Unix pipes and tab completion</p></li>
+                    <li><p>Runs in browsers, Node, Deno, Bun</p></li>
+                </ul>
+            </article>
+            <article>
+              <header>
+                <h4><a href="https://github.com/audiojs">AudioJS ecosystem</a></h4>
+              </header>
+                <p>Open-source audio/DSP toolchain for the web — author and maintainer. Modular packages covering decode, encode, I/O, filters, effects, and the full signal path.</p>
+                <ul>
+                    <li><p>web-audio-api — portable Web Audio API implementation; polyfill compatible with tone.js</p></li>
+                    <li><p>audio-decode / audio-encode — 13+ formats in Node and browser via WASM codecs</p></li>
+                    <li><p>audio-speaker / audio-mic — cross-platform audio I/O</p></li>
+                    <li><p>digital-filter — IIR/FIR/biquad/butterworth, smoothing, adaptive, multirate</p></li>
+                    <li><p>audio-filter — weighting curves (A/C/K), auditory, analog, speech, EQ</p></li>
+                    <li><p>audio-effect — modulation, dynamics, delay, spatial, distortion (phaser, flanger, chorus)</p></li>
+                    <li><p>pcm-convert, periodic-function, audio-buffer-utils, audio-stretch, audio-lena</p></li>
+                </ul>
+            </article>
+            <article>
+              <header>
+                <h4><a href="https://github.com/stackgl/glsl-transpiler">GLSL-transpiler</a></h4>
+              </header>
+                <p>GLSL → JavaScript compiler (stack-gl ecosystem). Lets you run shader code on CPU.</p>
+            </article>
+            <article>
+              <header>
+                <h4><a href="https://github.com/dy/fourier-transform">fourier-transform</a></h4>
+              </header>
+                <p>Performant FFT implementation for signal processing.</p>
+            </article>
+            <article>
+              <header>
+                <h4><a href="https://github.com/dy/sprae">Sprae</a></h4>
+              </header>
+                <p>3KB DOM microhydration library — reactive templating without a virtual DOM.</p>
+            </article>
+            <article>
+              <header>
+                <h4><a href="https://github.com/dy/watr">Watr</a></h4>
+              </header>
+                <p>WebAssembly text-format compiler.</p>
+            </article>
+            <article>
+              <header>
+                <h4><a href="https://github.com/dy/subscript">Subscript</a></h4>
+              </header>
+                <p>Fast expression parser and evaluator.</p>
+            </article>
+            <article>
+              <header>
+                <h4><a href="https://github.com/colorjs/color-space">Color-space</a></h4>
+              </header>
+                <p>Color space conversions library — comprehensive, dependency-free.</p>
+            </article>
+        </div>
+      </section>
+      <section id="skills">
+        <h3>Skills</h3>
+        <div class="grid-list">
+            <div>
+                <h4>Frontend Core</h4>
+                <ul class="tag-list">
+                    <li>typescript</li>
+                    <li>react</li>
+                    <li>next.js</li>
+                    <li>preact</li>
+                    <li>vue</li>
+                    <li>signals</li>
+                    <li>web components</li>
+                    <li>SSR</li>
+                </ul>
+            </div>
+            <div>
+                <h4>Graphics, Audio &amp; DSP</h4>
+                <ul class="tag-list">
+                    <li>webgl</li>
+                    <li>glsl</li>
+                    <li>regl</li>
+                    <li>three.js</li>
+                    <li>canvas</li>
+                    <li>web audio api</li>
+                    <li>data visualization</li>
+                    <li>signal processing</li>
+                    <li>fft</li>
+                    <li>wasm</li>
+                </ul>
+            </div>
+            <div>
+                <h4>Performance &amp; Testing</h4>
+                <ul class="tag-list">
+                    <li>core web vitals</li>
+                    <li>lighthouse</li>
+                    <li>profiling</li>
+                    <li>playwright</li>
+                    <li>jest</li>
+                    <li>puppeteer</li>
+                    <li>bundle optimization</li>
+                </ul>
+            </div>
+            <div>
+                <h4>Design Systems &amp; UI</h4>
+                <ul class="tag-list">
+                    <li>shadcn</li>
+                    <li>tailwind</li>
+                    <li>storybook</li>
+                    <li>material-ui</li>
+                    <li>figma</li>
+                    <li>wcag</li>
+                    <li>aria</li>
+                    <li>responsive design</li>
+                </ul>
+            </div>
+            <div>
+                <h4>Build &amp; Infra</h4>
+                <ul class="tag-list">
+                    <li>esbuild</li>
+                    <li>rollup</li>
+                    <li>webpack</li>
+                    <li>vercel</li>
+                    <li>github actions</li>
+                </ul>
+            </div>
+            <div>
+                <h4>Backend</h4>
+                <ul class="tag-list">
+                    <li>node.js</li>
+                    <li>python</li>
+                    <li>graphql</li>
+                    <li>firebase</li>
+                    <li>postgres</li>
+                </ul>
+            </div>
+        </div>
+      </section>
+      <section id="languages">
+        <h3>Languages</h3>
+        <div class="grid-list">
+            <div>
+                <h4>English</h4>
+              fluent
+            </div>
+            <div>
+                <h4>Russian</h4>
+              native
+            </div>
+            <div>
+                <h4>French</h4>
+              basic
+            </div>
+        </div>
+      </section>
+      <section id="references">
+        <h3>References</h3>
+        <div class="stack">
+        </div>
+      </section>
+  </body>
 </html>

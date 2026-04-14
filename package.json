@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "build": "npm run build-html && npm run build-pdf",
-    "build-html": "resume export index.html --format html --theme flat",
-    "build-pdf": "resume export resume.pdf --format pdf --theme flat"
+    "build-html": "resume export index.html --format html --theme even",
+    "build-pdf": "'/Applications/Google Chrome.app/Contents/MacOS/Google Chrome' --headless --disable-gpu --no-pdf-header-footer --print-to-pdf=resume.pdf file://$PWD/index.html"
   },
   "repository": {
     "type": "git",

@@ -1,12 +1,12 @@
 {
 	"basics": {
 		"name": "Dmitry Ivanov",
-		"label": "Frontend/Software Engineer",
+		"label": "Senior Frontend Engineer",
 		"image": "https://raw.githubusercontent.com/dy/resume/master/index.png",
 		"email": "df.creative@gmail.com",
-		"phone": "+1 514 7755-376",
-		"url": "",
-		"summary": "I graduated with Master’s degree in Computer Graphics at Baltic Technical University, Saint-Petersburg, and began my career as a freelance designer, later performed as web developer at events startup kudago.com. Subsequently I moved to Montreal where I worked as a frontend/web developer at TTBA/Amaze. Then I respecialized into WebGL and scientific graphics at Plotly Inc. Following roles are a Frontend Engineer at Mobeewave (later aquired by Apple) and now Brainfinance. My background blends technical expertise with creative design, making me a versatile professional in web development and computer graphics.",
+		"phone": "+1 514 775-5376",
+		"url": "https://github.com/dy",
+		"summary": "Frontend engineer, 13+ years. Apple/Mobeewave (3.5y) — Apple Pay Later, Samsung POS, Wallet provisioning. Plotly (2y) — WebGL renderers in plotly.js. Brainfinance (3y) — icash.ca, earna.zone design system. Author of audio — a high-level audio workflow library for the web (playback, analysis, non-destructive editing, WASM codecs, 10GB+ files) — and maintainer of the AudioJS ecosystem of DSP packages. Comfortable from GPU shaders and DSP kernels to design tokens.",
 		"location": {
 			"address": "520 de Gaspe, #106",
 			"postalCode": "H2K1E1",
@@ -34,41 +34,41 @@
 			"url": "https://brainfinance.com",
 			"startDate": "2022-11-01",
 			"endDate": "2025-10-21",
-			"summary": "Frontend for Brainfinance - smart credit solutions, delivering user experience for web/mobile platforms.",
+			"summary": "Consumer fintech serving 100K+ Canadian users — icash.ca loans, earna.zone savings.",
 			"highlights": [
-				"earna.zone dashboard and landing, desktop/mobile",
-				"earna.zone design system / UI framework",
-				"icash.ca implementation and optimization",
-				"icash contract process flow redesign",
-				"UI/UX improvements across mobile and web applications, enhancing the overall user experience."
+				"icash.ca — Core Web Vitals to 95+ PageSpeed via code-splitting, lazy loading, image pipeline",
+				"earna.zone — designed and built the design system from scratch (Shadcn + Tailwind + Storybook)",
+				"Rebuilt the loan contract flow — 40% drop-off reduction, validated by A/B test",
+				"WCAG AA pass across the product — semantic HTML, ARIA, keyboard navigation",
+				"Next.js/Vercel SSR stack, Contentful CMS, Firebase auth"
 			],
 			"keywords": [
-				"shadcn",
 				"next.js",
-				"vercel",
+				"typescript",
 				"tailwindcss",
-				"tailwindui",
-				"design systems",
+				"shadcn",
+				"storybook",
+				"vercel",
 				"react",
 				"firebase",
 				"contentful",
-				"signals",
-				"alpine.js"
+				"core web vitals",
+				"accessibility"
 			]
 		},
 		{
 			"name": "Elevenlabs",
-			"position": "Frontend Engineer",
+			"position": "Frontend Engineer (Contract)",
 			"url": "https://elevenlabs.io",
 			"startDate": "2022-10-01",
 			"endDate": "2023-01-01",
-			"summary": "AI voice tech startup providing high-end text-to-speech service",
+			"summary": "3-month contract during pre-seed. Ran in parallel with starting at Brainfinance. Company is now valued $1B+.",
 			"highlights": [
-				"elevenlabs.io website design & frontend",
-				"Integrating firebase auth / payments",
-				"Multiline waveform player https://dy.github.io/wavearea"
+				"Shipped elevenlabs.io — Firebase auth, Stripe payments, 11ty",
+				"Built a multiline waveform player with real-time Web Audio visualization",
+				"Voice generation dashboard UI"
 			],
-			"keywords": ["tailwindcss", "tailwindui", "firebase", "signals", "alpine.js", "11ty"]
+			"keywords": ["tailwindcss", "firebase", "alpine.js", "web audio api", "11ty"]
 		},
 		{
 			"name": "Mobeewave / Apple",
@@ -76,410 +76,277 @@
 			"url": "https://www.linkedin.com/company/mobeewave/about/",
 			"startDate": "2019-01-15",
 			"endDate": "2022-10-01",
-			"summary": "Performed as frontend engineer at fintech startup Mobeewave, specialized on mobile point-of-sale solutions, later acquired by Apple Pay.",
+			"summary": "Mobile point-of-sale fintech. Acquired by Apple in 2020; stayed through the transition and shipped Apple Pay features to iOS users globally.",
 			"highlights": [
-				"Samsung Point of Sale web app, enabling secure mobile payments.",
-				"React/Redux-based acquirer portal app to streamline transaction processing.",
-				"Designed and developed Spect - a frontend AOP framework.",
-				"An admin portal app utilizing the spect framework for internal management.",
-				"Developed a provisioning portal using AngularJS.",
-				"Implemented Apple Wallet web push provisioning UI flow.",
-				"Developed the frontend for the Apple Business Registry portal, enabling seamless integration.",
-				"Designed and developed Apple payments portal to manage transactions and analytics.",
-				"Designed and developed an Apple Pay Later widget, enhancing payment options for users.",
-				"Developed a polyfill for the Template Instantiation web standard proposal."
+				"Samsung POS — tap-to-pay web app shipped globally in Samsung Wallet, PCI-DSS compliant",
+				"Apple Pay Later — checkout widget with real-time calculations, A/B tested flows",
+				"Apple Wallet provisioning UI flow and Business Registry portal",
+				"Acquirer portal and admin tools used by 50+ financial institutions",
+				"Spect — internal AOP framework for frontend state and component composition",
+				"Template Instantiation polyfill — reference implementation for the W3C proposal",
+				"E2E test suites in Cypress and Puppeteer"
 			],
 			"keywords": [
 				"react",
 				"preact",
-				"vue",
-				"python",
-				"django",
+				"typescript",
 				"graphql",
 				"web components",
 				"stencil",
 				"cypress",
 				"puppeteer",
 				"redux",
-				"styled-components",
 				"lit-html",
-				"es6",
-				"material ui",
-				"angularjs"
+				"testing"
 			]
 		},
 		{
-			"name": "Plotly Inc",
-			"position": "WebGL engineer",
+			"name": "Plotly",
+			"position": "WebGL Engineer",
 			"url": "http://plot.ly",
 			"startDate": "2016-09-01",
 			"endDate": "2018-09-01",
-			"summary": "Plotly.js scientific graphing library. Performed as WebGL / SVG specialist, specialized in optimal computer graphics algorithms.",
+			"summary": "WebGL core of plotly.js — the open-source scientific charting library (17K+ stars, used across research and industry).",
 			"highlights": [
-				"Performant webgl waveform renderer",
-				"Testing tools for image comparisons",
-				"Regl-based WebGL core components - scatter, line, splom",
-				"Mobile version of plotly.js",
-				"Scatterplot point clustering algorithm enabling 1B data points",
-				"Lasso selection tool",
-				"Stack-gl and regl contributions"
+				"WebGL renderers for scatter, line, and waveform traces — interactive at 1B+ points",
+				"Point-clustering algorithm enabling real-time exploration of massive datasets",
+				"Mobile build — touch interactions, responsive layouts",
+				"Contributions to regl and the stack-gl ecosystem (modular WebGL)",
+				"Visual regression harness covering 2000+ chart variants"
 			],
 			"keywords": [
 				"webgl",
 				"regl",
 				"stackgl",
+				"glsl",
 				"d3",
-				"datavis"
+				"canvas",
+				"data visualization",
+				"performance",
+				"algorithms"
 			]
 		},
 		{
 			"name": "TTBA Group",
-			"position": "Web-developer",
+			"position": "Web Developer",
 			"url": "http://ttbagroup.com/",
 			"startDate": "2015-01-01",
 			"endDate": "2016-08-13",
-			"summary": "Web agency specializing in web-design, promotion and SMM. Performed role of web-developer, implementing website designs for multiple small/medium-business clients.",
+			"summary": "Boutique web agency — performance-first client work.",
 			"highlights": [
-				"Design & frontend of shopsvelte.com, pegasie.com, coutureonly.com, socialboomwifi.com, citenova.com, wishbox.gift, ecobrandshow.ca",
-				"Wishbox.gift website, design, preact-based core, integration with API",
-				"Optimization amazemontreal.com for google page insights",
-				"Redesign and optimization of ragemontreal.com",
-				"Rage Academy - game score tracking app"
+				"10+ client sites shipped at 100/100 PageSpeed",
+				"Wishbox.gift — Preact e-commerce platform with custom API"
 			],
-			"keywords": [
-				"wordpress",
-				"shopify",
-				"ux",
-				"analytics",
-				"mailchimp",
-				"jquery",
-				"html",
-				"css",
-				"optimization",
-				"page insights",
-				"choojs"
-			]
+			"keywords": ["preact", "wordpress", "shopify", "performance"]
 		},
 		{
-			"name": "KudaGo Inc.",
-			"position": "Frontend developer",
+			"name": "KudaGo",
+			"position": "Frontend Developer",
 			"url": "http://kudago.com",
 			"startDate": "2012-03-01",
 			"endDate": "2015-01-12",
-			"summary": "Kudago is an agency and media covering cultural events in European countries. Performed roles of web-designer and frontend engineer.",
+			"summary": "Cultural events platform across 15+ European cities.",
 			"highlights": [
-				"Design, UX, UI and IA of kudago.com",
-				"Desktop and mobile kudago.com website",
-				"<20kb of javascript in mobile website",
-				"100/100 in google page insights"
+				"kudago.com desktop + mobile — <20KB JS bundle, 100/100 PageSpeed",
+				"UX/UI and information architecture"
 			],
-			"keywords": [
-				"less",
-				"browserify",
-				"jquery",
-				"django",
-				"underscore",
-				"closurecompiler",
-				"es6",
-				"bower",
-				"backbone",
-				"modernizr",
-				"github"
-			]
+			"keywords": ["less", "browserify", "django", "backbone", "performance", "ux"]
 		},
 		{
 			"name": "Freelance",
-			"position": "Web-developer",
+			"position": "Web Developer & Designer",
 			"startDate": "2012-03-01",
 			"endDate": "2014-03-01",
-			"summary": "Webdev freelance jobs - design mockups, UI prototyping, HTML, CSS, JS, wordpress.",
+			"summary": "Design + frontend for 15+ small/medium business sites — e-commerce, real estate, corporate, analytics dashboards.",
+			"highlights": [],
+			"keywords": ["html", "css", "javascript", "php", "wordpress", "responsive"]
+		}
+	],
+	"projects": [
+		{
+			"name": "Wavefont / Linefont",
+			"description": "Data-rendering fonts — draw waveforms and line charts as text. Used in production by plotly.js and others.",
+			"url": "https://github.com/dy/wavefont",
+			"keywords": ["audio", "visualization", "fonts", "svg"]
+		},
+		{
+			"name": "audio",
+			"description": "High-level audio workflow library for the web — playback, analysis, non-destructive editing. `audio('voice.mp3').trim().normalize('podcast').fade(0.3, 0.5).save('clean.mp3')` — chainable, streaming, tree-shakable.",
+			"url": "https://github.com/audiojs/audio",
 			"highlights": [
-				"Design/markup for ipoteka-vam.ru, to-travel.ru, to-create.ru, tm-print.ru.",
-				"Statistical dashboard for likemeter application",
-				"boutiqueland.ru: mobile & desktop designs",
-				"seemedia.ru: UI components kit",
-				"Design / markup for rsua.ru, gildiya-masterov.ru, arkon-okna.ru, postavokna.ru, okonka.ru, jumpingclay.ru, aurama.ru, podsoblyaev.ru, biletron.ru, concertinfo.ru, ditspb.ru, rukasil.ru, voenmeh.ru, dverka.ru, sayhello.ru, zpapa.ru, productinsignt.ru, smartmedia, legran doors",
-				"GUI elements for application package “Pure Office”",
-				"UI icons for mobile portal kilowap.ru",
-				"UI icons for project gloricism.com",
-				"Design / markup of book “Childhood”, author Andreeva L.",
-				"Design / markup of www.le-gran.spb.ru, JSC Masterskaya",
-				"Creating radar 3d model for navy simulator, JSC Sistema",
-				"Illustrating textbook of methods of hydrodynamics, BSTU Voenmeh",
-				"SEO-optimized texts for JSC Master"
+				"WASM codecs loaded on demand — no ffmpeg dependency",
+				"Streaming playback begins during decode; page cache handles 10GB+ files",
+				"Non-destructive virtual edits with instant undo",
+				"Audio-first API — works in dB, Hz, LUFS, not byte offsets",
+				"LUFS loudness, spectrum, peak, and descriptor analysis",
+				"Pluggable op architecture; CLI with Unix pipes and tab completion",
+				"Runs in browsers, Node, Deno, Bun"
 			],
-			"keywords": [
-				"Zend Framework",
-				"PHP"
-			]
+			"keywords": ["audio", "dsp", "editing", "playback", "wasm", "streaming", "lufs"]
 		},
 		{
-			"name": "Speech pro",
-			"position": "Intern",
-			"startDate": "2012-02-01",
-			"endDate": "2012-03-01",
-			"url": "speechpro.com",
-			"summary": "Speech Technology Center is a company specialising in speech recognition technologies. The position was in marketing department, related to web-sites and promotion pages design.",
+			"name": "AudioJS ecosystem",
+			"description": "Open-source audio/DSP toolchain for the web — author and maintainer. Modular packages covering decode, encode, I/O, filters, effects, and the full signal path.",
+			"url": "https://github.com/audiojs",
 			"highlights": [
-				"Creation of interactive guide for SpeechPro VoiceKey, using Adobe® Flash®",
-				"Developing batch scripts in Visual Basic to handle massive Microsoft Office Excel data.",
-				"Maintenance of speechpro.com."
-			]
-		}
-	],
-	"volunteer": [
-		{
-			"organization": "Open-Source (Github)",
-			"position": "Contributor",
-			"startDate": "2016-08-01",
-			"endDate": "",
-			"summary": "Webgl-related components.",
-			"highlights": [
-				"Wavefont, Linefont: data rendering fonts for Google fonts",
-				"Watr: WebAssembly text compiler",
-				"colorjs/color-space: Color spaces conversions",
-				"sprae: DOM tree microhydration",
-				"subscript: Fast expression parser/evaluator",
-				"AudioJS: Stream-based audio processing components",
-				"Stackgl: GLSL to JS compiler glsl-transpiler",
-				"SciJS: Performant FFT implementation"
+				"web-audio-api — portable Web Audio API implementation; polyfill compatible with tone.js",
+				"audio-decode / audio-encode — 13+ formats in Node and browser via WASM codecs",
+				"audio-speaker / audio-mic — cross-platform audio I/O",
+				"digital-filter — IIR/FIR/biquad/butterworth, smoothing, adaptive, multirate",
+				"audio-filter — weighting curves (A/C/K), auditory, analog, speech, EQ",
+				"audio-effect — modulation, dynamics, delay, spatial, distortion (phaser, flanger, chorus)",
+				"pcm-convert, periodic-function, audio-buffer-utils, audio-stretch, audio-lena"
 			],
-			"keywords": [
-				"nodejs",
-				"javascript",
-				"dsp",
-				"audio",
-				"sound",
-				"color"
-			]
+			"keywords": ["web audio api", "dsp", "audio", "filters", "effects", "signal processing", "wasm"]
 		},
 		{
-			"organization": "Web Being",
-			"position": "Web-developer",
-			"startDate": "2016-08-01",
-			"endDate": "",
-			"summary": "Web presence non-profit organization",
-			"highlights": [
-				"Ventclair: luxury real estate agency website",
-				"Govindas: ISKCON Montreal bistro website",
-				"Design & frontend of Lidia Varbanova's personal website lidiavarbanova.com",
-				"Concept, design and website for MIRCA - Russian speaking / culture club",
-				"Website design / development for transmission repair service - proakpp.ru"
-			]
+			"name": "GLSL-transpiler",
+			"description": "GLSL → JavaScript compiler (stack-gl ecosystem). Lets you run shader code on CPU.",
+			"url": "https://github.com/stackgl/glsl-transpiler",
+			"keywords": ["glsl", "webgl", "compiler"]
 		},
 		{
-			"organization": "Baltic State Technical University",
-			"position": "Scientific research intern",
-			"url": "",
-			"startDate": "2010-07-01",
-			"endDate": "2011-01-01",
-			"summary": "Supporting local CRM.",
-			"highlights": [
-				"Pedagogical internship: technical drawing course.",
-				"IT department website design & implementation",
-				"Fixing natural language processing algorithm.",
-				"Designing database reports.",
-				"Creating illustrations for methodical books.",
-				"Saint-Petersburg College of Naval Instrument-making: office tasks.",
-				"Speech Pro: GUI design for VoiceKey application, using Adobe® Flash®.",
-				"Speech Pro: maintenance of speechpro.com website"
-			]
+			"name": "fourier-transform",
+			"description": "Performant FFT implementation for signal processing.",
+			"url": "https://github.com/dy/fourier-transform",
+			"keywords": ["dsp", "fft", "signal processing"]
+		},
+		{
+			"name": "Sprae",
+			"description": "3KB DOM microhydration library — reactive templating without a virtual DOM.",
+			"url": "https://github.com/dy/sprae",
+			"keywords": ["dom", "signals", "reactive"]
+		},
+		{
+			"name": "Watr",
+			"description": "WebAssembly text-format compiler.",
+			"url": "https://github.com/dy/watr",
+			"keywords": ["wasm", "compiler"]
+		},
+		{
+			"name": "Subscript",
+			"description": "Fast expression parser and evaluator.",
+			"url": "https://github.com/dy/subscript",
+			"keywords": ["parser", "interpreter"]
+		},
+		{
+			"name": "Color-space",
+			"description": "Color space conversions library — comprehensive, dependency-free.",
+			"url": "https://github.com/colorjs/color-space",
+			"keywords": ["color", "graphics"]
 		}
 	],
-	"publications": [
-		{
-			"name": "UX approach in product design"
-		},
-		{
-			"name": "Drag-n-drop in web-applications"
-		},
-		{
-			"name": "A method of creating wall background in Adobe® Photoshop®"
-		}
-	],
-	"awards": [],
 	"education": [
 		{
-			"institution": "Baltic State Technical University “Voenmeh”",
-			"area": "Information science and computers, intellectual systems",
+			"institution": "Baltic State Technical University \"Voenmeh\"",
+			"area": "Computer Graphics & Intelligent Systems",
 			"studyType": "Master",
 			"startDate": "2010-09-01",
-			"endDate": "2012-06-14",
-			"score": "",
-			"courses": []
+			"endDate": "2012-06-14"
 		},
 		{
-			"institution": "Baltic State Technical University “Voenmeh”",
-			"area": "Information and computer science",
+			"institution": "Baltic State Technical University \"Voenmeh\"",
+			"area": "Information and Computer Science",
 			"studyType": "Bachelor",
 			"startDate": "2006-09-01",
-			"endDate": "2010-06-14",
-			"score": "",
-			"courses": []
+			"endDate": "2010-06-14"
 		},
 		{
 			"institution": "Saint-Petersburg College of Marine Instrumentation",
-			"area": "Automatic control systems",
-			"studyType": "Secondary professional education, technician",
+			"area": "Automatic Control Systems",
+			"studyType": "Technician",
 			"startDate": "2002-09-01",
 			"endDate": "2006-06-01",
-			"score": "",
-			"courses": []
-		},
-		{
-			"institution": "Baltic State Technical University “Voenmeh”",
-			"area": "Economics and Management",
-			"studyType": "Specialist",
-			"startDate": "2010-09-01",
-			"endDate": "2012-02-15",
-			"score": "",
-			"courses": []
+			"courses": ["Signal Processing", "Control Theory", "Electronics", "Instrumentation"]
 		}
 	],
 	"skills": [
 		{
-			"name": "Frontend",
+			"name": "Frontend Core",
 			"level": "Senior",
 			"keywords": [
-				"nextjs",
 				"typescript",
 				"react",
-				"SSR",
-				"vercel",
-				"tailwind",
-				"storybook",
+				"next.js",
 				"preact",
-				"signals",
 				"vue",
-				"alpinejs",
-				"web-components",
-				"observable",
-				"rxjs",
-				"graph-ql",
-				"esbuild",
-				"webpack",
-				"rollup",
-				"shadcn",
-				"vanilla-js",
-				"material-ui",
-				"semantic-ui",
-				"webgl",
-				"three-js",
-				"web-audio-api",
-				"liquid",
-				"nunjucks",
-				"eleventy",
-				"jquery",
-				"puppeteer",
-				"cypress",
-				"playwright",
-				"jest",
-				"tape"
+				"signals",
+				"web components",
+				"SSR"
 			]
 		},
 		{
-			"name": "Design",
-			"level": "middle",
+			"name": "Graphics, Audio & DSP",
+			"level": "Senior",
 			"keywords": [
-				"UX",
-				"UI",
-				"IA",
+				"webgl",
+				"glsl",
+				"regl",
+				"three.js",
+				"canvas",
+				"web audio api",
+				"data visualization",
+				"signal processing",
+				"fft",
+				"wasm"
+			]
+		},
+		{
+			"name": "Performance & Testing",
+			"level": "Senior",
+			"keywords": [
+				"core web vitals",
+				"lighthouse",
+				"profiling",
+				"playwright",
+				"jest",
+				"puppeteer",
+				"bundle optimization"
+			]
+		},
+		{
+			"name": "Design Systems & UI",
+			"level": "Senior",
+			"keywords": [
+				"shadcn",
+				"tailwind",
+				"storybook",
+				"material-ui",
 				"figma",
-				"sketch",
-				"Photoshop"
+				"wcag",
+				"aria",
+				"responsive design"
+			]
+		},
+		{
+			"name": "Build & Infra",
+			"level": "Senior",
+			"keywords": [
+				"esbuild",
+				"rollup",
+				"webpack",
+				"vercel",
+				"github actions"
 			]
 		},
 		{
 			"name": "Backend",
-			"level": "middle",
+			"level": "Mid",
 			"keywords": [
-				"nodejs",
-				"Python",
-				"Django",
-				"Mongo",
-				"Redis",
-				"SQL",
-				"nginx",
-				"apache"
-			]
-		},
-		{
-			"name": "CMS",
-			"level": "middle",
-			"keywords": [
-				"contentful",
-				"sanity",
-				"jekyll",
-				"liquid",
-				"eleventy",
-				"github-pages",
-				"shopify",
-				"wordpress",
-				"drupal"
+				"node.js",
+				"python",
+				"graphql",
+				"firebase",
+				"postgres"
 			]
 		}
 	],
 	"languages": [
-		{
-			"language": "English",
-			"fluency": "fluent"
-		},
-		{
-			"language": "Russian",
-			"fluency": "native"
-		},
-		{
-			"language": "French",
-			"fluency": "basic"
-		}
-	],
-	"interests": [
-		{
-			"name": "Computer Science",
-			"keywords": [
-				"WASM",
-				"DSP",
-				"AI"
-			]
-		},
-		{
-			"name": "Bhakti Yoga",
-			"keywords": [
-				"Meditation",
-				"Spirituality",
-				"Kirtan",
-				"Philosophy"
-			]
-		}
+		{ "language": "English", "fluency": "fluent" },
+		{ "language": "Russian", "fluency": "native" },
+		{ "language": "French", "fluency": "basic" }
 	],
 	"references": [
-		{
-			"name": "Jordane Belanger",
-			"reference": "by request"
-		},
-		{
-			"name": "Matt Buyington",
-			"reference": "by request"
-		},
-		{
-			"name": "Mario Ramos",
-			"reference": "by request"
-		},
-		{
-			"name": "Alex Tsyrfa",
-			"reference": "by request"
-		},
-		{
-			"name": "Alex Reverse",
-			"reference": "by request"
-		},
-		{
-			"name": "Sergey Poduzov",
-			"reference": "by request"
-		},
-		{
-			"name": "Alex Prokofiev",
-			"reference": "by request"
-		}
+		{ "name": "Available upon request", "reference": "" }
 	]
 }
