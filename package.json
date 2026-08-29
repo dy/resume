@@ -4,8 +4,8 @@
   "description": "My cv",
   "main": "index.js",
   "scripts": {
-    "build": "npm run build-html && npm run build-pdf",
-    "build-html": "resume export index.html --format html --theme even",
+    "build": "npm run build-pdf",
+    "scaffold-html": "resume export index.html --format html --theme even",
     "build-pdf": "'/Applications/Google Chrome.app/Contents/MacOS/Google Chrome' --headless --no-pdf-header-footer --print-to-pdf=resume.pdf file://$PWD/index.html"
   },
   "repository": {

@@ -2,17 +2,47 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-      <title>Dmitry Ivanov</title>
-      <meta name="description" content="Frontend engineer, 13+ years. Apple/Mobeewave (3.5y) — Apple Pay Later, Samsung POS, Wallet provisioning. Plotly (2y) — WebGL renderers in plotly.js. Brainfinance (3y) — icash.ca, earna.zone design system. Author of audio — a high-level audio workflow library for the web (playback, analysis, non-destructive editing, WASM codecs, 10GB+ files) — and maintainer of the AudioJS ecosystem of DSP packages. Comfortable from GPU shaders and DSP kernels to design tokens.">
+      <title>Dmitry Ivanov | Software Engineer</title>
+      <meta name="author" content="Dmitry Ivanov">
+      <meta name="description" content="Software engineer focused on high-performance web applications, real-time audio, and 2D/3D graphics, with experience in fintech, voice interfaces, scientific visualization, WebAssembly, DSP, color, and UI tooling.">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap">
-    <style>:root {
+    <style>@font-face {
+  font-family: 'Space Grotesk';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('./assets/space-grotesk-regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Space Grotesk';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url('./assets/space-grotesk-semibold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Space Grotesk';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url('./assets/space-grotesk-bold.ttf') format('truetype');
+}
+
+@page {
+  size: Letter;
+  margin: 0;
+}
+
+:root {
   color-scheme: light;
 
   --fg: #111111;
   --muted: #6b6b6b;
   --bg: #ffffff;
   --rule: #111111;
+  --tag-border: oklch(90% 0 0);
 
   --gap-x: 2.5em;
   --col-label: 9.5em;
@@ -27,6 +57,7 @@
 
 html {
   font-size: clamp(14px, 0.75vw + 11.5px, 18px);
+  overflow-x: clip;
 }
 
 body {
@@ -39,6 +70,7 @@ body {
   max-width: var(--max-width);
   margin: 0 auto;
   padding: 3.5em 3.5em 4em;
+  overflow-x: clip;
 }
 
 ol, ul { padding-left: 1.1em; }
@@ -57,6 +89,8 @@ a {
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Space Grotesk', sans-serif;
   line-height: 1.2;
+  min-width: 0;
+  overflow-wrap: anywhere;
 }
 
 h1 {
@@ -108,7 +142,7 @@ cite {
   font-style: inherit;
 }
 
-cite::before { content: '— '; }
+cite::before { content: '– '; }
 
 svg {
   width: 12px;
@@ -172,8 +206,6 @@ svg {
   font-size: 0.9em;
 }
 
-.icon-list .network { color: var(--muted); }
-
 /* Sections */
 section {
   display: grid;
@@ -189,8 +221,6 @@ section > h3 { grid-column: 1; }
 
 section > .stack,
 section > .grid-list { grid-column: 2; }
-
-#references { display: none; }
 
 /* Stack of articles (jobs, projects, schools) */
 .stack {
@@ -250,66 +280,118 @@ article > header > .meta > :last-child {
 .tag-list {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.15em 0.5em;
+  gap: 0.35em;
   list-style: none;
   padding: 0;
   font-size: 0.88em;
-  color: var(--muted);
+  color: var(--fg);
   margin-top: 0.25em;
 }
 
-.tag-list > li:not(:last-child)::after {
-  content: ' ·';
+.tag-list > li {
+  padding: 0.06em 0.4em;
+  border: 1px solid var(--tag-border);
+  border-radius: 0.18em;
+  line-height: 1.35;
+  white-space: nowrap;
 }
 
-.bullet-item:not(:first-child)::before {
-  content: '· ';
-  margin: 0 0.2em;
+@media screen and (max-width: 640px) {
+  body { padding: 1.5em 1.25em 2.5em; }
+
+  .masthead,
+  section {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .masthead > div,
+  .masthead > article,
+  .masthead > .icon-list,
+  section > h3,
+  section > .stack,
+  section > .grid-list {
+    grid-column: 1;
+  }
+
+  .masthead > div,
+  .masthead > article,
+  .masthead > .icon-list {
+    grid-row: auto;
+  }
+
+  .masthead::before { display: none; }
+  .grid-list { grid-template-columns: minmax(0, 1fr); }
+}
+
+@media screen and (max-width: 420px) {
+  .masthead > div,
+  article > header {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .masthead > div { display: grid; }
+
+  article > header > .meta > :last-child {
+    grid-column: 1;
+    grid-row: 3;
+  }
 }
 
 @media print {
-  html { font-size: 15px; }
-  body { padding: 2.2em 2.6em; max-width: none; }
+  html { font-size: 12.5px; }
+  body { padding: 1.2em 2.6em; max-width: none; line-height: 1.38; }
   a { border-bottom: none; }
+  li { margin-top: 0.08em; }
+  article > * + * { margin-top: 0.25em; }
+  .masthead { row-gap: 0.75em; }
+  h3, .masthead::before { letter-spacing: 0.06em; }
+  section { padding-top: 0.75em; margin-top: 0.75em; }
+  .stack { gap: 0.55em; }
+  section article { break-inside: avoid; }
+  #projects {
+    break-before: page;
+    page-break-before: always;
+  }
 }
 </style>
   </head>
   <body>
       <header class="masthead">
-          <img src="https://raw.githubusercontent.com/dy/resume/master/index.png" alt="">
         <div>
             <h1>Dmitry Ivanov</h1>
-            <h2>Senior Frontend Engineer</h2>
+            <h2>Software Engineer</h2>
         </div>
           <article>
-            <p>Frontend engineer, 13+ years. Apple/Mobeewave (3.5y) — Apple Pay Later, Samsung POS, Wallet provisioning. Plotly (2y) — WebGL renderers in plotly.js. Brainfinance (3y) — icash.ca, earna.zone design system. Author of audio — a high-level audio workflow library for the web (playback, analysis, non-destructive editing, WASM codecs, 10GB+ files) — and maintainer of the AudioJS ecosystem of DSP packages. Comfortable from GPU shaders and DSP kernels to design tokens.</p>
+            <p>Software engineer focused on high-performance web applications, real-time audio, and 2D/3D graphics. Built fintech products at Mobeewave, Apple, and Brainfinance, voice interfaces at ElevenLabs, and scientific visualization at Plotly. Current open-source work covers WebAssembly, DSP, color, and UI tooling.</p>
           </article>
         <ul class="icon-list">
               <li>
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-map-pin"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class="feather feather-map-pin"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
                 Montréal, Canada
               </li>
             <li>
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-mail"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class="feather feather-mail"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
               <a href="mailto:df.creative@gmail.com">df.creative@gmail.com</a>
             </li>
             <li>
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-phone"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class="feather feather-phone"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
               <a href="tel:+15147755376">+1 514 775-5376</a>
             </li>
             <li>
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-link"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class="feather feather-link"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg>
               <a href="https://dy.github.io">dy.github.io</a>
             </li>
             <li>
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-github"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class="feather feather-github"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
                   <a href="https://github.com/dy">dy</a>
-                <span class="network">(Github)</span>
             </li>
             <li>
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-twitter"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path></svg>
-                  <a href="https://twitter.com/dmitryiv_">dmitryiv_</a>
-                <span class="network">(Twitter)</span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" stroke="none" aria-hidden="true"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"></path></svg>
+                  <a href="https://x.com/made_by_dy">made_by_dy</a>
+            </li>
+            <li>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class="feather feather-globe"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
+              English, Russian, French (conversational), Spanish (basic)
             </li>
         </ul>
       </header>
@@ -317,6 +399,21 @@ article > header > .meta > :last-child {
       <section id="work">
         <h3>Work</h3>
         <div class="stack">
+            <article>
+              <header>
+                <h4>Software Engineer</h4>
+                <div class="meta">
+                  <div>
+                    <strong><a href="https://dy.github.io">Independent Open Source</a></strong>
+                  </div>
+                  <div>
+                    <time datetime="2025-10-22">Oct 2025</time> –
+                    Present
+                  </div>
+                </div>
+              </header>
+                <p>Career break for long-planned open-source projects, including AudioJS and ColorJS. Selected projects total 3,000+ GitHub stars.</p>
+            </article>
             <article>
               <header>
                 <h4>Senior Frontend Engineer</h4>
@@ -330,13 +427,11 @@ article > header > .meta > :last-child {
                   </div>
                 </div>
               </header>
-                <p>Consumer fintech serving 100K+ Canadian users — icash.ca loans, earna.zone savings.</p>
+                <p>Consumer fintech serving 100,000+ users in Canada: icash.ca loans and earna.zone savings.</p>
                 <ul>
-                    <li><p>icash.ca — Core Web Vitals to 95+ PageSpeed via code-splitting, lazy loading, image pipeline</p></li>
-                    <li><p>earna.zone — designed and built the design system from scratch (Shadcn + Tailwind + Storybook)</p></li>
-                    <li><p>Rebuilt the loan contract flow — 40% drop-off reduction, validated by A/B test</p></li>
-                    <li><p>WCAG AA pass across the product — semantic HTML, ARIA, keyboard navigation</p></li>
-                    <li><p>Next.js/Vercel SSR stack, Contentful CMS, Firebase auth</p></li>
+                    <li><p>Owned frontend architecture and delivery for earna.zone, including its landing page, dashboard, application flows, and shadcn/Tailwind/Storybook design system</p></li>
+                    <li><p>Rebuilt the icash.ca frontend, including loan application and contract-signing flows; contract drop-off fell 40% in an A/B test</p></li>
+                    <li><p>Raised key icash.ca flows above 95 in PageSpeed performance tests and addressed WCAG AA accessibility issues</p></li>
                 </ul>
             </article>
             <article>
@@ -344,7 +439,7 @@ article > header > .meta > :last-child {
                 <h4>Frontend Engineer (Contract)</h4>
                 <div class="meta">
                   <div>
-                    <strong><a href="https://elevenlabs.io">Elevenlabs</a></strong>
+                    <strong><a href="https://elevenlabs.io">ElevenLabs</a></strong>
                   </div>
                   <div>
                     <time datetime="2022-10-01">Oct 2022</time> –
@@ -352,11 +447,10 @@ article > header > .meta > :last-child {
                   </div>
                 </div>
               </header>
-                <p>3-month contract during pre-seed. Ran in parallel with starting at Brainfinance. Company is now valued $1B+.</p>
+                <p>Concurrent pre-seed voice AI contract.</p>
                 <ul>
-                    <li><p>Shipped elevenlabs.io — Firebase auth, Stripe payments, 11ty</p></li>
-                    <li><p>Built a multiline waveform player with real-time Web Audio visualization</p></li>
-                    <li><p>Voice generation dashboard UI</p></li>
+                    <li><p>Designed and launched elevenlabs.io with 11ty, Firebase authentication, Stripe payments, and voice API access</p></li>
+                    <li><p>Built the browser player for generated speech</p></li>
                 </ul>
             </article>
             <article>
@@ -364,7 +458,7 @@ article > header > .meta > :last-child {
                 <h4>Software Engineer</h4>
                 <div class="meta">
                   <div>
-                    <strong><a href="https://www.linkedin.com/company/mobeewave/about/">Mobeewave / Apple</a></strong>
+                    <strong><a href="https://www.linkedin.com/company/mobeewave/about/">Mobeewave</a> / <a href="https://www.apple.com">Apple</a></strong>
                   </div>
                   <div>
                     <time datetime="2019-01-15">Jan 2019</time> –
@@ -372,15 +466,14 @@ article > header > .meta > :last-child {
                   </div>
                 </div>
               </header>
-                <p>Mobile point-of-sale fintech. Acquired by Apple in 2020; stayed through the transition and shipped Apple Pay features to iOS users globally.</p>
+                <p>Joined Mobeewave in 2019 and continued at Apple after the 2020 acquisition.</p>
                 <ul>
-                    <li><p>Samsung POS — tap-to-pay web app shipped globally in Samsung Wallet, PCI-DSS compliant</p></li>
-                    <li><p>Apple Pay Later — checkout widget with real-time calculations, A/B tested flows</p></li>
-                    <li><p>Apple Wallet provisioning UI flow and Business Registry portal</p></li>
-                    <li><p>Acquirer portal and admin tools used by 50+ financial institutions</p></li>
-                    <li><p>Spect — internal AOP framework for frontend state and component composition</p></li>
-                    <li><p>Template Instantiation polyfill — reference implementation for the W3C proposal</p></li>
-                    <li><p>E2E test suites in Cypress and Puppeteer</p></li>
+                    <li><p>Mobeewave: built the frontend for Samsung POS, a PCI DSS-compliant tap-to-pay product shipped in Samsung Wallet</p></li>
+                    <li><p>Mobeewave: built acquirer, admin, and provisioning portals; the acquirer portal was used by 50+ financial institutions</p></li>
+                    <li><p>Created <a href="https://github.com/dy/spect">Spect</a>, a frontend framework for state and component composition</p></li>
+                    <li><p>Apple: built the Wallet web push provisioning flow and Apple Business Registry portal frontend</p></li>
+                    <li><p>Apple: built the Pay Later checkout widget with real-time calculations</p></li>
+                    <li><p>Built the reference <a href="https://github.com/dy/template-parts">polyfill</a> for the W3C Template Instantiation proposal</p></li>
                 </ul>
             </article>
             <article>
@@ -388,7 +481,7 @@ article > header > .meta > :last-child {
                 <h4>WebGL Engineer</h4>
                 <div class="meta">
                   <div>
-                    <strong><a href="http://plot.ly">Plotly</a></strong>
+                    <strong><a href="https://plotly.com">Plotly</a></strong>
                   </div>
                   <div>
                     <time datetime="2016-09-01">Sep 2016</time> –
@@ -396,21 +489,67 @@ article > header > .meta > :last-child {
                   </div>
                 </div>
               </header>
-                <p>WebGL core of plotly.js — the open-source scientific charting library (17K+ stars, used across research and industry).</p>
+                <p>Built and maintained the WebGL stack for plotly.js, an open-source scientific charting library.</p>
                 <ul>
-                    <li><p>WebGL renderers for scatter, line, and waveform traces — interactive at 1B+ points</p></li>
-                    <li><p>Point-clustering algorithm enabling real-time exploration of massive datasets</p></li>
-                    <li><p>Mobile build — touch interactions, responsive layouts</p></li>
-                    <li><p>Contributions to regl and the stack-gl ecosystem (modular WebGL)</p></li>
-                    <li><p>Visual regression harness covering 2000+ chart variants</p></li>
+                    <li><p>Built WebGL scatter, line, scatterplot-matrix, and waveform renderers</p></li>
+                    <li><p>Designed point clustering for real-time exploration of datasets up to 1 billion points</p></li>
+                    <li><p>Maintained <a href="https://github.com/regl-project/regl">regl</a> and 24 <a href="https://github.com/gl-vis">gl-vis</a> repositories, including 2D and 3D renderers</p></li>
+                    <li><p>Built visual-regression tooling covering 2,000+ chart variants</p></li>
                 </ul>
             </article>
+        </div>
+      </section>
+      <section id="projects">
+        <h3>Open source</h3>
+        <div class="stack">
+            <article>
+              <header>
+                <h4><a href="https://github.com/audiojs">AudioJS</a></h4>
+              </header>
+                <p>Creator and maintainer of 70+ public audio and DSP repositories for browsers and Node.</p>
+                <ul>
+                    <li><p><a href="https://github.com/audiojs/audio">audio</a>: streaming decode, page-cached 10 GB+ files, non-destructive edits, and on-demand codecs</p></li>
+                    <li><p><a href="https://github.com/audiojs/web-audio-api">web-audio-api</a>: portable Web Audio API implementation; 950+ GitHub stars</p></li>
+                    <li><p><a href="https://github.com/dy/wavearea">wavearea</a>: multiline playback and editing</p></li>
+                    <li><p>JZ-based WebAssembly compilation for DSP modules</p></li>
+                    <li><p>300+ audio-processing modules spanning analysis, filtering, effects, synthesis, and neural audio</p></li>
+                </ul>
+            </article>
+            <article>
+              <header>
+                <h4><a href="https://github.com/dy/jz">JZ</a> / <a href="https://github.com/dy/watr">watr</a></h4>
+              </header>
+                <p>Created JZ, a numeric JavaScript-to-WebAssembly compiler for DSP, graphics, and codecs, and watr, a WAT compiler and optimizer.</p>
+            </article>
+            <article>
+              <header>
+                <h4><a href="https://github.com/dy/sprae">sprae</a></h4>
+              </header>
+                <p>Created signals-based DOM microhydration for server-rendered and static pages, with no build step or virtual DOM.</p>
+            </article>
+            <article>
+              <header>
+                <h4><a href="https://github.com/dy/wavefont">Wavefont</a> / <a href="https://github.com/dy/linefont">Linefont</a></h4>
+              </header>
+                <p>Created OpenType fonts that render waveform and line-chart data as text; 900+ GitHub stars combined.</p>
+            </article>
+            <article>
+              <header>
+                <h4><a href="https://github.com/colorjs/color-space">color-space</a> / <a href="https://github.com/stackgl/glsl-transpiler">glsl-transpiler</a></h4>
+              </header>
+                <p>Creator and maintainer of color-space, a color conversion library, and glsl-transpiler, a GLSL-to-JavaScript compiler for CPU execution.</p>
+            </article>
+        </div>
+      </section>
+      <section id="earlier">
+        <h3>Earlier experience</h3>
+        <div class="stack">
             <article>
               <header>
                 <h4>Web Developer</h4>
                 <div class="meta">
                   <div>
-                    <strong><a href="http://ttbagroup.com/">TTBA Group</a></strong>
+                    <strong><a href="https://ttbagroup.com/">TTBA Group</a></strong>
                   </div>
                   <div>
                     <time datetime="2015-01-01">Jan 2015</time> –
@@ -418,18 +557,14 @@ article > header > .meta > :last-child {
                   </div>
                 </div>
               </header>
-                <p>Boutique web agency — performance-first client work.</p>
-                <ul>
-                    <li><p>10+ client sites shipped at 100/100 PageSpeed</p></li>
-                    <li><p>Wishbox.gift — Preact e-commerce platform with custom API</p></li>
-                </ul>
+                <p>Built 10+ sites at 100/100 PageSpeed; Wishbox.gift used Preact and API integration.</p>
             </article>
             <article>
               <header>
                 <h4>Frontend Developer</h4>
                 <div class="meta">
                   <div>
-                    <strong><a href="http://kudago.com">KudaGo</a></strong>
+                    <strong><a href="https://kudago.com">KudaGo</a></strong>
                   </div>
                   <div>
                     <time datetime="2012-03-01">Mar 2012</time> –
@@ -437,26 +572,22 @@ article > header > .meta > :last-child {
                   </div>
                 </div>
               </header>
-                <p>Cultural events platform across 15+ European cities.</p>
-                <ul>
-                    <li><p>kudago.com desktop + mobile — &lt;20KB JS bundle, 100/100 PageSpeed</p></li>
-                    <li><p>UX/UI and information architecture</p></li>
-                </ul>
+                <p>Built KudaGo for 15+ cities; its mobile site used under 20 KB of JavaScript and scored 100/100 PageSpeed at launch.</p>
             </article>
             <article>
               <header>
-                <h4>Web Developer &amp; Designer</h4>
+                <h4>Graphic Designer / Web Developer</h4>
                 <div class="meta">
                   <div>
                     <strong>Freelance</strong>
                   </div>
                   <div>
-                    <time datetime="2012-03-01">Mar 2012</time> –
-                    <time datetime="2014-03-01">Mar 2014</time>
+                    <time datetime="2009-01-01">Jan 2009</time> –
+                    <time datetime="2013-03-01">Mar 2013</time>
                   </div>
                 </div>
               </header>
-                <p>Design + frontend for 15+ small/medium business sites — e-commerce, real estate, corporate, analytics dashboards.</p>
+                <p>Part-time web, UI, and graphic design; built an interactive VoiceKey guide during a 2012 Speech Technology Center internship.</p>
             </article>
         </div>
       </section>
@@ -467,124 +598,27 @@ article > header > .meta > :last-child {
               <header>
                 <h4>Baltic State Technical University &quot;Voenmeh&quot;</h4>
                 <div class="meta">
-                    <strong>Computer Graphics &amp; Intelligent Systems</strong>
+                    <strong>BSc + MSc</strong>
                   <div>
-                    <time datetime="2010-09-01">Sep 2010</time> –
+                    <time datetime="2006-09-01">Sep 2006</time> –
                     <time datetime="2012-06-14">Jun 2012</time>
                   </div>
                 </div>
               </header>
-                <p>Master</p>
+                <p>BSc: Information &amp; Computer Science; MSc: Computer Graphics &amp; Intelligent Systems</p>
             </article>
             <article>
               <header>
-                <h4>Baltic State Technical University &quot;Voenmeh&quot;</h4>
+                <h4>Saint Petersburg College of Marine Instrumentation</h4>
                 <div class="meta">
-                    <strong>Information and Computer Science</strong>
-                  <div>
-                    <time datetime="2006-09-01">Sep 2006</time> –
-                    <time datetime="2010-06-14">Jun 2010</time>
-                  </div>
-                </div>
-              </header>
-                <p>Bachelor</p>
-            </article>
-            <article>
-              <header>
-                <h4>Saint-Petersburg College of Marine Instrumentation</h4>
-                <div class="meta">
-                    <strong>Automatic Control Systems</strong>
+                    <strong>Technician diploma</strong>
                   <div>
                     <time datetime="2002-09-01">Sep 2002</time> –
                     <time datetime="2006-06-01">Jun 2006</time>
                   </div>
                 </div>
               </header>
-                <p>Technician</p>
-                <h5>Courses</h5>
-                <ul>
-                    <li><p>Signal Processing</p></li>
-                    <li><p>Control Theory</p></li>
-                    <li><p>Electronics</p></li>
-                    <li><p>Instrumentation</p></li>
-                </ul>
-            </article>
-        </div>
-      </section>
-      <section id="projects">
-        <h3>Projects</h3>
-        <div class="stack">
-            <article>
-              <header>
-                <h4><a href="https://github.com/dy/wavefont">Wavefont / Linefont</a></h4>
-              </header>
-                <p>Data-rendering fonts — draw waveforms and line charts as text. Used in production by plotly.js and others.</p>
-            </article>
-            <article>
-              <header>
-                <h4><a href="https://github.com/audiojs/audio">audio</a></h4>
-              </header>
-                <p>High-level audio workflow library for the web — playback, analysis, non-destructive editing. <code>audio('voice.mp3').trim().normalize('podcast').fade(0.3, 0.5).save('clean.mp3')</code> — chainable, streaming, tree-shakable.</p>
-                <ul>
-                    <li><p>WASM codecs loaded on demand — no ffmpeg dependency</p></li>
-                    <li><p>Streaming playback begins during decode; page cache handles 10GB+ files</p></li>
-                    <li><p>Non-destructive virtual edits with instant undo</p></li>
-                    <li><p>Audio-first API — works in dB, Hz, LUFS, not byte offsets</p></li>
-                    <li><p>LUFS loudness, spectrum, peak, and descriptor analysis</p></li>
-                    <li><p>Pluggable op architecture; CLI with Unix pipes and tab completion</p></li>
-                    <li><p>Runs in browsers, Node, Deno, Bun</p></li>
-                </ul>
-            </article>
-            <article>
-              <header>
-                <h4><a href="https://github.com/audiojs">AudioJS ecosystem</a></h4>
-              </header>
-                <p>Open-source audio/DSP toolchain for the web — author and maintainer. Modular packages covering decode, encode, I/O, filters, effects, and the full signal path.</p>
-                <ul>
-                    <li><p>web-audio-api — portable Web Audio API implementation; polyfill compatible with tone.js</p></li>
-                    <li><p>audio-decode / audio-encode — 13+ formats in Node and browser via WASM codecs</p></li>
-                    <li><p>audio-speaker / audio-mic — cross-platform audio I/O</p></li>
-                    <li><p>digital-filter — IIR/FIR/biquad/butterworth, smoothing, adaptive, multirate</p></li>
-                    <li><p>audio-filter — weighting curves (A/C/K), auditory, analog, speech, EQ</p></li>
-                    <li><p>audio-effect — modulation, dynamics, delay, spatial, distortion (phaser, flanger, chorus)</p></li>
-                    <li><p>pcm-convert, periodic-function, audio-buffer-utils, audio-stretch, audio-lena</p></li>
-                </ul>
-            </article>
-            <article>
-              <header>
-                <h4><a href="https://github.com/stackgl/glsl-transpiler">GLSL-transpiler</a></h4>
-              </header>
-                <p>GLSL → JavaScript compiler (stack-gl ecosystem). Lets you run shader code on CPU.</p>
-            </article>
-            <article>
-              <header>
-                <h4><a href="https://github.com/dy/fourier-transform">fourier-transform</a></h4>
-              </header>
-                <p>Performant FFT implementation for signal processing.</p>
-            </article>
-            <article>
-              <header>
-                <h4><a href="https://github.com/dy/sprae">Sprae</a></h4>
-              </header>
-                <p>3KB DOM microhydration library — reactive templating without a virtual DOM.</p>
-            </article>
-            <article>
-              <header>
-                <h4><a href="https://github.com/dy/watr">Watr</a></h4>
-              </header>
-                <p>WebAssembly text-format compiler.</p>
-            </article>
-            <article>
-              <header>
-                <h4><a href="https://github.com/dy/subscript">Subscript</a></h4>
-              </header>
-                <p>Fast expression parser and evaluator.</p>
-            </article>
-            <article>
-              <header>
-                <h4><a href="https://github.com/colorjs/color-space">Color-space</a></h4>
-              </header>
-                <p>Color space conversions library — comprehensive, dependency-free.</p>
+                <p>Automatic Control Systems · Signal Processing · Control Theory · Electronics · Instrumentation</p>
             </article>
         </div>
       </section>
@@ -592,100 +626,84 @@ article > header > .meta > :last-child {
         <h3>Skills</h3>
         <div class="grid-list">
             <div>
-                <h4>Frontend Core</h4>
+                <h4>Graphics &amp; WebAssembly</h4>
                 <ul class="tag-list">
-                    <li>typescript</li>
-                    <li>react</li>
-                    <li>next.js</li>
-                    <li>preact</li>
-                    <li>vue</li>
+                    <li>WebGL</li>
+                    <li>GLSL</li>
+                    <li>regl</li>
+                    <li>WebAssembly</li>
+                    <li>SIMD</li>
+                    <li>Canvas</li>
+                    <li>three.js</li>
+                    <li>D3</li>
+                    <li>data visualization</li>
+                </ul>
+            </div>
+            <div>
+                <h4>Audio &amp; DSP</h4>
+                <ul class="tag-list">
+                    <li>Web Audio API</li>
+                    <li>neural audio</li>
+                    <li>voice synthesis</li>
+                    <li>DSP</li>
+                    <li>FFT</li>
+                    <li>IIR/FIR filters</li>
+                    <li>codecs</li>
+                    <li>streaming</li>
+                    <li>LUFS</li>
+                </ul>
+            </div>
+            <div>
+                <h4>Frontend</h4>
+                <ul class="tag-list">
+                    <li>TypeScript</li>
+                    <li>React</li>
+                    <li>Next.js</li>
+                    <li>Preact</li>
+                    <li>Vue</li>
                     <li>signals</li>
                     <li>web components</li>
                     <li>SSR</li>
                 </ul>
             </div>
             <div>
-                <h4>Graphics, Audio &amp; DSP</h4>
-                <ul class="tag-list">
-                    <li>webgl</li>
-                    <li>glsl</li>
-                    <li>regl</li>
-                    <li>three.js</li>
-                    <li>canvas</li>
-                    <li>web audio api</li>
-                    <li>data visualization</li>
-                    <li>signal processing</li>
-                    <li>fft</li>
-                    <li>wasm</li>
-                </ul>
-            </div>
-            <div>
-                <h4>Performance &amp; Testing</h4>
-                <ul class="tag-list">
-                    <li>core web vitals</li>
-                    <li>lighthouse</li>
-                    <li>profiling</li>
-                    <li>playwright</li>
-                    <li>jest</li>
-                    <li>puppeteer</li>
-                    <li>bundle optimization</li>
-                </ul>
-            </div>
-            <div>
                 <h4>Design Systems &amp; UI</h4>
                 <ul class="tag-list">
                     <li>shadcn</li>
-                    <li>tailwind</li>
-                    <li>storybook</li>
-                    <li>material-ui</li>
-                    <li>figma</li>
-                    <li>wcag</li>
-                    <li>aria</li>
-                    <li>responsive design</li>
+                    <li>Tailwind</li>
+                    <li>Storybook</li>
+                    <li>Figma</li>
+                    <li>responsive UI</li>
+                    <li>WCAG / ARIA</li>
+                    <li>A/B testing</li>
                 </ul>
             </div>
             <div>
-                <h4>Build &amp; Infra</h4>
+                <h4>Performance &amp; Quality</h4>
                 <ul class="tag-list">
-                    <li>esbuild</li>
-                    <li>rollup</li>
-                    <li>webpack</li>
-                    <li>vercel</li>
-                    <li>github actions</li>
+                    <li>Core Web Vitals</li>
+                    <li>Lighthouse</li>
+                    <li>profiling</li>
+                    <li>visual regression</li>
+                    <li>Playwright</li>
+                    <li>Cypress</li>
+                    <li>Puppeteer</li>
+                    <li>Jest</li>
                 </ul>
             </div>
             <div>
-                <h4>Backend</h4>
+                <h4>Platform &amp; Delivery</h4>
                 <ul class="tag-list">
-                    <li>node.js</li>
-                    <li>python</li>
-                    <li>graphql</li>
-                    <li>firebase</li>
-                    <li>postgres</li>
+                    <li>Node.js</li>
+                    <li>Python</li>
+                    <li>GraphQL</li>
+                    <li>Firebase</li>
+                    <li>PostgreSQL</li>
+                    <li>CI/CD</li>
+                    <li>GitHub Actions</li>
+                    <li>esbuild / Rollup</li>
                 </ul>
             </div>
-        </div>
-      </section>
-      <section id="languages">
-        <h3>Languages</h3>
-        <div class="grid-list">
-            <div>
-                <h4>English</h4>
-              fluent
-            </div>
-            <div>
-                <h4>Russian</h4>
-              native
-            </div>
-            <div>
-                <h4>French</h4>
-              basic
-            </div>
-        </div>
-      </section>
-      <section id="references">
-        <h3>References</h3>
-        <div class="stack">
         </div>
       </section>
   </body>

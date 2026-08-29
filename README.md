@@ -1,7 +1,5 @@
-# [CV](http://registry.jsonresume.org/dfcreative)
+# CV
 
-[jsonresume.org](https://jsonresume.org/schema/) schema is used.
+[resume.json](resume.json) follows the [JSON Resume schema](https://jsonresume.org/schema/). [index.html](index.html) contains the custom web and print layout.
 
-To publish/manage resume use [resume-cli](https://www.npmjs.com/package/resume-cli) tool.
-
-Master branch [resume.json](resume.json) contains all the information.
+Run `npm run build` to regenerate [resume.pdf](resume.pdf). `npm run scaffold-html` overwrites `index.html` with the base JSON Resume theme.
