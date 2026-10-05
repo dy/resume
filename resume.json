@@ -5,7 +5,7 @@
 		"email": "df.creative@gmail.com",
 		"phone": "+1 514 775-5376",
 		"url": "https://dy.github.io",
-		"summary": "Software engineer focused on high-performance web applications, real-time audio, and 2D/3D graphics. Built fintech products at Mobeewave, Apple, and Brainfinance, voice interfaces at ElevenLabs, and scientific visualization at Plotly. Current open-source work covers WebAssembly, DSP, color, and UI tooling.",
+		"summary": "Software engineer focused on high-performance web applications, real-time audio, and 2D/3D graphics. Built fintech products at Mobeewave, Apple, and Brainfinance, voice interfaces at ElevenLabs, and scientific visualization at Plotly. Current open-source work covers WebGL, WebAssembly, DSP, and color. Trained in control systems and signal processing.",
 		"location": {
 			"city": "Montréal",
 			"region": "Québec",
@@ -26,11 +26,19 @@
 	},
 	"work": [
 		{
-			"name": "Independent Open Source",
+			"name": "Independent",
 			"position": "Software Engineer",
 			"url": "https://dy.github.io",
 			"startDate": "2025-10-22",
-			"summary": "Career break for long-planned open-source projects, including AudioJS and ColorJS. Selected projects total 3,000+ GitHub stars."
+			"summary": "Open-source graphics, audio, and WebAssembly; selected projects total 3,000+ GitHub stars.",
+			"highlights": [
+				"[gl-waveform](https://github.com/dy/gl-waveform): WebGL2 time-series renderer; 60 fps over 172.8M samples per channel, exact per-pixel peaks, streaming input",
+				"[audio](https://github.com/audiojs/audio): streaming audio engine; 10 GB+ files paged to OPFS, runs in a Worker; 300+ GitHub stars",
+				"[JZ](https://github.com/dy/jz) / [watr](https://github.com/dy/watr): JavaScript-to-WebAssembly compiler and WAT optimizer, benchmarked against C, Rust, and Go",
+				"[color-space](https://github.com/colorjs/color-space): 168 verified color spaces for JS, WebAssembly, and shaders; 380+ GitHub stars",
+				"[gpu-font](https://github.com/dy/gpu-font): in-browser font identification on WebGPU; right family in the top five 92% of the time",
+				"Go backend (Gin, GORM, SQLite) for ISKCON Montréal"
+			]
 		},
 		{
 			"name": "Brainfinance",
@@ -40,9 +48,9 @@
 			"endDate": "2025-10-21",
 			"summary": "Consumer fintech serving 100,000+ users in Canada: icash.ca loans and earna.zone savings.",
 			"highlights": [
-				"Owned frontend architecture and delivery for earna.zone, including its landing page, dashboard, application flows, and shadcn/Tailwind/Storybook design system",
-				"Rebuilt the icash.ca frontend, including loan application and contract-signing flows; contract drop-off fell 40% in an A/B test",
-				"Raised key icash.ca flows above 95 in PageSpeed performance tests and addressed WCAG AA accessibility issues"
+				"Owned the earna.zone frontend on Next.js: landing, dashboard, application flows, and design system (shadcn, Tailwind, Storybook)",
+				"Rebuilt icash.ca loan application and contract signing; contract drop-off fell 40% in an A/B test",
+				"Raised key flows above 95 in PageSpeed; fixed WCAG AA accessibility issues"
 			]
 		},
 		{
@@ -53,24 +61,20 @@
 			"endDate": "2023-01-01",
 			"summary": "Concurrent pre-seed voice AI contract.",
 			"highlights": [
-				"Designed and launched elevenlabs.io with 11ty, Firebase authentication, Stripe payments, and voice API access",
+				"Launched elevenlabs.io: 11ty, Firebase auth, Stripe payments, voice API access",
 				"Built the browser player for generated speech"
 			]
 		},
 		{
-			"name": "Mobeewave / Apple",
+			"name": "[Mobeewave](https://www.linkedin.com/company/mobeewave/about/) / [Apple](https://www.apple.com)",
 			"position": "Software Engineer",
-			"url": "https://www.linkedin.com/company/mobeewave/about/",
 			"startDate": "2019-01-15",
 			"endDate": "2022-10-01",
 			"summary": "Joined Mobeewave in 2019 and continued at Apple after the 2020 acquisition.",
 			"highlights": [
-				"Mobeewave: built the frontend for Samsung POS, a PCI DSS-compliant tap-to-pay product shipped in Samsung Wallet",
-				"Mobeewave: built acquirer, admin, and provisioning portals; the acquirer portal was used by 50+ financial institutions",
-				"Created Spect, a frontend framework for state and component composition",
-				"Apple: built the Wallet web push provisioning flow and Apple Business Registry portal frontend",
-				"Apple: built the Pay Later checkout widget with real-time calculations",
-				"Built the reference polyfill for the W3C Template Instantiation proposal"
+				"Mobeewave: Samsung POS tap-to-pay frontend (PCI DSS), shipped in Samsung Wallet; acquirer portal used by 50+ financial institutions",
+				"Apple: Wallet web push provisioning, Apple Business Registry portal, Pay Later checkout widget",
+				"Reference [polyfill](https://github.com/dy/template-parts) for the W3C Template Instantiation proposal"
 			]
 		},
 		{
@@ -81,10 +85,10 @@
 			"endDate": "2018-09-01",
 			"summary": "Built and maintained the WebGL stack for plotly.js, an open-source scientific charting library.",
 			"highlights": [
-				"Built WebGL scatter, line, scatterplot-matrix, and waveform renderers",
-				"Designed point clustering for real-time exploration of datasets up to 1 billion points",
-				"Maintained regl and 24 gl-vis repositories, including 2D and 3D renderers",
-				"Built visual-regression tooling covering 2,000+ chart variants"
+				"[Point clustering](https://github.com/dy/point-cluster) for real-time exploration of up to 1 billion points",
+				"WebGL scatter, line, scatterplot-matrix, and waveform renderers",
+				"Maintained [regl](https://github.com/regl-project/regl) (5,500+ GitHub stars) and 24 [gl-vis](https://github.com/gl-vis) repositories",
+				"Visual-regression tooling for 2,000+ chart variants"
 			]
 		},
 		{
@@ -93,7 +97,7 @@
 			"url": "https://ttbagroup.com/",
 			"startDate": "2015-01-01",
 			"endDate": "2016-08-13",
-			"summary": "Built 10+ sites at 100/100 PageSpeed; Wishbox.gift used Preact and API integration."
+			"summary": "10+ sites at 100/100 PageSpeed; Wishbox.gift on Preact."
 		},
 		{
 			"name": "KudaGo",
@@ -101,14 +105,7 @@
 			"url": "https://kudago.com",
 			"startDate": "2012-03-01",
 			"endDate": "2015-01-12",
-			"summary": "Built KudaGo for 15+ cities; its mobile site used under 20 KB of JavaScript and scored 100/100 PageSpeed at launch."
-		},
-		{
-			"name": "Freelance",
-			"position": "Graphic Designer / Web Developer",
-			"startDate": "2009-01-01",
-			"endDate": "2013-03-01",
-			"summary": "Part-time web, UI, and graphic design; built an interactive VoiceKey guide during a 2012 Speech Technology Center internship."
+			"summary": "City guide for 15+ cities; mobile site under 20 KB of JavaScript, 100/100 PageSpeed at launch."
 		}
 	],
 	"education": [
@@ -125,73 +122,133 @@
 			"studyType": "Technician diploma",
 			"startDate": "2002-09-01",
 			"endDate": "2006-06-01",
-			"courses": ["Signal Processing", "Control Theory", "Electronics", "Instrumentation"]
+			"courses": [
+				"Signal Processing",
+				"Control Theory",
+				"Electronics",
+				"Instrumentation"
+			]
 		}
 	],
 	"projects": [
 		{
 			"name": "AudioJS",
-			"description": "Creator and maintainer of 70+ public audio and DSP repositories for browsers and Node.",
+			"description": "70+ audio and DSP repositories for browsers and Node.",
 			"url": "https://github.com/audiojs",
 			"highlights": [
-				"audio: streaming decode, page-cached 10 GB+ files, non-destructive edits, and on-demand codecs",
-				"web-audio-api: portable Web Audio API implementation; 950+ GitHub stars",
-				"wavearea: multiline playback and editing",
-				"JZ-based WebAssembly compilation for DSP modules",
-				"300+ audio-processing modules spanning analysis, filtering, effects, synthesis, and neural audio"
+				"[web-audio-api](https://github.com/audiojs/web-audio-api): Web Audio API for Node; 950+ GitHub stars",
+				"[digital-filter](https://github.com/audiojs/digital-filter): IIR, FIR, adaptive, and multirate filters"
 			]
 		},
 		{
-			"name": "JZ / watr",
-			"description": "Created JZ, a numeric JavaScript-to-WebAssembly compiler for DSP, graphics, and codecs, and watr, a WAT compiler and optimizer.",
-			"url": "https://github.com/dy/jz"
+			"name": "[Wavefont](https://github.com/dy/wavefont) / [Linefont](https://github.com/dy/linefont)",
+			"description": "Fonts that draw waveforms and line charts as text; 900+ GitHub stars combined."
 		},
 		{
-			"name": "sprae",
-			"description": "Created signals-based DOM microhydration for server-rendered and static pages, with no build step or virtual DOM.",
-			"url": "https://github.com/dy/sprae"
-		},
-		{
-			"name": "Wavefont / Linefont",
-			"description": "Created OpenType fonts that render waveform and line-chart data as text; 900+ GitHub stars combined.",
-			"url": "https://github.com/dy/wavefont"
-		},
-		{
-			"name": "color-space / glsl-transpiler",
-			"description": "Creator and maintainer of color-space, a color conversion library, and glsl-transpiler, a GLSL-to-JavaScript compiler for CPU execution.",
-			"url": "https://github.com/colorjs/color-space"
+			"name": "[sprae](https://github.com/dy/sprae) / [Spect](https://github.com/dy/spect)",
+			"description": "sprae: reactive HTML attributes; made earna.zone server components interactive without client components. Spect: state and component framework."
 		}
 	],
 	"skills": [
 		{
 			"name": "Graphics & WebAssembly",
-			"keywords": ["WebGL", "GLSL", "regl", "WebAssembly", "SIMD", "Canvas", "three.js", "D3", "data visualization"]
+			"keywords": [
+				"WebGL",
+				"WebGPU",
+				"GLSL",
+				"regl",
+				"Canvas",
+				"SVG",
+				"three.js",
+				"D3",
+				"WebAssembly",
+				"SIMD"
+			]
 		},
 		{
 			"name": "Audio & DSP",
-			"keywords": ["Web Audio API", "neural audio", "voice synthesis", "DSP", "FFT", "IIR/FIR filters", "codecs", "streaming", "LUFS"]
+			"keywords": [
+				"Web Audio API",
+				"neural audio",
+				"voice synthesis",
+				"DSP",
+				"FFT",
+				"IIR/FIR filters",
+				"codecs",
+				"streaming",
+				"LUFS"
+			]
 		},
 		{
 			"name": "Frontend",
-			"keywords": ["TypeScript", "React", "Next.js", "Preact", "Vue", "signals", "web components", "SSR"]
+			"keywords": [
+				"TypeScript",
+				"React",
+				"Next.js",
+				"Preact",
+				"Vue",
+				"signals",
+				"web components",
+				"SSR"
+			]
 		},
 		{
 			"name": "Design Systems & UI",
-			"keywords": ["shadcn", "Tailwind", "Storybook", "Figma", "responsive UI", "WCAG / ARIA", "A/B testing"]
+			"keywords": [
+				"shadcn",
+				"Tailwind",
+				"Storybook",
+				"Figma",
+				"responsive UI",
+				"WCAG / ARIA",
+				"A/B testing"
+			]
 		},
 		{
 			"name": "Performance & Quality",
-			"keywords": ["Core Web Vitals", "Lighthouse", "profiling", "visual regression", "Playwright", "Cypress", "Puppeteer", "Jest"]
+			"keywords": [
+				"profiling",
+				"Web Workers",
+				"Core Web Vitals",
+				"Lighthouse",
+				"visual regression",
+				"Playwright",
+				"Cypress",
+				"Puppeteer",
+				"Jest"
+			]
 		},
 		{
 			"name": "Platform & Delivery",
-			"keywords": ["Node.js", "Python", "GraphQL", "Firebase", "PostgreSQL", "CI/CD", "GitHub Actions", "esbuild / Rollup"]
+			"keywords": [
+				"Node.js",
+				"Go",
+				"Python",
+				"GraphQL",
+				"Firebase",
+				"PostgreSQL",
+				"CI/CD",
+				"GitHub Actions",
+				"esbuild / Rollup"
+			]
 		}
 	],
 	"languages": [
-		{ "language": "English", "fluency": "fluent" },
-		{ "language": "Russian", "fluency": "native" },
-		{ "language": "French", "fluency": "conversational" },
-		{ "language": "Spanish", "fluency": "basic" }
+		{
+			"language": "English",
+			"fluency": "fluent"
+		},
+		{
+			"language": "Russian",
+			"fluency": "native"
+		},
+		{
+			"language": "French",
+			"fluency": "conversational"
+		},
+		{
+			"language": "Spanish",
+			"fluency": "basic"
+		}
 	]
 }

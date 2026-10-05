@@ -4,8 +4,7 @@
   "description": "My cv",
   "main": "index.js",
   "scripts": {
-    "build": "npm run build-pdf",
-    "scaffold-html": "resume export index.html --format html --theme even",
+    "build": "node build.mjs && npm run build-pdf",
     "build-pdf": "'/Applications/Google Chrome.app/Contents/MacOS/Google Chrome' --headless --no-pdf-header-footer --print-to-pdf=resume.pdf file://$PWD/index.html"
   },
   "repository": {
@@ -17,13 +16,5 @@
   "bugs": {
     "url": "https://github.com/dy/resume/issues"
   },
-  "homepage": "https://github.com/dy/resume#readme",
-  "dependencies": {
-    "jsonresume-theme-actual": "^0.2.1",
-    "jsonresume-theme-even": "^0.17.1",
-    "jsonresume-theme-flat": "^0.3.7",
-    "jsonresume-theme-joeytall": "^1.0.1",
-    "jsonresume-theme-tachyons-clean": "^0.0.9",
-    "resume-cli": "^3.1.2"
-  }
+  "homepage": "https://github.com/dy/resume#readme"
 }
