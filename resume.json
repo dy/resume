@@ -1,11 +1,11 @@
 {
 	"basics": {
 		"name": "Dmitry Ivanov",
-		"label": "Software Engineer",
+		"label": "Senior Frontend Engineer",
 		"email": "df.creative@gmail.com",
 		"phone": "+1 514 775-5376",
 		"url": "https://dy.github.io",
-		"summary": "Software engineer focused on high-performance web applications, real-time audio, and 2D/3D graphics. Built fintech products at Mobeewave, Apple, and Brainfinance, voice interfaces at ElevenLabs, and scientific visualization at Plotly. Current open-source work covers WebGL, WebAssembly, DSP, and color. Trained in control systems and signal processing.",
+		"summary": "Frontend engineer focused on interactive graphics and high-performance web applications. Built scientific visualization at Plotly, fintech products at Mobeewave, Apple, and Brainfinance, and voice interfaces at ElevenLabs. Current open-source work covers interactive tools, WebGL, color, and audio. Trained in control systems and signal processing.",
 		"location": {
 			"city": "Montréal",
 			"region": "Québec",
@@ -32,12 +32,12 @@
 			"startDate": "2025-10-22",
 			"summary": "Open-source graphics, audio, and WebAssembly; selected projects total 3,000+ GitHub stars.",
 			"highlights": [
-				"[gl-waveform](https://github.com/dy/gl-waveform): WebGL2 time-series renderer; 60 fps over 172.8M samples per channel, exact per-pixel peaks, streaming input",
-				"[audio](https://github.com/audiojs/audio): streaming audio engine; 10 GB+ files paged to OPFS, runs in a Worker; 300+ GitHub stars",
-				"[JZ](https://github.com/dy/jz) / [watr](https://github.com/dy/watr): JavaScript-to-WebAssembly compiler and WAT optimizer, benchmarked against C, Rust, and Go",
-				"[color-space](https://github.com/colorjs/color-space): 168 verified color spaces for JS, WebAssembly, and shaders; 380+ GitHub stars",
-				"[gpu-font](https://github.com/dy/gpu-font): in-browser font identification on WebGPU; right family in the top five 92% of the time",
-				"Go backend (Gin, GORM, SQLite) for ISKCON Montréal"
+				"[color-space.io](https://color-space.io): interactive atlas of 205 color spaces, each tested against a cited reference",
+				"[settings-panel](https://dy.github.io/settings-panel/): UI controls inferred from plain values",
+				"[gl-waveform](https://dy.github.io/gl-waveform/): WebGL2 waveform renderer; 60 fps pan and zoom over 172.8M samples",
+				"[audio](https://audio.js.org): audio editing in JavaScript; 300+ GitHub stars",
+				"[JZ](https://github.com/dy/jz) / [watr](https://github.com/dy/watr): JavaScript-to-WebAssembly compiler",
+				"Claude Code daily; agent changes verified by differential tests against reference implementations"
 			]
 		},
 		{
@@ -48,8 +48,8 @@
 			"endDate": "2025-10-21",
 			"summary": "Consumer fintech serving 100,000+ users in Canada: icash.ca loans and earna.zone savings.",
 			"highlights": [
-				"Owned the earna.zone frontend on Next.js: landing, dashboard, application flows, and design system (shadcn, Tailwind, Storybook)",
-				"Rebuilt icash.ca loan application and contract signing; contract drop-off fell 40% in an A/B test",
+				"Built the earna.zone design system and frontend on Next.js (shadcn, Tailwind, Storybook): landing, dashboard, application flows",
+				"Rebuilt icash.ca loan application and contract signing; fixed validation errors that blocked form submission",
 				"Raised key flows above 95 in PageSpeed; fixed WCAG AA accessibility issues"
 			]
 		},
@@ -58,8 +58,8 @@
 			"position": "Frontend Engineer (Contract)",
 			"url": "https://elevenlabs.io",
 			"startDate": "2022-10-01",
-			"endDate": "2023-01-01",
-			"summary": "Concurrent pre-seed voice AI contract.",
+			"endDate": "2022-11-22",
+			"summary": "Pre-seed voice AI contract.",
 			"highlights": [
 				"Launched elevenlabs.io: 11ty, Firebase auth, Stripe payments, voice API access",
 				"Built the browser player for generated speech"
@@ -85,10 +85,10 @@
 			"endDate": "2018-09-01",
 			"summary": "Built and maintained the WebGL stack for plotly.js, an open-source scientific charting library.",
 			"highlights": [
+				"WebGL [scatter](https://github.com/gl-vis/regl-scatter2d), line, scatterplot-matrix, and waveform renderers",
 				"[Point clustering](https://github.com/dy/point-cluster) for real-time exploration of up to 1 billion points",
-				"WebGL scatter, line, scatterplot-matrix, and waveform renderers",
-				"Maintained [regl](https://github.com/regl-project/regl) (5,500+ GitHub stars) and 24 [gl-vis](https://github.com/gl-vis) repositories",
-				"Visual-regression tooling for 2,000+ chart variants"
+				"Visual-regression testing across 2,000+ chart configurations",
+				"Maintained [regl](https://github.com/regl-project/regl) (5,500+ GitHub stars) and 24 [gl-vis](https://github.com/gl-vis) repositories"
 			]
 		},
 		{
@@ -132,6 +132,10 @@
 	],
 	"projects": [
 		{
+			"name": "[Wavefont](https://dy.github.io/wavefont/) / [Linefont](https://dy.github.io/linefont/)",
+			"description": "Variable fonts that draw waveforms and line charts as text; on Google Fonts; 900+ GitHub stars combined."
+		},
+		{
 			"name": "AudioJS",
 			"description": "70+ audio and DSP repositories for browsers and Node.",
 			"url": "https://github.com/audiojs",
@@ -141,93 +145,77 @@
 			]
 		},
 		{
-			"name": "[Wavefont](https://github.com/dy/wavefont) / [Linefont](https://github.com/dy/linefont)",
-			"description": "Fonts that draw waveforms and line charts as text; 900+ GitHub stars combined."
-		},
-		{
 			"name": "[sprae](https://github.com/dy/sprae) / [Spect](https://github.com/dy/spect)",
 			"description": "sprae: reactive HTML attributes; made earna.zone server components interactive without client components. Spect: state and component framework."
 		}
 	],
 	"skills": [
 		{
-			"name": "Graphics & WebAssembly",
+			"name": "Interactive graphics",
 			"keywords": [
-				"WebGL",
-				"WebGPU",
-				"GLSL",
-				"regl",
 				"Canvas",
 				"SVG",
-				"three.js",
-				"D3",
-				"WebAssembly",
-				"SIMD"
-			]
-		},
-		{
-			"name": "Audio & DSP",
-			"keywords": [
-				"Web Audio API",
-				"neural audio",
-				"voice synthesis",
-				"DSP",
-				"FFT",
-				"IIR/FIR filters",
-				"codecs",
-				"streaming",
-				"LUFS"
+				"WebGL",
+				"regl",
+				"GLSL",
+				"variable fonts",
+				"pointer & touch input",
+				"requestAnimationFrame"
 			]
 		},
 		{
 			"name": "Frontend",
 			"keywords": [
 				"TypeScript",
+				"JavaScript",
 				"React",
 				"Next.js",
 				"Preact",
-				"Vue",
 				"signals",
 				"web components",
 				"SSR"
 			]
 		},
 		{
-			"name": "Design Systems & UI",
-			"keywords": [
-				"shadcn",
-				"Tailwind",
-				"Storybook",
-				"Figma",
-				"responsive UI",
-				"WCAG / ARIA",
-				"A/B testing"
-			]
-		},
-		{
-			"name": "Performance & Quality",
+			"name": "Performance",
 			"keywords": [
 				"profiling",
 				"Web Workers",
+				"OffscreenCanvas",
+				"WebAssembly",
 				"Core Web Vitals",
-				"Lighthouse",
+				"Lighthouse"
+			]
+		},
+		{
+			"name": "Testing",
+			"keywords": [
+				"differential tests",
 				"visual regression",
 				"Playwright",
-				"Cypress",
 				"Puppeteer",
 				"Jest"
 			]
 		},
 		{
-			"name": "Platform & Delivery",
+			"name": "Audio & DSP",
 			"keywords": [
+				"Web Audio API",
+				"FFT",
+				"IIR/FIR filters",
+				"codecs",
+				"streaming"
+			]
+		},
+		{
+			"name": "Tools & platform",
+			"keywords": [
+				"Claude Code",
+				"MCP",
+				"Figma plugins",
 				"Node.js",
 				"Go",
 				"Python",
-				"GraphQL",
-				"Firebase",
-				"PostgreSQL",
-				"CI/CD",
 				"GitHub Actions",
 				"esbuild / Rollup"
 			]
